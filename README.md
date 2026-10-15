@@ -7,12 +7,12 @@ Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-15 10:24-03:00 (hora de Uruguay) · fechas 2026-10-13, 2026-10-14, 2026-10-15
+**Última revisión:** 2026-10-15 18:27-03:00 (hora de Uruguay) · fechas 2026-10-14, 2026-10-15
 
-- **Valverde** jugó 90' (titular, nota 6.8, de mediocentro) en AS Roma 3-4 Real Madrid · UEFA Champions League
-- **Bernal** jugó 9' (suplente, nota 6.5, de mediocentro) en Real Betis 3-2 FC Porto · UEFA Champions League
-- **Mouriño** jugó 90' (titular, nota 8.3, de lateral derecho) en Villarreal 3-1 SSC Napoli · UEFA Champions League
-- **Araújo** jugó 90' (titular, nota 8.5, de lateral izquierdo) en RC Lens 0-2 Sporting CP · UEFA Champions League
+- Valverde: ya procesado · AS Roma 3-4 Real Madrid
+- Bernal: ya procesado · Real Betis 3-2 FC Porto
+- Mouriño: sin partido hoy ni ayer
+- Araújo: sin partido hoy ni ayer
 
 ## Últimas infografías (5 en total, todas en [`salida/`](salida))
 
