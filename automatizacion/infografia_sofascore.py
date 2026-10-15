@@ -322,10 +322,17 @@ def main():
     resumen = {"revisado": datetime.datetime.now(TZ).isoformat(timespec="minutes"), "fechas": sorted(str(f) for f in fechas), "jugadores": []}
     for j in jugs:
         if opt("--clave") and j["clave"] != opt("--clave"): continue
-        evs = []
+        evs, err = [], None
         for page in (0, 1):
             try: evs += get(f"/player/{j['sofascore_id']}/events/last/{page}").get("events", [])
-            except Exception: break
+            except Exception as ex:
+                if page == 0: err = repr(ex)
+                break
+        if err:
+            # Si SofaScore no responde no se puede saber si jugó: se avisa como error, nunca como "sin partido".
+            resumen["jugadores"].append({"clave": j["clave"], "nombre": j["placa"],
+                                         "partidos": [{"estado": "error", "partido": "(no se pudo consultar SofaScore)", "error": err}]})
+            continue
         try: evs += get(f"/player/{j['sofascore_id']}/events/next/0").get("events", [])
         except Exception: pass
         vistos, partidos = set(), []
