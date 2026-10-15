@@ -1,14 +1,15 @@
 # Celestes por el mundo · infografías
 
-Todos los días a las 18:30 (hora de Uruguay) GitHub revisa en SofaScore si **Mouriño** jugaron hoy o ayer
-y arma una infografía por cada partido. No depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
+Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa en SofaScore si **Mouriño** jugaron hoy o ayer
+y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
+Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-15 09:42-03:00 (hora de Uruguay) · fechas 2026-10-13
+**Última revisión:** 2026-10-15 09:43-03:00 (hora de Uruguay) · fechas 2026-10-13
 
-- Mouriño: ERROR al revisar (no se pudo consultar SofaScore) → `<HTTPError 403: 'Forbidden'>`
+- **Mouriño** jugó 90' (titular, nota 8.3, de lateral derecho) en Villarreal 3-1 SSC Napoli · UEFA Champions League
 
 ## Últimas infografías (5 en total, todas en [`salida/`](salida))
 
@@ -19,7 +20,8 @@ Cerrá el aviso cuando la publiques o la descartes.
 
 ## Cómo se usa
 
-- **Correrlo ahora o para una fecha puntual:** pestaña [Actions](../../actions/workflows/infografias.yml) → *Run workflow*. Podés poner una fecha (AAAA-MM-DD), un jugador (`valverde`, `bernal`, `mourino`, `araujo`) y marcar *forzar* para rehacer una que ya estaba.
+- **Correrlo ahora o para una fecha puntual:** en Claude, abrí la tarea programada *Infografías Celestes por el mundo* y usá *Run now*, o pedíselo a Claude en un chat (por ejemplo: "armá la de Mouriño del 13/10").
+- SofaScore no le responde a los servidores de GitHub, por eso los datos se bajan desde la nube de Claude y GitHub solo guarda, muestra y avisa.
 - **Sumar o sacar jugadores:** editá [`automatizacion/jugadores.json`](automatizacion/jugadores.json) (cómo, en [`automatizacion/AGENTE.md`](automatizacion/AGENTE.md)).
 - **Qué ya se procesó:** [`automatizacion/procesados.json`](automatizacion/procesados.json). Si borrás una línea, ese partido se vuelve a armar.
 - Los mapas de calor quedan en [`mapas/`](mapas) y las figuras en [`salida/fotos/`](salida/fotos).

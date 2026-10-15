@@ -1,0 +1,30 @@
+name: Control diario
+
+# A las 23:30 de Uruguay se fija que la revisión del día haya llegado. Si no llegó, abre un aviso (y llega el mail).
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  controlar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ver si llegó la revisión de hoy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TZ: America/Montevideo
+        run: |
+          # corre a las 23:30 de Uruguay; el día a controlar es el de Uruguay
+          HOY=$(date +%F)
+          ULTIMA=$(python3 -c "import json;print(json.load(open('automatizacion/ultima_revision.json'))['revisado'][:10])")
+          echo "Hoy $HOY · última revisión $ULTIMA"
+          if [ "$ULTIMA" != "$HOY" ]; then
+            printf '@%s\n\nLa tarea programada de Claude no subió la revisión de hoy (la última es del %s). Revisá la tarea *Infografías Celestes por el mundo* en Claude o pedile a Claude que la corra.\n' "${{ github.repository_owner }}" "$ULTIMA" > cuerpo.md
+            gh issue create --title "⚠️ Hoy no llegó la revisión de infografías ($HOY)" --body-file cuerpo.md
+          fi

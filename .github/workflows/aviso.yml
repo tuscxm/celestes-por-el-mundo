@@ -1,0 +1,33 @@
+name: Aviso de infografías nuevas
+
+# Cuando la tarea de Claude sube un archivo nuevo en avisos/, se abre un issue y GitHub manda el mail.
+on:
+  push:
+    branches: [main]
+    paths: ["avisos/**"]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Abrir un issue por cada aviso nuevo
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ANTES: ${{ github.event.before }}
+        run: |
+          if git cat-file -e "$ANTES" 2>/dev/null; then
+            NUEVOS=$(git diff --name-only --diff-filter=A "$ANTES" "$GITHUB_SHA" -- avisos/)
+          else
+            NUEVOS=$(git show --name-only --diff-filter=A --format= "$GITHUB_SHA" -- avisos/)
+          fi
+          for f in $NUEVOS; do
+            tail -n +3 "$f" > cuerpo.md
+            gh issue create --title "$(head -n 1 "$f")" --body-file cuerpo.md
+          done

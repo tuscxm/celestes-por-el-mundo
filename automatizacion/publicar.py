@@ -1,11 +1,11 @@
 """Después de cada corrida: guarda lo nuevo en el repositorio, actualiza la galería del README
-y deja listo el aviso (issue de GitHub) si hubo infografías nuevas o errores.
+y deja listo el aviso si hubo infografías nuevas o errores.
 
-Uso: python3 automatizacion/publicar.py salida_hoy
+Uso: GITHUB_REPOSITORY=tuscxm/celestes-por-el-mundo GITHUB_REPOSITORY_OWNER=tuscxm python3 automatizacion/publicar.py salida_hoy
 Lee  salida_hoy/resumen.json (lo escribe infografia_sofascore.py).
 Mueve PNG/JSON/_copy.txt a salida/, mapas a mapas/, figuras a salida/fotos/.
-Escribe automatizacion/ultima_revision.json, README.md, y si corresponde
-salida_hoy/aviso_titulo.txt + salida_hoy/aviso.md (los usa el workflow para abrir el issue)."""
+Escribe automatizacion/ultima_revision.json, README.md, y si corresponde avisos/<fecha_hora>.md
+(primera línea = título). Al subirlo, el workflow .github/workflows/aviso.yml abre un issue y GitHub manda el mail."""
 import json, os, re, shutil, sys, glob, datetime
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -102,8 +102,11 @@ def aviso(resumen, salida_hoy):
     md.append("\n---\nNo se publicó nada en Instagram. Cerrá este aviso cuando la publiques o la descartes.")
     if CORRIDA:
         md.append(f"Detalle de la corrida: {CORRIDA}")
-    open(os.path.join(salida_hoy, "aviso_titulo.txt"), "w").write(titulo[:250])
-    open(os.path.join(salida_hoy, "aviso.md"), "w").write("\n".join(md))
+    os.makedirs(os.path.join(RAIZ, "avisos"), exist_ok=True)
+    nombre = resumen["revisado"][:16].replace("T", "_").replace(":", "")
+    ruta = os.path.join(RAIZ, "avisos", nombre + ".md")
+    open(ruta, "w").write(titulo[:250].replace("\n", " ") + "\n\n" + "\n".join(md))
+    print("aviso en", os.path.relpath(ruta, RAIZ))
     return True
 
 
@@ -138,10 +141,11 @@ def readme(ultima):
         rev += "\n".join(f"- {l}" for l in ultima["lineas"]) + "\n"
     return f"""# Celestes por el mundo · infografías
 
-Todos los días a las 18:30 (hora de Uruguay) GitHub revisa en SofaScore si **{', '.join(ultima['jugadores']) if ultima else 'los jugadores'}** jugaron hoy o ayer
-y arma una infografía por cada partido. No depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
+Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa en SofaScore si **{', '.join(ultima['jugadores']) if ultima else 'los jugadores'}** jugaron hoy o ayer
+y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
+Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
 {rev}
@@ -153,7 +157,8 @@ Cerrá el aviso cuando la publiques o la descartes.
 
 ## Cómo se usa
 
-- **Correrlo ahora o para una fecha puntual:** pestaña [Actions](../../actions/workflows/infografias.yml) → *Run workflow*. Podés poner una fecha (AAAA-MM-DD), un jugador (`valverde`, `bernal`, `mourino`, `araujo`) y marcar *forzar* para rehacer una que ya estaba.
+- **Correrlo ahora o para una fecha puntual:** en Claude, abrí la tarea programada *Infografías Celestes por el mundo* y usá *Run now*, o pedíselo a Claude en un chat (por ejemplo: "armá la de Mouriño del 13/10").
+- SofaScore no le responde a los servidores de GitHub, por eso los datos se bajan desde la nube de Claude y GitHub solo guarda, muestra y avisa.
 - **Sumar o sacar jugadores:** editá [`automatizacion/jugadores.json`](automatizacion/jugadores.json) (cómo, en [`automatizacion/AGENTE.md`](automatizacion/AGENTE.md)).
 - **Qué ya se procesó:** [`automatizacion/procesados.json`](automatizacion/procesados.json). Si borrás una línea, ese partido se vuelve a armar.
 - Los mapas de calor quedan en [`mapas/`](mapas) y las figuras en [`salida/fotos/`](salida/fotos).
