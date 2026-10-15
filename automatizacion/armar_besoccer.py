@@ -47,6 +47,9 @@ def main():
         apellido = b.get("apellido") or j["placa"].split()[-1].title()
         cara = os.path.join(AQUI, "caras", f"{j['clave']}.png")
         cara = cara if os.path.exists(cara) else None
+        if not seleccion:
+            from caras import cara_oficial
+            cara = cara_oficial(j["clave"], os.path.join(salida, "recursos"), j.get("foto_oficial")) or cara
         esc = os.path.join(AQUI, "escudos", ("uruguay" if seleccion else f"club_{j['clave']}") + ".png")
         esc = esc if os.path.exists(esc) else None
         fig = None

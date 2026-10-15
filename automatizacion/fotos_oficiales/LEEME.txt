@@ -1,0 +1,3 @@
+Fotos oficiales de cada jugador (de la web de su club), una por jugador: <clave>.png o .jpg (valverde, bernal, mourino, araujo).
+Se usan para la imagen grande en los partidos del club; si no hay, se usa la cara de la fuente de datos.
+Conviene renovarlas al empezar cada temporada.

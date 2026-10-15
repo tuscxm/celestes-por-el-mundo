@@ -61,6 +61,44 @@ def cara(pid, carpeta, clave=None):
         return None
 
 
+def cara_oficial(clave, carpeta, url=None):
+    """Foto oficial del jugador (web del club), en mejor calidad que la de la fuente de datos.
+    Se usa la que esté en automatizacion/fotos_oficiales/<clave>.(png|jpg|jpeg|webp).
+    Si jugadores.json trae "foto_oficial" (URL directa a la imagen) y se puede bajar, se guarda ahí primero.
+    Devuelve la ruta a la versión recortada (sin fondo) o None."""
+    dest_dir = os.path.join(AQUI, "fotos_oficiales")
+    if url:
+        try:
+            datos = _bajar(url)
+            Image.open(io.BytesIO(datos))  # que sea una imagen
+            os.makedirs(dest_dir, exist_ok=True)
+            open(os.path.join(dest_dir, f"{clave}.png" if url.lower().endswith(".png") else f"{clave}.jpg"), "wb").write(datos)
+        except Exception:
+            pass
+    fuente = next((os.path.join(dest_dir, f"{clave}.{ext}") for ext in ("png", "jpg", "jpeg", "webp")
+                   if os.path.exists(os.path.join(dest_dir, f"{clave}.{ext}"))), None)
+    if not fuente:
+        return None
+    os.makedirs(carpeta, exist_ok=True)
+    ruta = os.path.join(carpeta, f"oficial_{clave}.png")
+    if os.path.exists(ruta):
+        return ruta
+    try:
+        im = Image.open(fuente)
+        transparente = im.mode in ("RGBA", "LA") and im.getchannel("A").getextrema()[0] < 250
+        im = im.convert("RGBA") if transparente else _sin_fondo(im.convert("RGB")).convert("RGBA")
+        bbox = im.getchannel("A").point(lambda v: 255 if v > 20 else 0).getbbox()
+        if bbox:
+            im = im.crop(bbox)
+        w, h = im.size  # cuadrado desde arriba: cabeza y hombros, como las caras de la cancha
+        lado = min(w, h)
+        im = im.crop(((w - lado) // 2, 0, (w - lado) // 2 + lado, lado)).resize((700, 700), Image.LANCZOS)
+        im.save(ruta)
+        return ruta
+    except Exception:
+        return None
+
+
 def escudo(tid, carpeta):
     os.makedirs(carpeta, exist_ok=True)
     ruta = os.path.join(carpeta, f"escudo_{tid}.png")

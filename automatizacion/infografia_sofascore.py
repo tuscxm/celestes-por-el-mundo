@@ -17,7 +17,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 from mapa_sofascore import get, dibujar
 from figura import figura
-from caras import cara, escudo
+from caras import cara, escudo, cara_oficial
 
 TZ = ZoneInfo("America/Montevideo")
 MESES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SETIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
@@ -296,6 +296,8 @@ def armar_partido(j, e, salida, plantilla_fig):
     cams = j.get("camiseta", {})
     cam = (cams.get("7") if equipo.get("national") else next((v for k, v in cams.items() if k != "7"), None)) or next(iter(cams.values()))
     mi_cara = cara(pid, recursos, clave)
+    if not equipo.get("national"):  # foto oficial del club (mejor calidad) para la imagen grande
+        mi_cara = cara_oficial(clave, recursos, j.get("foto_oficial")) or mi_cara
     fig = None
     if not mi_cara:
         # sin foto: figura ilustrada de respaldo
