@@ -1,0 +1,251 @@
+[
+ {
+  "archivo": "Araujo_RCLens-SportingCP_2026-10-13",
+  "nombre": "MAXIMILIANO ARAÚJO",
+  "marcador": "RC LENS 0 — 2 SPORTING CP",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026 · TITULAR",
+  "minutos": "90’",
+  "nota": "8.5",
+  "nota_label": "NOTA SOFASCORE",
+  "formacion": "4-3-3",
+  "once": [
+   [
+    [
+     "30",
+     "Kaique"
+    ]
+   ],
+   [
+    [
+     "20",
+     "Araújo"
+    ],
+    [
+     "25",
+     "Inácio"
+    ],
+    [
+     "72",
+     "Quaresma"
+    ],
+    [
+     "22",
+     "Fresneda"
+    ]
+   ],
+   [
+    [
+     "77",
+     "Doumbia"
+    ],
+    [
+     "5",
+     "Altimira"
+    ],
+    [
+     "8",
+     "Simões"
+    ]
+   ],
+   [
+    [
+     "19",
+     "Irankunda"
+    ],
+    [
+     "97",
+     "J. Suárez "
+    ],
+    [
+     "10",
+     "Catamo"
+    ]
+   ]
+  ],
+  "jugador_dorsal": "20",
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "1 (1)",
+    false
+   ],
+   [
+    "Toques",
+    "72",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/11",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "13",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL IZQUIERDO",
+  "mediocentro": [
+   [
+    "Pases precisos",
+    "36/39",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "92%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "16/17",
+    false
+   ],
+   [
+    "Centros precisos",
+    "0/4",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "0/1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "10",
+    true
+   ],
+   [
+    "Despejes",
+    "4",
+    false
+   ],
+   [
+    "Conducciones",
+    "14 (173 m)",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27 · SofaScore",
+   "filas": [
+    [
+     "<b>LIGA PORTUGAL</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "7 (6)",
+     false
+    ],
+    [
+     "Minutos",
+     "560",
+     false
+    ],
+    [
+     "Nota media",
+     "6.86",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "1 · 2 · 2",
+     false
+    ],
+    [
+     "<b>CHAMPIONS LEAGUE</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "2 (2)",
+     false
+    ],
+    [
+     "Minutos",
+     "180",
+     false
+    ],
+    [
+     "Nota media",
+     "7.35",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 0",
+     false
+    ]
+   ]
+  },
+  "heat": null,
+  "heat_img": "mapas/araujo_2026-10-13.png",
+  "heat_credito": "Datos: SofaScore",
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,76 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Izquierdo"
+   ],
+   [
+    "VALOR",
+    "36,0 M€"
+   ]
+  ],
+  "foto": "fotos/araujo_2026-10-13.svg",
+  "credito_foto": "",
+  "muestra": [],
+  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+ }
+]

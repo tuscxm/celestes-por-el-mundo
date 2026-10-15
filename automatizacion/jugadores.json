@@ -1,0 +1,124 @@
+[
+ {
+  "clave": "valverde",
+  "placa": "FEDERICO VALVERDE",
+  "equipos": {
+   "2829": "Real Madrid",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,81 m",
+  "pie": "Derecho",
+  "nacimiento": "1998-07-22",
+  "camiseta": {
+   "2829": {
+    "tipo": "liso",
+    "c1": "#f4f4f2",
+    "c2": "#f4f4f2",
+    "texto": "#14244a",
+    "short": "#f4f4f2"
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111"
+   }
+  },
+  "sofascore_id": 831808
+ },
+ {
+  "clave": "bernal",
+  "placa": "FACUNDO BERNAL",
+  "api_id": 316519,
+  "equipos": {
+   "543": "Real Betis",
+   "7": "Uruguay"
+  },
+  "besoccer": "https://es.besoccer.com/jugador/f-bernal-3159878",
+  "posicion": "mediocentro",
+  "altura": "1,87 m",
+  "pie": "Derecho",
+  "nacimiento": "2003-08-21",
+  "camiseta": {
+   "543": {
+    "tipo": "rayas",
+    "c1": "#0a8b47",
+    "c2": "#f3f6f3",
+    "texto": "#0b1f15",
+    "short": "#f3f6f3"
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111"
+   }
+  },
+  "sofascore_id": 1177404
+ },
+ {
+  "clave": "mourino",
+  "placa": "SANTIAGO MOURIÑO",
+  "api_id": 311773,
+  "equipos": {
+   "533": "Villarreal",
+   "7": "Uruguay"
+  },
+  "besoccer": "https://es.besoccer.com/jugador/santiago-mourino-3240357",
+  "posicion": "lateral",
+  "altura": "1,86 m",
+  "pie": "Derecho",
+  "nacimiento": "2002-02-13",
+  "camiseta": {
+   "533": {
+    "tipo": "liso",
+    "c1": "#f7d117",
+    "c2": "#f7d117",
+    "texto": "#0d3b8c",
+    "short": "#f7d117"
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111"
+   }
+  },
+  "sofascore_id": 1468046
+ },
+ {
+  "clave": "araujo",
+  "placa": "MAXIMILIANO ARAÚJO",
+  "api_id": 51776,
+  "equipos": {
+   "228": "Sporting CP",
+   "7": "Uruguay"
+  },
+  "besoccer": "https://es.besoccer.com/jugador/m-araujo-652650",
+  "posicion": "lateral",
+  "altura": "1,76 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2000-02-15",
+  "camiseta": {
+   "228": {
+    "tipo": "aros",
+    "c1": "#0a7a43",
+    "c2": "#f3f6f3",
+    "texto": "#0a7a43",
+    "short": "#111"
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111"
+   }
+  },
+  "sofascore_id": 929193
+ }
+]

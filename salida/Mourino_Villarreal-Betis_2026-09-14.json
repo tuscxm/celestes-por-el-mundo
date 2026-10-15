@@ -1,0 +1,231 @@
+[
+ {
+  "archivo": "Mourino_Villarreal-Betis_2026-09-14",
+  "nombre": "SANTIAGO MOURIÑO",
+  "marcador": "VILLARREAL 1 — 2 REAL BETIS",
+  "meta": "LALIGA · JORNADA 5 · 14 SETIEMBRE 2026 · TITULAR",
+  "minutos": "76’",
+  "nota": "6.2",
+  "nota_label": "NOTA SOFASCORE",
+  "formacion": "4-4-2",
+  "once": [
+   [
+    [
+     "25",
+     "Gulácsi"
+    ]
+   ],
+   [
+    [
+     "20",
+     "Romero"
+    ],
+    [
+     "12",
+     "Veiga"
+    ],
+    [
+     "6",
+     "Navarro"
+    ],
+    [
+     "15",
+     "Mouriño"
+    ]
+   ],
+   [
+    [
+     "17",
+     "Buchanan"
+    ],
+    [
+     "14",
+     "Comesaña"
+    ],
+    [
+     "18",
+     "Gueye"
+    ],
+    [
+     "19",
+     "Pépé"
+    ]
+   ],
+   [
+    [
+     "9",
+     "Mikautadze"
+    ],
+    [
+     "7",
+     "Moreno"
+    ]
+   ]
+  ],
+  "jugador_dorsal": "15",
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "59",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "3/11",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/5",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "5",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "mediocentro": [
+   [
+    "Pases precisos",
+    "41/45",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "91%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "28/32",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "1/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    true
+   ],
+   [
+    "Despejes",
+    "3",
+    false
+   ],
+   [
+    "Conducciones",
+    "13 (130 m)",
+    false
+   ],
+   [
+    "Distancia recorrida",
+    "8,49 km",
+    false
+   ],
+   [
+    "Sprints",
+    "12",
+    false
+   ],
+   [
+    "Velocidad máxima",
+    "30,9 km/h",
+    true
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27 · SofaScore",
+   "filas": [
+    [
+     "<b>LALIGA</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "6 (4)",
+     false
+    ],
+    [
+     "Minutos",
+     "337",
+     false
+    ],
+    [
+     "Nota media",
+     "6.67",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 2",
+     false
+    ],
+    [
+     "<b>CHAMPIONS LEAGUE</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "1 (1)",
+     false
+    ],
+    [
+     "Minutos",
+     "90",
+     false
+    ],
+    [
+     "Nota media",
+     "7.00",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "1 · 0 · 1",
+     false
+    ]
+   ]
+  },
+  "heat": null,
+  "heat_img": "../mapas/mourino_2026-09-14.png",
+  "heat_credito": "Datos: SofaScore",
+  "perfil": null,
+  "foto": "fotos/mourino_2026-09-14.svg",
+  "credito_foto": "",
+  "muestra": [],
+  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+ }
+]

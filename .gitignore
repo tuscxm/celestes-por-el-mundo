@@ -1,0 +1,7 @@
+salida_hoy/
+__pycache__/
+*.pyc
+.DS_Store
+salida/*.html
+*.env
+*.env.*

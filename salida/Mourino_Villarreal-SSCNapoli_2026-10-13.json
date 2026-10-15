@@ -1,0 +1,246 @@
+[
+ {
+  "archivo": "Mourino_Villarreal-SSCNapoli_2026-10-13",
+  "nombre": "SANTIAGO MOURIÑO",
+  "marcador": "VILLARREAL 3 — 1 SSC NAPOLI",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026 · TITULAR",
+  "minutos": "90’",
+  "nota": "8.3",
+  "nota_label": "NOTA SOFASCORE",
+  "formacion": "4-4-2",
+  "once": [
+   [
+    [
+     "1",
+     "Júnior"
+    ]
+   ],
+   [
+    [
+     "20",
+     "Romero"
+    ],
+    [
+     "12",
+     "Veiga"
+    ],
+    [
+     "6",
+     "Navarro"
+    ],
+    [
+     "15",
+     "Mouriño"
+    ]
+   ],
+   [
+    [
+     "10",
+     "Moleiro"
+    ],
+    [
+     "18",
+     "Gueye"
+    ],
+    [
+     "14",
+     "Comesaña"
+    ],
+    [
+     "24",
+     "Saliba"
+    ]
+   ],
+   [
+    [
+     "9",
+     "Mikautadze"
+    ],
+    [
+     "7",
+     "Moreno"
+    ]
+   ]
+  ],
+  "jugador_dorsal": "15",
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "1 (1)",
+    false
+   ],
+   [
+    "Toques",
+    "73",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "7/10",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/2",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "12",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "mediocentro": [
+   [
+    "Pases precisos",
+    "44/52",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "85%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "26/32",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "2/2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    true
+   ],
+   [
+    "Despejes",
+    "3",
+    false
+   ],
+   [
+    "Conducciones",
+    "14 (163 m)",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27 · SofaScore",
+   "filas": [
+    [
+     "<b>LALIGA</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "6 (4)",
+     false
+    ],
+    [
+     "Minutos",
+     "337",
+     false
+    ],
+    [
+     "Nota media",
+     "6.67",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 2",
+     false
+    ],
+    [
+     "<b>CHAMPIONS LEAGUE</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "2 (2)",
+     false
+    ],
+    [
+     "Minutos",
+     "180",
+     false
+    ],
+    [
+     "Nota media",
+     "7.65",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "2 · 0 · 1",
+     false
+    ]
+   ]
+  },
+  "heat": null,
+  "heat_img": "mapas/mourino_2026-10-13.png",
+  "heat_credito": "Datos: SofaScore",
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "24 años"
+   ],
+   [
+    "ALTURA",
+    "1,86 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ],
+   [
+    "VALOR",
+    "19,4 M€"
+   ]
+  ],
+  "foto": "fotos/mourino_2026-10-13.svg",
+  "credito_foto": "",
+  "muestra": [],
+  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+ }
+]

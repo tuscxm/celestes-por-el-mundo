@@ -1,0 +1,248 @@
+[
+ {
+  "archivo": "Valverde_ASRoma-RealMadrid_2026-10-14",
+  "nombre": "FEDERICO VALVERDE",
+  "marcador": "AS ROMA 3 — 4 REAL MADRID",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 14 OCTUBRE 2026 · TITULAR",
+  "minutos": "90’",
+  "nota": "6.8",
+  "nota_label": "NOTA SOFASCORE",
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    [
+     "1",
+     "Courtois"
+    ]
+   ],
+   [
+    [
+     "17",
+     "Cucurella"
+    ],
+    [
+     "22",
+     "Rüdiger"
+    ],
+    [
+     "16",
+     "Konaté"
+    ],
+    [
+     "24",
+     "Dumfries"
+    ]
+   ],
+   [
+    [
+     "14",
+     "Tchouaméni"
+    ],
+    [
+     "8",
+     "Valverde"
+    ]
+   ],
+   [
+    [
+     "7",
+     "Vinícius Jr."
+    ],
+    [
+     "5",
+     "Bellingham"
+    ],
+    [
+     "25",
+     "Diomande"
+    ]
+   ],
+   [
+    [
+     "10",
+     "Mbappé"
+    ]
+   ]
+  ],
+  "jugador_dorsal": "8",
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "1 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "47",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/2",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "3",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "mediocentro": [
+   [
+    "Pases precisos",
+    "29/31",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "94%",
+    true
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Pases largos precisos",
+    "2/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    true
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "0/1",
+    false
+   ],
+   [
+    "Conducciones",
+    "11 (109 m)",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27 · SofaScore",
+   "filas": [
+    [
+     "<b>LALIGA</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "8 (8)",
+     false
+    ],
+    [
+     "Minutos",
+     "654",
+     false
+    ],
+    [
+     "Nota media",
+     "7.12",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 2 · 0",
+     false
+    ],
+    [
+     "<b>CHAMPIONS LEAGUE</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "2 (2)",
+     false
+    ],
+    [
+     "Minutos",
+     "180",
+     false
+    ],
+    [
+     "Nota media",
+     "7.55",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "1 · 0 · 0",
+     false
+    ]
+   ]
+  },
+  "heat": null,
+  "heat_img": "mapas/valverde_2026-10-14.png",
+  "heat_credito": "Datos: SofaScore",
+  "perfil": [
+   [
+    "DORSAL",
+    "8"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,81 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ],
+   [
+    "VALOR",
+    "87,0 M€"
+   ]
+  ],
+  "foto": "fotos/valverde_2026-10-14.svg",
+  "credito_foto": "",
+  "muestra": [],
+  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+ }
+]

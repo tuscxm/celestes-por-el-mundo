@@ -1,0 +1,238 @@
+[
+ {
+  "archivo": "Bernal_RealBetis-FCPorto_2026-10-14",
+  "nombre": "FACUNDO BERNAL",
+  "marcador": "REAL BETIS 3 — 2 FC PORTO",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 14 OCTUBRE 2026 · SUPLENTE",
+  "minutos": "9’",
+  "nota": "6.5",
+  "nota_label": "NOTA SOFASCORE",
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    [
+     "1",
+     "Valles"
+    ]
+   ],
+   [
+    [
+     "11",
+     "Garcia"
+    ],
+    [
+     "4",
+     "Natan"
+    ],
+    [
+     "5",
+     "Bartra"
+    ],
+    [
+     "12",
+     "Ortiz"
+    ]
+   ],
+   [
+    [
+     "21",
+     "Roca"
+    ],
+    [
+     "18",
+     "Deossa"
+    ]
+   ],
+   [
+    [
+     "10",
+     "Ezzalzouli"
+    ],
+    [
+     "22",
+     "Isco"
+    ],
+    [
+     "7",
+     "Antony"
+    ]
+   ],
+   [
+    [
+     "19",
+     "Parrott"
+    ]
+   ]
+  ],
+  "jugador_dorsal": "__",
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "3",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "1",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "mediocentro": [
+   [
+    "Pases precisos",
+    "2/3",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "67%",
+    true
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    true
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27 · SofaScore",
+   "filas": [
+    [
+     "<b>LALIGA</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "7 (5)",
+     false
+    ],
+    [
+     "Minutos",
+     "418",
+     false
+    ],
+    [
+     "Nota media",
+     "6.80",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 1",
+     false
+    ],
+    [
+     "<b>CHAMPIONS LEAGUE</b>",
+     " ",
+     false
+    ],
+    [
+     "Partidos (titular)",
+     "2 (1)",
+     false
+    ],
+    [
+     "Minutos",
+     "76",
+     false
+    ],
+    [
+     "Nota media",
+     "6.35",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 1",
+     false
+    ]
+   ]
+  },
+  "heat": null,
+  "heat_img": "mapas/bernal_2026-10-14.png",
+  "heat_credito": "Datos: SofaScore",
+  "perfil": [
+   [
+    "DORSAL",
+    "6"
+   ],
+   [
+    "EDAD",
+    "23 años"
+   ],
+   [
+    "ALTURA",
+    "1,87 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ],
+   [
+    "VALOR",
+    "9,7 M€"
+   ]
+  ],
+  "foto": "fotos/bernal_2026-10-14.svg",
+  "credito_foto": "",
+  "muestra": [],
+  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+ }
+]
