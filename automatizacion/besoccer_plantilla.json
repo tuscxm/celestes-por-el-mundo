@@ -11,6 +11,7 @@
  "minutos": 90,
  "nota": 8.1,
  "dorsal": "15",
+ "entro": {"_solo_si_fue_suplente": "minuto en que entró y a quién reemplazó; si fue titular, borrá este bloque", "minuto": 87, "por": "Isco"},
  "posicion": "lateral derecho  (uno de: arquero, lateral derecho, lateral izquierdo, defensor central, mediocentro, volante por derecha, volante por izquierda, delantero)",
  "formacion": "4-4-2",
  "once": [[["1", "Júnior"]],

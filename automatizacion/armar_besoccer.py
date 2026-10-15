@@ -63,6 +63,17 @@ def main():
                           "estrellas": estrellas(float(p[2])) if len(p) > 2 and p[2] else 0, "yo": str(p[0]) == str(b.get("dorsal"))} for p in linea])
         if not once:
             avisos.append("Sin alineación en el respaldo: la cancha va vacía")
+        pos0 = ROLES.get((b.get("posicion") or "").lower(), "SU JUEGO")
+        en = b.get("entro") or {}
+        sustitucion = None
+        if en.get("por") and not b.get("titular"):
+            mins = f"{en.get('minuto')}’" if en.get("minuto") is not None else ""
+            sustitucion = {"minuto": mins, "por": en["por"], "apellido": apellido, "cara": cara,
+                           "rol": pos0.replace("COMO ", "").lower() if pos0 != "SU JUEGO" else ""}
+            for linea in once:
+                for f in linea:
+                    if en["por"].lower() in f["nombre"].lower() or f["nombre"].lower() in en["por"].lower():
+                        f["sale"] = True
         nota = b.get("nota")
         generales = [[x[0], str(x[1]), bool(x[2]) if len(x) > 2 else False] for x in (b.get("su_partido") or [])]
         nac = j.get("nacimiento")
@@ -79,7 +90,7 @@ def main():
              "meta": " · ".join(x for x in [pa.get("torneo", "").upper(), (pa.get("ronda") or "").upper(), f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
              "condicion": "TITULAR" if b.get("titular") else "SUPLENTE",
              "minutos": f"{b.get('minutos', '')}’", "nota": f"{float(nota):.1f}" if nota else None, "estrellas": estrellas(float(nota)) if nota else 0,
-             "tema": tema(cam, {}), "formacion": b.get("formacion", ""), "once": once, "cara": cara, "foto": fig,
+             "tema": tema(cam, {}), "sustitucion": sustitucion, "formacion": b.get("formacion", ""), "once": once, "cara": cara, "foto": fig,
              "generales": generales, "pos_titulo": pos, "posicion": [[k, str(v), False] for k, v in (b.get("estadisticas") or [])],
              "extra": {"titulo": "TEMPORADA", "sub": b.get("temporada_sub", ""), "filas": [[k, str(v), False] for k, v in (b.get("temporada") or [])]},
              "heat_img": None, "perfil": perfil}
@@ -89,12 +100,14 @@ def main():
         club_tag = "Uruguay" if seleccion else "".join(ch for ch in (b.get("equipo") or pa.get("local", "")) if ch.isalnum())
         copy = f"🇺🇾 {j['placa']} · {pa.get('local','')} {pa.get('goles_local','')}-{pa.get('goles_visita','')} {pa.get('visita','')}\n"
         copy += f"⏱ {b.get('minutos','')}'" + (f" · ⭐ {float(nota):.1f}" if nota else "") + "\n"
+        if sustitucion:
+            copy += f"🔁 Entró" + (f" al {en.get('minuto')}'" if en.get("minuto") is not None else "") + f" por {en['por']}" + (f", como {sustitucion['rol']}" if sustitucion["rol"] else "") + "\n"
         if b.get("linea_posteo"):
             copy += b["linea_posteo"] + "\n"
         copy += f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
         open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
         info.update({"titular": bool(b.get("titular")), "minutos": b.get("minutos"), "nota": float(nota) if nota else None,
-                     "rol": pos, "archivo": archivo, "png": archivo + ".png", "mapa": None, "figura": None})
+                     "rol": pos, "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None), "archivo": archivo, "png": archivo + ".png", "mapa": None, "figura": None})
     info["avisos"] = avisos
 
     # resumen.json: reemplaza el error de este jugador

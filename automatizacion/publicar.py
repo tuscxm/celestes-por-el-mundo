@@ -38,7 +38,9 @@ def linea_jugador(j, p):
     if e == "jugó":
         nota = f", nota {p['nota']:.1f}" if p.get("nota") else ""
         rol = p.get("rol", "").replace("COMO ", "de ").lower()
-        return (f"**{n}** jugó {p['minutos']}' ({'titular' if p.get('titular') else 'suplente'}{nota}, {rol}) "
+        en = p.get("entro") or {}
+        ent = f", entró al {en.get('minuto','').replace('’', chr(39))} por {en['por']}" if en.get("por") else ""
+        return (f"**{n}** jugó {p['minutos']}' ({'titular' if p.get('titular') else 'suplente'}{ent}{nota}, {rol}) "
                 f"en {p['partido']} · {p.get('torneo', '')}")
     if e == "sin partido en esas fechas":
         return f"{n}: sin partido hoy ni ayer"

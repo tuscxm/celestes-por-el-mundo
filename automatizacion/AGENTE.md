@@ -8,6 +8,7 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
 - Ni la infografía ni el texto del posteo dicen de dónde salen los datos.
 
 ## Diseño (render_v3.py)
+Si entró de suplente, la infografía lo marca: la etiqueta dice "SUPLENTE · ENTRÓ DE <puesto>", el recuadro de minutos dice en qué minuto entró, y en la cancha su cara aparece sobre el jugador al que reemplazó, con "⇄ ENTRA <apellido> <minuto>". El texto del posteo y el aviso también lo dicen.
 Fondo con los colores del club (campo `fondo` de cada camiseta en `jugadores.json`: color 1, color 2, acento), escudo grande de marca de agua, cancha oscura con las caras recortadas del once (estrellas según la nota de cada uno: 8+ = 5, 7,3+ = 4, 6,7+ = 3, 6+ = 2), cara grande del jugador con placa y escudo, minutos y nota, y abajo las tarjetas: su partido, su juego según la posición, mapa de calor y temporada. Tipografía Barlow Condensed (en `fuentes/`, licencia OFL).
 Las caras salen de la foto del jugador y se les saca el fondo con rembg. Las de los cuatro jugadores se guardan en `caras/` y los escudos en `escudos/`, para usarlas aunque falle la fuente. Si no hay foto, se usa la figura ilustrada.
 
@@ -45,6 +46,7 @@ Si en `salida_hoy/resumen.json` un jugador figura con `"estado": "error"`:
    - `once`: el once inicial dividido en líneas según la formación, del arco al ataque, en el orden que muestra la página; cada jugador `[dorsal, apellido, nota]`.
    - `posicion`: BeSoccer abrevia en español: POR arquero, LD lateral derecho, LI lateral izquierdo, DFC defensor central, MCD/MC/MCO mediocentro, MD/ED volante por derecha, MI/EI volante por izquierda, DC delantero.
    - `minutos`: 90 si jugó completo; si salió o entró, el minuto del cambio.
+   - Si entró de suplente: `titular` false y `entro` con el minuto y el apellido del jugador al que reemplazó (sale en la página de eventos o de alineaciones). `posicion` es el puesto en el que entró.
    - Lo que no aparezca: no lo pongas. Nunca inventes ni estimes.
 4. Corré `python3 automatizacion/armar_besoccer.py <tu_json> --salida salida_hoy --procesados automatizacion/procesados.json` y después otra vez `GITHUB_REPOSITORY=tuscxm/celestes-por-el-mundo GITHUB_REPOSITORY_OWNER=tuscxm python3 automatizacion/publicar.py salida_hoy`.
 

@@ -234,18 +234,24 @@ def armar_partido(j, e, salida, plantilla_fig):
         rt = (p.get("statistics") or {}).get("rating")
         return {"dorsal": p.get("jerseyNumber") or p.get("shirtNumber") or "", "nombre": corto(p["player"]),
                 "cara": cara(p["player"]["id"], recursos, clave if p["player"]["id"] == pid else None),
-                "estrellas": estrellas(rt), "yo": p["player"]["id"] == pid}
+                "estrellas": estrellas(rt), "yo": p["player"]["id"] == pid, "pid": p["player"]["id"]}
     once = [[ficha(p) for p in orden(l)] for l in ls]
     dorsal = str(yo.get("jerseyNumber") or yo.get("shirtNumber") or yo["player"].get("jerseyNumber") or "")
-    if not titular:
-        avisos.append("Entró de suplente: no aparece en la cancha del once inicial")
     if minutos < 20:
         avisos.append(f"Jugó solo {minutos} minutos: hay pocos datos, revisar si vale la pena publicarla")
 
     # Incidencias: goles y tarjetas del jugador
     goles, amar, roja = 0, 0, 0
+    sustitucion = None
     try:
-        for i in get(f"/event/{e['id']}/incidents").get("incidents", []):
+        incs = get(f"/event/{e['id']}/incidents").get("incidents", [])
+        for i in incs:
+            if i.get("incidentType") == "substitution" and (i.get("playerIn") or {}).get("id") == pid:
+                po = i.get("playerOut") or {}
+                t = i.get("time"); ad = i.get("addedTime")
+                sustitucion = {"minuto": f"{t}+{ad}’" if ad else f"{t}’", "por": corto(po) if po.get("name") else "",
+                               "por_id": po.get("id")}
+        for i in incs:
             if (i.get("player") or {}).get("id") != pid: continue
             if i.get("incidentType") == "goal" and i.get("incidentClass") != "ownGoal": goles += 1
             if i.get("incidentType") == "card":
@@ -253,6 +259,13 @@ def armar_partido(j, e, salida, plantilla_fig):
                 elif i.get("incidentClass") in ("red", "yellowRed"): roja += 1
     except Exception:
         goles = n(s, "goals"); avisos.append("Sin incidencias: goles de las estadísticas y tarjetas sin confirmar")
+    if sustitucion:
+        for l in once:
+            for f in l:
+                if f.get("pid") == sustitucion["por_id"]:
+                    f["sale"] = True
+    elif not titular:
+        avisos.append("No se encontró el cambio en el que entró")
     tarjetas = "0" if not (amar or roja) else " + ".join(x for x in [f"{amar} amarilla" + ("s" if amar > 1 else "") if amar else "", "roja" if roja else ""] if x)
 
     generales = [["Goles", str(goles), goles > 0], ["Asistencias", str(n(s, "goalAssist")), n(s, "goalAssist") > 0],
@@ -323,6 +336,8 @@ def armar_partido(j, e, salida, plantilla_fig):
          "minutos": f"{minutos}’", "nota": f"{rating:.1f}" if rating else None, "estrellas": estrellas(rating),
          "tema": tema(cam, equipo), "formacion": form, "once": once,
          "cara": mi_cara, "foto": os.path.join(salida, fig) if fig else None,
+         "sustitucion": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"], "apellido": apellido(player), "cara": mi_cara,
+                          "rol": pos_titulo.replace("COMO ", "").lower()} if sustitucion else None),
          "generales": generales, "pos_titulo": pos_titulo, "posicion": filas_posicion(r, s),
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
          "heat_img": mapa, "perfil": perfil}
@@ -339,10 +354,13 @@ def armar_partido(j, e, salida, plantilla_fig):
     club_tag = "".join(ch for ch in (equipo["name"] if not equipo.get("national") else "Uruguay") if ch.isalnum())
     copy = (f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n"
             f"⏱ {minutos}' · ⭐ {rating:.1f}\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n⏱ {minutos}'\n")
+    if sustitucion:
+        copy += f"🔁 Entró al {sustitucion['minuto'].replace('’', chr(39))} por {sustitucion['por']}, como {pos_titulo.replace('COMO ', '').lower()}\n"
     copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
     open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
     return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo,
-            "archivo": archivo, "png": archivo + ".png", "mapa": mapa, "figura": fig, "avisos": avisos}
+            "archivo": archivo, "png": archivo + ".png", "mapa": mapa, "figura": fig, "avisos": avisos,
+            "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None)}
 
 def main():
     a = sys.argv[1:]

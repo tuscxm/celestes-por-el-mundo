@@ -94,6 +94,13 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .plate .cr{border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;margin-left:-6px;box-shadow:0 2px 6px rgba(0,0,0,.35)}
 .plate .cr img{object-fit:contain}
 .yo .plate .n{background:#f2c14e}
+.slot.sale .ph > img,.slot.sale .ph > .num{opacity:.45;filter:grayscale(.6)}
+.slot .entra{position:absolute;right:-26px;top:-14px;border-radius:50%;border:3px solid #f2c14e;background:rgba(20,22,25,.85);overflow:hidden;
+ box-shadow:0 0 0 4px rgba(242,193,78,.3),0 4px 10px rgba(0,0,0,.4);z-index:3}
+.slot .entra img{width:100%;height:100%;object-fit:cover;object-position:top}
+.chip{background:#f2c14e;color:#14171a;font-weight:900;font-size:13px;letter-spacing:.5px;border-radius:6px;padding:1px 7px;margin-top:3px;white-space:nowrap;
+ box-shadow:0 3px 8px rgba(0,0,0,.35);text-transform:uppercase}
+.tile .x{font-weight:800;font-size:19px;letter-spacing:1px;color:#f2c14e;margin-top:4px;text-transform:uppercase}
 .tab{background:#1b1e21;border-radius:0 0 7px 7px;padding:0 8px 1px;margin-top:-1px}
 .stars{color:#f2c14e;letter-spacing:1px;line-height:1.1}
 .hero{position:absolute;left:640px;top:318px;width:416px;height:380px}
@@ -182,10 +189,17 @@ def pitch_html(d, base, escudo_club):
                   f'<div class="num" style="width:{size-16}px;height:{size-16}px;font-size:{int(size*.32)}px">{esc(p.get("dorsal",""))}</div>')
             crest = f'<div class="cr" style="width:24px;height:24px"><img src="{cr}" style="width:19px;height:19px"></div>' if cr else ""
             st = estrellas_html(p.get("estrellas"), 11)
-            out += (f'<div class="slot{" yo" if p.get("yo") else ""}" style="left:{x}px;top:{y_face_bottom - size}px;z-index:{10+i}">'
-                    f'<div class="ph">{ph}</div>'
+            sub = d.get("sustitucion") if p.get("sale") else None
+            entra = ""
+            if sub:
+                ci = b64(sub.get("cara"))
+                entra = (f'<div class="entra" style="width:{int(size*.72)}px;height:{int(size*.72)}px">'
+                         + (f'<img src="{ci}">' if ci else '') + '</div>')
+            out += (f'<div class="slot{" yo" if p.get("yo") else ""}{" sale" if sub else ""}" style="left:{x}px;top:{y_face_bottom - size}px;z-index:{(40 if sub else 10)+i}">'
+                    f'<div class="ph">{ph}{entra}</div>'
                     f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(118 if k<=3 else 104)}px"><span>{nombre}</span></div>{crest}</div>'
-                    + (f'<div class="tab">{st}</div>' if st else "") + '</div>')
+                    + (f'<div class="tab">{st}</div>' if st else "")
+                    + (f'<div class="chip">⇄ Entra {esc(sub.get("apellido",""))} {esc(sub.get("minuto",""))}</div>' if sub else "") + '</div>')
     return out
 
 
@@ -226,7 +240,9 @@ def html(d, base):
     if len(cards) < 4 and d.get("perfil"):
         cards.insert(min(2, len(cards)), f'<div class="card"><h3>PERFIL</h3>{rows([[k, v, False] for k, v in d["perfil"]])}</div>')
     cond = d.get("condicion", "")
-    meta = esc(d.get("meta", "")) + (f'<span class="tag{" sup" if cond == "SUPLENTE" else ""}">{esc(cond)}</span>' if cond else "")
+    if d.get("sustitucion") and d["sustitucion"].get("rol"):
+        cond = f'SUPLENTE · ENTRÓ DE {d["sustitucion"]["rol"].upper()}'
+    meta = esc(d.get("meta", "")) + (f'<span class="tag{" sup" if cond.startswith("SUPLENTE") else ""}">{esc(cond)}</span>' if cond else "")
     nota_v = d.get("nota") or "—"
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{fuentes()}{CSS}
 :root{{--c1:{c1};--c2:{c2};--acento:{ac};--acento-txt:{txt_sobre(ac)}}}</style></head><body>
@@ -246,7 +262,7 @@ def html(d, base):
  <div class="plate yo"><div class="n"><span>{esc(d.get("apellido","")).upper()}</span></div>{f'<div class="cr"><img src="{crc}"></div>' if crc else ''}</div>
  {f'<div class="tab">{estrellas_html(d.get("estrellas"), 24)}</div>' if d.get("estrellas") else ''}
 </div>
-<div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div></div>
+<div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}</div>
  <div class="tile"><div class="v gold">{esc(nota_v)}</div><div class="l">NOTA</div></div></div>
 <div class="cards">{''.join(cards[:4])}</div>
 <div class="foot"><div class="wordmark">Celestes <i>por el</i> mundo</div><div class="hash">#CELESTESPORELMUNDO</div></div>
