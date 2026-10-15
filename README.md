@@ -1,17 +1,14 @@
 # Celestes por el mundo · infografías
 
-Todos los días a las 18:30 (hora de Uruguay) GitHub revisa en SofaScore si **Valverde, Bernal, Mouriño, Araújo** jugaron hoy o ayer
+Todos los días a las 18:30 (hora de Uruguay) GitHub revisa en SofaScore si **Mouriño** jugaron hoy o ayer
 y arma una infografía por cada partido. No depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-15 09:40-03:00 (hora de Uruguay) · fechas 2026-10-13
+**Última revisión:** 2026-10-15 09:42-03:00 (hora de Uruguay) · fechas 2026-10-13
 
-- Valverde: sin partido hoy ni ayer
-- Bernal: sin partido hoy ni ayer
-- Mouriño: sin partido hoy ni ayer
-- Araújo: sin partido hoy ni ayer
+- Mouriño: ERROR al revisar (no se pudo consultar SofaScore) → `<HTTPError 403: 'Forbidden'>`
 
 ## Últimas infografías (5 en total, todas en [`salida/`](salida))
 
