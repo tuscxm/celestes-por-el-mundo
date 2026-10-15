@@ -16,17 +16,28 @@
     "c1": "#f4f4f2",
     "c2": "#f4f4f2",
     "texto": "#14244a",
-    "short": "#f4f4f2"
+    "short": "#f4f4f2",
+    "fondo": [
+     "#2457b3",
+     "#0b1838",
+     "#f2c14e"
+    ]
    },
    "7": {
     "tipo": "liso",
     "c1": "#6fb7e6",
     "c2": "#6fb7e6",
     "texto": "#0b1f15",
-    "short": "#111"
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
    }
   },
-  "sofascore_id": 831808
+  "sofascore_id": 831808,
+  "besoccer": "https://es.besoccer.com/jugador/federico-santiago-valverde-dipetta"
  },
  {
   "clave": "bernal",
@@ -47,14 +58,24 @@
     "c1": "#0a8b47",
     "c2": "#f3f6f3",
     "texto": "#0b1f15",
-    "short": "#f3f6f3"
+    "short": "#f3f6f3",
+    "fondo": [
+     "#13a45a",
+     "#06331d",
+     "#f3f6f3"
+    ]
    },
    "7": {
     "tipo": "liso",
     "c1": "#6fb7e6",
     "c2": "#6fb7e6",
     "texto": "#0b1f15",
-    "short": "#111"
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
    }
   },
   "sofascore_id": 1177404
@@ -78,14 +99,24 @@
     "c1": "#f7d117",
     "c2": "#f7d117",
     "texto": "#0d3b8c",
-    "short": "#f7d117"
+    "short": "#f7d117",
+    "fondo": [
+     "#f2cf1d",
+     "#0f5d8c",
+     "#0d3b8c"
+    ]
    },
    "7": {
     "tipo": "liso",
     "c1": "#6fb7e6",
     "c2": "#6fb7e6",
     "texto": "#0b1f15",
-    "short": "#111"
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
    }
   },
   "sofascore_id": 1468046
@@ -109,14 +140,24 @@
     "c1": "#0a7a43",
     "c2": "#f3f6f3",
     "texto": "#0a7a43",
-    "short": "#111"
+    "short": "#111",
+    "fondo": [
+     "#13a45a",
+     "#06331d",
+     "#f3f6f3"
+    ]
    },
    "7": {
     "tipo": "liso",
     "c1": "#6fb7e6",
     "c2": "#6fb7e6",
     "texto": "#0b1f15",
-    "short": "#111"
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
    }
   },
   "sofascore_id": 929193

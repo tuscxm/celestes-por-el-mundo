@@ -2,67 +2,115 @@
  {
   "archivo": "Araujo_RCLens-SportingCP_2026-10-13",
   "nombre": "MAXIMILIANO ARAÚJO",
-  "marcador": "RC LENS 0 — 2 SPORTING CP",
-  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026 · TITULAR",
+  "apellido": "Araújo",
+  "dorsal": "20",
+  "local": "RC Lens",
+  "visita": "Sporting CP",
+  "goles_local": 0,
+  "goles_visita": 2,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_1648.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3001.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3001.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026",
+  "condicion": "TITULAR",
   "minutos": "90’",
   "nota": "8.5",
-  "nota_label": "NOTA SOFASCORE",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
   "formacion": "4-3-3",
   "once": [
    [
-    [
-     "30",
-     "Kaique"
-    ]
+    {
+     "dorsal": "30",
+     "nombre": "Kaique",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1167067.png",
+     "estrellas": 5,
+     "yo": false
+    }
    ],
    [
-    [
-     "20",
-     "Araújo"
-    ],
-    [
-     "25",
-     "Inácio"
-    ],
-    [
-     "72",
-     "Quaresma"
-    ],
-    [
-     "22",
-     "Fresneda"
-    ]
+    {
+     "dorsal": "20",
+     "nombre": "Araújo",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_929193.png",
+     "estrellas": 5,
+     "yo": true
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Inácio",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1001196.png",
+     "estrellas": 3,
+     "yo": false
+    },
+    {
+     "dorsal": "72",
+     "nombre": "Quaresma",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_989841.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Fresneda",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1167818.png",
+     "estrellas": 3,
+     "yo": false
+    }
    ],
    [
-    [
-     "77",
-     "Doumbia"
-    ],
-    [
-     "5",
-     "Altimira"
-    ],
-    [
-     "8",
-     "Simões"
-    ]
+    {
+     "dorsal": "77",
+     "nombre": "Doumbia",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1141754.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Altimira",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1137814.png",
+     "estrellas": 5,
+     "yo": false
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Simões",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1410209.png",
+     "estrellas": 2,
+     "yo": false
+    }
    ],
    [
-    [
-     "19",
-     "Irankunda"
-    ],
-    [
-     "97",
-     "J. Suárez "
-    ],
-    [
-     "10",
-     "Catamo"
-    ]
+    {
+     "dorsal": "19",
+     "nombre": "Irankunda",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1144687.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "97",
+     "nombre": "J. Suárez ",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_914213.png",
+     "estrellas": 5,
+     "yo": false
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Catamo",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1001140.png",
+     "estrellas": 2,
+     "yo": false
+    }
    ]
   ],
-  "jugador_dorsal": "20",
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_929193.png",
+  "foto": null,
   "generales": [
    [
     "Goles",
@@ -111,7 +159,7 @@
    ]
   ],
   "pos_titulo": "COMO LATERAL IZQUIERDO",
-  "mediocentro": [
+  "posicion": [
    [
     "Pases precisos",
     "36/39",
@@ -156,25 +204,25 @@
     "Conducciones",
     "14 (173 m)",
     false
+   ],
+   [
+    "Distancia recorrida",
+    "11,25 km",
+    false
    ]
   ],
   "extra": {
    "titulo": "TEMPORADA",
-   "sub": "26/27 · SofaScore",
+   "sub": "26/27",
    "filas": [
     [
-     "<b>LIGA PORTUGAL</b>",
-     " ",
+     "LIGA PORTUGAL",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "7 (6)",
-     false
-    ],
-    [
-     "Minutos",
-     "560",
+     "PJ (tit.) · Min.",
+     "7 (6) · 560",
      false
     ],
     [
@@ -188,18 +236,13 @@
      false
     ],
     [
-     "<b>CHAMPIONS LEAGUE</b>",
-     " ",
+     "CHAMPIONS LEAGUE",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "2 (2)",
-     false
-    ],
-    [
-     "Minutos",
-     "180",
+     "PJ (tit.) · Min.",
+     "2 (2) · 180",
      false
     ],
     [
@@ -214,9 +257,7 @@
     ]
    ]
   },
-  "heat": null,
   "heat_img": "mapas/araujo_2026-10-13.png",
-  "heat_credito": "Datos: SofaScore",
   "perfil": [
    [
     "DORSAL",
@@ -242,10 +283,6 @@
     "VALOR",
     "36,0 M€"
    ]
-  ],
-  "foto": "fotos/araujo_2026-10-13.svg",
-  "credito_foto": "",
-  "muestra": [],
-  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+  ]
  }
 ]

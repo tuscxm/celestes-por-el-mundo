@@ -17,6 +17,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 from mapa_sofascore import get, dibujar
 from figura import figura
+from caras import cara, escudo
 
 TZ = ZoneInfo("America/Montevideo")
 MESES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SETIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
@@ -30,6 +31,25 @@ PAISES = {"Uruguay": "Uruguay", "Japan": "Japón", "South Korea": "Corea del Sur
           "England": "Inglaterra", "Italy": "Italia", "United States": "Estados Unidos", "Mexico": "México",
           "Colombia": "Colombia", "Chile": "Chile", "Paraguay": "Paraguay", "Peru": "Perú", "Ecuador": "Ecuador",
           "Bolivia": "Bolivia", "Venezuela": "Venezuela", "Morocco": "Marruecos", "Netherlands": "Países Bajos"}
+
+def estrellas(r):
+    """Nota del partido -> estrellas (como en las alineaciones con caras)."""
+    if not r: return 0
+    return 5 if r >= 8 else 4 if r >= 7.3 else 3 if r >= 6.7 else 2 if r >= 6 else 1
+
+def _lum(h):
+    h = h.lstrip("#"); r, g, b = (int(h[i:i+2], 16) / 255 for i in (0, 2, 4))
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+def tema(cam, equipo):
+    """Colores del fondo: los de jugadores.json ("fondo") o, si no están, los del club."""
+    if cam and cam.get("fondo"):
+        c1, c2 = cam["fondo"][:2]; ac = cam["fondo"][2] if len(cam["fondo"]) > 2 else "#9fd6f7"
+        return {"c1": c1, "c2": c2, "acento": ac}
+    tc = equipo.get("teamColors") or {}
+    p, s2 = tc.get("primary", "#2a6fb0"), tc.get("secondary", "#0d2440")
+    if _lum(p) > 0.85: p, s2 = s2, "#0d1726"
+    return {"c1": p, "c2": s2 if _lum(s2) < 0.85 else "#0d1726", "acento": "#9fd6f7"}
 
 def nombre_equipo(t):
     return PAISES.get(t["name"], t["name"]) if t.get("national") else t["name"]
@@ -140,9 +160,8 @@ def temporada(pid, team_id, year):
         if not S.get("appearances"):
             continue
         nom = COPAS_EUROPEAS.get(ut["id"]) or NOMBRES_TORNEO.get(ut["name"], ut["name"].upper())
-        filas += [[f"<b>{nom}</b>", " ", False],
-                  ["Partidos (titular)", f"{n(S,'appearances')} ({n(S,'matchesStarted')})", False],
-                  ["Minutos", str(n(S, "minutesPlayed")), False]]
+        filas += [[nom, " ", False],
+                  ["PJ (tit.) · Min.", f"{n(S,'appearances')} ({n(S,'matchesStarted')}) · {n(S, 'minutesPlayed')}", False]]
         if S.get("rating"): filas.append(["Nota media", f"{S['rating']:.2f}", True])
         filas.append(["Goles · Asist. · Amar.", f"{n(S,'goals')} · {n(S,'assists')} · {n(S,'yellowCards')}", False])
     return filas[:10], avisos
@@ -210,7 +229,13 @@ def armar_partido(j, e, salida, plantilla_fig):
         if all(avg.get(p["player"]["id"]) is not None for p in l):
             return sorted(l, key=lambda p: -avg[p["player"]["id"]])
         return list(reversed(l))  # SofaScore lista de derecha a izquierda
-    once = [[[p.get("jerseyNumber") or p.get("shirtNumber") or "", corto(p["player"])] for p in orden(l)] for l in ls]
+    recursos = os.path.join(salida, "recursos")
+    def ficha(p):
+        rt = (p.get("statistics") or {}).get("rating")
+        return {"dorsal": p.get("jerseyNumber") or p.get("shirtNumber") or "", "nombre": corto(p["player"]),
+                "cara": cara(p["player"]["id"], recursos, clave if p["player"]["id"] == pid else None),
+                "estrellas": estrellas(rt), "yo": p["player"]["id"] == pid}
+    once = [[ficha(p) for p in orden(l)] for l in ls]
     dorsal = str(yo.get("jerseyNumber") or yo.get("shirtNumber") or yo["player"].get("jerseyNumber") or "")
     if not titular:
         avisos.append("Entró de suplente: no aparece en la cancha del once inicial")
@@ -257,9 +282,14 @@ def armar_partido(j, e, salida, plantilla_fig):
         filas_t = [["Sin datos de temporada", " ", False]]; avisos.append("Sin temporada por competición")
     cams = j.get("camiseta", {})
     cam = (cams.get("7") if equipo.get("national") else next((v for k, v in cams.items() if k != "7"), None)) or next(iter(cams.values()))
-    os.makedirs(os.path.join(salida, "fotos"), exist_ok=True)
-    fig = f"fotos/{clave}_{fecha}.svg"
-    open(os.path.join(salida, fig), "w").write(figura(plantilla_fig, apellido(player), dorsal, cam))
+    mi_cara = cara(pid, recursos, clave)
+    fig = None
+    if not mi_cara:
+        # sin foto: figura ilustrada de respaldo
+        os.makedirs(os.path.join(salida, "fotos"), exist_ok=True)
+        fig = f"fotos/{clave}_{fecha}.svg"
+        open(os.path.join(salida, fig), "w").write(figura(plantilla_fig, apellido(player), dorsal, cam))
+        avisos.append("No se consiguió la foto del jugador: se usó la figura ilustrada")
 
     nac = j.get("nacimiento")
     edad = None
@@ -277,20 +307,28 @@ def armar_partido(j, e, salida, plantilla_fig):
     home, away = nombre_equipo(e["homeTeam"]), nombre_equipo(e["awayTeam"])
     hs, as_ = e.get("homeScore", {}).get("current"), e.get("awayScore", {}).get("current")
     rating = s.get("rating")
-    if not rating: avisos.append("SofaScore no tiene nota del jugador en este partido")
+    if not rating: avisos.append("No hay nota del jugador en este partido")
     archivo = f"{apellido(player)}_{home.replace(' ', '')}-{away.replace(' ', '')}_{fecha}".replace("ñ", "n").replace("ú", "u").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o")
-    d = {"archivo": archivo, "nombre": j["placa"], "marcador": f"{home.upper()} {hs} — {as_} {away.upper()}",
-         "meta": " · ".join(x for x in [torneo, ronda, f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}", "TITULAR" if titular else "SUPLENTE"] if x),
-         "minutos": f"{minutos}’", "nota": f"{rating:.1f}" if rating else None, "nota_label": "NOTA SOFASCORE",
-         "formacion": form, "once": once, "jugador_dorsal": dorsal if titular else "__",
-         "generales": generales, "pos_titulo": pos_titulo, "mediocentro": filas_posicion(r, s),
-         "extra": {"titulo": "TEMPORADA", "sub": f"{year} · SofaScore" if year else "SofaScore", "filas": filas_t},
-         "heat": None, "heat_img": mapa, "heat_credito": "Datos: SofaScore" if mapa else "", "perfil": perfil,
-         "foto": fig, "credito_foto": "", "muestra": [],
-         "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"}
+    esc_club = escudo(equipo["id"], recursos)
+    if esc_club:  # copia para cuando haya que armarla con BeSoccer
+        import shutil
+        os.makedirs(os.path.join(AQUI, "escudos"), exist_ok=True)
+        shutil.copy2(esc_club, os.path.join(AQUI, "escudos", ("uruguay" if equipo.get("national") else f"club_{clave}") + ".png"))
+    d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido(player), "dorsal": dorsal,
+         "local": home, "visita": away, "goles_local": hs, "goles_visita": as_,
+         "escudo_local": escudo(e["homeTeam"]["id"], recursos), "escudo_visita": escudo(e["awayTeam"]["id"], recursos),
+         "escudo_club": esc_club,
+         "meta": " · ".join(x for x in [torneo, ronda, f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
+         "condicion": "TITULAR" if titular else "SUPLENTE",
+         "minutos": f"{minutos}’", "nota": f"{rating:.1f}" if rating else None, "estrellas": estrellas(rating),
+         "tema": tema(cam, equipo), "formacion": form, "once": once,
+         "cara": mi_cara, "foto": os.path.join(salida, fig) if fig else None,
+         "generales": generales, "pos_titulo": pos_titulo, "posicion": filas_posicion(r, s),
+         "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
+         "heat_img": mapa, "perfil": perfil}
     jp = os.path.join(salida, archivo + ".json")
     json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
-    subprocess.run([sys.executable, os.path.join(AQUI, "render_v2.py"), jp], check=True)
+    subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
 
     linea = []
     if goles: linea.append(f"{goles} gol" + ("es" if goles > 1 else ""))
@@ -300,7 +338,7 @@ def armar_partido(j, e, salida, plantilla_fig):
     if n(s, "ballRecovery"): linea.append(f"{n(s,'ballRecovery')} recuperaci" + ("ones" if n(s, "ballRecovery") > 1 else "ón"))
     club_tag = "".join(ch for ch in (equipo["name"] if not equipo.get("national") else "Uruguay") if ch.isalnum())
     copy = (f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n"
-            f"⏱ {minutos}' · ⭐ {rating:.1f} (SofaScore)\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n⏱ {minutos}'\n")
+            f"⏱ {minutos}' · ⭐ {rating:.1f}\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n⏱ {minutos}'\n")
     copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
     open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
     return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo,
@@ -311,7 +349,7 @@ def main():
     def opt(k, dflt=None):
         return a[a.index(k) + 1] if k in a else dflt
     jugs = json.load(open(a[0]))
-    salida = opt("--salida", "salida_hoy"); os.makedirs(salida, exist_ok=True)
+    salida = os.path.abspath(opt("--salida", "salida_hoy")); os.makedirs(salida, exist_ok=True)
     proc_path = opt("--procesados"); procesados = set(json.load(open(proc_path))) if proc_path and os.path.exists(proc_path) else set()
     hoy = datetime.datetime.now(TZ).date()
     if opt("--fecha"):
@@ -344,12 +382,13 @@ def main():
             tipo = e["status"]["type"]
             if tipo != "finished":
                 info["estado"] = "no terminó" if tipo == "inprogress" else ("no empezó" if tipo == "notstarted" else tipo)
-            elif f"{j['clave']}_{e['id']}" in procesados and "--forzar" not in a:
+            elif (f"{j['clave']}_{e['id']}" in procesados or f"{j['clave']}_{fecha_local(e)}" in procesados) and "--forzar" not in a:
                 info["estado"] = "ya procesado"
             else:
                 try:
                     info.update(armar_partido(j, e, salida, plantilla_fig))
                     procesados.add(f"{j['clave']}_{e['id']}")
+                    if info.get("estado") == "jugó": procesados.add(f"{j['clave']}_{fecha_local(e)}")
                 except Exception as ex:
                     info["estado"] = "error"; info["error"] = repr(ex)
             partidos.append(info)

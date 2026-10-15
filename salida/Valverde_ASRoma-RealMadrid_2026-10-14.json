@@ -2,69 +2,117 @@
  {
   "archivo": "Valverde_ASRoma-RealMadrid_2026-10-14",
   "nombre": "FEDERICO VALVERDE",
-  "marcador": "AS ROMA 3 — 4 REAL MADRID",
-  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 14 OCTUBRE 2026 · TITULAR",
+  "apellido": "Valverde",
+  "dorsal": "8",
+  "local": "AS Roma",
+  "visita": "Real Madrid",
+  "goles_local": 3,
+  "goles_visita": 4,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2702.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2829.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2829.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 14 OCTUBRE 2026",
+  "condicion": "TITULAR",
   "minutos": "90’",
   "nota": "6.8",
-  "nota_label": "NOTA SOFASCORE",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#2457b3",
+   "c2": "#0b1838",
+   "acento": "#f2c14e"
+  },
   "formacion": "4-2-3-1",
   "once": [
    [
-    [
-     "1",
-     "Courtois"
-    ]
+    {
+     "dorsal": "1",
+     "nombre": "Courtois",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_70988.png",
+     "estrellas": 1,
+     "yo": false
+    }
    ],
    [
-    [
-     "17",
-     "Cucurella"
-    ],
-    [
-     "22",
-     "Rüdiger"
-    ],
-    [
-     "16",
-     "Konaté"
-    ],
-    [
-     "24",
-     "Dumfries"
-    ]
+    {
+     "dorsal": "17",
+     "nombre": "Cucurella",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_794939.png",
+     "estrellas": 2,
+     "yo": false
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Rüdiger",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_142622.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Konaté",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_826215.png",
+     "estrellas": 3,
+     "yo": false
+    },
+    {
+     "dorsal": "24",
+     "nombre": "Dumfries",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_759520.png",
+     "estrellas": 2,
+     "yo": false
+    }
    ],
    [
-    [
-     "14",
-     "Tchouaméni"
-    ],
-    [
-     "8",
-     "Valverde"
-    ]
+    {
+     "dorsal": "14",
+     "nombre": "Tchouaméni",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_859025.png",
+     "estrellas": 2,
+     "yo": false
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Valverde",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_831808.png",
+     "estrellas": 3,
+     "yo": true
+    }
    ],
    [
-    [
-     "7",
-     "Vinícius Jr."
-    ],
-    [
-     "5",
-     "Bellingham"
-    ],
-    [
-     "25",
-     "Diomande"
-    ]
+    {
+     "dorsal": "7",
+     "nombre": "Vinícius Jr.",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_868812.png",
+     "estrellas": 2,
+     "yo": false
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bellingham",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_991011.png",
+     "estrellas": 3,
+     "yo": false
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Diomande",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2087085.png",
+     "estrellas": 4,
+     "yo": false
+    }
    ],
    [
-    [
-     "10",
-     "Mbappé"
-    ]
+    {
+     "dorsal": "10",
+     "nombre": "Mbappé",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_826643.png",
+     "estrellas": 4,
+     "yo": false
+    }
    ]
   ],
-  "jugador_dorsal": "8",
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_831808.png",
+  "foto": null,
   "generales": [
    [
     "Goles",
@@ -113,7 +161,7 @@
    ]
   ],
   "pos_titulo": "COMO MEDIOCENTRO",
-  "mediocentro": [
+  "posicion": [
    [
     "Pases precisos",
     "29/31",
@@ -157,21 +205,16 @@
   ],
   "extra": {
    "titulo": "TEMPORADA",
-   "sub": "26/27 · SofaScore",
+   "sub": "26/27",
    "filas": [
     [
-     "<b>LALIGA</b>",
-     " ",
+     "LALIGA",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "8 (8)",
-     false
-    ],
-    [
-     "Minutos",
-     "654",
+     "PJ (tit.) · Min.",
+     "8 (8) · 654",
      false
     ],
     [
@@ -185,18 +228,13 @@
      false
     ],
     [
-     "<b>CHAMPIONS LEAGUE</b>",
-     " ",
+     "CHAMPIONS LEAGUE",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "2 (2)",
-     false
-    ],
-    [
-     "Minutos",
-     "180",
+     "PJ (tit.) · Min.",
+     "2 (2) · 180",
      false
     ],
     [
@@ -211,9 +249,7 @@
     ]
    ]
   },
-  "heat": null,
   "heat_img": "mapas/valverde_2026-10-14.png",
-  "heat_credito": "Datos: SofaScore",
   "perfil": [
    [
     "DORSAL",
@@ -239,10 +275,6 @@
     "VALOR",
     "87,0 M€"
    ]
-  ],
-  "foto": "fotos/valverde_2026-10-14.svg",
-  "credito_foto": "",
-  "muestra": [],
-  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+  ]
  }
 ]

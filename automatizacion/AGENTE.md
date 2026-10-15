@@ -2,8 +2,14 @@
 
 Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es la única fuente: scripts, jugadores, `procesados.json` y todas las infografías. La tarea programada de Claude corre todos los días a las 18:30 de Uruguay en la nube (SofaScore no le responde a los servidores de GitHub, sí a la nube de Claude), sin depender de ninguna computadora.
 
-## Fuente de datos
-Todo sale de **SofaScore** (api.sofascore.com), que responde desde la nube: partido, alineación, estadísticas del jugador, nota, mapa de calor y temporada por competición. Ya no hacen falta API-Football ni BeSoccer (esos scripts quedan en la carpeta por si se quieren volver a usar).
+## Fuentes de datos (no se nombran en las infografías)
+- **SofaScore** (api.sofascore.com) es la fuente principal: partido, alineación con nota de cada jugador, estadísticas, mapa de calor, temporada, caras y escudos. Responde desde la nube de Claude, no desde GitHub.
+- **BeSoccer** es el respaldo cuando SofaScore no responde. No deja entrar a los scripts: la tarea de Claude lo lee con su herramienta web (ver "Respaldo con BeSoccer").
+- Ni la infografía ni el texto del posteo dicen de dónde salen los datos.
+
+## Diseño (render_v3.py)
+Fondo con los colores del club (campo `fondo` de cada camiseta en `jugadores.json`: color 1, color 2, acento), escudo grande de marca de agua, cancha oscura con las caras recortadas del once (estrellas según la nota de cada uno: 8+ = 5, 7,3+ = 4, 6,7+ = 3, 6+ = 2), cara grande del jugador con placa y escudo, minutos y nota, y abajo las tarjetas: su partido, su juego según la posición, mapa de calor y temporada. Tipografía Barlow Condensed (en `fuentes/`, licencia OFL).
+Las caras salen de la foto del jugador y se les saca el fondo con rembg. Las de los cuatro jugadores se guardan en `caras/` y los escudos en `escudos/`, para usarlas aunque falle la fuente. Si no hay foto, se usa la figura ilustrada.
 
 ## Jugadores
 Están en `automatizacion/jugadores.json`. Cada uno tiene `sofascore_id`, placa, altura, pie, nacimiento y colores de camiseta (club y Uruguay, clave "7").
@@ -30,6 +36,17 @@ Si el jugador jugó (más de 0 minutos), se arma la infografía y se indica si f
 4. Claude hace commit y push. Al llegar un archivo nuevo a `avisos/`, el workflow `aviso.yml` abre un issue y GitHub manda el mail.
 5. `control.yml` revisa a las 23:30 que la revisión del día haya llegado; si no, abre un issue.
 6. **No publica nada.** La publicación en Instagram se hace solo con la aprobación del usuario.
+
+## Respaldo con BeSoccer (cuando SofaScore no responde)
+Si en `salida_hoy/resumen.json` un jugador figura con `"estado": "error"`:
+1. Abrí con la herramienta web su página de partidos: `<besoccer>` de `jugadores.json` con `/jugador/partidos/` en lugar de `/jugador/` (ej.: https://es.besoccer.com/jugador/partidos/santiago-mourino-3240357). Buscá partidos de las fechas revisadas (hoy y ayer, hora de Uruguay).
+2. Si no hubo partido, o no jugó (banco / no convocado), o no terminó: armá el JSON solo con `clave`, `fecha` y `estado` y corrélo igual (así el aviso queda bien).
+3. Si jugó: abrí la página del partido (`/partido/...`) y la de `/alineaciones`, y la ficha del jugador para la temporada. Completá una copia de `automatizacion/besoccer_plantilla.json`:
+   - `once`: el once inicial dividido en líneas según la formación, del arco al ataque, en el orden que muestra la página; cada jugador `[dorsal, apellido, nota]`.
+   - `posicion`: BeSoccer abrevia en español: POR arquero, LD lateral derecho, LI lateral izquierdo, DFC defensor central, MCD/MC/MCO mediocentro, MD/ED volante por derecha, MI/EI volante por izquierda, DC delantero.
+   - `minutos`: 90 si jugó completo; si salió o entró, el minuto del cambio.
+   - Lo que no aparezca: no lo pongas. Nunca inventes ni estimes.
+4. Corré `python3 automatizacion/armar_besoccer.py <tu_json> --salida salida_hoy --procesados automatizacion/procesados.json` y después otra vez `GITHUB_REPOSITORY=tuscxm/celestes-por-el-mundo GITHUB_REPOSITORY_OWNER=tuscxm python3 automatizacion/publicar.py salida_hoy`.
 
 ## Para correrlo a mano con una fecha
 `bash automatizacion/correr.sh --fecha 2026-09-14 --clave mourino --forzar` (en la nube de Claude o en una compu con Python).

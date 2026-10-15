@@ -2,69 +2,117 @@
  {
   "archivo": "Bernal_RealBetis-FCPorto_2026-10-14",
   "nombre": "FACUNDO BERNAL",
-  "marcador": "REAL BETIS 3 — 2 FC PORTO",
-  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 14 OCTUBRE 2026 · SUPLENTE",
+  "apellido": "Bernal",
+  "dorsal": "6",
+  "local": "Real Betis",
+  "visita": "FC Porto",
+  "goles_local": 3,
+  "goles_visita": 2,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2816.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3002.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2816.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 14 OCTUBRE 2026",
+  "condicion": "SUPLENTE",
   "minutos": "9’",
   "nota": "6.5",
-  "nota_label": "NOTA SOFASCORE",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
   "formacion": "4-2-3-1",
   "once": [
    [
-    [
-     "1",
-     "Valles"
-    ]
+    {
+     "dorsal": "1",
+     "nombre": "Valles",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_964983.png",
+     "estrellas": 2,
+     "yo": false
+    }
    ],
    [
-    [
-     "11",
-     "Garcia"
-    ],
-    [
-     "4",
-     "Natan"
-    ],
-    [
-     "5",
-     "Bartra"
-    ],
-    [
-     "12",
-     "Ortiz"
-    ]
+    {
+     "dorsal": "11",
+     "nombre": "Garcia",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_851271.png",
+     "estrellas": 3,
+     "yo": false
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Natan",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1015287.png",
+     "estrellas": 1,
+     "yo": false
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bartra",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_99519.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Ortiz",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1152139.png",
+     "estrellas": 3,
+     "yo": false
+    }
    ],
    [
-    [
-     "21",
-     "Roca"
-    ],
-    [
-     "18",
-     "Deossa"
-    ]
+    {
+     "dorsal": "21",
+     "nombre": "Roca",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_847128.png",
+     "estrellas": 2,
+     "yo": false
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Deossa",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1129401.png",
+     "estrellas": 2,
+     "yo": false
+    }
    ],
    [
-    [
-     "10",
-     "Ezzalzouli"
-    ],
-    [
-     "22",
-     "Isco"
-    ],
-    [
-     "7",
-     "Antony"
-    ]
+    {
+     "dorsal": "10",
+     "nombre": "Ezzalzouli",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1011375.png",
+     "estrellas": 5,
+     "yo": false
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Isco",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_103417.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "7",
+     "nombre": "Antony",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_958380.png",
+     "estrellas": 3,
+     "yo": false
+    }
    ],
    [
-    [
-     "19",
-     "Parrott"
-    ]
+    {
+     "dorsal": "19",
+     "nombre": "Parrott",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_966555.png",
+     "estrellas": 3,
+     "yo": false
+    }
    ]
   ],
-  "jugador_dorsal": "__",
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1177404.png",
+  "foto": null,
   "generales": [
    [
     "Goles",
@@ -113,7 +161,7 @@
    ]
   ],
   "pos_titulo": "COMO MEDIOCENTRO",
-  "mediocentro": [
+  "posicion": [
    [
     "Pases precisos",
     "2/3",
@@ -147,21 +195,16 @@
   ],
   "extra": {
    "titulo": "TEMPORADA",
-   "sub": "26/27 · SofaScore",
+   "sub": "26/27",
    "filas": [
     [
-     "<b>LALIGA</b>",
-     " ",
+     "LALIGA",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "7 (5)",
-     false
-    ],
-    [
-     "Minutos",
-     "418",
+     "PJ (tit.) · Min.",
+     "7 (5) · 418",
      false
     ],
     [
@@ -175,18 +218,13 @@
      false
     ],
     [
-     "<b>CHAMPIONS LEAGUE</b>",
-     " ",
+     "CHAMPIONS LEAGUE",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "2 (1)",
-     false
-    ],
-    [
-     "Minutos",
-     "76",
+     "PJ (tit.) · Min.",
+     "2 (1) · 76",
      false
     ],
     [
@@ -201,9 +239,7 @@
     ]
    ]
   },
-  "heat": null,
   "heat_img": "mapas/bernal_2026-10-14.png",
-  "heat_credito": "Datos: SofaScore",
   "perfil": [
    [
     "DORSAL",
@@ -229,10 +265,6 @@
     "VALOR",
     "9,7 M€"
    ]
-  ],
-  "foto": "fotos/bernal_2026-10-14.svg",
-  "credito_foto": "",
-  "muestra": [],
-  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+  ]
  }
 ]

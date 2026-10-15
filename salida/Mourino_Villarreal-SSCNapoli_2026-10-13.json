@@ -2,67 +2,115 @@
  {
   "archivo": "Mourino_Villarreal-SSCNapoli_2026-10-13",
   "nombre": "SANTIAGO MOURIÑO",
-  "marcador": "VILLARREAL 3 — 1 SSC NAPOLI",
-  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026 · TITULAR",
+  "apellido": "Mouriño",
+  "dorsal": "15",
+  "local": "Villarreal",
+  "visita": "SSC Napoli",
+  "goles_local": 3,
+  "goles_visita": 1,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2819.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2714.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2819.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026",
+  "condicion": "TITULAR",
   "minutos": "90’",
   "nota": "8.3",
-  "nota_label": "NOTA SOFASCORE",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#f2cf1d",
+   "c2": "#0f5d8c",
+   "acento": "#0d3b8c"
+  },
   "formacion": "4-4-2",
   "once": [
    [
-    [
-     "1",
-     "Júnior"
-    ]
+    {
+     "dorsal": "1",
+     "nombre": "Júnior",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1066603.png",
+     "estrellas": 4,
+     "yo": false
+    }
    ],
    [
-    [
-     "20",
-     "Romero"
-    ],
-    [
-     "12",
-     "Veiga"
-    ],
-    [
-     "6",
-     "Navarro"
-    ],
-    [
-     "15",
-     "Mouriño"
-    ]
+    {
+     "dorsal": "20",
+     "nombre": "Romero",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1396048.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Veiga",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1087359.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Navarro",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1525863.png",
+     "estrellas": 2,
+     "yo": false
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Mouriño",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1468046.png",
+     "estrellas": 5,
+     "yo": true
+    }
    ],
    [
-    [
-     "10",
-     "Moleiro"
-    ],
-    [
-     "18",
-     "Gueye"
-    ],
-    [
-     "14",
-     "Comesaña"
-    ],
-    [
-     "24",
-     "Saliba"
-    ]
+    {
+     "dorsal": "10",
+     "nombre": "Moleiro",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1012444.png",
+     "estrellas": 3,
+     "yo": false
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Gueye",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_879694.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Comesaña",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_843678.png",
+     "estrellas": 4,
+     "yo": false
+    },
+    {
+     "dorsal": "24",
+     "nombre": "Saliba",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1093229.png",
+     "estrellas": 3,
+     "yo": false
+    }
    ],
    [
-    [
-     "9",
-     "Mikautadze"
-    ],
-    [
-     "7",
-     "Moreno"
-    ]
+    {
+     "dorsal": "9",
+     "nombre": "Mikautadze",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1009372.png",
+     "estrellas": 3,
+     "yo": false
+    },
+    {
+     "dorsal": "7",
+     "nombre": "Moreno",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_146866.png",
+     "estrellas": 2,
+     "yo": false
+    }
    ]
   ],
-  "jugador_dorsal": "15",
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1468046.png",
+  "foto": null,
   "generales": [
    [
     "Goles",
@@ -111,7 +159,7 @@
    ]
   ],
   "pos_titulo": "COMO LATERAL DERECHO",
-  "mediocentro": [
+  "posicion": [
    [
     "Pases precisos",
     "44/52",
@@ -151,25 +199,30 @@
     "Conducciones",
     "14 (163 m)",
     false
+   ],
+   [
+    "Distancia recorrida",
+    "10,36 km",
+    false
+   ],
+   [
+    "Sprints",
+    "12",
+    false
    ]
   ],
   "extra": {
    "titulo": "TEMPORADA",
-   "sub": "26/27 · SofaScore",
+   "sub": "26/27",
    "filas": [
     [
-     "<b>LALIGA</b>",
-     " ",
+     "LALIGA",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "6 (4)",
-     false
-    ],
-    [
-     "Minutos",
-     "337",
+     "PJ (tit.) · Min.",
+     "6 (4) · 337",
      false
     ],
     [
@@ -183,18 +236,13 @@
      false
     ],
     [
-     "<b>CHAMPIONS LEAGUE</b>",
-     " ",
+     "CHAMPIONS LEAGUE",
+     " ",
      false
     ],
     [
-     "Partidos (titular)",
-     "2 (2)",
-     false
-    ],
-    [
-     "Minutos",
-     "180",
+     "PJ (tit.) · Min.",
+     "2 (2) · 180",
      false
     ],
     [
@@ -209,9 +257,7 @@
     ]
    ]
   },
-  "heat": null,
   "heat_img": "mapas/mourino_2026-10-13.png",
-  "heat_credito": "Datos: SofaScore",
   "perfil": [
    [
     "DORSAL",
@@ -237,10 +283,6 @@
     "VALOR",
     "19,4 M€"
    ]
-  ],
-  "foto": "fotos/mourino_2026-10-13.svg",
-  "credito_foto": "",
-  "muestra": [],
-  "fuente": "Partido, temporada y mapa de calor: SofaScore · Figura ilustrativa, no es una foto del jugador"
+  ]
  }
 ]

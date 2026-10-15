@@ -4,7 +4,7 @@
 #      bash automatizacion/correr.sh --fecha 2026-10-13 --clave mourino --forzar
 set -euo pipefail
 cd "$(dirname "$0")/.."
-python3 -c "import numpy, scipy, matplotlib, playwright" 2>/dev/null \
+python3 -c "import numpy, scipy, matplotlib, playwright, rembg" 2>/dev/null \
   || pip install -q --break-system-packages -r automatizacion/requirements.txt
 if [ $# -eq 0 ]; then set -- --dias 2; fi
 rm -rf salida_hoy

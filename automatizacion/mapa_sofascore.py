@@ -15,10 +15,19 @@ from scipy.ndimage import gaussian_filter
 API = "https://api.sofascore.com/api/v1"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
 
-def get(path):
-    req = urllib.request.Request(API + path, headers={"User-Agent": UA, "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=25) as r:
-        return json.load(r)
+def get(path, intentos=3):
+    """Consulta con reintentos (a veces la conexión se corta). Un 404 no se reintenta."""
+    import time, urllib.error
+    for k in range(intentos):
+        try:
+            req = urllib.request.Request(API + path, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as ex:
+            if ex.code == 404 or k == intentos - 1: raise
+        except Exception:
+            if k == intentos - 1: raise
+        time.sleep(2 + 3 * k)
 
 def buscar_partido(pid, fecha):
     for page in (0, 1):
@@ -46,7 +55,7 @@ def dibujar(puntos, salida):
                                                        (.45, (1, .7, .12, .7)), (.75, (1, .35, .12, .85)), (1, (.85, .08, .08, .95))])
     fig = plt.figure(figsize=(W / 20, L / 20), dpi=110)
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(-2, W + 2); ax.set_ylim(-2, L + 2); ax.axis("off")
-    fig.patch.set_facecolor("#1f5a3c"); ax.set_facecolor("#1f5a3c")
+    fig.patch.set_facecolor("#2b2e31"); ax.set_facecolor("#2b2e31")
     ax.imshow(H, extent=[0, W, 0, L], origin="lower", cmap=cmap, interpolation="bilinear", zorder=2, aspect="auto")
     lw, c = 1.4, (1, 1, 1, .8)
     ax.add_patch(Rectangle((0, 0), W, L, fill=False, lw=lw, ec=c, zorder=3))
