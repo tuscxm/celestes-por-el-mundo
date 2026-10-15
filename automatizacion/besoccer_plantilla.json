@@ -5,23 +5,146 @@
  "estado": "jugó  |  no jugó  |  no convocado  |  no terminó  |  sin partido en esas fechas",
  "apellido": "Mouriño",
  "equipo": "Villarreal",
- "partido": {"local": "Villarreal", "visita": "Napoli", "goles_local": 3, "goles_visita": 1,
-             "torneo": "Champions League", "ronda": "Jornada 2", "seleccion": false, "local_es_su_equipo": true},
+ "partido": {
+  "local": "Villarreal",
+  "visita": "Napoli",
+  "goles_local": 3,
+  "goles_visita": 1,
+  "torneo": "Champions League",
+  "ronda": "Jornada 2",
+  "seleccion": false,
+  "local_es_su_equipo": true
+ },
  "titular": true,
  "minutos": 90,
  "nota": 8.1,
  "dorsal": "15",
- "entro": {"_solo_si_fue_suplente": "minuto en que entró y a quién reemplazó; si fue titular, borrá este bloque", "minuto": 87, "por": "Isco"},
+ "entro": {
+  "_solo_si_fue_suplente": "minuto en que entró y a quién reemplazó; si fue titular, borrá este bloque",
+  "minuto": 87,
+  "por": "Isco"
+ },
  "posicion": "lateral derecho  (uno de: arquero, lateral derecho, lateral izquierdo, defensor central, mediocentro, volante por derecha, volante por izquierda, delantero)",
  "formacion": "4-4-2",
- "once": [[["1", "Júnior"]],
-          [["23", "Cardona"], ["4", "Costa"], ["12", "Veiga"], ["15", "Mouriño"]],
-          [["24", "Moleiro"], ["18", "Gueye"], ["14", "Comesaña"], ["10", "Buchanan"]],
-          [["9", "Mikautadze"], ["7", "Moreno"]]],
- "su_partido": [["Goles", 1, true], ["Asistencias", 0], ["Tarjetas", "0"], ["Cambio", "Jugó completo"]],
- "estadisticas": [["Pases", "44/52"]],
+ "once": [
+  [
+   [
+    "1",
+    "Luiz Júnior",
+    7.4
+   ]
+  ],
+  [
+   [
+    "12",
+    "Veiga",
+    7.1
+   ],
+   [
+    "6",
+    "Navarro",
+    6.3
+   ],
+   [
+    "20",
+    "Romero",
+    7.2
+   ],
+   [
+    "15",
+    "Mouriño",
+    8.1
+   ]
+  ],
+  [
+   [
+    "18",
+    "Gueye",
+    7.2
+   ],
+   [
+    "14",
+    "Comesaña",
+    7.6
+   ],
+   [
+    "10",
+    "Moleiro",
+    6.7
+   ],
+   [
+    "24",
+    "Saliba",
+    6.7
+   ]
+  ],
+  [
+   [
+    "9",
+    "Mikautadze",
+    7.2
+   ],
+   [
+    "7",
+    "G. Moreno",
+    7.3
+   ]
+  ]
+ ],
+ "su_partido": [
+  [
+   "Goles",
+   1,
+   true
+  ],
+  [
+   "Asistencias",
+   0
+  ],
+  [
+   "Tarjetas",
+   "0"
+  ],
+  [
+   "Cambio",
+   "Jugó completo"
+  ]
+ ],
  "temporada_sub": "26/27",
- "temporada": [["LALIGA", " "], ["PJ (tit.) · Min.", "6 (4) · 337"], ["Nota media", "6,7"], ["Goles · Asist. · Amar.", "0 · 0 · 2"]],
+ "temporada": [
+  [
+   "LALIGA",
+   " "
+  ],
+  [
+   "PJ (tit.) · Min.",
+   "6 (4) · 337"
+  ],
+  [
+   "Nota media",
+   "6.5"
+  ],
+  [
+   "Goles · Amar.",
+   "0 · 2"
+  ],
+  [
+   "CHAMPIONS LEAGUE",
+   " "
+  ],
+  [
+   "PJ (tit.) · Min.",
+   "2 (2) · 180"
+  ],
+  [
+   "Nota media",
+   "7.5"
+  ],
+  [
+   "Goles · Amar.",
+   "2 · 1"
+  ]
+ ],
  "linea_posteo": "1 gol",
  "avisos": []
 }

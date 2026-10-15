@@ -1,6 +1,6 @@
 # Agente de infografías · Celestes por el mundo (v4, SofaScore + GitHub)
 
-Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es la única fuente: scripts, jugadores, `procesados.json` y todas las infografías. La tarea programada de Claude corre todos los días a las 18:30 de Uruguay en la nube (SofaScore no le responde a los servidores de GitHub, sí a la nube de Claude), sin depender de ninguna computadora.
+Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es la única fuente: scripts, jugadores, `procesados.json` y todas las infografías. La tarea programada de Claude ("Infografías Celestes por el mundo (nube)") corre todos los días a las 18:26 de Uruguay en la nube (SofaScore no le responde a los servidores de GitHub, sí a la nube de Claude), sin depender de ninguna computadora.
 
 ## Fuentes de datos (no se nombran en las infografías)
 - **SofaScore** (api.sofascore.com) es la fuente principal: partido, alineación con nota de cada jugador, estadísticas, mapa de calor, temporada, caras y escudos. Responde desde la nube de Claude, no desde GitHub.
@@ -8,9 +8,10 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
 - Ni la infografía ni el texto del posteo dicen de dónde salen los datos.
 
 ## Diseño (render_v3.py)
-Si entró de suplente, la infografía lo marca: la etiqueta dice "SUPLENTE · ENTRÓ DE <puesto>", el recuadro de minutos dice en qué minuto entró, y en la cancha su cara aparece sobre el jugador al que reemplazó, con "⇄ ENTRA <apellido> <minuto>". El texto del posteo y el aviso también lo dicen.
 Fondo con los colores del club (campo `fondo` de cada camiseta en `jugadores.json`: color 1, color 2, acento), escudo grande de marca de agua, cancha oscura con las caras recortadas del once (estrellas según la nota de cada uno: 8+ = 5, 7,3+ = 4, 6,7+ = 3, 6+ = 2), cara grande del jugador con placa y escudo, minutos y nota, y abajo las tarjetas: su partido, su juego según la posición, mapa de calor y temporada. Tipografía Barlow Condensed (en `fuentes/`, licencia OFL).
 Para la imagen grande, en partidos del club, se usa primero la foto oficial que esté en `fotos_oficiales/<clave>.png|jpg` (o la URL directa del campo `foto_oficial` de `jugadores.json`, si la red la deja bajar); si no hay, la de la fuente de datos. Las caras salen de la foto del jugador y se les saca el fondo con rembg. Las de los cuatro jugadores se guardan en `caras/` y los escudos en `escudos/`, para usarlas aunque falle la fuente. Si no hay foto, se usa la figura ilustrada.
+
+Si entró de suplente, la infografía lo marca: la etiqueta dice "SUPLENTE · ENTRÓ DE <puesto>", el recuadro de minutos dice en qué minuto entró, y en la cancha su cara aparece sobre el jugador al que reemplazó, con "⇄ ENTRA <apellido> <minuto>". El texto del posteo y el aviso también lo dicen.
 
 ## Jugadores
 Están en `automatizacion/jugadores.json`. Cada uno tiene `sofascore_id`, placa, altura, pie, nacimiento y colores de camiseta (club y Uruguay, clave "7").
@@ -30,7 +31,7 @@ Si el jugador jugó (más de 0 minutos), se arma la infografía y se indica si f
 ## Qué hace cada día
 1. La tarea de Claude trae el repositorio y corre `bash automatizacion/correr.sh` (hoy y ayer, hora de Uruguay). Eso instala lo que falte, corre `infografia_sofascore.py` y después `publicar.py`.
    - Por cada partido terminado en el que jugaron deja PNG, JSON, `_copy.txt`, mapa de calor y figura.
-   - La infografía trae: alineación con el jugador resaltado; minutos y nota de SofaScore; "Su partido"; el cuadro según dónde jugó (decidido por su posición media); el mapa de calor real; y la temporada por competición.
+   - La infografía trae: alineación con caras y el jugador resaltado; minutos y nota; "Su partido"; el cuadro según dónde jugó (decidido por su posición media); el mapa de calor real; y la temporada por competición.
    - Nunca se inventa nada: lo que SofaScore no trae se omite y queda en "avisos". Si SofaScore no responde, sale como error (nunca como "sin partido").
 2. `publicar.py` guarda todo en `salida/`, `mapas/` y `salida/fotos/`, actualiza `procesados.json`, `ultima_revision.json` y la galería del README, y si hubo infografías nuevas o errores escribe `avisos/<fecha_hora>.md` (primera línea = título, que empieza por quién jugó).
 3. Claude mira cada PNG (textos cortados o encimados, jugador resaltado, números razonables). Si ve un problema, lo agrega al aviso.
@@ -54,7 +55,11 @@ Si en `salida_hoy/resumen.json` un jugador figura con `"estado": "error"`:
 `bash automatizacion/correr.sh --fecha 2026-09-14 --clave mourino --forzar` (en la nube de Claude o en una compu con Python).
 
 ## Texto del posteo (lo genera el script en `_copy.txt`)
+```
 🇺🇾 {NOMBRE} · {Local} {goles}-{goles} {Visitante}
-⏱ {minutos}' · ⭐ {nota} (SofaScore)
+⏱ {minutos}' · ⭐ {nota}
+🔁 Entró al {minuto}' por {jugador que salió}, como {puesto}   (solo si fue suplente)
 {goles, asistencias, pases, duelos, recuperaciones}
 #CelestesPorElMundo #Uruguay #{club}
+```
+Sin mencionar la fuente de los datos.
