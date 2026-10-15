@@ -6,10 +6,10 @@ y arma una infografía por cada partido. No depende de ninguna computadora prend
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-15 09:28-03:00 (hora de Uruguay) · fechas 2026-10-14
+**Última revisión:** 2026-10-15 09:40-03:00 (hora de Uruguay) · fechas 2026-10-13
 
-- **Valverde** jugó 90' (titular, nota 6.8, de mediocentro) en AS Roma 3-4 Real Madrid · UEFA Champions League
-- **Bernal** jugó 9' (suplente, nota 6.5, de mediocentro) en Real Betis 3-2 FC Porto · UEFA Champions League
+- Valverde: sin partido hoy ni ayer
+- Bernal: sin partido hoy ni ayer
 - Mouriño: sin partido hoy ni ayer
 - Araújo: sin partido hoy ni ayer
 
@@ -17,7 +17,7 @@ Cerrá el aviso cuando la publiques o la descartes.
 
 <table>
 <tr><td align="center" valign="top" width="33%"><a href="salida/Valverde_ASRoma-RealMadrid_2026-10-14.png"><img src="salida/Valverde_ASRoma-RealMadrid_2026-10-14.png" width="300"></a><br><sub>FEDERICO VALVERDE · AS Roma 3-4 Real Madrid<br>2026-10-14 · <a href="salida/Valverde_ASRoma-RealMadrid_2026-10-14_copy.txt">texto del posteo</a></sub></td><td align="center" valign="top" width="33%"><a href="salida/Bernal_RealBetis-FCPorto_2026-10-14.png"><img src="salida/Bernal_RealBetis-FCPorto_2026-10-14.png" width="300"></a><br><sub>FACUNDO BERNAL · Real Betis 3-2 FC Porto<br>2026-10-14 · <a href="salida/Bernal_RealBetis-FCPorto_2026-10-14_copy.txt">texto del posteo</a></sub></td><td align="center" valign="top" width="33%"><a href="salida/Mourino_Villarreal-SSCNapoli_2026-10-13.png"><img src="salida/Mourino_Villarreal-SSCNapoli_2026-10-13.png" width="300"></a><br><sub>SANTIAGO MOURIÑO · Villarreal 3-1 SSC Napoli<br>2026-10-13 · <a href="salida/Mourino_Villarreal-SSCNapoli_2026-10-13_copy.txt">texto del posteo</a></sub></td></tr>
-<tr><td align="center" valign="top" width="33%"><a href="salida/Araujo_RCLens-SportingCP_2026-10-13.png"><img src="salida/Araujo_RCLens-SportingCP_2026-10-13.png" width="300"></a><br><sub>MAXIMILIANO ARAÚJO · RC Lens 0-2 Sporting CP<br>2026-10-13 · <a href="salida/Araujo_RCLens-SportingCP_2026-10-13_copy.txt">texto del posteo</a></sub></td><td align="center" valign="top" width="33%"><a href="salida/Mourino_Villarreal-Betis_2026-09-14.png"><img src="salida/Mourino_Villarreal-Betis_2026-09-14.png" width="300"></a><br><sub>Mourino Villarreal-Betis 2026-09-14<br>2026-09-14 · <a href="salida/Mourino_Villarreal-Betis_2026-09-14_copy.txt">texto del posteo</a></sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="salida/Araujo_RCLens-SportingCP_2026-10-13.png"><img src="salida/Araujo_RCLens-SportingCP_2026-10-13.png" width="300"></a><br><sub>MAXIMILIANO ARAÚJO · RC Lens 0-2 Sporting CP<br>2026-10-13 · <a href="salida/Araujo_RCLens-SportingCP_2026-10-13_copy.txt">texto del posteo</a></sub></td><td align="center" valign="top" width="33%"><a href="salida/Mourino_Villarreal-Betis_2026-09-14.png"><img src="salida/Mourino_Villarreal-Betis_2026-09-14.png" width="300"></a><br><sub>Mourino Villarreal-Betis 2026-09-14<br>2026-09-14</sub></td></tr>
 </table>
 
 ## Cómo se usa
