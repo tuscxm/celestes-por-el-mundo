@@ -1,15 +1,18 @@
 # Celestes por el mundo · infografías
 
-Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa en SofaScore si **Mouriño** jugaron hoy o ayer
+Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa en SofaScore si **Valverde, Bernal, Mouriño, Araújo** jugaron hoy o ayer
 y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-15 09:43-03:00 (hora de Uruguay) · fechas 2026-10-13
+**Última revisión:** 2026-10-15 09:46-03:00 (hora de Uruguay) · fechas 2026-10-14, 2026-10-15
 
-- **Mouriño** jugó 90' (titular, nota 8.3, de lateral derecho) en Villarreal 3-1 SSC Napoli · UEFA Champions League
+- Valverde: ya procesado · AS Roma 3-4 Real Madrid
+- Bernal: ya procesado · Real Betis 3-2 FC Porto
+- Mouriño: sin partido hoy ni ayer
+- Araújo: sin partido hoy ni ayer
 
 ## Últimas infografías (5 en total, todas en [`salida/`](salida))
 
