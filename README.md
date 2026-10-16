@@ -7,10 +7,10 @@ Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-15 18:27-03:00 (hora de Uruguay) · fechas 2026-10-14, 2026-10-15
+**Última revisión:** 2026-10-16 18:27-03:00 (hora de Uruguay) · fechas 2026-10-15, 2026-10-16
 
-- Valverde: ya procesado · AS Roma 3-4 Real Madrid
-- Bernal: ya procesado · Real Betis 3-2 FC Porto
+- Valverde: sin partido hoy ni ayer
+- Bernal: sin partido hoy ni ayer
 - Mouriño: sin partido hoy ni ayer
 - Araújo: sin partido hoy ni ayer
 
