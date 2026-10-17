@@ -1,0 +1,292 @@
+[
+ {
+  "archivo": "Bernal_RealBetis-FCBarcelona_2026-10-17",
+  "nombre": "FACUNDO BERNAL",
+  "apellido": "Bernal",
+  "dorsal": "6",
+  "local": "Real Betis",
+  "visita": "FC Barcelona",
+  "goles_local": 2,
+  "goles_visita": 5,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2816.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2817.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2816.png",
+  "meta": "LALIGA · JORNADA 9 · 17 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "54’",
+  "nota": "5.6",
+  "estrellas": 1,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Valles",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_964983.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 964983
+    }
+   ],
+   [
+    {
+     "dorsal": "11",
+     "nombre": "Garcia",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_851271.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 851271
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Gómez",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1186010.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1186010
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Llorente",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_305278.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 305278
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Bellerín",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_188365.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 188365
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Ceballos",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_547838.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 547838
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Bernal",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1177404.png",
+     "estrellas": 1,
+     "yo": true,
+     "pid": 1177404
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Ezzalzouli",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1011375.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1011375
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Fornals",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_816763.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 816763
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Lo Celso",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_798835.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 798835
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Hernández",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_887055.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 887055
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1177404.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "18",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/4",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1 amarilla + roja",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "4",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "9/13",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "69%",
+    true
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Pases largos precisos",
+    "2/4",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    true
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "2/2",
+    false
+   ],
+   [
+    "Conducciones",
+    "4 (35 m)",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (6) · 472",
+     false
+    ],
+    [
+     "Nota media",
+     "6.65",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 2",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (1) · 76",
+     false
+    ],
+    [
+     "Nota media",
+     "6.35",
+     true
+    ],
+    [
+     "Goles · Asist. · Amar.",
+     "0 · 0 · 1",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/bernal_2026-10-17.png",
+  "perfil": [
+   [
+    "DORSAL",
+    "6"
+   ],
+   [
+    "EDAD",
+    "23 años"
+   ],
+   [
+    "ALTURA",
+    "1,87 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ],
+   [
+    "VALOR",
+    "9,7 M€"
+   ]
+  ]
+ }
+]
