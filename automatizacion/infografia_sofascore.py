@@ -129,7 +129,7 @@ def filas_posicion(r, s):
         cnt("Recuperaciones", "ballRecovery")
     if s.get("ballCarriesCount"):
         f.append(["Conducciones", f"{n(s,'ballCarriesCount')} ({round(s.get('totalBallCarriesDistance') or 0)} m)", False])
-    opt("Distancia recorrida", "kilometersCovered", lambda v: f"{v:.2f} km".replace(".", ","))
+    opt("Distancia", "kilometersCovered", lambda v: f"{v:.2f} km".replace(".", ","))
     opt("Sprints", "numberOfSprints", lambda v: str(v))
     opt("Velocidad máxima", "topSpeed", lambda v: f"{v:.1f} km/h".replace(".", ","), True)
     return f[:10]

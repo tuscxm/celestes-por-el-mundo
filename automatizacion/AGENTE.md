@@ -27,6 +27,7 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
 - Ni la infografía ni el texto del posteo dicen de dónde salen los datos. El aviso trae una sección "Fuentes consultadas" de uso interno.
 
 ## Diseño (render_v3.py)
+Desde el 18/10/2026: fondo con un escudo grande del club (en lugar de las rayas y los dos escudos chicos), cancha de la formación más chica, tarjeta del mapa de calor más ancha con el bloque de la franja del jugador debajo, el cuadro de la posición se titula "TOTALES" y todas las caras llevan una línea de contorno negra (tapa restos claros del recorte).
 Fondo con los colores del club (campo `fondo` de cada camiseta en `jugadores.json`: color 1, color 2, acento), escudo grande de marca de agua, cancha oscura con las caras recortadas del once (estrellas según la nota de cada uno: 8+ = 5, 7,3+ = 4, 6,7+ = 3, 6+ = 2), cara grande del jugador con placa y escudo, minutos y nota, y abajo las tarjetas: su partido, su juego según la posición, mapa de calor y temporada. Tipografía Barlow Condensed (en `fuentes/`, licencia OFL).
 Para la imagen grande, en partidos del club, se usa primero la foto oficial que esté en `fotos_oficiales/<clave>.png|jpg` (o la URL directa del campo `foto_oficial` de `jugadores.json`, si la red la deja bajar); si no hay, la de la fuente de datos. Las caras salen de la foto del jugador y se les saca el fondo con rembg. Las de los cuatro jugadores se guardan en `caras/` y los escudos en `escudos/`, para usarlas aunque falle la fuente. Si no hay foto, se usa la figura ilustrada.
 

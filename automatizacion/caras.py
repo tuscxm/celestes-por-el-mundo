@@ -103,6 +103,27 @@ def _sin_fondo(im):
 _sr = None
 
 
+def _contorno(im, grosor=None):
+    """Línea de contorno negra alrededor de la persona: tapa cualquier resto claro del recorte.
+    Mitad del grosor va por dentro del borde y mitad por fuera; donde la figura toca el borde de la imagen
+    (hombros abajo) no se dibuja."""
+    from scipy import ndimage as ndi
+    im = im.convert("RGBA")
+    a = np.asarray(im).astype(float)
+    H, W = a.shape[:2]
+    g = grosor or max(3, min(H, W) // 105)
+    m = a[..., 3] > 110
+    if not m.any():
+        return im
+    dentro = m & ~ndi.binary_erosion(m, iterations=max(1, g // 2 + 1), border_value=1)
+    fuera = ndi.binary_dilation(m, iterations=max(1, g - g // 2)) & ~m
+    banda = ndi.gaussian_filter((dentro | fuera).astype(float), 0.7)
+    banda = np.clip(banda * 1.3, 0, 1)
+    rgb = a[..., :3] * (1 - banda[..., None]) + 8 * banda[..., None]
+    alfa = np.maximum(a[..., 3], banda * 255)
+    return Image.fromarray(np.dstack([rgb, alfa]).astype("uint8"), "RGBA")
+
+
 def _agrandar(im, lado=600):
     """Agranda la foto chica (150 px) con superresolución FSRCNN x4 (modelos/FSRCNN_x4.pb); si no se puede, LANCZOS."""
     global _sr
@@ -128,7 +149,7 @@ def cara(pid, carpeta, clave=None):
         if im.size[0] < 60:
             raise ValueError("imagen muy chica")
         im = _agrandar(im)
-        _sin_fondo(im).save(ruta)
+        _contorno(_sin_fondo(im)).save(ruta)
         if clave:
             os.makedirs(os.path.join(AQUI, "caras"), exist_ok=True)
             shutil.copy2(ruta, os.path.join(AQUI, "caras", f"{clave}.png"))
@@ -171,7 +192,7 @@ def cara_oficial(clave, carpeta, url=None):
         w, h = im.size  # cuadrado desde arriba: cabeza y hombros, como las caras de la cancha
         lado = min(w, h)
         im = im.crop(((w - lado) // 2, 0, (w - lado) // 2 + lado, lado)).resize((700, 700), Image.LANCZOS)
-        im.save(ruta)
+        _contorno(im).save(ruta)
         return ruta
     except Exception:
         return None
