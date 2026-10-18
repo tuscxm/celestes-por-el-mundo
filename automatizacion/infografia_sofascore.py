@@ -22,8 +22,11 @@ import fuentes
 
 TZ = ZoneInfo("America/Montevideo")
 MESES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SETIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
-COPAS_EUROPEAS = {7: "CHAMPIONS LEAGUE", 679: "EUROPA LEAGUE", 17015: "CONFERENCE LEAGUE"}
-NOMBRES_TORNEO = {"LaLiga": "LALIGA", "UEFA Champions League": "CHAMPIONS LEAGUE", "UEFA Europa League": "EUROPA LEAGUE",
+# copas internacionales que se muestran en TEMPORADA además de la liga del club
+COPAS_EUROPEAS = {7: "CHAMPIONS LEAGUE", 679: "EUROPA LEAGUE", 17015: "CONFERENCE LEAGUE",
+                  384: "COPA LIBERTADORES", 480: "COPA SUDAMERICANA"}
+NOMBRES_TORNEO = {"CONMEBOL Libertadores": "COPA LIBERTADORES", "CONMEBOL Sudamericana": "COPA SUDAMERICANA",
+                  "Liga Profesional de Fútbol": "LIGA PROFESIONAL", "LaLiga": "LALIGA", "UEFA Champions League": "CHAMPIONS LEAGUE", "UEFA Europa League": "EUROPA LEAGUE",
                   "UEFA Europa Conference League": "CONFERENCE LEAGUE", "UEFA Conference League": "CONFERENCE LEAGUE",
                   "Liga Portugal Betclic": "LIGA PORTUGAL", "Liga Portugal": "LIGA PORTUGAL",
                   "International Friendly Games": "AMISTOSO INTERNACIONAL", "Copa del Rey": "COPA DEL REY"}
@@ -134,7 +137,7 @@ def filas_posicion(r, s):
     opt("Velocidad máxima", "topSpeed", lambda v: f"{v:.1f} km/h".replace(".", ","), True)
     return f[:10]
 
-def temporada(pid, team_id, year):
+def temporada(pid, team_id, year, actual=None):
     """Bloques por competición del club en la temporada `year`: liga del club + copa europea si juega."""
     avisos = []
     try:
@@ -146,8 +149,12 @@ def temporada(pid, team_id, year):
     except Exception:
         return [], ["Sin temporada en SofaScore"]
     filas = []
-    orden = sorted(ts, key=lambda t: (t["uniqueTournament"]["id"] != liga_id, t["uniqueTournament"]["id"] not in COPAS_EUROPEAS))
+    # liga primero; después la copa del partido que se muestra (si es una copa); después las otras copas. Entran 2.
+    orden = sorted(ts, key=lambda t: (t["uniqueTournament"]["id"] != liga_id, t["uniqueTournament"]["id"] != actual,
+                                      t["uniqueTournament"]["id"] not in COPAS_EUROPEAS))
+    bloques = 0
     for t in orden:
+        if bloques >= 2: break
         ut = t["uniqueTournament"]
         if ut["id"] != liga_id and ut["id"] not in COPAS_EUROPEAS:
             continue
@@ -161,6 +168,7 @@ def temporada(pid, team_id, year):
         if not S.get("appearances"):
             continue
         nom = COPAS_EUROPEAS.get(ut["id"]) or NOMBRES_TORNEO.get(ut["name"], ut["name"].upper())
+        bloques += 1
         filas += [[nom, " ", False],
                   ["PJ (tit.) · Min.", f"{n(S,'appearances')} ({n(S,'matchesStarted')}) · {n(S, 'minutesPlayed')}", False]]
         if S.get("rating"): filas.append(["Nota media", f"{S['rating']:.2f}", True])
@@ -174,6 +182,8 @@ def comp_clave(nombre):
     if "champions" in t: return "champions"
     if "conference" in t: return "conference"
     if "europa" in t: return "europa"
+    if "libertadores" in t: return "libertadores"
+    if "sudamericana" in t: return "sudamericana"
     if "laliga" in t or "la liga" in t or "primera division" in t: return "laliga"
     if "portugal" in t or "primeira" in t: return "portugal"
     return t
@@ -463,7 +473,8 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     player = get(f"/player/{pid}").get("player", {})
     year = (e.get("season") or {}).get("year")
     club_id = club_de(j, player)
-    filas_t, av = temporada(pid, club_id, year) if (club_id and year and not equipo.get("national")) else ([], [])
+    ut_actual = (e["tournament"].get("uniqueTournament") or {}).get("id")
+    filas_t, av = temporada(pid, club_id, year, ut_actual) if (club_id and year and not equipo.get("national")) else ([], [])
     if equipo.get("national") and club_id:
         # partido de selección: temporada del club en curso
         try:
@@ -502,7 +513,11 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     torneo = NOMBRES_TORNEO.get(e["tournament"].get("uniqueTournament", {}).get("name", e["tournament"]["name"]),
                                 e["tournament"]["name"].upper())
     ri = e.get("roundInfo") or {}
-    ronda = (ri.get("name") or "").upper() or (f"JORNADA {ri['round']}" if ri.get("round") else "")
+    RONDAS = {"final": "FINAL", "semifinals": "SEMIFINALES", "semifinal": "SEMIFINAL", "quarterfinals": "CUARTOS DE FINAL",
+              "round of 16": "OCTAVOS DE FINAL", "round of 32": "16AVOS DE FINAL", "playoff round": "REPECHAJE",
+              "knockout round play-offs": "PLAYOFF", "qualification": "CLASIFICACIÓN", "group stage": "FASE DE GRUPOS"}
+    ronda = ri.get("name") or ""
+    ronda = RONDAS.get(ronda.lower(), ronda).upper() or (f"JORNADA {ri['round']}" if ri.get("round") else "")
     home, away = nombre_equipo(e["homeTeam"]), nombre_equipo(e["awayTeam"])
     hs, as_ = e.get("homeScore", {}).get("current"), e.get("awayScore", {}).get("current")
     # Valoración: promedio de las notas de todas las fuentes que la traen
