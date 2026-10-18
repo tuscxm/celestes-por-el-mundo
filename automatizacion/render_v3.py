@@ -266,10 +266,10 @@ GRANO = ("url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' 
 
 def fondo_html(estilo, wm):
     """Fondo de la infografía.
-    rayas   : el de siempre (rayas diagonales y dos escudos a color en los costados).
+    rayas   : (el que se usa) rayas diagonales y dos escudos a color en los costados.
     sol     : rayos de un sol de mayo detrás de la foto del jugador, un solo escudo grande en silueta y grano.
     franja  : franja vertical con las 9 franjas de la bandera en el borde izquierdo, escudo en silueta y trama de puntos.
-    bandera : (el que se usa) sol de mayo con los rayos saliendo desde el nombre del jugador, 9 franjas muy suaves y escudo en silueta."""
+    bandera : sol de mayo con los rayos saliendo desde el nombre del jugador, 9 franjas muy suaves y escudo en silueta."""
     silueta = (f'<img class="wm1" src="{wm}">' if wm else '')
     if estilo == "sol":
         return ('<div class="bg sinrayas"></div>'
@@ -332,7 +332,7 @@ def html(d, base):
     nota_v = d.get("nota") or "—"
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{fuentes()}{CSS}
 :root{{--c1:{c1};--c2:{c2};--acento:{ac};--acento-txt:{txt_sobre(ac)}}}</style></head><body>
-{fondo_html(d.get("fondo", "bandera"), wm)}
+{fondo_html(d.get("fondo", "rayas"), wm)}
 <div class="shade"></div>
 <div class="brand">CELESTES POR EL MUNDO</div>
 <h1 style="font-size:{size}px">{nombre}</h1>
