@@ -15,7 +15,7 @@ from zoneinfo import ZoneInfo
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
-from mapa_sofascore import get, dibujar
+from mapa_sofascore import get, dibujar, dibujar_horizontal
 from figura import figura
 from caras import cara, escudo, cara_oficial
 import fuentes
@@ -290,7 +290,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     if len(puntos) >= 5:
         os.makedirs(os.path.join(salida, "mapas"), exist_ok=True)
         mapa = f"mapas/{clave}_{fecha}.png"
-        dibujar(puntos, os.path.join(salida, mapa))
+        dibujar_horizontal(puntos, os.path.join(salida, mapa), j.get("zona"))
         json.dump({"fuente": "SofaScore", "credito": "Datos: SofaScore", "evento": e["id"], "toques": len(puntos)},
                   open(os.path.join(salida, mapa[:-4] + ".json"), "w"))
     else:
@@ -473,7 +473,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
                           "rol": pos_titulo.replace("COMO ", "").lower()} if sustitucion else None),
          "generales": generales, "pos_titulo": pos_titulo, "posicion": pos_filas,
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
-         "heat_img": mapa, "zona": zona, "perfil": perfil, "notas_por_fuente": notas, "amarillas_hero": amar,
+         "heat_img": mapa, "heat_horizontal": True, "zona": zona, "perfil": perfil, "notas_por_fuente": notas, "amarillas_hero": amar,
          "roja": (min_roja or True) if roja else None}
     jp = os.path.join(salida, archivo + ".json")
     json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)

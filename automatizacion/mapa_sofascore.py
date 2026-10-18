@@ -69,6 +69,42 @@ def dibujar(puntos, salida):
     fig.savefig(salida, dpi=110, facecolor=fig.get_facecolor())
     plt.close(fig)
 
+def dibujar_horizontal(puntos, salida, zona=None):
+    """Mapa de calor con la cancha acostada: ataca hacia la DERECHA, así que el costado derecho del equipo
+    queda ABAJO y el izquierdo ARRIBA. Si se da `zona` (derecha / centro / izquierda) se marca esa franja
+    con un recuadro y se oscurece un poco el resto."""
+    L, W = 105.0, 68.0
+    xs = np.array([p["x"] for p in puntos]) / 100 * L
+    ys = np.array([p["y"] for p in puntos]) / 100 * W      # y=0 (derecha del equipo) abajo
+    H, _, _ = np.histogram2d(ys, xs, bins=[136, 210], range=[[0, W], [0, L]])
+    H = gaussian_filter(H, sigma=9)
+    H = H / H.max() if H.max() > 0 else H
+    cmap = LinearSegmentedColormap.from_list("calor", [(0, (1, .88, .4, 0)), (.18, (1, .88, .4, .35)),
+                                                       (.45, (1, .7, .12, .7)), (.75, (1, .35, .12, .85)), (1, (.85, .08, .08, .95))])
+    fig = plt.figure(figsize=(L / 12, W / 12), dpi=130)
+    ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(-2, L + 2); ax.set_ylim(-2, W + 2); ax.axis("off")
+    fig.patch.set_facecolor("#2b2e31"); ax.set_facecolor("#2b2e31")
+    ax.imshow(H, extent=[0, L, 0, W], origin="lower", cmap=cmap, interpolation="bilinear", zorder=2, aspect="auto")
+    lw, c = 1.6, (1, 1, 1, .8)
+    ax.add_patch(Rectangle((0, 0), L, W, fill=False, lw=lw, ec=c, zorder=3))
+    ax.plot([L / 2, L / 2], [0, W], lw=lw, c=c, zorder=3)
+    ax.add_patch(Circle((L / 2, W / 2), 9.15, fill=False, lw=lw, ec=c, zorder=3))
+    for x0, s in ((0, 1), (L, -1)):
+        ax.add_patch(Rectangle((x0 if s > 0 else x0 - 16.5, (W - 40.3) / 2), 16.5, 40.3, fill=False, lw=lw, ec=c, zorder=3))
+        ax.add_patch(Rectangle((x0 if s > 0 else x0 - 5.5, (W - 18.3) / 2), 5.5, 18.3, fill=False, lw=lw, ec=c, zorder=3))
+        ax.add_patch(Arc((x0 + s * 11, W / 2), 18.3, 18.3, theta1=-53 if s > 0 else 127, theta2=53 if s > 0 else 233, lw=lw, ec=c, zorder=3))
+    ax.annotate("", xy=(L - 3, W - 3), xytext=(L - 17, W - 3), arrowprops=dict(arrowstyle="-|>", color=(1, 1, 1, .8), lw=1.8), zorder=5)
+    franjas = {"derecha": (0, W / 3), "centro": (W / 3, 2 * W / 3), "izquierda": (2 * W / 3, W)}
+    if zona in franjas:
+        y0, y1 = franjas[zona]
+        for a0, a1 in franjas.values():
+            if (a0, a1) != (y0, y1):
+                ax.add_patch(Rectangle((0, a0), L, a1 - a0, fc=(0.08, 0.09, 0.1, .38), ec="none", zorder=4))
+        ax.add_patch(Rectangle((0.4, y0 + 0.4), L - 0.8, y1 - y0 - 0.8, fill=False, lw=2.6, ec="#f2c14e", ls=(0, (6, 3)), zorder=5))
+    fig.savefig(salida, dpi=130, facecolor=fig.get_facecolor())
+    plt.close(fig)
+
+
 def main(jug_path, clave, fecha_s, base="."):
     jugs = json.load(open(jug_path))
     j = next(x for x in jugs if x["clave"] == clave)

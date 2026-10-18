@@ -61,11 +61,11 @@ CSS = """
 body{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:'BC','Barlow Condensed','Inter',Arial,sans-serif;color:#fff;
  background:#15181b}
 .bg{position:absolute;inset:0;background:
+   repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 60px,rgba(255,255,255,0) 60px 160px),
    radial-gradient(ellipse 70% 45% at 50% 0%,rgba(255,255,255,.28),transparent 70%),
    linear-gradient(150deg,var(--c1) 0%,var(--c1) 38%,var(--c2) 100%)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(10,12,14,.55) 72%,rgba(10,12,14,.92) 100%)}
-.wm{position:absolute;left:50%;top:150px;width:1000px;height:1000px;transform:translateX(-50%);object-fit:contain;opacity:.16;
- filter:drop-shadow(0 20px 60px rgba(0,0,0,.35))}
+.wm{position:absolute;width:360px;height:360px;object-fit:contain;opacity:.42;filter:drop-shadow(0 10px 30px rgba(0,0,0,.35))}
 .brand{position:absolute;top:30px;left:50%;transform:translateX(-50%);background:rgba(15,18,21,.62);border-radius:10px;
  padding:7px 18px;font-weight:800;font-size:21px;letter-spacing:4px;color:#9fd6f7;white-space:nowrap}
 h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-height:1;white-space:nowrap;text-transform:uppercase;letter-spacing:1px;
@@ -79,7 +79,7 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
  text-shadow:0 2px 8px rgba(0,0,0,.5)}
 .meta .tag{background:#fff;color:#111;border-radius:6px;padding:1px 9px;margin-left:6px}
 .meta .tag.sup{background:#f2c14e}
-.pitch{position:absolute;left:24px;top:322px;width:520px;height:500px}
+.pitch{position:absolute;left:24px;top:322px;width:480px;height:408px}
 .form{position:absolute;left:10px;top:-2px;background:rgba(15,18,21,.8);border-radius:8px;padding:3px 10px;font-weight:800;font-size:17px;letter-spacing:2px;color:#9fd6f7;z-index:5}
 .slot{position:absolute;display:flex;flex-direction:column;align-items:center;transform:translateX(-50%)}
 .slot .ph{position:relative;display:flex;justify-content:center;align-items:flex-end}
@@ -103,23 +103,30 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .tile .x{font-weight:800;font-size:19px;letter-spacing:1px;color:#f2c14e;margin-top:4px;text-transform:uppercase}
 .tab{background:#1b1e21;border-radius:0 0 7px 7px;padding:0 8px 1px;margin-top:-1px}
 .stars{color:#f2c14e;letter-spacing:1px;line-height:1.1}
-.hero{position:absolute;left:560px;top:318px;width:496px;height:360px}
+.hero{position:absolute;left:520px;top:316px;width:536px;height:300px}
 .hero .glow{position:absolute;left:8px;right:8px;top:0;bottom:30px;background:radial-gradient(ellipse 50% 55% at 50% 62%,rgba(255,255,255,.55),rgba(255,255,255,0) 72%)}
-.hero .face{position:absolute;left:50%;top:0;transform:translateX(-50%);width:300px;height:300px;object-fit:cover;object-position:top;
+.hero .face{position:absolute;left:50%;top:0;transform:translateX(-50%);width:250px;height:250px;object-fit:cover;object-position:top;
  -webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
-.hero .fig{position:absolute;left:50%;top:-6px;transform:translateX(-50%);height:300px;border-radius:18px}
-.hero .plate{position:absolute;left:50%;top:268px;transform:translateX(-50%)}
-.hero .plate .n{font-size:44px;padding:2px 20px 0 16px}
+.hero .fig{position:absolute;left:50%;top:-6px;transform:translateX(-50%);height:250px;border-radius:18px}
+.hero .plate{position:absolute;left:50%;top:222px;transform:translateX(-50%)}
+.hero .plate .n{font-size:38px;padding:2px 18px 0 14px}
 .hero .plate .cr{width:66px;height:66px;margin-left:-10px}
 .hero .plate .cr img{width:52px;height:52px}
 .hero .dorsal{position:absolute;right:18px;top:16px;font-weight:900;font-size:64px;color:rgba(255,255,255,.92);text-shadow:0 4px 16px rgba(0,0,0,.45)}
-.hero .tab{position:absolute;left:50%;top:328px;transform:translateX(-50%);padding:1px 14px 3px}
-.tiles{position:absolute;left:576px;top:690px;width:480px;display:flex;gap:16px}
-.tile{flex:1;height:132px;background:rgba(15,18,21,.84);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.tile .v{font-weight:900;font-size:76px;line-height:.95}
-.tile .l{font-weight:700;font-size:18px;letter-spacing:4px;color:#b8c2c9;margin-top:6px}
-.cards{position:absolute;left:24px;right:24px;top:838px;height:442px;display:flex;gap:16px}
-.card.calor{flex:1.45}
+.hero .tab{position:absolute;left:50%;top:274px;transform:translateX(-50%);padding:1px 14px 3px}
+.tiles{position:absolute;left:536px;top:628px;width:520px;display:flex;gap:14px}
+.tile{flex:1;height:102px;background:rgba(15,18,21,.84);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tile .v{font-weight:900;font-size:62px;line-height:.95}
+.tile .l{font-weight:700;font-size:16px;letter-spacing:4px;color:#b8c2c9;margin-top:4px}
+.cards{position:absolute;left:24px;right:24px;display:flex;gap:16px}
+.cards.a{top:744px;height:334px}.cards.b{top:1092px;height:190px}
+.card.calor{flex:2.1;display:flex;flex-direction:column}
+.card.dos .lista{column-count:2;column-gap:26px}.card.dos .row{break-inside:avoid}
+.calor .cuerpo{display:flex;gap:18px;align-items:center;flex:1}
+.calor .cuerpo img{height:256px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.calor .stats{flex:1;min-width:0}
+.calor .zt{font-size:22px;margin:0 0 4px}
+.calor .stats .row{font-size:20px;padding:6px 0 5px}.calor .stats .row b{font-size:22px}
 .card{flex:1;background:rgba(15,18,21,.86);border-radius:18px;padding:16px 16px 12px;min-width:0;position:relative;overflow:hidden}
 .card::before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:var(--acento)}
 .card h3{font-weight:800;font-size:21px;letter-spacing:1.5px;color:#9fd6f7;margin:2px 0 8px;white-space:nowrap;display:flex;justify-content:space-between;align-items:baseline}
@@ -149,13 +156,13 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .tile .x.rojo{color:#ff5a5f}
 .mc{display:inline-block;width:11px;height:15px;border-radius:2px;margin-left:3px;vertical-align:-1px;border:1px solid rgba(0,0,0,.5)}
 .mc.am{background:#f7d117}.mc.ro{background:#e0252b}
-.row.c{font-size:17.5px;padding:2px 0 2px}.row.c b{font-size:18.5px}
+.row.c{font-size:17.5px;padding:1.5px 0 1.5px}.row.c b{font-size:18.5px}
 """
 
 
 def pitch_html(d, base, escudo_club):
-    w, h = 520, 500
-    top_w, bot_w = 408, 520
+    w, h = 480, 408
+    top_w, bot_w = 380, 480
     lines = d.get("once") or []
     pts = f"{(w-top_w)/2},0 {w-(w-top_w)/2},0 {w},{h} 0,{h}"
     def X(xr, y):  # xr en 0..1 dentro de la cancha, y en px
@@ -187,22 +194,22 @@ def pitch_html(d, base, escudo_club):
     cr = b64(escudo_club)
     for i, line in enumerate(lines):
         # i=0 arquero (abajo) ... n-1 ataque (arriba)
-        y_face_bottom = (h - 50) - i * ((h - 50 - 80) / max(1, n - 1))
+        y_face_bottom = (h - 40) - i * ((h - 40 - 62) / max(1, n - 1))
         k = len(line)
         persp = y_face_bottom / h
-        size = int((62 + 14 * persp) * (0.9 if n >= 5 else 1))
+        size = int((50 + 10 * persp) * (0.9 if n >= 5 else 1))
         for j, p in enumerate(line):
             xr = (j + 1) / (k + 1) if k > 1 else 0.5
             if k >= 4:
                 xr = 0.08 + 0.84 * j / (k - 1)
             x = X(xr, y_face_bottom)
             nombre = esc(p.get("nombre", "")).upper()
-            fs = 13.5 if len(nombre) <= 8 else (12.5 if len(nombre) <= 11 else 11)
+            fs = 12 if len(nombre) <= 8 else (11 if len(nombre) <= 11 else 10)
             img = b64(p.get("cara"))
             ph = (f'<img src="{img}" style="width:{size}px;height:{size}px">' if img else
                   f'<div class="num" style="width:{size-16}px;height:{size-16}px;font-size:{int(size*.32)}px">{esc(p.get("dorsal",""))}</div>')
             crest = f'<div class="cr" style="width:24px;height:24px"><img src="{cr}" style="width:19px;height:19px"></div>' if cr else ""
-            st = estrellas_html(p.get("estrellas"), 11)
+            st = estrellas_html(p.get("estrellas"), 9)
             sub = d.get("sustitucion") if p.get("sale") else None
             entra = ""
             if sub:
@@ -211,7 +218,7 @@ def pitch_html(d, base, escudo_club):
                          + (f'<img src="{ci}">' if ci else '') + '</div>')
             out += (f'<div class="slot{" yo" if p.get("yo") else ""}{" sale" if sub else ""}" style="left:{x}px;top:{y_face_bottom - size}px;z-index:{(40 if sub else 10)+i}">'
                     f'<div class="ph">{ph}{entra}{tarjetas_html(p)}</div>'
-                    f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(104 if k<=3 else 92)}px"><span>{nombre}</span></div>{crest}</div>'
+                    f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(96 if k<=3 else 86)}px"><span>{nombre}</span></div>{crest}</div>'
                     + (f'<div class="tab">{st}</div>' if st else "")
                     + (f'<div class="chip">⇄ Entra {esc(sub.get("apellido",""))} {esc(sub.get("minuto",""))}</div>' if sub else "") + '</div>')
     return out
@@ -254,27 +261,27 @@ def html(d, base):
     foto = b64(d.get("foto"))
     hero_img = (f'<img class="face" src="{cara}">' if cara else (f'<img class="fig" src="{foto}">' if foto else ""))
     crc = b64(ec)
-    cards = []
-    if d.get("generales"):
-        cards.append(f'<div class="card"><h3>SU PARTIDO</h3>{rows(d["generales"][:10])}</div>')
-    if d.get("posicion"):
-        cards.append(f'<div class="card"><h3>TOTALES</h3>{rows(d["posicion"][:10])}</div>')
+    # Fila A: mapa de calor grande (con lo que hizo en su franja) + temporada
+    fila_a, fila_b = [], []
     zona = d.get("zona") or {}
-    zrows = (f'<div class="zt">{esc(zona["titulo"])}</div>' + rows(zona["filas"], len(zona["filas"]) > 4)) if zona.get("filas") else ""
-    if d.get("heat_img") and b64(os.path.join(base, d["heat_img"])):
-        hi = b64(os.path.join(base, d["heat_img"]))
-        if zrows:
-            cards.append(f'<div class="card calor"><h3>MAPA DE CALOR</h3><div class="heat chica"><img src="{hi}"></div>{zrows}</div>')
-        else:
-            cards.append(f'<div class="card calor"><h3>MAPA DE CALOR</h3><div class="heat"><img src="{hi}"></div></div>')
-    elif zrows:
-        cards.append(f'<div class="card calor"><h3>{esc(zona["titulo"])}</h3>{rows(zona["filas"])}</div>')
+    hi = b64(os.path.join(base, d["heat_img"])) if d.get("heat_img") else None
+    zt = f'<div class="zt">{esc(zona["titulo"])}</div>' if zona.get("filas") else ""
+    if hi:
+        stats = f'<div class="stats">{zt}{rows(zona.get("filas") or [])}</div>' if zona.get("filas") else ""
+        fila_a.append(f'<div class="card calor"><h3>MAPA DE CALOR</h3><div class="cuerpo"><img src="{hi}">{stats}</div></div>')
+    elif zona.get("filas"):
+        fila_a.append(f'<div class="card calor"><h3>{esc(zona["titulo"])}</h3>{rows(zona["filas"])}</div>')
+    elif d.get("perfil"):
+        fila_a.append(f'<div class="card calor"><h3>PERFIL</h3>{rows([[k, v, False] for k, v in d["perfil"]])}</div>')
     ex = d.get("extra") or {}
     if ex.get("filas"):
         fe = ex["filas"][:10]
-        cards.append(f'<div class="card"><h3>{esc(ex.get("titulo","TEMPORADA"))}<small>{esc(ex.get("sub",""))}</small></h3>{rows(fe, len(fe) > 9)}</div>')
-    if len(cards) < 4 and d.get("perfil"):
-        cards.insert(min(2, len(cards)), f'<div class="card"><h3>PERFIL</h3>{rows([[k, v, False] for k, v in d["perfil"]])}</div>')
+        fila_a.append(f'<div class="card"><h3>{esc(ex.get("titulo","TEMPORADA"))}<small>{esc(ex.get("sub",""))}</small></h3>{rows(fe, True)}</div>')
+    # Fila B: todo lo que hizo en el partido (totales), a dos columnas
+    if d.get("generales"):
+        fila_b.append(f'<div class="card dos"><h3>SU PARTIDO</h3><div class="lista">{rows(d["generales"][:10], True)}</div></div>')
+    if d.get("posicion"):
+        fila_b.append(f'<div class="card dos"><h3>TOTALES</h3><div class="lista">{rows(d["posicion"][:10], True)}</div></div>')
     cond = d.get("condicion", "")
     if d.get("sustitucion") and d["sustitucion"].get("rol"):
         cond = f'SUPLENTE · ENTRÓ DE {d["sustitucion"]["rol"].upper()}'
@@ -283,7 +290,8 @@ def html(d, base):
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{fuentes()}{CSS}
 :root{{--c1:{c1};--c2:{c2};--acento:{ac};--acento-txt:{txt_sobre(ac)}}}</style></head><body>
 <div class="bg"></div>
-{f'<img class="wm" src="{wm}">' if wm else ''}
+{f'<img class="wm" src="{wm}" style="left:-150px;top:40px">' if wm else ''}
+{f'<img class="wm" src="{wm}" style="right:-150px;top:40px">' if wm else ''}
 <div class="shade"></div>
 <div class="brand">CELESTES POR EL MUNDO</div>
 <h1 style="font-size:{size}px">{nombre}</h1>
@@ -299,7 +307,8 @@ def html(d, base):
 </div>
 <div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}{(f'<div class="x rojo">Expulsado' + (f' al {esc(d["roja"])}' if isinstance(d.get("roja"), str) else '') + '</div>') if d.get("roja") else ''}</div>
  <div class="tile"><div class="v gold">{esc(nota_v)}</div><div class="l">NOTA</div></div></div>
-<div class="cards">{''.join(cards[:4])}</div>
+<div class="cards a">{''.join(fila_a)}</div>
+<div class="cards b">{''.join(fila_b)}</div>
 <div class="foot"><div class="wordmark">Celestes <i>por el</i> mundo</div><div class="hash">#CELESTESPORELMUNDO</div></div>
 </body></html>"""
 
