@@ -215,7 +215,7 @@ ZONAS = {"derecha": ("POR LA DERECHA", lambda y: y < 100 / 3), "centro": ("POR E
          "izquierda": ("POR LA IZQUIERDA", lambda y: y > 200 / 3)}
 
 
-def por_zona(zona, puntos, rb):
+def por_zona(zona, puntos, rb, tiros=None, s=None, ataque=False, volante=False):
     """Lo que hizo en una franja de la cancha (a lo ancho, desde su equipo: y < 33 derecha, 33-67 centro, > 67 izquierda).
     puntos: mapa de calor; rb: rating-breakdown de SofaScore (cada acción con su ubicación). Solo datos con ubicación."""
     if zona not in ZONAS: return None
@@ -230,8 +230,25 @@ def por_zona(zona, puntos, rb):
     pa = acc("passes")
     if (rb or {}).get("passes") is not None and pa:
         f.append(["Pases precisos", f"{sum(1 for e in pa if e.get('outcome'))}/{len(pa)}", False])
-        kp = sum(1 for e in pa if e.get("keypass"))
-        if kp: f.append(["Pases clave", str(kp), True])
+    if volante and (rb or {}).get("passes") is not None:
+        ut = [e for e in pa if (e.get("passEndCoordinates") or {}).get("x", 0) >= 200 / 3]
+        f.append(["Pases al último tercio", f"{sum(1 for e in ut if e.get('outcome'))}/{len(ut)}", True])
+    if ataque and tiros is not None:
+        # el mapa de remates mide el ancho al revés que el resto (y alto = costado derecho): se da vuelta
+        tz = [t for t in tiros if (t.get("playerCoordinates") or {}).get("y") is not None and en(100 - t["playerCoordinates"]["y"])]
+        f.append(["Remates al arco", f"{sum(1 for t in tz if t.get('shotType') in ('goal', 'save'))}/{len(tz)}", True])
+    if ataque and s is not None and (rb or {}).get("passes") is not None:
+        # asistencias en la franja: solo si se puede saber sin suponer (todas las jugadas de pase clave registradas
+        # están dentro o todas fuera de la franja, y están todas las que cuenta la estadística)
+        asis = n(s, "goalAssist")
+        kp_all = [e for e in rb["passes"] if e.get("keypass")]
+        kp_in = [e for e in pa if e.get("keypass")]
+        if asis == 0:
+            f.append(["Asistencias", "0", False])
+        elif len(kp_all) == n(s, "keyPass") and len(kp_in) in (0, len(kp_all)):
+            f.append(["Asistencias", str(asis if kp_in else 0), True])
+    kp = sum(1 for e in pa if e.get("keypass"))
+    if kp: f.append(["Pases clave", str(kp), True])
     dr = acc("dribbles")
     if dr: f.append(["Regates exitosos", f"{sum(1 for e in dr if e.get('outcome'))}/{len(dr)}", False])
     if (rb or {}).get("defensive") is not None:
@@ -240,7 +257,10 @@ def por_zona(zona, puntos, rb):
         if it or de: f.append(["Intercep. · Despejes", f"{it} · {de}", False])
     if (rb or {}).get("ball-carries") is not None:
         f.append(["Conducciones", str(len(acc("ball-carries"))), False])
-    return {"titulo": titulo, "filas": f[:5]} if f else None
+    for d in ("Conducciones", "Intercep. · Despejes", "Regates exitosos"):
+        if len(f) <= 7: break
+        f = [x for x in f if x[0] != d]
+    return {"titulo": titulo, "filas": f[:7]} if f else None
 
 
 def extras_volante(rb):
@@ -523,6 +543,14 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     con_volante = todas or r in ("mediocentro", "banda") or j.get("mixto")
     pos_filas = armar_totales(pos_filas, filas_ataque(s) if con_ataque else [],
                               extras_volante(rb) if con_volante else {}, tarjetas)
+    # el bloque de su franja suma lo mismo que TOTALES (remates, asistencias, último tercio) pero de esa franja
+    tiros = None
+    if con_ataque:
+        try:
+            tiros = get(f"/event/{e['id']}/shotmap/player/{pid}").get("shotmap", [])
+        except Exception:
+            tiros = None
+    zona = por_zona(j.get("zona"), puntos, rb, tiros, s, con_ataque, con_volante) or zona
     if r == "delantero" and s.get("expectedGoals") is None:
         xg = (datos.get("understat") or {}).get("stats", {}).get("xg")
         if xg is None: xg = (datos.get("fotmob") or {}).get("stats", {}).get("expected_goals")

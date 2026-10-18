@@ -134,6 +134,7 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .calor .stats{flex:1;min-width:0}
 .calor .zt{font-size:22px;margin:0 0 4px}
 .calor .stats .row{font-size:20px;padding:6px 0 5px}.calor .stats .row b{font-size:22px}
+.calor .stats.apretado .row{font-size:18px;padding:3px 0 2px}.calor .stats.apretado .row b{font-size:19px}.calor .stats.apretado .zt{font-size:20px}
 .card{flex:1;background:rgba(15,18,21,.86);border-radius:18px;padding:16px 16px 12px;min-width:0;position:relative;overflow:hidden}
 .card::before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:var(--acento)}
 .card h3{font-weight:800;font-size:21px;letter-spacing:1.5px;color:#9fd6f7;margin:2px 0 8px;white-space:nowrap;display:flex;justify-content:space-between;align-items:baseline}
@@ -313,7 +314,8 @@ def html(d, base):
     hi = b64(os.path.join(base, d["heat_img"])) if d.get("heat_img") else None
     zt = f'<div class="zt">{esc(zona["titulo"])}</div>' if zona.get("filas") else ""
     if hi:
-        stats = f'<div class="stats">{zt}{rows(zona.get("filas") or [])}</div>' if zona.get("filas") else ""
+        zf = zona.get("filas") or []
+        stats = f'<div class="stats{" apretado" if len(zf) > 5 else ""}">{zt}{rows(zf)}</div>' if zf else ""
         fila_a.append(f'<div class="card calor"><h3>MAPA DE CALOR</h3><div class="cuerpo"><img src="{hi}">{stats}</div></div>')
     elif zona.get("filas"):
         fila_a.append(f'<div class="card calor"><h3>{esc(zona["titulo"])}</h3>{rows(zona["filas"])}</div>')
