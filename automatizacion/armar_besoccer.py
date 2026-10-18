@@ -63,7 +63,10 @@ def main():
         once = []
         for linea in b.get("once") or []:
             once.append([{"dorsal": p[0], "nombre": p[1], "cara": cara if str(p[0]) == str(b.get("dorsal")) else None,
-                          "estrellas": estrellas(float(p[2])) if len(p) > 2 and p[2] else 0, "yo": str(p[0]) == str(b.get("dorsal"))} for p in linea])
+                          "estrellas": estrellas(float(p[2])) if len(p) > 2 and p[2] else 0, "yo": str(p[0]) == str(b.get("dorsal")),
+                          # tarjetas (opcional, 4.º elemento): {"roja": "54’"} o {"amarillas": 1}
+                          "roja": (p[3] or {}).get("roja") if len(p) > 3 and isinstance(p[3], dict) else None,
+                          "amarillas": (p[3] or {}).get("amarillas") if len(p) > 3 and isinstance(p[3], dict) else None} for p in linea])
         if not once:
             avisos.append("Sin alineación en el respaldo: la cancha va vacía")
         pos0 = ROLES.get((b.get("posicion") or "").lower(), "SU JUEGO")
@@ -96,7 +99,7 @@ def main():
              "tema": tema(cam, {}), "sustitucion": sustitucion, "formacion": b.get("formacion", ""), "once": once, "cara": cara, "foto": fig,
              "generales": generales, "pos_titulo": pos, "posicion": [[k, str(v), False] for k, v in (b.get("estadisticas") or [])],
              "extra": {"titulo": "TEMPORADA", "sub": b.get("temporada_sub", ""), "filas": [[k, str(v), False] for k, v in (b.get("temporada") or [])]},
-             "heat_img": None, "perfil": perfil}
+             "heat_img": None, "perfil": perfil, "roja": b.get("roja")}
         jp = os.path.join(salida, archivo + ".json")
         json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
         subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
@@ -105,6 +108,8 @@ def main():
         copy += f"⏱ {b.get('minutos','')}'" + (f" · ⭐ {float(nota):.1f}" if nota else "") + "\n"
         if sustitucion:
             copy += f"🔁 Entró" + (f" al {en.get('minuto')}'" if en.get("minuto") is not None else "") + f" por {en['por']}" + (f", como {sustitucion['rol']}" if sustitucion["rol"] else "") + "\n"
+        if b.get("roja"):
+            copy += "🟥 Expulsado" + (f" al {str(b['roja']).replace('’', chr(39))}" if isinstance(b["roja"], str) else "") + "\n"
         if b.get("linea_posteo"):
             copy += b["linea_posteo"] + "\n"
         copy += f"#CelestesPorElMundo #Uruguay #{club_tag}\n"

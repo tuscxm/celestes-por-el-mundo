@@ -152,8 +152,14 @@ def fotmob(j, fechas):
             r["once"] = [[[str(p.get("shirtNumber") or ""), p.get("lastName") or p.get("name"), p.get("id")]
                           for p in sorted(filas[y], key=lambda q: -(q.get("verticalLayout") or {}).get("x", 0))]
                          for y in sorted(filas)] if filas else []
-            # si entró: minuto y a quién reemplazó
+            # tarjetas de cada jugador (para la cancha) y, si entró, minuto y a quién reemplazó
+            r["tarjetas"] = {}
             for ev in ((c.get("matchFacts") or {}).get("events") or {}).get("events") or []:
+                if ev.get("type") == "Card" and (ev.get("player") or {}).get("id"):
+                    t = r["tarjetas"].setdefault(str(ev["player"]["id"]), {"amarillas": 0, "roja": None})
+                    mi = f"{ev.get('time')}+{ev['overloadTime']}’" if ev.get("overloadTime") else f"{ev.get('time')}’"
+                    if ev.get("card") == "Yellow": t["amarillas"] += 1
+                    elif ev.get("card") in ("Red", "YellowRed"): t["roja"] = mi
                 sw = ev.get("swap") or []
                 if ev.get("type") == "Substitution" and len(sw) == 2 and str(sw[0].get("id")) == str(pid):
                     ot = ev.get("overloadTime")
@@ -406,8 +412,30 @@ def zerozero(j, fechas):
     return out, None
 
 
+# ----------------------------------------------------------------- BeSoccer (lo lee la tarea de Claude con WebFetch)
+BESOCCER_HOY = os.path.join(AQUI, "besoccer_hoy.json")
+
+
+def besoccer(j, fechas):
+    """BeSoccer no deja entrar a los scripts: antes de correr el script, la tarea de Claude lee las páginas con su
+    herramienta web y deja los datos en automatizacion/besoccer_hoy.json (formato en AGENTE.md). Acá solo se leen."""
+    if not os.path.exists(BESOCCER_HOY):
+        return [], "no hay besoccer_hoy.json (la tarea no leyó BeSoccer)"
+    d = json.load(open(BESOCCER_HOY))
+    out = []
+    for p in (d.get("jugadores") or {}).get(j["clave"]) or []:
+        if not p.get("fecha") or datetime.date.fromisoformat(p["fecha"]) not in fechas: continue
+        q = {k: v for k, v in p.items() if v is not None}
+        q.update({"fuente": "besoccer", "nota": fnum(p.get("nota")),
+                  "notas_once": {str(k): fnum(v) for k, v in (p.get("notas_once") or {}).items() if fnum(v)}})
+        out.append(q)
+    return out, None
+
+
 # ----------------------------------------------------------------- todo junto
-FUENTES = [("fotmob", fotmob), ("api_football", api_football), ("football_data", football_data),
+# Las fuentes extra (y BeSoccer como fuente más) se usan para los partidos desde esta fecha en adelante.
+DESDE = datetime.date(2026, 10, 19)
+FUENTES = [("fotmob", fotmob), ("besoccer", besoccer), ("api_football", api_football), ("football_data", football_data),
            ("thesportsdb", thesportsdb), ("understat", understat), ("zerozero", zerozero)]
 
 
@@ -415,6 +443,9 @@ def consultar(j, fechas, solo=None):
     """Consulta todas las fuentes extra para un jugador. Nunca levanta excepción.
     Devuelve {"partidos": {fuente: [..]}, "estado": {fuente: "ok" | "error: ..." | "sin datos: ..."}}"""
     res, est = {}, {}
+    fechas = {f for f in fechas if f >= DESDE}
+    if not fechas:
+        return {"partidos": {}, "estado": {}}
     for nombre, fn in FUENTES:
         if solo and nombre not in solo: continue
         try:

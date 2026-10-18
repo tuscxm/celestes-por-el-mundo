@@ -64,7 +64,11 @@ def armar(j, fechas, salida, proc_path):
             if d.get("entro") and not d.get("titular"):
                 b["entro"] = {"minuto": d["entro"]["minuto"], "por": d["entro"]["por"]}
             ao = af.get("notas_once") or {}
-            b["once"] = [[[p[0], p[1], fuentes.promedio([d["notas_once"].get(p[0]), ao.get(p[0])])] for p in linea] for linea in d.get("once") or []]
+            tj = d.get("tarjetas") or {}
+            b["once"] = [[[p[0], p[1], fuentes.promedio([d["notas_once"].get(p[0]), ao.get(p[0])]), tj.get(str(p[2])) or {}] for p in linea]
+                         for linea in d.get("once") or []]
+            mia = tj.get(str(j.get("fotmob_id"))) or {}
+            if mia.get("roja"): b["roja"] = mia["roja"]
 
             def frac(k):
                 v = st.get(k)

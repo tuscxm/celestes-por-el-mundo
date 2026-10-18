@@ -21,23 +21,52 @@ def _bajar(url):
 
 
 def _sin_fondo(im):
-    """Saca el fondo con rembg (modelo de personas). Si no está, borra el blanco conectado al borde."""
+    """Saca el fondo. 1) rembg (modelo de personas) da la máscara de la persona.
+    2) Lo que tiene el color del fondo y está conectado al borde de arriba o de los costados se borra aunque el
+       modelo lo haya incluido (el blanco entre rulos, los halos alrededor de la cabeza).
+    3) En el borde, la transparencia sale de la distancia al color del fondo y se le saca al color el fondo
+       mezclado (sin aureola clara). 4) Se come 1 px del borde y se suaviza.
+    Si rembg no está, borra el fondo claro conectado al borde."""
     global _sesion
+    from scipy import ndimage as ndi
+    im = im.convert("RGB")
+    a = np.asarray(im).astype(float)
+    H, W = a.shape[:2]; lado = min(H, W)
     try:
         from rembg import remove, new_session
         if _sesion is None:
             _sesion = new_session("u2net_human_seg")
-        return remove(im, session=_sesion)
+        m = np.asarray(remove(im, session=_sesion, only_mask=True)).astype(float) / 255.0
     except Exception:
-        from scipy.ndimage import label
-        a = np.asarray(im.convert("RGB")).astype(int)
-        claro = (a.min(axis=2) > 235)
-        lab, _ = label(claro)
-        borde = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))) - {0}
-        fondo = np.isin(lab, list(borde))
-        alfa = Image.fromarray(np.where(fondo, 0, 255).astype("uint8")).filter(ImageFilter.GaussianBlur(1.2))
-        out = im.convert("RGBA"); out.putalpha(alfa)
-        return out
+        m = None
+    k = max(2, lado // 60)
+    borde = np.concatenate([a[:k].reshape(-1, 3), a[:, :k].reshape(-1, 3), a[:, -k:].reshape(-1, 3)])
+    bg = np.median(borde, axis=0)
+    dist = np.sqrt(((a - bg) ** 2).sum(axis=2))
+    lowd = dist < 24
+    semillas = np.zeros_like(lowd); semillas[0, :] = True
+    h7 = int(H * 0.62); semillas[:h7, 0] = True; semillas[:h7, -1] = True
+    fondo = ndi.binary_propagation(semillas & lowd, mask=lowd)
+    if m is None:
+        m = (~fondo).astype(float)
+    duro = ndi.binary_fill_holes(m > 0.5)
+    lab, nl = ndi.label(duro)
+    if nl > 1:
+        tam = ndi.sum(duro, lab, range(1, nl + 1)); duro = lab == (1 + int(np.argmax(tam)))
+    interior = ndi.binary_erosion(duro, iterations=max(1, int(lado * 0.012)))
+    soporte = ndi.binary_dilation(duro, iterations=max(1, int(lado * 0.02)))
+    aw = np.clip((dist - 10) / 55.0, 0, 1)
+    alfa = np.where(interior, 1.0, np.where(soporte, np.minimum(aw, m + 0.6), 0.0))
+    cerca = ndi.binary_dilation(fondo, iterations=2) & ~fondo
+    alfa = np.where(fondo, 0.0, alfa)
+    alfa = np.where(cerca, np.minimum(alfa, np.clip((dist - 14) / 60.0, 0, 1)), alfa)
+    interior = interior & ~ndi.binary_dilation(fondo, iterations=3)
+    alfa = ndi.minimum_filter(alfa, size=3)
+    alfa = ndi.gaussian_filter(alfa, 0.7)
+    alfa[interior] = 1.0
+    al = np.clip(alfa, 1e-3, 1)[..., None]
+    fg = np.where(alfa[..., None] > 0.98, a, np.clip((a - (1 - al) * bg) / al, 0, 255))
+    return Image.fromarray(np.dstack([fg, alfa * 255]).astype("uint8"), "RGBA")
 
 
 def cara(pid, carpeta, clave=None):
@@ -49,7 +78,7 @@ def cara(pid, carpeta, clave=None):
         im = Image.open(io.BytesIO(_bajar(f"{BASE}/player/{pid}/image"))).convert("RGB")
         if im.size[0] < 60:
             raise ValueError("imagen muy chica")
-        im = im.resize((450, 450), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
+        im = im.resize((600, 600), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2, percent=50, threshold=2))
         _sin_fondo(im).save(ruta)
         if clave:
             os.makedirs(os.path.join(AQUI, "caras"), exist_ok=True)

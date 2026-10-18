@@ -286,8 +286,18 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     # Incidencias: goles y tarjetas del jugador
     goles, amar, roja = 0, 0, 0
     sustitucion = None
+    tarjetas_eq = {}   # id -> {"amarillas": n, "roja": minuto}  (para mostrarlas en la cancha)
+    min_roja = None
     try:
         incs = get(f"/event/{e['id']}/incidents").get("incidents", [])
+        for i in incs:
+            if i.get("incidentType") != "card" or not (i.get("player") or {}).get("id"): continue
+            t = tarjetas_eq.setdefault(i["player"]["id"], {"amarillas": 0, "roja": None})
+            mi = f"{i.get('time')}+{i['addedTime']}’" if i.get("addedTime") else f"{i.get('time')}’"
+            if i.get("incidentClass") == "yellow": t["amarillas"] += 1
+            elif i.get("incidentClass") in ("red", "yellowRed"):
+                t["roja"] = mi
+                if i.get("incidentClass") == "yellowRed": t["amarillas"] = max(t["amarillas"], 1)
         for i in incs:
             if i.get("incidentType") == "substitution" and (i.get("playerIn") or {}).get("id") == pid:
                 po = i.get("playerOut") or {}
@@ -299,9 +309,15 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
             if i.get("incidentType") == "goal" and i.get("incidentClass") != "ownGoal": goles += 1
             if i.get("incidentType") == "card":
                 if i.get("incidentClass") == "yellow": amar += 1
-                elif i.get("incidentClass") in ("red", "yellowRed"): roja += 1
+                elif i.get("incidentClass") in ("red", "yellowRed"):
+                    roja += 1; min_roja = tarjetas_eq.get(pid, {}).get("roja")
     except Exception:
         goles = n(s, "goals"); avisos.append("Sin incidencias: goles de las estadísticas y tarjetas sin confirmar")
+    for l in once:
+        for f in l:
+            tj = tarjetas_eq.get(f.get("pid")) or {}
+            if tj.get("roja"): f["roja"] = tj["roja"]
+            if tj.get("amarillas"): f["amarillas"] = tj["amarillas"]
     if sustitucion:
         for l in once:
             for f in l:
@@ -410,7 +426,8 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
                           "rol": pos_titulo.replace("COMO ", "").lower()} if sustitucion else None),
          "generales": generales, "pos_titulo": pos_titulo, "posicion": pos_filas,
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
-         "heat_img": mapa, "perfil": perfil, "notas_por_fuente": notas}
+         "heat_img": mapa, "perfil": perfil, "notas_por_fuente": notas, "amarillas_hero": amar,
+         "roja": (min_roja or True) if roja else None}
     jp = os.path.join(salida, archivo + ".json")
     json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
     subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
@@ -424,13 +441,16 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     club_tag = "".join(ch for ch in (equipo["name"] if not equipo.get("national") else "Uruguay") if ch.isalnum())
     copy = (f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n"
             f"⏱ {minutos}' · ⭐ {rating:.1f}\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n⏱ {minutos}'\n")
+    if roja:
+        copy += "🟥 Expulsado" + (f" al {min_roja.replace('’', chr(39))}" if isinstance(min_roja, str) else "") + "\n"
     if sustitucion:
         copy += f"🔁 Entró al {sustitucion['minuto'].replace('’', chr(39))} por {sustitucion['por']}, como {pos_titulo.replace('COMO ', '').lower()}\n"
     copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
     open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
     return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo, "notas_por_fuente": notas,
             "archivo": archivo, "png": archivo + ".png", "mapa": mapa, "figura": fig, "avisos": avisos,
-            "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None)}
+            "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None),
+            "roja": (min_roja or True) if roja else None}
 
 def main():
     a = sys.argv[1:]
@@ -482,7 +502,7 @@ def main():
             else:
                 try:
                     info.update(armar_partido(j, e, salida, plantilla_fig, extra))
-                    if extra: info["fuentes"] = extra["estado"]
+                    if extra and extra.get("estado"): info["fuentes"] = extra["estado"]
                     procesados.add(f"{j['clave']}_{e['id']}")
                     if info.get("estado") == "jugó": procesados.add(f"{j['clave']}_{fecha_local(e)}")
                 except Exception as ex:

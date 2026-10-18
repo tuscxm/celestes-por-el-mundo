@@ -136,6 +136,14 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .wordmark i{font-style:normal;color:#9fd6f7}
 .wordmark::after{content:"";display:block;height:4px;width:70%;margin-top:3px;border-radius:2px;background:linear-gradient(90deg,#9fd6f7,#9fd6f7 50%,#fff 50%,#fff)}
 .hash{font-weight:700;font-size:20px;letter-spacing:2px;color:#cfd8de}
+.tarj{position:absolute;right:-4px;top:6px;display:flex;gap:0;z-index:4}
+.tarj i{display:block;width:17px;height:23px;border-radius:3px;border:1.5px solid rgba(0,0,0,.6);box-shadow:0 2px 5px rgba(0,0,0,.5)}
+.tarj i + i{margin-left:-7px;transform:rotate(12deg)}
+.tarj i.am{background:#f7d117}.tarj i.ro{background:#e0252b}
+.hero .tarj{left:auto;right:26px;top:100px}
+.hero .tarj i{width:30px;height:42px;border-radius:5px;border-width:2px}
+.hero .tarj i + i{margin-left:-12px}
+.tile .x.rojo{color:#ff5a5f}
 """
 
 
@@ -196,11 +204,20 @@ def pitch_html(d, base, escudo_club):
                 entra = (f'<div class="entra" style="width:{int(size*.72)}px;height:{int(size*.72)}px">'
                          + (f'<img src="{ci}">' if ci else '') + '</div>')
             out += (f'<div class="slot{" yo" if p.get("yo") else ""}{" sale" if sub else ""}" style="left:{x}px;top:{y_face_bottom - size}px;z-index:{(40 if sub else 10)+i}">'
-                    f'<div class="ph">{ph}{entra}</div>'
+                    f'<div class="ph">{ph}{entra}{tarjetas_html(p)}</div>'
                     f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(118 if k<=3 else 104)}px"><span>{nombre}</span></div>{crest}</div>'
                     + (f'<div class="tab">{st}</div>' if st else "")
                     + (f'<div class="chip">⇄ Entra {esc(sub.get("apellido",""))} {esc(sub.get("minuto",""))}</div>' if sub else "") + '</div>')
     return out
+
+
+def tarjetas_html(p):
+    """Tarjetas del jugador: roja (con o sin amarilla antes) o amarillas."""
+    if p.get("roja"):
+        return '<div class="tarj">' + ('<i class="am"></i>' if p.get("amarillas") else '') + '<i class="ro"></i></div>'
+    if p.get("amarillas"):
+        return '<div class="tarj">' + '<i class="am"></i>' * min(2, int(p["amarillas"])) + '</div>'
+    return ""
 
 
 def rows(items):
@@ -257,12 +274,12 @@ def html(d, base):
  <span class="t">{esc(d["visita"])}</span>{f'<img src="{ev}">' if ev else ''}</div>
 <div class="meta">{meta}</div>
 <div class="pitch">{pitch_html(d, base, ec)}</div>
-<div class="hero"><div class="glow"></div>{hero_img}
+<div class="hero"><div class="glow"></div>{hero_img}{tarjetas_html({"roja": d.get("roja"), "amarillas": d.get("amarillas_hero")}) if d.get("roja") else ""}
  {f'<div class="dorsal">{esc(d.get("dorsal",""))}</div>' if d.get("dorsal") else ''}
  <div class="plate yo"><div class="n"><span>{esc(d.get("apellido","")).upper()}</span></div>{f'<div class="cr"><img src="{crc}"></div>' if crc else ''}</div>
  {f'<div class="tab">{estrellas_html(d.get("estrellas"), 24)}</div>' if d.get("estrellas") else ''}
 </div>
-<div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}</div>
+<div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}{(f'<div class="x rojo">Expulsado' + (f' al {esc(d["roja"])}' if isinstance(d.get("roja"), str) else '') + '</div>') if d.get("roja") else ''}</div>
  <div class="tile"><div class="v gold">{esc(nota_v)}</div><div class="l">NOTA</div></div></div>
 <div class="cards">{''.join(cards[:4])}</div>
 <div class="foot"><div class="wordmark">Celestes <i>por el</i> mundo</div><div class="hash">#CELESTESPORELMUNDO</div></div>
