@@ -131,6 +131,8 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .gold{color:#f2c14e}
 .heat{display:flex;justify-content:center}
 .heat img{height:296px;border-radius:10px}
+.heat.chica img{height:156px}
+.zt{font-weight:800;font-size:16px;letter-spacing:1.5px;color:#f2c14e;margin:6px 0 2px}
 .foot{position:absolute;left:28px;right:28px;bottom:16px;display:flex;justify-content:space-between;align-items:center}
 .wordmark{font-weight:900;font-size:30px;letter-spacing:1px;text-transform:uppercase;line-height:1}
 .wordmark i{font-style:normal;color:#9fd6f7}
@@ -257,8 +259,16 @@ def html(d, base):
     if d.get("posicion"):
         pt = d.get("pos_titulo", "SU JUEGO")
         cards.append(f'<div class="card"><h3 style="font-size:{21 if len(pt) <= 19 else 18}px">{esc(pt)}</h3>{rows(d["posicion"][:9])}</div>')
+    zona = d.get("zona") or {}
+    zrows = (f'<div class="zt">{esc(zona["titulo"])}</div>' + rows(zona["filas"], True)) if zona.get("filas") else ""
     if d.get("heat_img") and b64(os.path.join(base, d["heat_img"])):
-        cards.append(f'<div class="card"><h3>MAPA DE CALOR</h3><div class="heat"><img src="{b64(os.path.join(base, d["heat_img"]))}"></div></div>')
+        hi = b64(os.path.join(base, d["heat_img"]))
+        if zrows:
+            cards.append(f'<div class="card"><h3>MAPA DE CALOR</h3><div class="heat chica"><img src="{hi}"></div>{zrows}</div>')
+        else:
+            cards.append(f'<div class="card"><h3>MAPA DE CALOR</h3><div class="heat"><img src="{hi}"></div></div>')
+    elif zrows:
+        cards.append(f'<div class="card"><h3>{esc(zona["titulo"])}</h3>{rows(zona["filas"])}</div>')
     ex = d.get("extra") or {}
     if ex.get("filas"):
         fe = ex["filas"][:10]

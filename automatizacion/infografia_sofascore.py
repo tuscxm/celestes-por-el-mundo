@@ -211,6 +211,38 @@ def tarjetas_txt(amarillas, rojas):
     return f"{amarillas or 0}[A] · {rojas or 0}[R]"
 
 
+ZONAS = {"derecha": ("POR LA DERECHA", lambda y: y < 100 / 3), "centro": ("POR EL CENTRO", lambda y: 100 / 3 <= y <= 200 / 3),
+         "izquierda": ("POR LA IZQUIERDA", lambda y: y > 200 / 3)}
+
+
+def por_zona(zona, puntos, rb):
+    """Lo que hizo en una franja de la cancha (a lo ancho, desde su equipo: y < 33 derecha, 33-67 centro, > 67 izquierda).
+    puntos: mapa de calor; rb: rating-breakdown de SofaScore (cada acción con su ubicación). Solo datos con ubicación."""
+    if zona not in ZONAS: return None
+    titulo, en = ZONAS[zona]
+    f = []
+    if puntos:
+        k = sum(1 for p in puntos if en(p["y"]))
+        f.append(["Acciones", f"{k}/{len(puntos)} ({round(k * 100 / len(puntos))}%)", True])
+    def acc(cat, tipo=None):
+        return [e for e in (rb or {}).get(cat) or [] if (tipo is None or e.get("eventActionType") == tipo)
+                and (e.get("playerCoordinates") or {}).get("y") is not None and en(e["playerCoordinates"]["y"])]
+    pa = acc("passes")
+    if (rb or {}).get("passes") is not None and pa:
+        f.append(["Pases precisos", f"{sum(1 for e in pa if e.get('outcome'))}/{len(pa)}", False])
+        kp = sum(1 for e in pa if e.get("keypass"))
+        if kp: f.append(["Pases clave", str(kp), True])
+    dr = acc("dribbles")
+    if dr: f.append(["Regates exitosos", f"{sum(1 for e in dr if e.get('outcome'))}/{len(dr)}", False])
+    if (rb or {}).get("defensive") is not None:
+        f.append(["Recuperaciones", str(len(acc("defensive", "ball-recovery"))), False])
+        it, de = len(acc("defensive", "interception")), len(acc("defensive", "clearance"))
+        if it or de: f.append(["Intercep. · Despejes", f"{it} · {de}", False])
+    if (rb or {}).get("ball-carries") is not None:
+        f.append(["Conducciones", str(len(acc("ball-carries"))), False])
+    return {"titulo": titulo, "filas": f[:5]} if f else None
+
+
 def club_de(jug, player):
     """Equipo del club del jugador según SofaScore (para la temporada)."""
     t = player.get("team") or {}
@@ -265,6 +297,14 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
         avisos.append("SofaScore no tiene mapa de calor de este partido: se muestra el perfil")
 
     r, pos_titulo = rol(yo.get("position") or yo["player"].get("position"), y_med)
+    # Su franja de la cancha (jugadores.json "zona": derecha / centro / izquierda)
+    try:
+        rb = get(f"/event/{e['id']}/player/{pid}/rating-breakdown")
+    except Exception:
+        rb = None
+    zona = por_zona(j.get("zona"), puntos, rb)
+    if j.get("zona") and not zona:
+        avisos.append("No hay datos con ubicación para separar lo que hizo " + ZONAS.get(j["zona"], ("",))[0].lower())
 
     # Alineación
     tit = [p for p in lu[lado]["players"] if not p.get("substitute")]
@@ -433,7 +473,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
                           "rol": pos_titulo.replace("COMO ", "").lower()} if sustitucion else None),
          "generales": generales, "pos_titulo": pos_titulo, "posicion": pos_filas,
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
-         "heat_img": mapa, "perfil": perfil, "notas_por_fuente": notas, "amarillas_hero": amar,
+         "heat_img": mapa, "zona": zona, "perfil": perfil, "notas_por_fuente": notas, "amarillas_hero": amar,
          "roja": (min_roja or True) if roja else None}
     jp = os.path.join(salida, archivo + ".json")
     json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)

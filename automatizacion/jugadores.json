@@ -42,7 +42,8 @@
   "fotmob_id": 743533,
   "apifootball_equipo": 541,
   "footballdata_equipo": 86,
-  "understat_equipo": "Real_Madrid"
+  "understat_equipo": "Real_Madrid",
+  "zona": "derecha"
  },
  {
   "clave": "bernal",
@@ -88,7 +89,8 @@
   "fotmob_id": 1436133,
   "apifootball_equipo": 543,
   "footballdata_equipo": 90,
-  "understat_equipo": "Real_Betis"
+  "understat_equipo": "Real_Betis",
+  "zona": "centro"
  },
  {
   "clave": "mourino",
@@ -134,7 +136,8 @@
   "fotmob_id": 1407468,
   "apifootball_equipo": 533,
   "footballdata_equipo": 94,
-  "understat_equipo": "Villarreal"
+  "understat_equipo": "Villarreal",
+  "zona": "centro"
  },
  {
   "clave": "araujo",
@@ -179,6 +182,7 @@
   "club": "Sporting CP",
   "fotmob_id": 1031656,
   "apifootball_equipo": 228,
-  "footballdata_equipo": 498
+  "footballdata_equipo": 498,
+  "zona": "izquierda"
  }
 ]
