@@ -260,6 +260,45 @@ def extras_volante(rb):
     return f
 
 
+def filas_ataque(s):
+    """Pases peligrosos, asistencias y todo lo de remates (para delanteros y los más adelantados)."""
+    f = []
+    tiros = n(s, "totalShots") if "totalShots" in s else n(s, "onTargetScoringAttempt") + n(s, "shotOffTarget") + n(s, "blockedScoringAttempt")
+    f.append(["Remates al arco", f"{n(s, 'onTargetScoringAttempt')}/{tiros}", True])
+    f.append(["Remates afuera · bloq.", f"{n(s, 'shotOffTarget')} · {n(s, 'blockedScoringAttempt')}", False])
+    if n(s, "hitWoodwork"): f.append(["Remates al palo", str(n(s, "hitWoodwork")), True])
+    if s.get("expectedGoals") is not None: f.append(["Goles esperados (xG)", f"{s['expectedGoals']:.2f}".replace(".", ","), False])
+    f.append(["Ocasiones claras falladas", str(n(s, "bigChanceMissed")), False])
+    f.append(["Pases clave", str(n(s, "keyPass")), True])
+    f.append(["Ocasiones claras creadas", str(n(s, "bigChanceCreated")), True])
+    if s.get("expectedAssists") is not None: f.append(["Asistencias esperadas (xA)", f"{s['expectedAssists']:.2f}".replace(".", ","), False])
+    if s.get("totalCross"): f.append(["Centros precisos", f"{n(s, 'accurateCross')}/{n(s, 'totalCross')}", False])
+    return f
+
+
+# filas que se sacan primero cuando no entran en TOTALES
+DESCARTABLES = ["Velocidad máxima", "Sprints", "Distancia", "Pases en campo rival", "Despejes", "Pases largos precisos",
+                "Entradas ganadas", "Intercepciones", "Conducciones", "Regates exitosos", "Recuperaciones"]
+
+
+def armar_totales(base, ataque, volante, tarjetas, tope=14):
+    """TOTALES: pases, después lo de ataque y lo de volante si corresponde, el resto, y las tarjetas al final."""
+    pases = [x for x in base if x[0] in ("Pases precisos", "Precisión de pase")]
+    resto = [x for x in base if x[0] not in ("Pases precisos", "Precisión de pase")]
+    filas = pases + (volante.get("ultimo_tercio") and [volante["ultimo_tercio"]] or []) + ataque + resto
+    if volante.get("recup_zonas"):
+        i = next((k for k, x in enumerate(filas) if x[0] == "Recuperaciones"), len(filas) - 1) + 1
+        filas.insert(i, volante["recup_zonas"])
+    vistas, sin_rep = set(), []
+    for x in filas:
+        if x[0] not in vistas: vistas.add(x[0]); sin_rep.append(x)
+    filas = sin_rep
+    for d in DESCARTABLES:
+        if len(filas) < tope: break
+        filas = [x for x in filas if x[0] != d]
+    return filas[:tope - 1] + [["Tarjetas", tarjetas, False]]
+
+
 def club_de(jug, player):
     """Equipo del club del jugador según SofaScore (para la temporada)."""
     t = player.get("team") or {}
@@ -292,9 +331,11 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
 
     # Posiciones medias (para ordenar la cancha y saber si jugó de lateral o de central)
     try:
-        avg = {p["player"]["id"]: p.get("averageY") for p in get(f"/event/{e['id']}/average-positions").get(lado, [])}
+        _ap = get(f"/event/{e['id']}/average-positions").get(lado, [])
+        avg = {p["player"]["id"]: p.get("averageY") for p in _ap}
+        avgx = {p["player"]["id"]: p.get("averageX") for p in _ap}
     except Exception:
-        avg = {}
+        avg, avgx = {}, {}
     # Mapa de calor
     mapa = None
     try:
@@ -465,17 +506,23 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
               "api_football": f"{af_st['pases_precisos']}/{af_st['pases']}" if af_st.get("pases") else None}, avisos)
     # xG: si SofaScore no lo trae y otra fuente sí, se completa (dato fijo)
     pos_filas = filas_posicion(r, s)
-    pos_filas = pos_filas[:9]
-    if r in ("mediocentro", "banda") or j.get("mixto"):
-        ex_v = extras_volante(rb)
-        if ex_v.get("ultimo_tercio"):
-            i = next((k for k, x in enumerate(pos_filas) if x[0] == "Precisión de pase"), -1) + 1
-            pos_filas.insert(i, ex_v["ultimo_tercio"])
-        if ex_v.get("recup_zonas"):
-            i = next((k for k, x in enumerate(pos_filas) if x[0] == "Recuperaciones"), len(pos_filas) - 1) + 1
-            pos_filas.insert(i, ex_v["recup_zonas"])
-    pos_filas.insert(min(len(pos_filas), 11), ["Tarjetas", tarjetas, False])
-    pos_filas = pos_filas[:12]
+    # Dónde jugó en el dibujo: enganche / volante por afuera de una línea de 4 -> todo; delantero o entre
+    # los 4 más adelantados -> lo de ataque; mediocentro, volante o mixto -> lo de volante.
+    linea_i = next((k for k, l in enumerate(ls) if any(p["player"]["id"] == pid for p in l)), None) if len(ls) > 1 else None
+    enganche = linea_i is not None and len(ls) >= 5 and linea_i == len(ls) - 2
+    por_afuera = False
+    if linea_i is not None and 2 <= linea_i <= len(ls) - 2 and len(ls[linea_i]) == 4:
+        lo = orden(ls[linea_i]); por_afuera = lo[0]["player"]["id"] == pid or lo[-1]["player"]["id"] == pid
+    campo = [p for p in tit if (p.get("position") or p["player"].get("position")) != "G"]
+    if all(avgx.get(p["player"]["id"]) is not None for p in campo) and campo:
+        adelantados = [p["player"]["id"] for p in sorted(campo, key=lambda p: -avgx[p["player"]["id"]])[:4]]
+    else:
+        adelantados = [p["player"]["id"] for l in reversed(ls[1:] if len(ls) > 1 else []) for p in l][:4]
+    todas = enganche or por_afuera
+    con_ataque = todas or r == "delantero" or (titular and pid in adelantados)
+    con_volante = todas or r in ("mediocentro", "banda") or j.get("mixto")
+    pos_filas = armar_totales(pos_filas, filas_ataque(s) if con_ataque else [],
+                              extras_volante(rb) if con_volante else {}, tarjetas)
     if r == "delantero" and s.get("expectedGoals") is None:
         xg = (datos.get("understat") or {}).get("stats", {}).get("xg")
         if xg is None: xg = (datos.get("fotmob") or {}).get("stats", {}).get("expected_goals")
