@@ -64,6 +64,11 @@ body{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:'B
    repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 60px,rgba(255,255,255,0) 60px 160px),
    radial-gradient(ellipse 70% 45% at 50% 0%,rgba(255,255,255,.28),transparent 70%),
    linear-gradient(150deg,var(--c1) 0%,var(--c1) 38%,var(--c2) 100%)}
+.bg.sinrayas{background:radial-gradient(ellipse 70% 45% at 50% 0%,rgba(255,255,255,.22),transparent 70%),linear-gradient(150deg,var(--c1) 0%,var(--c1) 38%,var(--c2) 100%)}
+.capa{position:absolute;inset:0;pointer-events:none}
+.grano{background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.wm1{position:absolute;right:-170px;top:250px;width:720px;height:720px;object-fit:contain;opacity:.10;filter:brightness(0) invert(1)}
+.franja{position:absolute;left:0;top:0;bottom:0;width:18px;z-index:3;background:repeating-linear-gradient(180deg,#fff 0 75px,#5fa8de 75px 150px);box-shadow:2px 0 10px rgba(0,0,0,.35)}
 .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(10,12,14,.55) 72%,rgba(10,12,14,.92) 100%)}
 .wm{position:absolute;width:360px;height:360px;object-fit:contain;opacity:.42;filter:drop-shadow(0 10px 30px rgba(0,0,0,.35))}
 .brand{position:absolute;top:30px;left:50%;transform:translateX(-50%);background:rgba(15,18,21,.62);border-radius:10px;
@@ -251,6 +256,41 @@ def rows(items, compacto=False):
     return out
 
 
+GRANO = ("url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'>"
+         "<filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/>"
+         "<feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter>"
+         "<rect width='100%' height='100%' filter='url(%23n)'/></svg>\")")
+
+
+def fondo_html(estilo, wm):
+    """Fondo de la infografía.
+    rayas   : el de siempre (rayas diagonales y dos escudos a color en los costados).
+    sol     : rayos de un sol de mayo detrás de la foto del jugador, un solo escudo grande en silueta y grano.
+    franja  : franja vertical con las 9 franjas de la bandera en el borde izquierdo, escudo en silueta y trama de puntos.
+    bandera : sol de mayo saliendo de la esquina de arriba a la izquierda (como en la bandera), 9 franjas muy suaves y escudo en silueta."""
+    silueta = (f'<img class="wm1" src="{wm}">' if wm else '')
+    if estilo == "sol":
+        return ('<div class="bg sinrayas"></div>'
+                '<div class="capa" style="background:repeating-conic-gradient(from 0deg at 843px 420px,rgba(255,255,255,.085) 0 5.625deg,rgba(255,255,255,0) 5.625deg 11.25deg);'
+                '-webkit-mask-image:radial-gradient(circle at 843px 420px,#000 0,#000 180px,rgba(0,0,0,.35) 520px,transparent 900px)"></div>'
+                + silueta + '<div class="capa grano" style="opacity:.10"></div>')
+    if estilo == "franja":
+        return ('<div class="bg sinrayas"></div>'
+                '<div class="capa" style="background:radial-gradient(rgba(255,255,255,.10) 1.3px,transparent 1.8px) 0 0/11px 11px;'
+                '-webkit-mask-image:linear-gradient(160deg,#000 0%,rgba(0,0,0,.4) 45%,transparent 70%)"></div>'
+                + silueta +
+                '<div class="franja"></div>')
+    if estilo == "bandera":
+        return ('<div class="bg sinrayas"></div>'
+                '<div class="capa" style="background:repeating-linear-gradient(180deg,rgba(255,255,255,.055) 0 75px,rgba(255,255,255,0) 75px 150px)"></div>'
+                '<div class="capa" style="background:repeating-conic-gradient(from 0deg at 0px 0px,rgba(255,255,255,.10) 0 4deg,rgba(255,255,255,0) 4deg 8deg);'
+                '-webkit-mask-image:radial-gradient(circle at 0 0,#000 0,rgba(0,0,0,.6) 300px,transparent 760px)"></div>'
+                + silueta + '<div class="capa grano" style="opacity:.08"></div>')
+    return ('<div class="bg"></div>'
+            + (f'<img class="wm" src="{wm}" style="left:-150px;top:40px">' if wm else '')
+            + (f'<img class="wm" src="{wm}" style="right:-150px;top:40px">' if wm else ''))
+
+
 def html(d, base):
     t = d.get("tema") or {}
     c1, c2, ac = t.get("c1", "#2a6fb0"), t.get("c2", "#0d2440"), t.get("acento", "#6fb7e6")
@@ -290,9 +330,7 @@ def html(d, base):
     nota_v = d.get("nota") or "—"
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{fuentes()}{CSS}
 :root{{--c1:{c1};--c2:{c2};--acento:{ac};--acento-txt:{txt_sobre(ac)}}}</style></head><body>
-<div class="bg"></div>
-{f'<img class="wm" src="{wm}" style="left:-150px;top:40px">' if wm else ''}
-{f'<img class="wm" src="{wm}" style="right:-150px;top:40px">' if wm else ''}
+{fondo_html(d.get("fondo", "rayas"), wm)}
 <div class="shade"></div>
 <div class="brand">CELESTES POR EL MUNDO</div>
 <h1 style="font-size:{size}px">{nombre}</h1>
