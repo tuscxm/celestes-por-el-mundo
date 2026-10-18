@@ -20,8 +20,92 @@ def _bajar(url):
         return r.read()
 
 
+_sesiones = {}
+
+
+def _mascara(im, modelo):
+    from rembg import remove, new_session
+    if modelo not in _sesiones:
+        _sesiones[modelo] = new_session(modelo)
+    return np.asarray(remove(im, session=_sesiones[modelo], only_mask=True)).astype(float) / 255.0
+
+
 def _sin_fondo(im):
-    """Saca el fondo. 1) rembg (modelo isnet-general-use, el que mejor respeta el pelo) da la máscara de la persona.
+    """Saca el fondo (v2, 18/10/2026).
+    1) Dos modelos: u2net_human_seg (silueta de persona completa: hombros y cara enteros, nunca come piel clara)
+       e isnet-general-use (detalle del pelo). Se usa la unión, la figura más grande y sin agujeros.
+    2) Trimapa: núcleo seguro (erosión), fondo seguro (afuera de la figura dilatada, más el color del fondo
+       conectado al borde) y una banda angosta de duda en el contorno.
+    3) Matting de forma cerrada (pymatting) en la banda: transparencia real pelo por pelo, también en el blanco
+       que queda entre los rulos; y estimación del color de la persona sin el fondo mezclado (sin aureola).
+    Si algo falla, usa el método anterior."""
+    try:
+        return _sin_fondo_matting(im)
+    except Exception as ex:  # noqa
+        print("  aviso: recorte con matting falló, uso el anterior:", ex)
+        return _sin_fondo_v1(im)
+
+
+def _sin_fondo_matting(im):
+    from scipy import ndimage as ndi
+    from pymatting import estimate_alpha_cf, estimate_foreground_ml
+    im = im.convert("RGB")
+    a = np.asarray(im).astype(float)
+    H, W = a.shape[:2]; lado = min(H, W)
+    m_h = _mascara(im, "u2net_human_seg")
+    m_i = _mascara(im, "isnet-general-use")
+    base = np.maximum(m_h, m_i) > 0.5
+    lab, nl = ndi.label(base)
+    if nl > 1:
+        tam = ndi.sum(base, lab, range(1, nl + 1)); base = lab == (1 + int(np.argmax(tam)))
+    base = ndi.binary_fill_holes(base)
+    if base.sum() < 0.05 * H * W:
+        raise ValueError("máscara vacía")
+    # color del fondo (bordes de arriba y costados) y fondo conectado al borde
+    k = max(2, lado // 60)
+    borde = np.concatenate([a[:k].reshape(-1, 3), a[:, :k].reshape(-1, 3), a[:, -k:].reshape(-1, 3)])
+    bg = np.median(borde, axis=0)
+    dist = np.sqrt(((a - bg) ** 2).sum(axis=2))
+    lowd = dist < 18
+    semillas = np.zeros_like(lowd); semillas[0, :] = True
+    h7 = int(H * 0.7); semillas[:h7, 0] = True; semillas[:h7, -1] = True
+    fondo = ndi.binary_propagation(semillas & lowd, mask=lowd)
+    # trimapa
+    r_in, r_out = max(3, int(lado * 0.014)), max(3, int(lado * 0.012))
+    nucleo = ndi.binary_erosion(base, iterations=r_in)
+    nucleo_h = ndi.binary_erosion(m_h > 0.5, iterations=r_in)          # cara/hombros seguros del modelo de personas
+    seguro_fg = (nucleo | nucleo_h) & ~fondo
+    seguro_bg = ~ndi.binary_dilation(base, iterations=r_out) | (fondo & ~ndi.binary_erosion(base, iterations=r_in * 3))
+    tri = np.full((H, W), 0.5)
+    tri[seguro_bg] = 0.0
+    tri[seguro_fg] = 1.0
+    # los hombros que tocan el borde de abajo: siempre persona
+    tri[-max(2, lado // 100):][base[-max(2, lado // 100):]] = 1.0
+    img = a / 255.0
+    alfa = estimate_alpha_cf(img, tri, laplacian_kwargs={"epsilon": 1e-6}, cg_kwargs={"maxiter": 2000})
+    alfa = np.clip(alfa, 0, 1)
+    # sin motas sueltas: solo lo conectado a la figura principal
+    sol = alfa > 0.15
+    lab, nl = ndi.label(sol)
+    if nl > 1:
+        tam = ndi.sum(sol, lab, range(1, nl + 1)); keep = lab == (1 + int(np.argmax(tam)))
+        alfa = np.where(keep, alfa, 0.0)
+    # hombros y camiseta (abajo): la camiseta clara se confunde con el fondo blanco -> silueta del modelo de
+    # personas, alisada (contorno prolijo), con transición suave hacia la zona de la cabeza
+    r = max(3, lado // 80)
+    yy, xx = np.ogrid[-r:r + 1, -r:r + 1]; disco = xx * xx + yy * yy <= r * r
+    hom = ndi.binary_closing(ndi.binary_opening(m_h > 0.5, structure=disco), structure=disco)
+    hom = ndi.gaussian_filter(hom.astype(float), max(1.0, lado / 400)) 
+    hom = np.clip((hom - 0.5) * 4 + 0.5, 0, 1)
+    peso = np.clip((np.arange(H)[:, None] / H - 0.58) / 0.08, 0, 1) * np.ones((1, W))
+    alfa = alfa * (1 - peso) + hom * peso
+    alfa = np.where(alfa < 0.04, 0.0, np.where(alfa > 0.97, 1.0, alfa))
+    fg = estimate_foreground_ml(img, alfa)
+    return Image.fromarray(np.dstack([np.clip(fg * 255, 0, 255), alfa * 255]).astype("uint8"), "RGBA")
+
+
+def _sin_fondo_v1(im):
+    """Saca el fondo (método anterior). 1) rembg (modelo isnet-general-use, el que mejor respeta el pelo) da la máscara de la persona.
     2) Lo que tiene el color del fondo y está conectado al borde de arriba o de los costados se borra aunque el
        modelo lo haya incluido (el blanco entre rulos, los halos alrededor de la cabeza).
     3) En el borde, la transparencia sale de la distancia al color del fondo y se le saca al color el fondo
@@ -115,6 +199,15 @@ def _contorno(im, grosor=None):
     m = a[..., 3] > 110
     if not m.any():
         return im
+    # una sola figura y sin agujeros: el contorno va solo por afuera (sin puntos ni líneas sueltas)
+    lab, nl = ndi.label(m)
+    if nl > 1:
+        tam = ndi.sum(m, lab, range(1, nl + 1)); m = lab == (1 + int(np.argmax(tam)))
+    m = ndi.binary_fill_holes(m)
+    # contorno parejo: sin dientes de 1-2 px que el trazo negro exagera
+    m = ndi.binary_opening(ndi.binary_closing(m, iterations=2), iterations=1)
+    m = ndi.gaussian_filter(m.astype(float), max(1.0, min(H, W) / 300)) > 0.5
+    a[..., 3] = np.where(m, np.maximum(a[..., 3], 0), 0)
     dentro = m & ~ndi.binary_erosion(m, iterations=max(1, g // 2 + 1), border_value=1)
     fuera = ndi.binary_dilation(m, iterations=max(1, g - g // 2)) & ~m
     banda = ndi.gaussian_filter((dentro | fuera).astype(float), 0.7)
@@ -198,6 +291,26 @@ def cara_oficial(clave, carpeta, url=None):
         return None
 
 
+def _escudo_hd(im, lado=600):
+    """Escudo de 150 px agrandado a 600 con superresolución (color) y LANCZOS (transparencia), para que
+    se vea nítido en el PNG al doble de resolución (marcas de agua, marcador, cancha)."""
+    im = im.convert("RGBA")
+    if im.size[0] >= lado:
+        return im
+    alfa = im.getchannel("A")
+    # el color de los píxeles transparentes se rellena con el vecino opaco (sin bordes negros al agrandar)
+    from scipy import ndimage as ndi
+    a = np.asarray(im).astype(float)
+    op = a[..., 3] > 8
+    if op.any() and not op.all():
+        idx = ndi.distance_transform_edt(~op, return_indices=True)[1]
+        a[..., :3] = a[idx[0], idx[1], :3]
+    rgb = _agrandar(Image.fromarray(a[..., :3].astype("uint8"), "RGB"), lado)
+    al = alfa.resize((lado, lado), Image.LANCZOS)
+    out = rgb.convert("RGBA"); out.putalpha(al)
+    return out
+
+
 def escudo(tid, carpeta):
     os.makedirs(carpeta, exist_ok=True)
     ruta = os.path.join(carpeta, f"escudo_{tid}.png")
@@ -206,9 +319,15 @@ def escudo(tid, carpeta):
     cache = os.path.join(AQUI, "escudos", f"{tid}.png")
     try:
         im = Image.open(io.BytesIO(_bajar(f"{BASE}/team/{tid}/image"))).convert("RGBA")
-        im.save(ruta)
         os.makedirs(os.path.dirname(cache), exist_ok=True)
         im.save(cache)
+        _escudo_hd(im).save(ruta)
         return ruta
     except Exception:
-        return cache if os.path.exists(cache) else None
+        if os.path.exists(cache):
+            try:
+                _escudo_hd(Image.open(cache)).save(ruta)
+                return ruta
+            except Exception:
+                return cache
+        return None

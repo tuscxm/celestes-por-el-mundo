@@ -5,3 +5,4 @@ playwright
 pillow
 rembg[cpu]
 opencv-contrib-python-headless
+pymatting

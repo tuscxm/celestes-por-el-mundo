@@ -81,7 +81,7 @@ def dibujar_horizontal(puntos, salida, zona=None):
     H = H / H.max() if H.max() > 0 else H
     cmap = LinearSegmentedColormap.from_list("calor", [(0, (1, .88, .4, 0)), (.18, (1, .88, .4, .35)),
                                                        (.45, (1, .7, .12, .7)), (.75, (1, .35, .12, .85)), (1, (.85, .08, .08, .95))])
-    fig = plt.figure(figsize=(L / 12, W / 12), dpi=130)
+    fig = plt.figure(figsize=(L / 12, W / 12), dpi=230)
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(-2, L + 2); ax.set_ylim(-2, W + 2); ax.axis("off")
     fig.patch.set_facecolor("#2b2e31"); ax.set_facecolor("#2b2e31")
     ax.imshow(H, extent=[0, L, 0, W], origin="lower", cmap=cmap, interpolation="bilinear", zorder=2, aspect="auto")
@@ -101,7 +101,7 @@ def dibujar_horizontal(puntos, salida, zona=None):
             if (a0, a1) != (y0, y1):
                 ax.add_patch(Rectangle((0, a0), L, a1 - a0, fc=(0.08, 0.09, 0.1, .38), ec="none", zorder=4))
         ax.add_patch(Rectangle((0.4, y0 + 0.4), L - 0.8, y1 - y0 - 0.8, fill=False, lw=2.6, ec="#f2c14e", ls=(0, (6, 3)), zorder=5))
-    fig.savefig(salida, dpi=130, facecolor=fig.get_facecolor())
+    fig.savefig(salida, dpi=230, facecolor=fig.get_facecolor())
     plt.close(fig)
 
 

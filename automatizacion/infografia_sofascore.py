@@ -64,6 +64,21 @@ def fecha_local(e):
 def apellido(p):
     return p.get("lastName") or p.get("shortName", p["name"]).split(" ")[-1]
 
+def _sin_tildes(t):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", t) if unicodedata.category(c) != "Mn").lower()
+
+
+def apellido_placa(p, placa):
+    """Apellido para mostrar: el de la fuente, pero con las tildes del nombre de jugadores.json
+    (la fuente a veces lo trae sin tilde: "Caceres" -> "Cáceres")."""
+    ap = apellido(p)
+    for w in (placa or "").split():
+        if _sin_tildes(w) == _sin_tildes(ap):
+            return w.capitalize() if ap[:1].isupper() else w.lower()
+    return ap
+
+
 def corto(p):
     s = p.get("shortName") or p["name"]
     return s.split(". ", 1)[1] if ". " in s else s
@@ -565,6 +580,10 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
             tiros = get(f"/event/{e['id']}/shotmap/player/{pid}").get("shotmap", [])
         except Exception:
             tiros = None
+        # sin remates en todo el partido: en su franja también son 0/0 (no hace falta el mapa de remates)
+        tot = n(s, "totalShots") if "totalShots" in s else n(s, "onTargetScoringAttempt") + n(s, "shotOffTarget") + n(s, "blockedScoringAttempt")
+        if tiros is None and tot == 0:
+            tiros = []
     zona = por_zona(j.get("zona"), puntos, rb, tiros, s, con_ataque, con_volante) or zona
     if r == "delantero" and s.get("expectedGoals") is None:
         xg = (datos.get("understat") or {}).get("stats", {}).get("xg")
@@ -577,7 +596,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
         import shutil
         os.makedirs(os.path.join(AQUI, "escudos"), exist_ok=True)
         shutil.copy2(esc_club, os.path.join(AQUI, "escudos", ("uruguay" if equipo.get("national") else f"club_{clave}") + ".png"))
-    d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido(player), "dorsal": dorsal,
+    d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido_placa(player, j["placa"]), "dorsal": dorsal,
          "local": home, "visita": away, "goles_local": hs, "goles_visita": as_,
          "escudo_local": escudo(e["homeTeam"]["id"], recursos), "escudo_visita": escudo(e["awayTeam"]["id"], recursos),
          "escudo_club": esc_club,
@@ -586,7 +605,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
          "minutos": f"{minutos}’", "nota": f"{rating:.1f}" if rating else None, "estrellas": estrellas(rating),
          "tema": tema(cam, equipo), "formacion": form, "once": once,
          "cara": mi_cara, "foto": os.path.join(salida, fig) if fig else None,
-         "sustitucion": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"], "apellido": apellido(player), "cara": mi_cara,
+         "sustitucion": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"], "apellido": apellido_placa(player, j["placa"]), "cara": mi_cara,
                           "rol": pos_titulo.replace("COMO ", "").lower()} if sustitucion else None),
          "generales": generales, "pos_titulo": pos_titulo, "posicion": pos_filas,
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},

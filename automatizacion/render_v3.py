@@ -22,6 +22,7 @@ if os.path.isdir("/opt/pw-browsers"):  # nube de Claude
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 W, HH = 1080, 1350
+ESCALA = 2   # el PNG sale a 2160x2700 (mismo diseño, el doble de nitidez; Instagram lo baja a 1080 sin perder calidad)
 
 
 def b64(path):
@@ -100,11 +101,11 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .plate .cr img{object-fit:contain}
 .yo .plate .n{background:#f2c14e}
 .slot.sale .ph > img,.slot.sale .ph > .num{opacity:.45;filter:grayscale(.6)}
-.slot .entra{position:absolute;right:-26px;top:-14px;border-radius:50%;border:3px solid #f2c14e;background:rgba(20,22,25,.85);overflow:hidden;
+.slot .entra{position:absolute;right:-30px;top:-4px;border-radius:50%;border:3px solid #f2c14e;background:rgba(20,22,25,.85);overflow:hidden;
  box-shadow:0 0 0 4px rgba(242,193,78,.3),0 4px 10px rgba(0,0,0,.4);z-index:3}
 .slot .entra img{width:100%;height:100%;object-fit:cover;object-position:top}
-.chip{background:#f2c14e;color:#14171a;font-weight:900;font-size:13px;letter-spacing:.5px;border-radius:6px;padding:1px 7px;margin-top:3px;white-space:nowrap;
- box-shadow:0 3px 8px rgba(0,0,0,.35);text-transform:uppercase}
+.chip{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:5;background:#f2c14e;color:#14171a;font-weight:900;font-size:12px;letter-spacing:.3px;
+ border-radius:6px;padding:1px 7px;white-space:nowrap;box-shadow:0 3px 8px rgba(0,0,0,.45);text-transform:uppercase}
 .tile .x{font-weight:800;font-size:19px;letter-spacing:1px;color:#f2c14e;margin-top:4px;text-transform:uppercase}
 .tab{background:#1b1e21;border-radius:0 0 7px 7px;padding:0 8px 1px;margin-top:-1px}
 .stars{color:#f2c14e;letter-spacing:1px;line-height:1.1}
@@ -228,11 +229,12 @@ def pitch_html(d, base, escudo_club):
                 ci = b64(sub.get("cara"))
                 entra = (f'<div class="entra" style="width:{int(size*.72)}px;height:{int(size*.72)}px">'
                          + (f'<img src="{ci}">' if ci else '') + '</div>')
+            chip = (f'<div class="chip">⇄ Entra {esc(sub.get("apellido",""))} {esc(sub.get("minuto",""))}</div>' if sub else "")
             out += (f'<div class="slot{" yo" if p.get("yo") else ""}{" sale" if sub else ""}" style="left:{x}px;top:{y_face_bottom - size}px;z-index:{(40 if sub else 10)+i}">'
-                    f'<div class="ph">{ph}{entra}{tarjetas_html(p)}</div>'
+                    f'<div class="ph">{ph}{entra}{tarjetas_html(p)}{chip}</div>'
                     f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(112 if k<=3 else 100)}px"><span>{nombre}</span></div>{crest}</div>'
                     + (f'<div class="tab">{st}</div>' if st else "")
-                    + (f'<div class="chip">⇄ Entra {esc(sub.get("apellido",""))} {esc(sub.get("minuto",""))}</div>' if sub else "") + '</div>')
+                    + '</div>')
     return out
 
 
@@ -376,13 +378,14 @@ async def main(path):
     base = os.path.dirname(os.path.abspath(path))
     async with async_playwright() as pw:
         b = await pw.chromium.launch()
-        pg = await b.new_page(viewport={"width": W, "height": HH})
+        pg = await b.new_page(viewport={"width": W, "height": HH}, device_scale_factor=ESCALA)
         for d in data:
             d = _abs(dict(d), base)
             h = os.path.join(base, d["archivo"] + ".html")
             open(h, "w").write(html(d, base))
             await pg.goto("file://" + h)
-            await pg.wait_for_timeout(150)
+            await pg.evaluate("document.fonts.ready")
+            await pg.wait_for_timeout(300)
             await pg.screenshot(path=os.path.join(base, d["archivo"] + ".png"))
             os.remove(h)
             print("OK", os.path.join(base, d["archivo"] + ".png"))

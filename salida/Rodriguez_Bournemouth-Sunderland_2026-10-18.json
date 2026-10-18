@@ -2,15 +2,15 @@
  {
   "archivo": "Rodriguez_Bournemouth-Sunderland_2026-10-18",
   "nombre": "ÁLVARO RODRÍGUEZ",
-  "apellido": "Rodriguez",
+  "apellido": "Rodríguez",
   "dorsal": "30",
   "local": "Bournemouth",
   "visita": "Sunderland",
   "goles_local": 2,
   "goles_visita": 0,
-  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_60.png",
-  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_41.png",
-  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_60.png",
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/escudo_60.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/escudo_41.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/escudo_60.png",
   "meta": "PREMIER LEAGUE · JORNADA 7 · 18 OCTUBRE 2026",
   "condicion": "SUPLENTE",
   "minutos": "11’",
@@ -27,7 +27,7 @@
     {
      "dorsal": "1",
      "nombre": "Petrović",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_882604.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_882604.png",
      "estrellas": 2,
      "yo": false,
      "pid": 882604
@@ -37,7 +37,7 @@
     {
      "dorsal": "3",
      "nombre": "Truffert",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_999028.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_999028.png",
      "estrellas": 3,
      "yo": false,
      "pid": 999028
@@ -45,7 +45,7 @@
     {
      "dorsal": "14",
      "nombre": "Silva",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1006069.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1006069.png",
      "estrellas": 4,
      "yo": false,
      "pid": 1006069,
@@ -54,7 +54,7 @@
     {
      "dorsal": "5",
      "nombre": "Hill",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1156586.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1156586.png",
      "estrellas": 5,
      "yo": false,
      "pid": 1156586
@@ -62,7 +62,7 @@
     {
      "dorsal": "15",
      "nombre": "Smith",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_44566.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_44566.png",
      "estrellas": 3,
      "yo": false,
      "pid": 44566
@@ -72,7 +72,7 @@
     {
      "dorsal": "12",
      "nombre": "Adams",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_800419.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_800419.png",
      "estrellas": 4,
      "yo": false,
      "pid": 800419
@@ -82,7 +82,7 @@
     {
      "dorsal": "16",
      "nombre": "Tavernier",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_895576.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_895576.png",
      "estrellas": 4,
      "yo": false,
      "pid": 895576
@@ -90,7 +90,7 @@
     {
      "dorsal": "4",
      "nombre": "Cook",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_548188.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_548188.png",
      "estrellas": 4,
      "yo": false,
      "pid": 548188,
@@ -99,7 +99,7 @@
     {
      "dorsal": "10",
      "nombre": "Christie",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_322391.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_322391.png",
      "estrellas": 4,
      "yo": false,
      "pid": 322391,
@@ -108,7 +108,7 @@
     {
      "dorsal": "37",
      "nombre": "Rayan",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1464966.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1464966.png",
      "estrellas": 4,
      "yo": false,
      "pid": 1464966
@@ -118,7 +118,7 @@
     {
      "dorsal": "9",
      "nombre": "Evanilson",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_998490.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_998490.png",
      "estrellas": 5,
      "yo": false,
      "pid": 998490,
@@ -126,13 +126,13 @@
     }
    ]
   ],
-  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1154587.png",
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1154587.png",
   "foto": null,
   "sustitucion": {
    "minuto": "79’",
    "por": "Evanilson",
-   "apellido": "Rodriguez",
-   "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1154587.png",
+   "apellido": "Rodríguez",
+   "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1154587.png",
    "rol": "delantero"
   },
   "generales": [
@@ -325,6 +325,11 @@
      "Pases precisos",
      "2/2",
      false
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
     ],
     [
      "Asistencias",

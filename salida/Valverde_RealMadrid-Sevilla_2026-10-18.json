@@ -8,9 +8,9 @@
   "visita": "Sevilla",
   "goles_local": 4,
   "goles_visita": 1,
-  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2829.png",
-  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2833.png",
-  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2829.png",
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/escudo_2829.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/escudo_2833.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/escudo_2829.png",
   "meta": "LALIGA · JORNADA 9 · 18 OCTUBRE 2026",
   "condicion": "TITULAR",
   "minutos": "85’",
@@ -27,7 +27,7 @@
     {
      "dorsal": "1",
      "nombre": "Courtois",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_70988.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_70988.png",
      "estrellas": 4,
      "yo": false,
      "pid": 70988
@@ -37,7 +37,7 @@
     {
      "dorsal": "17",
      "nombre": "Cucurella",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_794939.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_794939.png",
      "estrellas": 2,
      "yo": false,
      "pid": 794939,
@@ -46,7 +46,7 @@
     {
      "dorsal": "4",
      "nombre": "Huijsen",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1176744.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1176744.png",
      "estrellas": 4,
      "yo": false,
      "pid": 1176744,
@@ -55,7 +55,7 @@
     {
      "dorsal": "16",
      "nombre": "Konaté",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_826215.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_826215.png",
      "estrellas": 3,
      "yo": false,
      "pid": 826215
@@ -63,7 +63,7 @@
     {
      "dorsal": "8",
      "nombre": "Valverde",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_831808.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_831808.png",
      "estrellas": 3,
      "yo": true,
      "pid": 831808
@@ -73,7 +73,7 @@
     {
      "dorsal": "14",
      "nombre": "Tchouaméni",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_859025.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_859025.png",
      "estrellas": 4,
      "yo": false,
      "pid": 859025
@@ -81,7 +81,7 @@
     {
      "dorsal": "15",
      "nombre": "Güler",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1091116.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1091116.png",
      "estrellas": 5,
      "yo": false,
      "pid": 1091116
@@ -91,7 +91,7 @@
     {
      "dorsal": "25",
      "nombre": "Diomande",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2087085.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_2087085.png",
      "estrellas": 5,
      "yo": false,
      "pid": 2087085
@@ -99,7 +99,7 @@
     {
      "dorsal": "5",
      "nombre": "Bellingham",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_991011.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_991011.png",
      "estrellas": 4,
      "yo": false,
      "pid": 991011
@@ -107,7 +107,7 @@
     {
      "dorsal": "9",
      "nombre": "Endrick",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1174937.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_1174937.png",
      "estrellas": 2,
      "yo": false,
      "pid": 1174937
@@ -117,14 +117,14 @@
     {
      "dorsal": "10",
      "nombre": "Mbappé",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_826643.png",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_826643.png",
      "estrellas": 5,
      "yo": false,
      "pid": 826643
     }
    ]
   ],
-  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_831808.png",
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/7f53918d-f865-572a-a8f1-b6f0e5338945/scratchpad/rehecha/recursos/cara_831808.png",
   "foto": null,
   "sustitucion": null,
   "generales": [
