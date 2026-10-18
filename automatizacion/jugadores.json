@@ -543,5 +543,92 @@
   "apifootball_equipo": 490,
   "footballdata_equipo": 104,
   "understat_equipo": "Cagliari"
+ },
+ {
+  "clave": "zalazar",
+  "placa": "RODRIGO ZALAZAR",
+  "equipos": {
+   "3001": "Sporting CP",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,74 m",
+  "pie": "Derecho",
+  "nacimiento": "1999-08-12",
+  "camiseta": {
+   "3001": {
+    "tipo": "aros",
+    "c1": "#0a7a43",
+    "c2": "#f3f6f3",
+    "texto": "#0a7a43",
+    "short": "#111",
+    "fondo": [
+     "#13a45a",
+     "#06331d",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 966575,
+  "club": "Sporting CP",
+  "fotmob_id": 1070776,
+  "zona": "centro",
+  "apifootball_equipo": 228,
+  "footballdata_equipo": 498
+ },
+ {
+  "clave": "merentiel",
+  "placa": "MIGUEL MERENTIEL",
+  "equipos": {
+   "3202": "Boca Juniors",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,76 m",
+  "pie": "Derecho",
+  "nacimiento": "1996-02-24",
+  "camiseta": {
+   "3202": {
+    "tipo": "liso",
+    "c1": "#003399",
+    "c2": "#003399",
+    "texto": "#ffcc66",
+    "short": "#003399",
+    "fondo": [
+     "#0a3d91",
+     "#061a40",
+     "#f2c14e"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 892275,
+  "club": "Boca Juniors",
+  "fotmob_id": 826418,
+  "zona": "centro",
+  "apifootball_equipo": 451
  }
 ]

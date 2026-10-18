@@ -221,8 +221,23 @@ def _af(path):
     return d.get("response") or []
 
 
+def _guardar_id(clave, campo, valor):
+    """Guarda en jugadores.json un ID encontrado solo (así no se vuelve a gastar un pedido en buscarlo)."""
+    ruta = os.path.join(AQUI, "jugadores.json")
+    J = json.load(open(ruta))
+    for x in J:
+        if x["clave"] == clave and not x.get(campo):
+            x[campo] = valor
+    json.dump(J, open(ruta, "w"), ensure_ascii=False, indent=1)
+
+
 def api_football(j, fechas, equipo_af=None):
     eq = equipo_af or j.get("apifootball_equipo")
+    if not eq and j.get("club"):
+        # se busca una sola vez (1 pedido) y queda guardado
+        for t in _af(f"/teams?search={urllib.parse.quote(j['club'].split(' de ')[0])}"):
+            if mismo_equipo(t["team"]["name"], j["club"]) or mismo_equipo(t["team"]["name"], j["club"].split(" de ")[0]):
+                eq = t["team"]["id"]; _guardar_id(j["clave"], "apifootball_equipo", eq); j["apifootball_equipo"] = eq; break
     if not eq:
         return [], "sin apifootball_equipo en jugadores.json"
     fx = _af(f"/fixtures?team={eq}&last=3&timezone=America/Montevideo")
@@ -301,6 +316,17 @@ def _fd(path):
 
 def football_data(j, fechas):
     eq = j.get("footballdata_equipo")
+    if not eq and j.get("club"):
+        # se busca una sola vez en las ligas del plan gratis que puede jugar y queda guardado
+        for comp in ("PD", "PL", "SA", "PPL", "BL1", "FL1", "DED"):
+            try:
+                for t in _fd(f"/competitions/{comp}/teams").get("teams") or []:
+                    if any(mismo_equipo(t.get(c), j["club"].split(" de ")[0]) for c in ("name", "shortName")):
+                        eq = t["id"]; break
+            except Exception:
+                continue
+            if eq:
+                _guardar_id(j["clave"], "footballdata_equipo", eq); j["footballdata_equipo"] = eq; break
     if not eq:
         return [], "sin footballdata_equipo en jugadores.json"
     d1, d2 = min(fechas), max(fechas)

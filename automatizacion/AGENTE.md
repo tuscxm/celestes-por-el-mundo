@@ -11,6 +11,7 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
   - **TheSportsDB** (www.thesportsdb.com): resultado y alineación. Clave pública gratuita "123" o `THESPORTSDB_KEY`.
   - **Understat** (understat.com): minutos, xG, xA, tiros y pases clave. Solo LaLiga (no cubre Portugal).
   - **zerozero** (www.zerozero.pt): minutos y resultado de la ficha del jugador.
+  - Si a un jugador le falta el ID de API-Football o de football-data.org, el script lo busca una sola vez por el nombre del club (`club`) y lo guarda en `jugadores.json`.
   - Los IDs de cada fuente están en `jugadores.json` (`fotmob_id`, `apifootball_equipo`, `footballdata_equipo`, `understat_equipo`, `club`).
   - **BeSoccer** (es.besoccer.com): no deja entrar a los scripts. **Antes de correr el script**, la tarea de Claude lee con WebFetch las páginas de partidos de cada jugador (ver "BeSoccer como fuente diaria") y deja lo leído en `automatizacion/besoccer_hoy.json`. El script lo toma como una fuente más (nota, minutos, goles, tarjetas, notas del once).
 - **Desde cuándo**: las fuentes extra (incluida BeSoccer como fuente diaria) se usan para los partidos **del 18/10/2026 en adelante** (`DESDE` en `fuentes.py`). Los partidos anteriores quedan como estaban (solo SofaScore).
@@ -51,6 +52,8 @@ Están en `automatizacion/jugadores.json`. Cada uno tiene `sofascore_id`, placa,
 | Martín Satriano | Getafe | 973536 | centro |
 | Sebastián Boselli | Getafe | 1392092 | centro |
 | Juan Manuel Rodríguez | Cagliari | 1485391 | centro |
+| Rodrigo Zalazar | Sporting CP | 966575 | centro |
+| Miguel Merentiel | Boca Juniors | 892275 | centro |
 
 Para sumar un jugador, se agrega un bloque con su `sofascore_id`. Se saca de https://api.sofascore.com/api/v1/search/all?q=Nombre%20Apellido.
 
