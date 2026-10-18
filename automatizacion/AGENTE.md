@@ -30,19 +30,27 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
 ## Diseño (render_v3.py)
 Desde el 18/10/2026: fondo con los colores del club, rayas diagonales y dos escudos de marca de agua (`fondo` en el JSON: rayas por defecto; hay variantes guardadas sol, franja y bandera sin usar); detrás de la cancha de la formación va el escudo del club en silueta blanca; cancha de la formación más chica; abajo, una fila con el MAPA DE CALOR grande y acostado (ataca hacia la derecha, el costado derecho del equipo queda abajo; su franja marcada con un recuadro dorado y el resto apenas oscurecido) con el bloque "POR LA DERECHA / EL CENTRO / LA IZQUIERDA" al lado, más la TEMPORADA; y otra fila con SU PARTIDO y TOTALES a dos columnas, que son siempre los números de todo el partido (solo el bloque del mapa de calor es de la franja). Todas las caras llevan una línea de contorno negra.
 Fondo con los colores del club (campo `fondo` de cada camiseta en `jugadores.json`: color 1, color 2, acento), escudo grande de marca de agua, cancha oscura con las caras recortadas del once (estrellas según la nota de cada uno: 8+ = 5, 7,3+ = 4, 6,7+ = 3, 6+ = 2), cara grande del jugador con placa y escudo, minutos y nota, y abajo las tarjetas: su partido, su juego según la posición, mapa de calor y temporada. Tipografía Barlow Condensed (en `fuentes/`, licencia OFL).
-Para la imagen grande, en partidos del club, se usa primero la foto oficial que esté en `fotos_oficiales/<clave>.png|jpg` (o la URL directa del campo `foto_oficial` de `jugadores.json`, si la red la deja bajar); si no hay, la de la fuente de datos. Las caras salen de la foto del jugador y se les saca el fondo con rembg. Las de los cuatro jugadores se guardan en `caras/` y los escudos en `escudos/`, para usarlas aunque falle la fuente. Si no hay foto, se usa la figura ilustrada.
+Para la imagen grande, en partidos del club, se usa primero la foto oficial que esté en `fotos_oficiales/<clave>.png|jpg` (o la URL directa del campo `foto_oficial` de `jugadores.json`, si la red la deja bajar); si no hay, la de la fuente de datos. Las caras salen de la foto del jugador y se les saca el fondo con rembg. Las de los jugadores seguidos se guardan en `caras/` y los escudos en `escudos/`, para usarlas aunque falle la fuente. Si no hay foto, se usa la figura ilustrada.
 
 Si entró de suplente, la infografía lo marca: la etiqueta dice "SUPLENTE · ENTRÓ DE <puesto>", el recuadro de minutos dice en qué minuto entró, y en la cancha su cara aparece sobre el jugador al que reemplazó, con "⇄ ENTRA <apellido> <minuto>". El texto del posteo y el aviso también lo dicen.
 
 ## Jugadores
 Están en `automatizacion/jugadores.json`. Cada uno tiene `sofascore_id`, placa, altura, pie, nacimiento y colores de camiseta (club y Uruguay, clave "7").
 
-| Jugador | Club | SofaScore |
-|---|---|---|
-| Federico Valverde | Real Madrid | 831808 |
-| Facundo Bernal | Real Betis | 1177404 |
-| Santiago Mouriño | Villarreal | 1468046 |
-| Maximiliano Araújo | Sporting CP | 929193 |
+| Jugador | Club | SofaScore | Franja |
+|---|---|---|---|
+| Federico Valverde | Real Madrid | 831808 | derecha (mixto) |
+| Facundo Bernal | Real Betis | 1177404 | centro |
+| Santiago Mouriño | Villarreal | 1468046 | centro |
+| Maximiliano Araújo | Sporting CP | 929193 | izquierda (mixto) |
+| Álvaro Rodríguez | Bournemouth | 1154587 | centro |
+| Facundo González | Racing de Santander | 1085103 | centro |
+| Sebastián Cáceres | Celta de Vigo | 924889 | centro |
+| Gonzalo Petit | Cádiz | 1482378 | centro |
+| Rodrigo Bentancur | Tottenham | 791190 | centro |
+| Martín Satriano | Getafe | 973536 | centro |
+| Sebastián Boselli | Getafe | 1392092 | centro |
+| Juan Manuel Rodríguez | Cagliari | 1485391 | centro |
 
 Para sumar un jugador, se agrega un bloque con su `sofascore_id`. Se saca de https://api.sofascore.com/api/v1/search/all?q=Nombre%20Apellido.
 
@@ -74,7 +82,7 @@ Si en `salida_hoy/resumen.json` un jugador sigue con `"estado": "error"` (el res
 
 ## BeSoccer como fuente diaria (partidos del 18/10/2026 en adelante)
 Antes de `correr.sh`, para cada jugador:
-1. Abrí con WebFetch `<besoccer>` de `jugadores.json` con `/jugador/partidos/` en lugar de `/jugador/`. Buscá partidos de hoy y ayer (hora de Uruguay) que ya hayan terminado.
+1. Abrí con WebFetch `<besoccer>` de `jugadores.json` con `/jugador/partidos/` en lugar de `/jugador/` (si el jugador no tiene `besoccer`, buscalo en es.besoccer.com, y si lo encontrás seguro —mismo nombre, club y nacionalidad uruguaya— agregá la URL a `jugadores.json`). Buscá partidos de hoy y ayer (hora de Uruguay) que ya hayan terminado.
 2. Si jugó, abrí la página del partido y la de `/alineaciones` para leer su nota, minutos, goles, asistencias, tarjetas y las notas del once (por dorsal).
 3. Escribí `automatizacion/besoccer_hoy.json` (reemplazá el anterior) solo con lo leído. Lo que no aparezca, no lo pongas:
 ```json

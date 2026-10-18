@@ -160,6 +160,8 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .hero .tarj i{width:30px;height:42px;border-radius:5px;border-width:2px}
 .hero .tarj i + i{margin-left:-12px}
 .tile .x.rojo{color:#ff5a5f}
+.tile.mas .v{font-size:54px}.tile.mas .x{font-size:16px;margin-top:2px}
+.tile.dos .v{font-size:44px}.tile.dos .l{font-size:13px;margin-top:1px}.tile.dos .x{font-size:14px;margin-top:0}
 .mc{display:inline-block;width:11px;height:15px;border-radius:2px;margin-left:3px;vertical-align:-1px;border:1px solid rgba(0,0,0,.5)}
 .mc.am{background:#f7d117}.mc.ro{background:#e0252b}
 .row.c{font-size:17px;padding:1px 0 1px}.row.c b{font-size:18.5px}
@@ -346,7 +348,7 @@ def html(d, base):
  <div class="plate yo"><div class="n"><span>{esc(d.get("apellido","")).upper()}</span></div>{f'<div class="cr"><img src="{crc}"></div>' if crc else ''}</div>
  {f'<div class="tab">{estrellas_html(d.get("estrellas"), 24)}</div>' if d.get("estrellas") else ''}
 </div>
-<div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}{(f'<div class="x rojo">Expulsado' + (f' al {esc(d["roja"])}' if isinstance(d.get("roja"), str) else '') + '</div>') if d.get("roja") else ''}</div>
+<div class="tiles"><div class="tile{' mas' if (d.get('sustitucion') or d.get('roja')) else ''}{' dos' if (d.get('sustitucion') and d.get('roja')) else ''}"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}{(f'<div class="x rojo">Expulsado' + (f' al {esc(d["roja"])}' if isinstance(d.get("roja"), str) else '') + '</div>') if d.get("roja") else ''}</div>
  <div class="tile"><div class="v gold">{esc(nota_v)}</div><div class="l">NOTA</div></div></div>
 <div class="cards a">{''.join(fila_b)}</div>
 <div class="cards b">{''.join(fila_a)}</div>

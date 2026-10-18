@@ -1,6 +1,6 @@
 # Celestes por el mundo · infografías
 
-Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa si **Valverde, Bernal, Mouriño, Araújo** jugaron hoy o ayer
+Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa si **Valverde, Bentancur, Bernal, Mouriño, Araújo, Cáceres, Boselli, Satriano, Petit, Facundo González, Álvaro Rodríguez y Juan Manuel Rodríguez** jugaron hoy o ayer
 y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.

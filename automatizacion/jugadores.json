@@ -186,5 +186,362 @@
   "footballdata_equipo": 498,
   "zona": "izquierda",
   "mixto": true
+ },
+ {
+  "clave": "alvaro_rodriguez",
+  "placa": "ÁLVARO RODRÍGUEZ",
+  "apodo": "Á. Rodríguez",
+  "equipos": {
+   "60": "Bournemouth",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,93 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2004-07-14",
+  "camiseta": {
+   "60": {
+    "tipo": "rayas",
+    "c1": "#c8102e",
+    "c2": "#111111",
+    "texto": "#ffffff",
+    "short": "#111",
+    "fondo": [
+     "#c8102e",
+     "#1a0a0c",
+     "#f2c14e"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1154587,
+  "club": "Bournemouth",
+  "fotmob_id": 1327406,
+  "zona": "centro",
+  "apifootball_equipo": 35,
+  "footballdata_equipo": 1044,
+  "understat_equipo": "Bournemouth"
+ },
+ {
+  "clave": "facundo_gonzalez",
+  "placa": "FACUNDO GONZÁLEZ",
+  "equipos": {
+   "2835": "Real Racing Club",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,93 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2003-06-06",
+  "camiseta": {
+   "2835": {
+    "tipo": "liso",
+    "c1": "#f3f6f3",
+    "c2": "#f3f6f3",
+    "texto": "#0b8a4a",
+    "short": "#111",
+    "fondo": [
+     "#0b8a4a",
+     "#06331d",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1085103,
+  "club": "Racing de Santander",
+  "fotmob_id": 1212179,
+  "zona": "centro"
+ },
+ {
+  "clave": "caceres",
+  "placa": "SEBASTIÁN CÁCERES",
+  "equipos": {
+   "2821": "Celta Vigo",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,83 m",
+  "pie": "Derecho",
+  "nacimiento": "1999-08-18",
+  "camiseta": {
+   "2821": {
+    "tipo": "liso",
+    "c1": "#8ac3ee",
+    "c2": "#8ac3ee",
+    "texto": "#0f3c6e",
+    "short": "#f3f6f3",
+    "fondo": [
+     "#6cace4",
+     "#0f3c6e",
+     "#e2001a"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 924889,
+  "club": "Celta de Vigo",
+  "fotmob_id": 1020026,
+  "zona": "centro",
+  "apifootball_equipo": 538,
+  "footballdata_equipo": 558,
+  "understat_equipo": "Celta_Vigo"
+ },
+ {
+  "clave": "petit",
+  "placa": "GONZALO PETIT",
+  "equipos": {
+   "4488": "Cádiz",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,89 m",
+  "pie": "Derecho",
+  "nacimiento": "2006-09-21",
+  "camiseta": {
+   "4488": {
+    "tipo": "liso",
+    "c1": "#f6d21a",
+    "c2": "#f6d21a",
+    "texto": "#001d43",
+    "short": "#001d43",
+    "fondo": [
+     "#f2cf1d",
+     "#001d43",
+     "#001d43"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1482378,
+  "club": "Cádiz",
+  "fotmob_id": 1648518,
+  "zona": "centro",
+  "apifootball_equipo": 724
+ },
+ {
+  "clave": "bentancur",
+  "placa": "RODRIGO BENTANCUR",
+  "equipos": {
+   "33": "Tottenham Hotspur",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,87 m",
+  "pie": "Ambidiestro",
+  "nacimiento": "1997-06-25",
+  "camiseta": {
+   "33": {
+    "tipo": "liso",
+    "c1": "#f4f4f2",
+    "c2": "#f4f4f2",
+    "texto": "#132257",
+    "short": "#132257",
+    "fondo": [
+     "#1d2f6f",
+     "#060b22",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 791190,
+  "club": "Tottenham",
+  "fotmob_id": 620618,
+  "zona": "centro",
+  "apifootball_equipo": 47,
+  "footballdata_equipo": 73,
+  "understat_equipo": "Tottenham"
+ },
+ {
+  "clave": "satriano",
+  "placa": "MARTÍN SATRIANO",
+  "equipos": {
+   "2859": "Getafe",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,87 m",
+  "pie": "Derecho",
+  "nacimiento": "2001-02-20",
+  "camiseta": {
+   "2859": {
+    "tipo": "liso",
+    "c1": "#00369e",
+    "c2": "#00369e",
+    "texto": "#ffffff",
+    "short": "#00369e",
+    "fondo": [
+     "#1f56c4",
+     "#0a1f4d",
+     "#e2001a"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 973536,
+  "club": "Getafe",
+  "fotmob_id": 1197039,
+  "zona": "centro",
+  "apifootball_equipo": 546,
+  "footballdata_equipo": 82,
+  "understat_equipo": "Getafe"
+ },
+ {
+  "clave": "boselli",
+  "placa": "SEBASTIÁN BOSELLI",
+  "equipos": {
+   "2859": "Getafe",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,83 m",
+  "pie": "Derecho",
+  "nacimiento": "2003-12-04",
+  "camiseta": {
+   "2859": {
+    "tipo": "liso",
+    "c1": "#00369e",
+    "c2": "#00369e",
+    "texto": "#ffffff",
+    "short": "#00369e",
+    "fondo": [
+     "#1f56c4",
+     "#0a1f4d",
+     "#e2001a"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1392092,
+  "club": "Getafe",
+  "fotmob_id": 1414777,
+  "zona": "centro",
+  "apifootball_equipo": 546,
+  "footballdata_equipo": 82,
+  "understat_equipo": "Getafe"
+ },
+ {
+  "clave": "juan_rodriguez",
+  "placa": "JUAN MANUEL RODRÍGUEZ",
+  "apodo": "J. Rodríguez",
+  "equipos": {
+   "2719": "Cagliari",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,90 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2005-05-30",
+  "camiseta": {
+   "2719": {
+    "tipo": "liso",
+    "c1": "#a3001e",
+    "c2": "#242766",
+    "texto": "#ffffff",
+    "short": "#242766",
+    "fondo": [
+     "#a3001e",
+     "#0d1f4d",
+     "#f2c14e"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1485391,
+  "club": "Cagliari",
+  "fotmob_id": 1621219,
+  "zona": "centro",
+  "apifootball_equipo": 490,
+  "footballdata_equipo": 104,
+  "understat_equipo": "Cagliari"
  }
 ]

@@ -17,8 +17,19 @@ CORRIDA = (f"{os.environ.get('GITHUB_SERVER_URL', 'https://github.com')}/{REPO}/
 MAX_GALERIA = 24
 
 
+def _apodos():
+    try:
+        return {j["placa"]: j.get("apodo") for j in json.load(open(os.path.join(RAIZ, "automatizacion", "jugadores.json")))}
+    except Exception:
+        return {}
+
+
+APODOS = _apodos()
+
+
 def apodo(nombre):
-    return nombre.split()[-1].title()
+    """Cómo se nombra al jugador en los avisos (campo "apodo" de jugadores.json, o el apellido)."""
+    return APODOS.get(nombre) or nombre.split()[-1].title()
 
 
 def mover(salida_hoy):
