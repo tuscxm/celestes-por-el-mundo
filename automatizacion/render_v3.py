@@ -181,11 +181,13 @@ def pitch_html(d, base, escudo_club):
         return (L(xa, y0, xa, y1) + L(xb, y0, xb, y1) + L(xa, y1, xb, y1))
     svg = (f'<svg width="{w}" height="{h}" style="position:absolute;left:0;top:0">'
            f'<defs><radialGradient id="g" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#4a4e52"/><stop offset="1" stop-color="#26292c"/></radialGradient>'
-           f'<pattern id="rings" width="{w}" height="{h}" patternUnits="userSpaceOnUse">'
-           + "".join(f'<ellipse cx="{w/2}" cy="{h/2}" rx="{r*1.25}" ry="{r}" fill="none" stroke="rgba(255,255,255,.035)" stroke-width="18"/>' for r in range(40, 420, 46))
-           + f'</pattern></defs>'
-           f'<polygon points="{pts}" fill="url(#g)"/><polygon points="{pts}" fill="url(#rings)"/>'
-           f'<polygon points="{pts}" {ln} stroke-linejoin="round"/>'
+           f'<clipPath id="cancha"><polygon points="{pts}"/></clipPath>'
+           f'<filter id="blanco"><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/></filter></defs>'
+           f'<polygon points="{pts}" fill="url(#g)"/>'
+           # escudo del club en silueta blanca detrás de la cancha (en lugar de los círculos)
+           + (f'<g clip-path="url(#cancha)"><image href="{b64(escudo_club)}" x="{w/2 - h*0.44}" y="{h*0.06}" width="{h*0.88}" height="{h*0.88}" '
+              f'preserveAspectRatio="xMidYMid meet" filter="url(#blanco)" opacity=".09"/></g>' if b64(escudo_club) else "")
+           + f'<polygon points="{pts}" {ln} stroke-linejoin="round"/>'
            + L(0, h/2, 1, h/2)
            + f'<ellipse cx="{w/2}" cy="{h/2}" rx="{0.13*(top_w+bot_w)/2}" ry="{0.13*(top_w+bot_w)/2*0.62}" {ln}/>'
            + box(.2, .8, 0, 92) + box(.36, .64, 0, 34)
