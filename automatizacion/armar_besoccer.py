@@ -38,7 +38,7 @@ def main():
     info = {"estado": b.get("estado", "jugó"), "fecha": b["fecha"], "fuente_respaldo": True,
             "partido": f"{pa.get('local','')} {pa.get('goles_local','')}-{pa.get('goles_visita','')} {pa.get('visita','')}".strip(),
             "torneo": pa.get("torneo", "")}
-    avisos = list(b.get("avisos") or []) + ["Armada con datos de respaldo (BeSoccer): hay menos estadísticas que de costumbre, revisala antes de publicar"]
+    avisos = list(b.get("avisos") or []) + ([] if b.get("estado", "jugó") != "jugó" else [f"Armada con datos de respaldo ({b.get('fuente_respaldo', 'BeSoccer')}): hay menos estadísticas que de costumbre, revisala antes de publicar"])
 
     if info["estado"] == "jugó":
         seleccion = bool(pa.get("seleccion"))

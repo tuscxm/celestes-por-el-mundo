@@ -92,6 +92,11 @@ def aviso(resumen, salida_hoy):
     if avisos:
         md.append("\n## Avisos")
         md += [f"- {a}" for a in avisos]
+    fu = [(j, p) for j, p, _ in jugaron if p.get("fuentes")]
+    if fu:
+        md.append("\n## Fuentes consultadas (uso interno, no va en el posteo)")
+        for j, p in fu:
+            md.append(f"- {apodo(j['nombre'])}: " + " · ".join(f"{k} {v}" for k, v in p["fuentes"].items()))
     for j, p, _ in jugaron:
         png = f"salida/{p['png']}"
         copy_path = os.path.join(RAIZ, "salida", p["archivo"] + "_copy.txt")

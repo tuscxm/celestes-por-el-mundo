@@ -18,6 +18,7 @@ sys.path.insert(0, AQUI)
 from mapa_sofascore import get, dibujar
 from figura import figura
 from caras import cara, escudo, cara_oficial
+import fuentes
 
 TZ = ZoneInfo("America/Montevideo")
 MESES = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SETIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
@@ -166,12 +167,50 @@ def temporada(pid, team_id, year):
         filas.append(["Goles · Asist. · Amar.", f"{n(S,'goals')} · {n(S,'assists')} · {n(S,'yellowCards')}", False])
     return filas[:10], avisos
 
+def comp_clave(nombre):
+    """Nombre de competición -> clave común entre fuentes (para promediar notas de la temporada)."""
+    t = fuentes.norm(nombre)
+    if "champions" in t: return "champions"
+    if "conference" in t: return "conference"
+    if "europa" in t: return "europa"
+    if "laliga" in t or "la liga" in t or "primera division" in t: return "laliga"
+    if "portugal" in t or "primeira" in t: return "portugal"
+    return t
+
+
+def notas_temporada(filas, datos):
+    """Nota media de cada competición = promedio de todas las fuentes que la traen. Se toca solo esa fila."""
+    otras = {}
+    for d in (datos or {}).values():
+        for comp, v in (d.get("temporada") or {}).items():
+            if v.get("nota"): otras.setdefault(comp_clave(comp), []).append(v["nota"])
+    out, comp, i = [], None, 0
+    while i < len(filas):
+        f = filas[i]; out.append(f)
+        if f[1] == " ":
+            comp = comp_clave(f[0])
+        elif f[0] == "Nota media" and comp in otras:
+            prom = fuentes.promedio([float(f[1])] + otras[comp])
+            out[-1] = ["Nota media", f"{prom:.2f}", f[2]]
+        elif f[0].startswith("PJ") and comp in otras and not (i + 1 < len(filas) and filas[i + 1][0] == "Nota media"):
+            out.append(["Nota media", f"{fuentes.promedio(otras[comp]):.2f}", True])
+        i += 1
+    return out[:10]
+
+
+def comparar(nombre, principal, otros, avisos):
+    """Datos fijos: se usa el principal. Si otra fuente dice distinto, queda en los avisos (no en la infografía)."""
+    dif = {f: v for f, v in otros.items() if v is not None and principal is not None and str(v) != str(principal)}
+    if dif:
+        avisos.append(f"Las fuentes no coinciden en {nombre}: SofaScore {principal} · " + " · ".join(f"{f} {v}" for f, v in dif.items()) + " (se usó SofaScore)")
+
+
 def club_de(jug, player):
     """Equipo del club del jugador según SofaScore (para la temporada)."""
     t = player.get("team") or {}
     return t.get("id")
 
-def armar_partido(j, e, salida, plantilla_fig):
+def armar_partido(j, e, salida, plantilla_fig, extra=None):
     pid = j["sofascore_id"]; avisos = []
     lu = get(f"/event/{e['id']}/lineups")
     lado, yo = None, None
@@ -193,6 +232,8 @@ def armar_partido(j, e, salida, plantilla_fig):
     fecha = fecha_local(e)
     clave = j["clave"]
     equipo = e["homeTeam"] if lado == "home" else e["awayTeam"]
+    rival = e["awayTeam"] if lado == "home" else e["homeTeam"]
+    datos = fuentes.del_partido(extra, fecha, rival["name"])
 
     # Posiciones medias (para ordenar la cancha y saber si jugó de lateral o de central)
     try:
@@ -231,7 +272,9 @@ def armar_partido(j, e, salida, plantilla_fig):
         return list(reversed(l))  # SofaScore lista de derecha a izquierda
     recursos = os.path.join(salida, "recursos")
     def ficha(p):
-        rt = (p.get("statistics") or {}).get("rating")
+        dor = str(p.get("jerseyNumber") or p.get("shirtNumber") or "")
+        # estrellas: promedio de las notas de todas las fuentes (por dorsal)
+        rt = fuentes.promedio([(p.get("statistics") or {}).get("rating")] + [d.get("notas_once", {}).get(dor) for d in datos.values()])
         return {"dorsal": p.get("jerseyNumber") or p.get("shirtNumber") or "", "nombre": corto(p["player"]),
                 "cara": cara(p["player"]["id"], recursos, clave if p["player"]["id"] == pid else None),
                 "estrellas": estrellas(rt), "yo": p["player"]["id"] == pid, "pid": p["player"]["id"]}
@@ -291,6 +334,7 @@ def armar_partido(j, e, salida, plantilla_fig):
         except Exception:
             pass
     avisos += av
+    filas_t = notas_temporada(filas_t, datos)
     if not filas_t:
         filas_t = [["Sin datos de temporada", " ", False]]; avisos.append("Sin temporada por competición")
     cams = j.get("camiseta", {})
@@ -321,8 +365,32 @@ def armar_partido(j, e, salida, plantilla_fig):
     ronda = (ri.get("name") or "").upper() or (f"JORNADA {ri['round']}" if ri.get("round") else "")
     home, away = nombre_equipo(e["homeTeam"]), nombre_equipo(e["awayTeam"])
     hs, as_ = e.get("homeScore", {}).get("current"), e.get("awayScore", {}).get("current")
-    rating = s.get("rating")
+    # Valoración: promedio de las notas de todas las fuentes que la traen
+    notas = {"sofascore": s.get("rating")}
+    notas.update({f: d.get("nota") for f, d in datos.items() if d.get("nota")})
+    rating = fuentes.promedio(notas.values())
     if not rating: avisos.append("No hay nota del jugador en este partido")
+    elif len([v for v in notas.values() if v]) > 1:
+        avisos.append("Nota = promedio de " + " · ".join(f"{f} {v:.2f}" for f, v in notas.items() if v) + f" → {rating:.2f}")
+    # Datos fijos: se usa SofaScore; las diferencias con las otras fuentes van a los avisos
+    comparar("minutos", minutos, {f: d.get("minutos") for f, d in datos.items()}, avisos)
+    comparar("goles", goles, {f: d.get("goles") for f, d in datos.items()}, avisos)
+    comparar("asistencias", n(s, "goalAssist"), {f: d.get("asistencias") for f, d in datos.items()}, avisos)
+    comparar("rojas", roja, {f: d.get("rojas") for f, d in datos.items()}, avisos)
+    comparar("resultado", f"{hs}-{as_}", {f: f"{int(d['goles_local'])}-{int(d['goles_visita'])}" for f, d in datos.items()
+                                          if d.get("goles_local") is not None and d.get("goles_visita") is not None and fuentes.mismo_equipo(d.get("local"), e["homeTeam"]["name"])}, avisos)
+    fm_pases = (datos.get("fotmob") or {}).get("stats", {}).get("accurate_passes")
+    af_st = (datos.get("api_football") or {}).get("stats") or {}
+    comparar("pases precisos", f"{n(s,'accuratePass')}/{n(s,'totalPass')}" if s.get("totalPass") else None,
+             {"fotmob": f"{fm_pases[0]}/{fm_pases[1]}" if isinstance(fm_pases, (list, tuple)) else None,
+              "api_football": f"{af_st['pases_precisos']}/{af_st['pases']}" if af_st.get("pases") else None}, avisos)
+    # xG: si SofaScore no lo trae y otra fuente sí, se completa (dato fijo)
+    pos_filas = filas_posicion(r, s)
+    if r == "delantero" and s.get("expectedGoals") is None:
+        xg = (datos.get("understat") or {}).get("stats", {}).get("xg")
+        if xg is None: xg = (datos.get("fotmob") or {}).get("stats", {}).get("expected_goals")
+        if isinstance(xg, (int, float)) and len(pos_filas) < 10:
+            pos_filas.append(["Goles esperados (xG)", f"{xg:.2f}".replace(".", ","), False])
     archivo = f"{apellido(player)}_{home.replace(' ', '')}-{away.replace(' ', '')}_{fecha}".replace("ñ", "n").replace("ú", "u").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o")
     esc_club = escudo(equipo["id"], recursos)
     if esc_club:  # copia para cuando haya que armarla con BeSoccer
@@ -340,9 +408,9 @@ def armar_partido(j, e, salida, plantilla_fig):
          "cara": mi_cara, "foto": os.path.join(salida, fig) if fig else None,
          "sustitucion": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"], "apellido": apellido(player), "cara": mi_cara,
                           "rol": pos_titulo.replace("COMO ", "").lower()} if sustitucion else None),
-         "generales": generales, "pos_titulo": pos_titulo, "posicion": filas_posicion(r, s),
+         "generales": generales, "pos_titulo": pos_titulo, "posicion": pos_filas,
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
-         "heat_img": mapa, "perfil": perfil}
+         "heat_img": mapa, "perfil": perfil, "notas_por_fuente": notas}
     jp = os.path.join(salida, archivo + ".json")
     json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
     subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
@@ -360,7 +428,7 @@ def armar_partido(j, e, salida, plantilla_fig):
         copy += f"🔁 Entró al {sustitucion['minuto'].replace('’', chr(39))} por {sustitucion['por']}, como {pos_titulo.replace('COMO ', '').lower()}\n"
     copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
     open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
-    return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo,
+    return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo, "notas_por_fuente": notas,
             "archivo": archivo, "png": archivo + ".png", "mapa": mapa, "figura": fig, "avisos": avisos,
             "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None)}
 
@@ -377,6 +445,7 @@ def main():
     else:
         fechas = {hoy - datetime.timedelta(days=i) for i in range(int(opt("--dias", "2")))}
     plantilla_fig = os.path.join(AQUI, "fotos", "bernal_espalda_ancho.svg")
+    respaldos = []
     resumen = {"revisado": datetime.datetime.now(TZ).isoformat(timespec="minutes"), "fechas": sorted(str(f) for f in fechas), "jugadores": []}
     for j in jugs:
         if opt("--clave") and j["clave"] != opt("--clave"): continue
@@ -387,13 +456,19 @@ def main():
                 if page == 0: err = repr(ex)
                 break
         if err:
-            # Si SofaScore no responde no se puede saber si jugó: se avisa como error, nunca como "sin partido".
+            # Si SofaScore no responde se avisa como error (nunca como "sin partido") y se prueba el respaldo
+            # automático con las otras fuentes al final (respaldo_auto.py).
             resumen["jugadores"].append({"clave": j["clave"], "nombre": j["placa"],
                                          "partidos": [{"estado": "error", "partido": "(no se pudo consultar SofaScore)", "error": err}]})
+            respaldos.append(j)
             continue
         try: evs += get(f"/player/{j['sofascore_id']}/events/next/0").get("events", [])
         except Exception: pass
         vistos, partidos = set(), []
+        # Otras fuentes: solo si hay algún partido terminado de este jugador en las fechas (ahorra pedidos)
+        extra = None
+        if any(fecha_local(e) in fechas and e["status"]["type"] == "finished" for e in evs):
+            extra = fuentes.consultar(j, fechas)
         for e in evs:
             if e["id"] in vistos or fecha_local(e) not in fechas: continue
             vistos.add(e["id"])
@@ -406,7 +481,8 @@ def main():
                 info["estado"] = "ya procesado"
             else:
                 try:
-                    info.update(armar_partido(j, e, salida, plantilla_fig))
+                    info.update(armar_partido(j, e, salida, plantilla_fig, extra))
+                    if extra: info["fuentes"] = extra["estado"]
                     procesados.add(f"{j['clave']}_{e['id']}")
                     if info.get("estado") == "jugó": procesados.add(f"{j['clave']}_{fecha_local(e)}")
                 except Exception as ex:
@@ -416,6 +492,14 @@ def main():
     if proc_path:
         json.dump(sorted(procesados), open(proc_path, "w"), indent=1)
     json.dump(resumen, open(os.path.join(salida, "resumen.json"), "w"), ensure_ascii=False, indent=1)
+    # Respaldo automático para los jugadores en los que SofaScore no respondió
+    for j in respaldos:
+        try:
+            import respaldo_auto
+            respaldo_auto.armar(j, fechas, salida, proc_path)
+            resumen = json.load(open(os.path.join(salida, "resumen.json")))
+        except Exception as ex:
+            print(f"respaldo automático de {j['clave']} falló: {ex!r}")
     print(json.dumps(resumen, ensure_ascii=False, indent=1))
 
 if __name__ == "__main__":
