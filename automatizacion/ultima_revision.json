@@ -1,19 +1,39 @@
 {
- "revisado": "2026-10-17T18:26-03:00",
+ "revisado": "2026-10-18T18:32-03:00",
  "fechas": [
-  "2026-10-16",
-  "2026-10-17"
+  "2026-10-17",
+  "2026-10-18"
  ],
  "lineas": [
-  "Valverde: sin partido hoy ni ayer",
-  "**Bernal** jugó 54' (titular, nota 5.6, de mediocentro) en Real Betis 2-5 FC Barcelona · LaLiga",
-  "Mouriño: no jugó en Villarreal 0-0 Elche (suplente sin entrar)",
-  "Araújo: sin partido hoy ni ayer"
+  "**Valverde** jugó 85' (titular, nota 7.1, de lateral derecho) en Real Madrid 4-1 Sevilla · LaLiga",
+  "Bernal: ya procesado · Real Betis 2-5 FC Barcelona",
+  "Mouriño: ya procesado · Villarreal 0-0 Elche",
+  "Araújo: sin partido hoy ni ayer",
+  "**Á. Rodríguez** jugó 11' (suplente, entró al 79' por Evanilson, nota 6.2, de delantero) en Bournemouth 2-0 Sunderland · Premier League",
+  "González: no jugó en Osasuna 2-0 Real Racing Club (suplente sin entrar)",
+  "**Cáceres** jugó 77' (titular, nota 7.9, de defensor central) en Celta Vigo 2-1 Deportivo Alavés · LaLiga",
+  "Petit: sin partido hoy ni ayer",
+  "Bentancur: sin partido hoy ni ayer",
+  "Satriano: sin partido hoy ni ayer",
+  "Boselli: sin partido hoy ni ayer",
+  "J. Rodríguez: sin partido hoy ni ayer",
+  "Zalazar: sin partido hoy ni ayer",
+  "Merentiel: sin partido hoy ni ayer"
  ],
  "jugadores": [
   "Valverde",
   "Bernal",
   "Mouriño",
-  "Araújo"
+  "Araújo",
+  "Á. Rodríguez",
+  "González",
+  "Cáceres",
+  "Petit",
+  "Bentancur",
+  "Satriano",
+  "Boselli",
+  "J. Rodríguez",
+  "Zalazar",
+  "Merentiel"
  ]
 }

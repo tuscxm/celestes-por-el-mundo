@@ -1,0 +1,323 @@
+[
+ {
+  "archivo": "Caceres_CeltaVigo-DeportivoAlaves_2026-10-18",
+  "nombre": "SEBASTIÁN CÁCERES",
+  "apellido": "Caceres",
+  "dorsal": "21",
+  "local": "Celta Vigo",
+  "visita": "Deportivo Alavés",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2821.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2885.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2821.png",
+  "meta": "LALIGA · JORNADA 9 · 18 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "77’",
+  "nota": "7.9",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#6cace4",
+   "c2": "#0f3c6e",
+   "acento": "#e2001a"
+  },
+  "formacion": "3-4-3",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Radu",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_815202.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 815202
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Cáceres",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_924889.png",
+     "estrellas": 4,
+     "yo": true,
+     "pid": 924889,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Lago",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1145100.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1145100
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Rodríguez",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1526627.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 1526627
+    }
+   ],
+   [
+    {
+     "dorsal": "23",
+     "nombre": "Álvarez",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1154935.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1154935
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Moriba",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_962890.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 962890
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Carreira",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1002764.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1002764
+    },
+    {
+     "dorsal": "30",
+     "nombre": "Burcio",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1858279.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1858279
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Swedberg",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1126779.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1126779
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Jutglà",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_949962.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 949962
+    },
+    {
+     "dorsal": "24",
+     "nombre": "Driouech",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1047395.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1047395
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_924889.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "70",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "8/11",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "3/5",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "10",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "43/52",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "83%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "11/16",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/6",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "5/5",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    true
+   ],
+   [
+    "Despejes",
+    "8",
+    false
+   ],
+   [
+    "Conducciones",
+    "17 (105 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (3) · 257",
+     false
+    ],
+    [
+     "Nota media",
+     "7.49",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/caceres_2026-10-18.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "27/82 (33%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "8/10",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "0 · 4",
+     false
+    ],
+    [
+     "Conducciones",
+     "3",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "21"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,83 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ],
+   [
+    "VALOR",
+    "4,1 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 8,
+   "fotmob": 7.86
+  },
+  "amarillas_hero": 1,
+  "roja": null
+ }
+]
