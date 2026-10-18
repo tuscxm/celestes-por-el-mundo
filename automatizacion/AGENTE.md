@@ -13,9 +13,10 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
   - **zerozero** (www.zerozero.pt): minutos y resultado de la ficha del jugador.
   - Los IDs de cada fuente están en `jugadores.json` (`fotmob_id`, `apifootball_equipo`, `footballdata_equipo`, `understat_equipo`, `club`).
   - **BeSoccer** (es.besoccer.com): no deja entrar a los scripts. **Antes de correr el script**, la tarea de Claude lee con WebFetch las páginas de partidos de cada jugador (ver "BeSoccer como fuente diaria") y deja lo leído en `automatizacion/besoccer_hoy.json`. El script lo toma como una fuente más (nota, minutos, goles, tarjetas, notas del once).
-- **Desde cuándo**: las fuentes extra (incluida BeSoccer como fuente diaria) se usan para los partidos **del 19/10/2026 en adelante** (`DESDE` en `fuentes.py`). Los partidos anteriores quedan como estaban (solo SofaScore).
+- **Desde cuándo**: las fuentes extra (incluida BeSoccer como fuente diaria) se usan para los partidos **del 18/10/2026 en adelante** (`DESDE` en `fuentes.py`). Los partidos anteriores quedan como estaban (solo SofaScore).
 - **Tarjetas**: las rojas (y amarillas) se ven en la cancha junto a la cara de cada jugador; si el protagonista fue expulsado, también al lado de su foto grande, "EXPULSADO AL <minuto>" bajo los minutos y "🟥 Expulsado al <minuto>'" en el texto del posteo.
-- **Caras**: `caras.py` recorta con rembg y además borra el fondo claro que queda entre el pelo y alrededor de la cabeza, y limpia la aureola del borde.
+- **Caras**: `caras.py` agranda la foto con superresolución (FSRCNN x4, `modelos/FSRCNN_x4.pb`), recorta con rembg (modelo isnet-general-use) y además borra el fondo claro que queda entre el pelo y alrededor de la cabeza, alisa el contorno de los hombros y limpia la aureola del borde.
+- **Tarjetas en las tarjetas de datos**: "Su partido", el cuadro de la posición ("Como mediocentro", etc.) y "Temporada" muestran amarillas y rojas con su dibujo (`2[A] · 1[R]` en los datos).
 - **Cómo se combinan**:
   - **Datos fijos** (resultado, minutos, goles, asistencias, pases, tarjetas, xG...): se usa SofaScore; si SofaScore no lo trae, el de otra fuente. Si las fuentes no coinciden, queda en los avisos (nunca en la infografía).
   - **Valoraciones** (nota del partido, nota media de la temporada y las estrellas de la cancha, que salen de la nota): **promedio de todas las fuentes que traen nota** (SofaScore, FotMob, API-Football; BeSoccer si se usó). El aviso dice qué notas se promediaron.
@@ -68,14 +69,14 @@ Si en `salida_hoy/resumen.json` un jugador sigue con `"estado": "error"` (el res
    - Lo que no aparezca: no lo pongas. Nunca inventes ni estimes.
 4. Corré `python3 automatizacion/armar_besoccer.py <tu_json> --salida salida_hoy --procesados automatizacion/procesados.json` y después otra vez `GITHUB_REPOSITORY=tuscxm/celestes-por-el-mundo GITHUB_REPOSITORY_OWNER=tuscxm python3 automatizacion/publicar.py salida_hoy`.
 
-## BeSoccer como fuente diaria (partidos del 19/10/2026 en adelante)
+## BeSoccer como fuente diaria (partidos del 18/10/2026 en adelante)
 Antes de `correr.sh`, para cada jugador:
 1. Abrí con WebFetch `<besoccer>` de `jugadores.json` con `/jugador/partidos/` en lugar de `/jugador/`. Buscá partidos de hoy y ayer (hora de Uruguay) que ya hayan terminado.
 2. Si jugó, abrí la página del partido y la de `/alineaciones` para leer su nota, minutos, goles, asistencias, tarjetas y las notas del once (por dorsal).
 3. Escribí `automatizacion/besoccer_hoy.json` (reemplazá el anterior) solo con lo leído. Lo que no aparezca, no lo pongas:
 ```json
-{"fecha_revision": "2026-10-19",
- "jugadores": {"bernal": [{"fecha": "2026-10-19", "local": "Real Betis", "visita": "Sevilla", "goles_local": 1, "goles_visita": 0,
+{"fecha_revision": "2026-10-18",
+ "jugadores": {"bernal": [{"fecha": "2026-10-18", "local": "Real Betis", "visita": "Sevilla", "goles_local": 1, "goles_visita": 0,
                            "minutos": 90, "titular": true, "nota": 7.2, "goles": 0, "asistencias": 1, "amarillas": 1, "rojas": 0,
                            "notas_once": {"1": 6.8, "6": 7.2}}]}}
 ```

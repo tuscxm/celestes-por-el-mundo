@@ -164,7 +164,8 @@ def temporada(pid, team_id, year):
         filas += [[nom, " ", False],
                   ["PJ (tit.) · Min.", f"{n(S,'appearances')} ({n(S,'matchesStarted')}) · {n(S, 'minutesPlayed')}", False]]
         if S.get("rating"): filas.append(["Nota media", f"{S['rating']:.2f}", True])
-        filas.append(["Goles · Asist. · Amar.", f"{n(S,'goals')} · {n(S,'assists')} · {n(S,'yellowCards')}", False])
+        filas.append(["Goles · Asist.", f"{n(S,'goals')} · {n(S,'assists')}", False])
+        filas.append(["Tarjetas", tarjetas_txt(n(S, 'yellowCards'), n(S, 'redCards') + n(S, 'yellowRedCards')), False])
     return filas[:10], avisos
 
 def comp_clave(nombre):
@@ -203,6 +204,11 @@ def comparar(nombre, principal, otros, avisos):
     dif = {f: v for f, v in otros.items() if v is not None and principal is not None and str(v) != str(principal)}
     if dif:
         avisos.append(f"Las fuentes no coinciden en {nombre}: SofaScore {principal} · " + " · ".join(f"{f} {v}" for f, v in dif.items()) + " (se usó SofaScore)")
+
+
+def tarjetas_txt(amarillas, rojas):
+    """Texto con las dos tarjetas: '2[A] · 1[R]' (la plantilla dibuja [A] amarilla y [R] roja)."""
+    return f"{amarillas or 0}[A] · {rojas or 0}[R]"
 
 
 def club_de(jug, player):
@@ -325,7 +331,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
                     f["sale"] = True
     elif not titular:
         avisos.append("No se encontró el cambio en el que entró")
-    tarjetas = "0" if not (amar or roja) else " + ".join(x for x in [f"{amar} amarilla" + ("s" if amar > 1 else "") if amar else "", "roja" if roja else ""] if x)
+    tarjetas = tarjetas_txt(amar, roja)
 
     generales = [["Goles", str(goles), goles > 0], ["Asistencias", str(n(s, "goalAssist")), n(s, "goalAssist") > 0],
                  ["Tiros (al arco)", f"{n(s,'totalShots') if 'totalShots' in s else n(s,'onTargetScoringAttempt')+n(s,'shotOffTarget')+n(s,'blockedScoringAttempt')} ({n(s,'onTargetScoringAttempt')})", False],
@@ -402,6 +408,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
               "api_football": f"{af_st['pases_precisos']}/{af_st['pases']}" if af_st.get("pases") else None}, avisos)
     # xG: si SofaScore no lo trae y otra fuente sí, se completa (dato fijo)
     pos_filas = filas_posicion(r, s)
+    pos_filas.insert(min(len(pos_filas), 8), ["Tarjetas", tarjetas, False])
     if r == "delantero" and s.get("expectedGoals") is None:
         xg = (datos.get("understat") or {}).get("stats", {}).get("xg")
         if xg is None: xg = (datos.get("fotmob") or {}).get("stats", {}).get("expected_goals")

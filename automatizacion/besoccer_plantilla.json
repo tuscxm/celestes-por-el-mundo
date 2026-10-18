@@ -1,5 +1,5 @@
 {
- "_ayuda": "Los valores de abajo son un EJEMPLO. Copiá este archivo, completalo SOLO con datos leídos en BeSoccer y corré armar_besoccer.py. Lo que no encuentres: borralo o ponelo en null. Nunca inventes.",
+ "_ayuda": "Los valores de abajo son un EJEMPLO. Copiá este archivo, completalo SOLO con datos leídos en BeSoccer y corré armar_besoccer.py. Lo que no encuentres: borralo o ponelo en null. Nunca inventes. Tarjetas: escribí '<amarillas>[A] · <rojas>[R]' (la plantilla dibuja las tarjetas). En 'once', un 4.º elemento opcional {\"roja\": \"54’\"} o {\"amarillas\": 1} muestra la tarjeta en la cancha; \"roja\": \"<minuto>\" arriba marca la expulsión del jugador.",
  "clave": "mourino",
  "fecha": "2026-10-13",
  "estado": "jugó  |  no jugó  |  no convocado  |  no terminó  |  sin partido en esas fechas",
@@ -103,7 +103,7 @@
   ],
   [
    "Tarjetas",
-   "0"
+   "0[A] · 0[R]"
   ],
   [
    "Cambio",
@@ -125,8 +125,12 @@
    "6.5"
   ],
   [
-   "Goles · Amar.",
-   "0 · 2"
+   "Goles · Asist.",
+   "0 · 0"
+  ],
+  [
+   "Tarjetas",
+   "2[A] · 0[R]"
   ],
   [
    "CHAMPIONS LEAGUE",
@@ -141,8 +145,12 @@
    "7.5"
   ],
   [
-   "Goles · Amar.",
-   "2 · 1"
+   "Goles · Asist.",
+   "2 · 0"
+  ],
+  [
+   "Tarjetas",
+   "1[A] · 0[R]"
   ]
  ],
  "linea_posteo": "1 gol",

@@ -74,7 +74,7 @@ def armar(j, fechas, salida, proc_path):
                 v = st.get(k)
                 return f"{v[0]}/{v[1]}" if isinstance(v, (list, tuple)) and v[1] is not None else None
             am, ro = d.get("amarillas") or 0, d.get("rojas") or 0
-            tarj = "0" if not (am or ro) else " + ".join(x for x in [f"{am} amarilla" + ("s" if am > 1 else "") if am else "", "roja" if ro else ""] if x)
+            tarj = f"{am}[A] · {ro}[R]"
             sp = [["Goles", d.get("goles"), bool(d.get("goles"))], ["Asistencias", d.get("asistencias"), bool(d.get("asistencias"))]]
             if st.get("touches") is not None: sp.append(["Toques", st["touches"]])
             if st.get("duel_won") is not None and st.get("duel_lost") is not None:
@@ -94,7 +94,9 @@ def armar(j, fechas, salida, proc_path):
                     if frac("long_balls_accurate"): es.append([lbl, frac("long_balls_accurate")])
                 elif st.get(k) is not None:
                     es.append([lbl, st[k]])
-            b["estadisticas"] = es[:10]
+            if d.get("amarillas") is not None or d.get("rojas") is not None:
+                es.insert(min(len(es), 8), ["Tarjetas", tarj])
+            b["estadisticas"] = es[:9]
             # temporada: FotMob (+ nota promediada con API-Football si la trae)
             tm = []
             for comp, v in (d.get("temporada") or {}).items():
@@ -103,7 +105,9 @@ def armar(j, fechas, salida, proc_path):
                 if v.get("pj") is not None: tm.append(["PJ (tit.) · Min.", f"{v['pj']} ({v.get('tit', '?')}) · {v.get('min', '?')}"])
                 nota_t = fuentes.promedio([v.get("nota")] + otras)
                 if nota_t: tm.append(["Nota media", f"{nota_t:.2f}"])
-                if v.get("goles") is not None: tm.append(["Goles · Asist. · Amar.", f"{v['goles']} · {v.get('asist', 0)} · {v.get('amarillas', 0)}"])
+                if v.get("goles") is not None: tm.append(["Goles · Asist.", f"{v['goles']} · {v.get('asist', 0)}"])
+                if v.get("amarillas") is not None or v.get("rojas") is not None:
+                    tm.append(["Tarjetas", f"{v.get('amarillas') or 0}[A] · {v.get('rojas') or 0}[R]"])
                 b["temporada_sub"] = (v.get("season") or "").replace("20", "", 1).replace("/20", "/") if v.get("season") else ""
             b["temporada"] = tm
             lp = []

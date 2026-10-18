@@ -21,7 +21,7 @@ def _bajar(url):
 
 
 def _sin_fondo(im):
-    """Saca el fondo. 1) rembg (modelo de personas) da la máscara de la persona.
+    """Saca el fondo. 1) rembg (modelo isnet-general-use, el que mejor respeta el pelo) da la máscara de la persona.
     2) Lo que tiene el color del fondo y está conectado al borde de arriba o de los costados se borra aunque el
        modelo lo haya incluido (el blanco entre rulos, los halos alrededor de la cabeza).
     3) En el borde, la transparencia sale de la distancia al color del fondo y se le saca al color el fondo
@@ -35,7 +35,7 @@ def _sin_fondo(im):
     try:
         from rembg import remove, new_session
         if _sesion is None:
-            _sesion = new_session("u2net_human_seg")
+            _sesion = new_session("isnet-general-use")
         m = np.asarray(remove(im, session=_sesion, only_mask=True)).astype(float) / 255.0
     except Exception:
         m = None
@@ -43,13 +43,19 @@ def _sin_fondo(im):
     borde = np.concatenate([a[:k].reshape(-1, 3), a[:, :k].reshape(-1, 3), a[:, -k:].reshape(-1, 3)])
     bg = np.median(borde, axis=0)
     dist = np.sqrt(((a - bg) ** 2).sum(axis=2))
-    lowd = dist < 24
+    lowd = dist < 32
     semillas = np.zeros_like(lowd); semillas[0, :] = True
     h7 = int(H * 0.62); semillas[:h7, 0] = True; semillas[:h7, -1] = True
     fondo = ndi.binary_propagation(semillas & lowd, mask=lowd)
     if m is None:
         m = (~fondo).astype(float)
     duro = ndi.binary_fill_holes(m > 0.5)
+    # hombros/camiseta (parte de abajo): contorno parejo, sin flecos blancos sueltos
+    r = max(2, lado // 120)
+    yy, xx = np.ogrid[-r:r + 1, -r:r + 1]; disco = xx * xx + yy * yy <= r * r
+    abajo = np.zeros_like(duro); abajo[int(H * 0.6):] = True
+    liso = ndi.binary_closing(ndi.binary_opening(duro, structure=disco), structure=disco)
+    duro = np.where(abajo, liso, duro)
     lab, nl = ndi.label(duro)
     if nl > 1:
         tam = ndi.sum(duro, lab, range(1, nl + 1)); duro = lab == (1 + int(np.argmax(tam)))
@@ -61,12 +67,55 @@ def _sin_fondo(im):
     alfa = np.where(fondo, 0.0, alfa)
     alfa = np.where(cerca, np.minimum(alfa, np.clip((dist - 14) / 60.0, 0, 1)), alfa)
     interior = interior & ~ndi.binary_dilation(fondo, iterations=3)
+    # en la mitad de arriba (pelo, orejas): lo claro y sin color del borde es fondo o reflejo blanco -> afuera
+    claro = (a.min(axis=2) > bg.mean() - 12) & ((a.max(axis=2) - a.min(axis=2)) < 22)
+    claro_suave = (a.max(axis=2) - a.min(axis=2)) < 26   # gris/blanco, sin color de piel
+    arriba = np.zeros_like(claro); arriba[:int(H * 0.6)] = True
+    borde_ext = soporte & ~ndi.binary_erosion(duro, iterations=max(1, int(lado * 0.02)))
+    alfa = np.where(arriba & borde_ext & claro, 0.0, alfa)
+    # huecos de fondo encerrados entre el pelo (no tocan el borde de la imagen): manchas claras que llegan al contorno
+    bolsillo = (dist < 62) & claro_suave & arriba & soporte
+    labb, nb = ndi.label(bolsillo)
+    if nb:
+        franja = soporte & ~ndi.binary_erosion(duro, iterations=max(2, int(lado * 0.06)))
+        toca = np.unique(labb[franja & bolsillo]); toca = toca[toca > 0]
+        quitar = np.isin(labb, toca)
+        alfa = np.where(quitar, 0.0, alfa); interior = interior & ~quitar
+    # matting en el borde: cada píxel es mezcla del color de la persona más cercano y el fondo -> su proporción
+    nucleo = ndi.binary_erosion(duro, iterations=max(2, int(lado * 0.03)))
+    if nucleo.any():
+        idx = ndi.distance_transform_edt(~nucleo, return_indices=True)[1]
+        fgl = a[idx[0], idx[1]]
+        dv = fgl - bg; den = (dv ** 2).sum(axis=2)
+        am = np.clip(((a - bg) * dv).sum(axis=2) / np.maximum(den, 1), 0, 1)
+        cabeza = np.zeros_like(interior); cabeza[:int(H * 0.6)] = True
+        usar = (den >= 45 ** 2) & ~interior & soporte & cabeza
+        alfa = np.where(usar, np.minimum(alfa, am), alfa)
+        a = np.where(usar[..., None], fgl, a)   # el borde toma el color de la persona más cercano (sin aureola ni sombra)
     alfa = ndi.minimum_filter(alfa, size=3)
     alfa = ndi.gaussian_filter(alfa, 0.7)
     alfa[interior] = 1.0
     al = np.clip(alfa, 1e-3, 1)[..., None]
     fg = np.where(alfa[..., None] > 0.98, a, np.clip((a - (1 - al) * bg) / al, 0, 255))
     return Image.fromarray(np.dstack([fg, alfa * 255]).astype("uint8"), "RGBA")
+
+
+_sr = None
+
+
+def _agrandar(im, lado=600):
+    """Agranda la foto chica (150 px) con superresolución FSRCNN x4 (modelos/FSRCNN_x4.pb); si no se puede, LANCZOS."""
+    global _sr
+    try:
+        import cv2
+        if _sr is None:
+            _sr = cv2.dnn_superres.DnnSuperResImpl_create()
+            _sr.readModel(os.path.join(AQUI, "modelos", "FSRCNN_x4.pb")); _sr.setModel("fsrcnn", 4)
+        a = cv2.cvtColor(np.asarray(im.convert("RGB")), cv2.COLOR_RGB2BGR)
+        b = Image.fromarray(cv2.cvtColor(_sr.upsample(a), cv2.COLOR_BGR2RGB))
+        return b.resize((lado, lado), Image.LANCZOS) if b.size != (lado, lado) else b
+    except Exception:
+        return im.resize((lado, lado), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2, percent=50, threshold=2))
 
 
 def cara(pid, carpeta, clave=None):
@@ -78,7 +127,7 @@ def cara(pid, carpeta, clave=None):
         im = Image.open(io.BytesIO(_bajar(f"{BASE}/player/{pid}/image"))).convert("RGB")
         if im.size[0] < 60:
             raise ValueError("imagen muy chica")
-        im = im.resize((600, 600), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2, percent=50, threshold=2))
+        im = _agrandar(im)
         _sin_fondo(im).save(ruta)
         if clave:
             os.makedirs(os.path.join(AQUI, "caras"), exist_ok=True)

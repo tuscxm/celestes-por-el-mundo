@@ -144,6 +144,9 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .hero .tarj i{width:30px;height:42px;border-radius:5px;border-width:2px}
 .hero .tarj i + i{margin-left:-12px}
 .tile .x.rojo{color:#ff5a5f}
+.mc{display:inline-block;width:11px;height:15px;border-radius:2px;margin-left:3px;vertical-align:-1px;border:1px solid rgba(0,0,0,.5)}
+.mc.am{background:#f7d117}.mc.ro{background:#e0252b}
+.row.c{font-size:17.5px;padding:2px 0 2px}.row.c b{font-size:18.5px}
 """
 
 
@@ -220,15 +223,20 @@ def tarjetas_html(p):
     return ""
 
 
-def rows(items):
+def valor_html(v):
+    """Valor de una fila; [A] y [R] se dibujan como tarjeta amarilla y roja."""
+    return esc(v).replace("[A]", '<i class="mc am"></i>').replace("[R]", '<i class="mc ro"></i>')
+
+
+def rows(items, compacto=False):
     out = ""
     for it in items:
         k, v = it[0], it[1]
         g = it[2] if len(it) > 2 else False
         if v == " " or v == "":
-            out += f'<div class="row h"><span>{k}</span></div>'
+            out += f'<div class="row h{" c" if compacto else ""}"><span>{k}</span></div>'
         else:
-            out += f'<div class="row"><span>{k}</span><b class="{"gold" if g else ""}">{esc(v)}</b></div>'
+            out += f'<div class="row{" c" if compacto else ""}"><span>{k}</span><b class="{"gold" if g else ""}">{valor_html(v)}</b></div>'
     return out
 
 
@@ -253,7 +261,8 @@ def html(d, base):
         cards.append(f'<div class="card"><h3>MAPA DE CALOR</h3><div class="heat"><img src="{b64(os.path.join(base, d["heat_img"]))}"></div></div>')
     ex = d.get("extra") or {}
     if ex.get("filas"):
-        cards.append(f'<div class="card"><h3>{esc(ex.get("titulo","TEMPORADA"))}<small>{esc(ex.get("sub",""))}</small></h3>{rows(ex["filas"][:9])}</div>')
+        fe = ex["filas"][:10]
+        cards.append(f'<div class="card"><h3>{esc(ex.get("titulo","TEMPORADA"))}<small>{esc(ex.get("sub",""))}</small></h3>{rows(fe, len(fe) > 9)}</div>')
     if len(cards) < 4 and d.get("perfil"):
         cards.insert(min(2, len(cards)), f'<div class="card"><h3>PERFIL</h3>{rows([[k, v, False] for k, v in d["perfil"]])}</div>')
     cond = d.get("condicion", "")
