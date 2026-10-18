@@ -79,7 +79,7 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
  text-shadow:0 2px 8px rgba(0,0,0,.5)}
 .meta .tag{background:#fff;color:#111;border-radius:6px;padding:1px 9px;margin-left:6px}
 .meta .tag.sup{background:#f2c14e}
-.pitch{position:absolute;left:24px;top:322px;width:480px;height:408px}
+.pitch{position:absolute;left:24px;top:322px;width:590px;height:414px}
 .form{position:absolute;left:10px;top:-2px;background:rgba(15,18,21,.8);border-radius:8px;padding:3px 10px;font-weight:800;font-size:17px;letter-spacing:2px;color:#9fd6f7;z-index:5}
 .slot{position:absolute;display:flex;flex-direction:column;align-items:center;transform:translateX(-50%)}
 .slot .ph{position:relative;display:flex;justify-content:center;align-items:flex-end}
@@ -103,23 +103,24 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .tile .x{font-weight:800;font-size:19px;letter-spacing:1px;color:#f2c14e;margin-top:4px;text-transform:uppercase}
 .tab{background:#1b1e21;border-radius:0 0 7px 7px;padding:0 8px 1px;margin-top:-1px}
 .stars{color:#f2c14e;letter-spacing:1px;line-height:1.1}
-.hero{position:absolute;left:520px;top:316px;width:536px;height:300px}
+.hero{position:absolute;left:630px;top:314px;width:426px;height:270px}
 .hero .glow{position:absolute;left:8px;right:8px;top:0;bottom:30px;background:radial-gradient(ellipse 50% 55% at 50% 62%,rgba(255,255,255,.55),rgba(255,255,255,0) 72%)}
-.hero .face{position:absolute;left:50%;top:0;transform:translateX(-50%);width:250px;height:250px;object-fit:cover;object-position:top;
+.hero .face{position:absolute;left:50%;top:0;transform:translateX(-50%);width:214px;height:214px;object-fit:cover;object-position:top;
  -webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
-.hero .fig{position:absolute;left:50%;top:-6px;transform:translateX(-50%);height:250px;border-radius:18px}
-.hero .plate{position:absolute;left:50%;top:222px;transform:translateX(-50%)}
-.hero .plate .n{font-size:38px;padding:2px 18px 0 14px}
-.hero .plate .cr{width:66px;height:66px;margin-left:-10px}
-.hero .plate .cr img{width:52px;height:52px}
-.hero .dorsal{position:absolute;right:18px;top:16px;font-weight:900;font-size:64px;color:rgba(255,255,255,.92);text-shadow:0 4px 16px rgba(0,0,0,.45)}
-.hero .tab{position:absolute;left:50%;top:274px;transform:translateX(-50%);padding:1px 14px 3px}
-.tiles{position:absolute;left:536px;top:628px;width:520px;display:flex;gap:14px}
-.tile{flex:1;height:102px;background:rgba(15,18,21,.84);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.tile .v{font-weight:900;font-size:62px;line-height:.95}
+.hero .fig{position:absolute;left:50%;top:-6px;transform:translateX(-50%);height:214px;border-radius:18px}
+.hero .plate{position:absolute;left:50%;top:186px;transform:translateX(-50%)}
+.hero .plate .n{font-size:34px;padding:2px 16px 0 13px}
+.hero .plate .cr{width:56px;height:56px;margin-left:-10px}
+.hero .plate .cr img{width:44px;height:44px}
+.hero .dorsal{position:absolute;left:calc(50% + 104px);top:52px;font-weight:900;font-size:60px;color:rgba(255,255,255,.92);text-shadow:0 4px 16px rgba(0,0,0,.45)}
+.hero .tab{position:absolute;left:50%;top:234px;transform:translateX(-50%);padding:1px 14px 3px}
+.tiles{position:absolute;left:636px;top:590px;width:420px;display:flex;gap:14px}
+.tile{flex:1;height:112px;background:rgba(15,18,21,.84);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tile .v{font-weight:900;font-size:64px;line-height:.95}
 .tile .l{font-weight:700;font-size:16px;letter-spacing:4px;color:#b8c2c9;margin-top:4px}
 .cards{position:absolute;left:24px;right:24px;display:flex;gap:16px}
-.cards.a{top:742px;height:316px}.cards.b{top:1070px;height:216px}
+.cards.a{top:750px;height:206px}.cards.b{top:968px;height:316px}
+.card.dos{padding-top:12px}.card.dos h3{margin-bottom:5px}
 .card.calor{flex:2.1;display:flex;flex-direction:column}
 .card.dos .lista{column-count:2;column-gap:26px}.card.dos .row{break-inside:avoid}
 .calor .cuerpo{display:flex;gap:18px;align-items:center;flex:1}
@@ -150,7 +151,7 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .tarj i{display:block;width:17px;height:23px;border-radius:3px;border:1.5px solid rgba(0,0,0,.6);box-shadow:0 2px 5px rgba(0,0,0,.5)}
 .tarj i + i{margin-left:-7px;transform:rotate(12deg)}
 .tarj i.am{background:#f7d117}.tarj i.ro{background:#e0252b}
-.hero .tarj{left:auto;right:26px;top:100px}
+.hero .tarj{left:calc(50% + 106px);right:auto;top:130px}
 .hero .tarj i{width:30px;height:42px;border-radius:5px;border-width:2px}
 .hero .tarj i + i{margin-left:-12px}
 .tile .x.rojo{color:#ff5a5f}
@@ -161,8 +162,8 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 
 
 def pitch_html(d, base, escudo_club):
-    w, h = 480, 408
-    top_w, bot_w = 380, 480
+    w, h = 590, 414
+    top_w, bot_w = 470, 590
     lines = d.get("once") or []
     pts = f"{(w-top_w)/2},0 {w-(w-top_w)/2},0 {w},{h} 0,{h}"
     def X(xr, y):  # xr en 0..1 dentro de la cancha, y en px
@@ -194,22 +195,22 @@ def pitch_html(d, base, escudo_club):
     cr = b64(escudo_club)
     for i, line in enumerate(lines):
         # i=0 arquero (abajo) ... n-1 ataque (arriba)
-        y_face_bottom = (h - 40) - i * ((h - 40 - 62) / max(1, n - 1))
+        y_face_bottom = (h - 42) - i * ((h - 42 - 64) / max(1, n - 1))
         k = len(line)
         persp = y_face_bottom / h
-        size = int((50 + 10 * persp) * (0.9 if n >= 5 else 1))
+        size = int((56 + 12 * persp) * (0.9 if n >= 5 else 1))
         for j, p in enumerate(line):
             xr = (j + 1) / (k + 1) if k > 1 else 0.5
             if k >= 4:
                 xr = 0.08 + 0.84 * j / (k - 1)
             x = X(xr, y_face_bottom)
             nombre = esc(p.get("nombre", "")).upper()
-            fs = 12 if len(nombre) <= 8 else (11 if len(nombre) <= 11 else 10)
+            fs = 13 if len(nombre) <= 8 else (12 if len(nombre) <= 11 else 11)
             img = b64(p.get("cara"))
             ph = (f'<img src="{img}" style="width:{size}px;height:{size}px">' if img else
                   f'<div class="num" style="width:{size-16}px;height:{size-16}px;font-size:{int(size*.32)}px">{esc(p.get("dorsal",""))}</div>')
             crest = f'<div class="cr" style="width:24px;height:24px"><img src="{cr}" style="width:19px;height:19px"></div>' if cr else ""
-            st = estrellas_html(p.get("estrellas"), 9)
+            st = estrellas_html(p.get("estrellas"), 10)
             sub = d.get("sustitucion") if p.get("sale") else None
             entra = ""
             if sub:
@@ -218,7 +219,7 @@ def pitch_html(d, base, escudo_club):
                          + (f'<img src="{ci}">' if ci else '') + '</div>')
             out += (f'<div class="slot{" yo" if p.get("yo") else ""}{" sale" if sub else ""}" style="left:{x}px;top:{y_face_bottom - size}px;z-index:{(40 if sub else 10)+i}">'
                     f'<div class="ph">{ph}{entra}{tarjetas_html(p)}</div>'
-                    f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(96 if k<=3 else 86)}px"><span>{nombre}</span></div>{crest}</div>'
+                    f'<div class="plate"><div class="n" style="font-size:{fs}px;max-width:{int(112 if k<=3 else 100)}px"><span>{nombre}</span></div>{crest}</div>'
                     + (f'<div class="tab">{st}</div>' if st else "")
                     + (f'<div class="chip">⇄ Entra {esc(sub.get("apellido",""))} {esc(sub.get("minuto",""))}</div>' if sub else "") + '</div>')
     return out
@@ -307,8 +308,8 @@ def html(d, base):
 </div>
 <div class="tiles"><div class="tile"><div class="v">{esc(d["minutos"])}</div><div class="l">MINUTOS</div>{(f'<div class="x">Entró al {esc(d["sustitucion"]["minuto"])}</div>') if d.get("sustitucion") else ''}{(f'<div class="x rojo">Expulsado' + (f' al {esc(d["roja"])}' if isinstance(d.get("roja"), str) else '') + '</div>') if d.get("roja") else ''}</div>
  <div class="tile"><div class="v gold">{esc(nota_v)}</div><div class="l">NOTA</div></div></div>
-<div class="cards a">{''.join(fila_a)}</div>
-<div class="cards b">{''.join(fila_b)}</div>
+<div class="cards a">{''.join(fila_b)}</div>
+<div class="cards b">{''.join(fila_a)}</div>
 <div class="foot"><div class="wordmark">Celestes <i>por el</i> mundo</div><div class="hash">#CELESTESPORELMUNDO</div></div>
 </body></html>"""
 
