@@ -267,7 +267,7 @@ def fondo_html(estilo, wm):
     rayas   : el de siempre (rayas diagonales y dos escudos a color en los costados).
     sol     : rayos de un sol de mayo detrás de la foto del jugador, un solo escudo grande en silueta y grano.
     franja  : franja vertical con las 9 franjas de la bandera en el borde izquierdo, escudo en silueta y trama de puntos.
-    bandera : sol de mayo saliendo de la esquina de arriba a la izquierda (como en la bandera), 9 franjas muy suaves y escudo en silueta."""
+    bandera : (el que se usa) sol de mayo con los rayos saliendo desde el nombre del jugador, 9 franjas muy suaves y escudo en silueta."""
     silueta = (f'<img class="wm1" src="{wm}">' if wm else '')
     if estilo == "sol":
         return ('<div class="bg sinrayas"></div>'
@@ -283,8 +283,8 @@ def fondo_html(estilo, wm):
     if estilo == "bandera":
         return ('<div class="bg sinrayas"></div>'
                 '<div class="capa" style="background:repeating-linear-gradient(180deg,rgba(255,255,255,.055) 0 75px,rgba(255,255,255,0) 75px 150px)"></div>'
-                '<div class="capa" style="background:repeating-conic-gradient(from 0deg at 0px 0px,rgba(255,255,255,.10) 0 4deg,rgba(255,255,255,0) 4deg 8deg);'
-                '-webkit-mask-image:radial-gradient(circle at 0 0,#000 0,rgba(0,0,0,.6) 300px,transparent 760px)"></div>'
+                '<div class="capa" style="background:repeating-conic-gradient(from 0deg at 540px 132px,rgba(255,255,255,.10) 0 4deg,rgba(255,255,255,0) 4deg 8deg);'
+                '-webkit-mask-image:radial-gradient(circle at 540px 132px,#000 0,rgba(0,0,0,.6) 320px,transparent 820px)"></div>'
                 + silueta + '<div class="capa grano" style="opacity:.08"></div>')
     return ('<div class="bg"></div>'
             + (f'<img class="wm" src="{wm}" style="left:-150px;top:40px">' if wm else '')
@@ -330,7 +330,7 @@ def html(d, base):
     nota_v = d.get("nota") or "—"
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{fuentes()}{CSS}
 :root{{--c1:{c1};--c2:{c2};--acento:{ac};--acento-txt:{txt_sobre(ac)}}}</style></head><body>
-{fondo_html(d.get("fondo", "rayas"), wm)}
+{fondo_html(d.get("fondo", "bandera"), wm)}
 <div class="shade"></div>
 <div class="brand">CELESTES POR EL MUNDO</div>
 <h1 style="font-size:{size}px">{nombre}</h1>
