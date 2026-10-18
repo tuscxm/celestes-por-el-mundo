@@ -43,7 +43,8 @@
   "apifootball_equipo": 541,
   "footballdata_equipo": 86,
   "understat_equipo": "Real_Madrid",
-  "zona": "derecha"
+  "zona": "derecha",
+  "mixto": true
  },
  {
   "clave": "bernal",
@@ -183,6 +184,7 @@
   "fotmob_id": 1031656,
   "apifootball_equipo": 228,
   "footballdata_equipo": 498,
-  "zona": "izquierda"
+  "zona": "izquierda",
+  "mixto": true
  }
 ]

@@ -243,6 +243,23 @@ def por_zona(zona, puntos, rb):
     return {"titulo": titulo, "filas": f[:5]} if f else None
 
 
+def extras_volante(rb):
+    """Para volantes, mediocentros y jugadores mixtos (Valverde, Araújo): pases que llegaron al último tercio y
+    recuperaciones en cada tercio de la cancha (defensa · medio · ataque). Solo con acciones que traen ubicación
+    (x a lo largo: 0 su arco, 100 el arco rival)."""
+    f = {}
+    if not rb: return f
+    pa = [e for e in rb.get("passes") or [] if (e.get("passEndCoordinates") or {}).get("x") is not None]
+    if rb.get("passes") is not None:
+        ut = [e for e in pa if e["passEndCoordinates"]["x"] >= 200 / 3]
+        f["ultimo_tercio"] = ["Pases al último tercio", f"{sum(1 for e in ut if e.get('outcome'))}/{len(ut)}", True]
+    if rb.get("defensive") is not None:
+        rec = [e for e in rb["defensive"] if e.get("eventActionType") == "ball-recovery" and (e.get("playerCoordinates") or {}).get("x") is not None]
+        t = [sum(1 for e in rec if lo <= e["playerCoordinates"]["x"] < hi) for lo, hi in ((0, 100 / 3), (100 / 3, 200 / 3), (200 / 3, 101))]
+        f["recup_zonas"] = ["Recup. def · med · ata", f"{t[0]} · {t[1]} · {t[2]}", False]
+    return f
+
+
 def club_de(jug, player):
     """Equipo del club del jugador según SofaScore (para la temporada)."""
     t = player.get("team") or {}
@@ -448,7 +465,17 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
               "api_football": f"{af_st['pases_precisos']}/{af_st['pases']}" if af_st.get("pases") else None}, avisos)
     # xG: si SofaScore no lo trae y otra fuente sí, se completa (dato fijo)
     pos_filas = filas_posicion(r, s)
-    pos_filas.insert(min(len(pos_filas), 8), ["Tarjetas", tarjetas, False])
+    pos_filas = pos_filas[:9]
+    if r in ("mediocentro", "banda") or j.get("mixto"):
+        ex_v = extras_volante(rb)
+        if ex_v.get("ultimo_tercio"):
+            i = next((k for k, x in enumerate(pos_filas) if x[0] == "Precisión de pase"), -1) + 1
+            pos_filas.insert(i, ex_v["ultimo_tercio"])
+        if ex_v.get("recup_zonas"):
+            i = next((k for k, x in enumerate(pos_filas) if x[0] == "Recuperaciones"), len(pos_filas) - 1) + 1
+            pos_filas.insert(i, ex_v["recup_zonas"])
+    pos_filas.insert(min(len(pos_filas), 11), ["Tarjetas", tarjetas, False])
+    pos_filas = pos_filas[:12]
     if r == "delantero" and s.get("expectedGoals") is None:
         xg = (datos.get("understat") or {}).get("stats", {}).get("xg")
         if xg is None: xg = (datos.get("fotmob") or {}).get("stats", {}).get("expected_goals")

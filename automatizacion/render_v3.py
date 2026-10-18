@@ -119,7 +119,7 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .tile .v{font-weight:900;font-size:62px;line-height:.95}
 .tile .l{font-weight:700;font-size:16px;letter-spacing:4px;color:#b8c2c9;margin-top:4px}
 .cards{position:absolute;left:24px;right:24px;display:flex;gap:16px}
-.cards.a{top:744px;height:334px}.cards.b{top:1092px;height:190px}
+.cards.a{top:742px;height:316px}.cards.b{top:1070px;height:216px}
 .card.calor{flex:2.1;display:flex;flex-direction:column}
 .card.dos .lista{column-count:2;column-gap:26px}.card.dos .row{break-inside:avoid}
 .calor .cuerpo{display:flex;gap:18px;align-items:center;flex:1}
@@ -156,7 +156,7 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .tile .x.rojo{color:#ff5a5f}
 .mc{display:inline-block;width:11px;height:15px;border-radius:2px;margin-left:3px;vertical-align:-1px;border:1px solid rgba(0,0,0,.5)}
 .mc.am{background:#f7d117}.mc.ro{background:#e0252b}
-.row.c{font-size:17.5px;padding:1.5px 0 1.5px}.row.c b{font-size:18.5px}
+.row.c{font-size:17px;padding:1px 0 1px}.row.c b{font-size:18.5px}
 """
 
 
@@ -281,7 +281,7 @@ def html(d, base):
     if d.get("generales"):
         fila_b.append(f'<div class="card dos"><h3>SU PARTIDO</h3><div class="lista">{rows(d["generales"][:10], True)}</div></div>')
     if d.get("posicion"):
-        fila_b.append(f'<div class="card dos"><h3>TOTALES</h3><div class="lista">{rows(d["posicion"][:10], True)}</div></div>')
+        fila_b.append(f'<div class="card dos"><h3>TOTALES</h3><div class="lista">{rows(d["posicion"][:12], True)}</div></div>')
     cond = d.get("condicion", "")
     if d.get("sustitucion") and d["sustitucion"].get("rol"):
         cond = f'SUPLENTE · ENTRÓ DE {d["sustitucion"]["rol"].upper()}'
