@@ -1,0 +1,345 @@
+[
+ {
+  "archivo": "Boselli_Getafe-RayoVallecano_2026-10-19",
+  "nombre": "SEBASTIÁN BOSELLI",
+  "apellido": "Boselli",
+  "dorsal": "15",
+  "local": "Getafe",
+  "visita": "Rayo Vallecano",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2859.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2818.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2859.png",
+  "meta": "LALIGA · JORNADA 9 · 19 OCTUBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "10’",
+  "nota": "6.7",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#1f56c4",
+   "c2": "#0a1f4d",
+   "acento": "#e2001a"
+  },
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Soria",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_604258.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 604258
+    }
+   ],
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Mojica",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_344847.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 344847
+    },
+    {
+     "dorsal": "26",
+     "nombre": "I. Valou",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1924859.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1924859
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Djené",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_307702.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 307702,
+     "roja": "28’",
+     "amarillas": 1
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Carvajal",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_138572.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 138572,
+     "amarillas": 1,
+     "sale": true
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Satriano",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_973536.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 973536
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Martín",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1154549.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1154549
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Gudelj",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_68332.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 68332,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Femenía",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_53739.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 53739,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Ünal",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_336655.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 336655,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Terrats",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1088565.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1088565
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1392092.png",
+  "foto": null,
+  "sustitucion": {
+   "minuto": "80’",
+   "por": "Carvajal",
+   "apellido": "Boselli",
+   "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1392092.png",
+   "rol": "lateral derecho"
+  },
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "10",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/2",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "5",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "1/3",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "33%",
+    true
+   ],
+   [
+    "Entradas ganadas",
+    "0/2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    true
+   ],
+   [
+    "Despejes",
+    "2",
+    false
+   ],
+   [
+    "Conducciones",
+    "1 (3 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (1) · 162",
+     false
+    ],
+    [
+     "Nota media",
+     "6.44",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "CONFERENCE LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "1 (0) · 8",
+     false
+    ],
+    [
+     "Nota media",
+     "6.50",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/boselli_2026-10-19.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "1/13 (8%)",
+     true
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "0 · 1",
+     false
+    ],
+    [
+     "Conducciones",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,83 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ],
+   [
+    "VALOR",
+    "1,5 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 6.9,
+   "fotmob": 6.45
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

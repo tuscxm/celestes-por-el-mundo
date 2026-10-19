@@ -1,0 +1,325 @@
+[
+ {
+  "archivo": "Rodriguez_Monza-Cagliari_2026-10-19",
+  "nombre": "JUAN MANUEL RODRÍGUEZ",
+  "apellido": "Rodríguez",
+  "dorsal": "15",
+  "local": "Monza",
+  "visita": "Cagliari",
+  "goles_local": 4,
+  "goles_visita": 0,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2729.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2719.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2719.png",
+  "meta": "SERIE A · JORNADA 7 · 19 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.2",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#a3001e",
+   "c2": "#0d1f4d",
+   "acento": "#f2c14e"
+  },
+  "formacion": "4-3-2-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Caprile",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_947954.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 947954
+    }
+   ],
+   [
+    {
+     "dorsal": "33",
+     "nombre": "Obert",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_964153.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 964153
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Rodríguez",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1485391.png",
+     "estrellas": 2,
+     "yo": true,
+     "pid": 1485391
+    },
+    {
+     "dorsal": "26",
+     "nombre": "Mina",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_360396.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 360396
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Zé Pedro",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_945448.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 945448
+    }
+   ],
+   [
+    {
+     "dorsal": "6",
+     "nombre": "Winks",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_545780.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 545780,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Romano",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1417034.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1417034
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Adopo",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_928777.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 928777
+    }
+   ],
+   [
+    {
+     "dorsal": "70",
+     "nombre": "Maldini",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_970928.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 970928
+    },
+    {
+     "dorsal": "31",
+     "nombre": "Mendy",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2049928.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 2049928
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Nzola",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_788061.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 788061
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1485391.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "84",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "6/9",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "3/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "7",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "62/69",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "90%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "18/21",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "6/9",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "2/3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    true
+   ],
+   [
+    "Despejes",
+    "5",
+    false
+   ],
+   [
+    "Conducciones",
+    "23 (140 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SERIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (7) · 530",
+     false
+    ],
+    [
+     "Nota media",
+     "6.91",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/juan_rodriguez_2026-10-19.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "41/97 (42%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "28/31",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "3",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "0 · 2",
+     false
+    ],
+    [
+     "Conducciones",
+     "9",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "21 años"
+   ],
+   [
+    "ALTURA",
+    "1,90 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ],
+   [
+    "VALOR",
+    "13,2 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 6.5,
+   "fotmob": 5.92
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]
