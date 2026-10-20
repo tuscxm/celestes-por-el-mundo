@@ -1,0 +1,346 @@
+[
+ {
+  "archivo": "Mourino_LiverpoolFC-Villarreal_2026-10-20",
+  "nombre": "SANTIAGO MOURIÑO",
+  "apellido": "Mouriño",
+  "dorsal": "15",
+  "local": "Liverpool FC",
+  "visita": "Villarreal",
+  "goles_local": 4,
+  "goles_visita": 3,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_44.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2819.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_2819.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 3 · 20 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.1",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#f2cf1d",
+   "c2": "#0f5d8c",
+   "acento": "#0d3b8c"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Gulácsi",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_37096.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 37096
+    }
+   ],
+   [
+    {
+     "dorsal": "23",
+     "nombre": "Cardona",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_986245.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 986245
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Veiga",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1087359.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1087359
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Navarro",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1525863.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1525863
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Mouriño",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1468046.png",
+     "estrellas": 2,
+     "yo": true,
+     "pid": 1468046,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Gueye",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_879694.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 879694
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Comesaña",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_843678.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 843678
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Moleiro",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1012444.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1012444,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "24",
+     "nombre": "Saliba",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1093229.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1093229
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Buchanan",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_973290.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 973290
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Mikautadze",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1009372.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1009372
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1468046.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "1 (1)",
+    false
+   ],
+   [
+    "Toques",
+    "72",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/13",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "3",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "16",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "33/44",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "75%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "16/22",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "0/1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "5",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "9",
+    true
+   ],
+   [
+    "Despejes",
+    "5",
+    false
+   ],
+   [
+    "Conducciones",
+    "14 (126 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "6 (4) · 337",
+     false
+    ],
+    [
+     "Nota media",
+     "6.65",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (3) · 270",
+     false
+    ],
+    [
+     "Nota media",
+     "7.03",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/mourino_2026-10-20.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "9/92 (10%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "3/4",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "0 · 2",
+     false
+    ],
+    [
+     "Conducciones",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "24 años"
+   ],
+   [
+    "ALTURA",
+    "1,86 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ],
+   [
+    "VALOR",
+    "19,4 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 5.8,
+   "fotmob": 6.39
+  },
+  "amarillas_hero": 1,
+  "roja": null
+ }
+]
