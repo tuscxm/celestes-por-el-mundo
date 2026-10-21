@@ -1043,5 +1043,91 @@
   "fotmob_id": 592909,
   "rol_352": "interno",
   "zona": "centro"
+ },
+ {
+  "clave": "brizuela",
+  "placa": "THIAGO BRIZUELA",
+  "equipos": {
+   "6879": "Liverpool UY",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,69 m",
+  "pie": "Derecho",
+  "nacimiento": "2009-02-26",
+  "camiseta": {
+   "6879": {
+    "tipo": "rayas",
+    "c1": "#082543",
+    "c2": "#111111",
+    "texto": "#ffffff",
+    "short": "#111111",
+    "fondo": [
+     "#0b3a6b",
+     "#05121f",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 2311172,
+  "club": "Liverpool (Uruguay)",
+  "fotmob_id": 1970886,
+  "zona": "centro",
+  "rol_352": "enganche"
+ },
+ {
+  "clave": "piquerez",
+  "placa": "JOAQUÍN PIQUEREZ",
+  "equipos": {
+   "1963": "Palmeiras",
+   "7": "Uruguay"
+  },
+  "posicion": "lateral",
+  "altura": "1,83 m",
+  "pie": "Izquierdo",
+  "nacimiento": "1998-08-24",
+  "camiseta": {
+   "1963": {
+    "tipo": "liso",
+    "c1": "#006437",
+    "c2": "#006437",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#0b7a45",
+     "#032414",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 881110,
+  "club": "Palmeiras",
+  "fotmob_id": 861661,
+  "zona": "centro",
+  "rol_352": "zaguero"
  }
 ]
