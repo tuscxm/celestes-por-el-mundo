@@ -81,7 +81,7 @@ def apellido_placa(p, placa):
 
 def corto(p):
     s = p.get("shortName") or p["name"]
-    return s.split(". ", 1)[1] if ". " in s else s
+    return s.rsplit(". ", 1)[1] if ". " in s else s
 
 def n(s, k):
     """Contador de SofaScore: si la clave no está, SofaScore lo omite porque es 0."""

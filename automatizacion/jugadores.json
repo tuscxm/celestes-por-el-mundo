@@ -185,7 +185,8 @@
   "apifootball_equipo": 228,
   "footballdata_equipo": 498,
   "zona": "izquierda",
-  "mixto": true
+  "mixto": true,
+  "apodo": "M. Araújo"
  },
  {
   "clave": "alvaro_rodriguez",
@@ -630,5 +631,135 @@
   "fotmob_id": 826418,
   "zona": "centro",
   "apifootball_equipo": 451
+ },
+ {
+  "clave": "gimenez",
+  "placa": "JOSÉ MARÍA GIMÉNEZ",
+  "apodo": "Giménez",
+  "equipos": {
+   "2832": "Deportivo de A Coruña",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,85 m",
+  "pie": "Derecho",
+  "nacimiento": "1995-01-20",
+  "camiseta": {
+   "2832": {
+    "tipo": "rayas",
+    "c1": "#003399",
+    "c2": "#ffffff",
+    "texto": "#ffffff",
+    "short": "#003399",
+    "fondo": [
+     "#1f4fb8",
+     "#06163f",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 325355,
+  "club": "Deportivo de La Coruña",
+  "fotmob_id": 474589,
+  "zona": "centro"
+ },
+ {
+  "clave": "amaro",
+  "placa": "KEVIN AMARO",
+  "equipos": {
+   "2890": "KRC Genk",
+   "7": "Uruguay"
+  },
+  "posicion": "lateral",
+  "altura": "1,77 m",
+  "pie": "Derecho",
+  "nacimiento": "2004-03-03",
+  "camiseta": {
+   "2890": {
+    "tipo": "liso",
+    "c1": "#0000dd",
+    "c2": "#0000dd",
+    "texto": "#ffffff",
+    "short": "#0000dd",
+    "fondo": [
+     "#1f3fd1",
+     "#070f3d",
+     "#f2c14e"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1392533,
+  "club": "Genk",
+  "fotmob_id": 1437365,
+  "zona": "centro"
+ },
+ {
+  "clave": "ronald_araujo",
+  "placa": "RONALD ARAÚJO",
+  "apodo": "R. Araújo",
+  "equipos": {
+   "44": "Liverpool FC",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,91 m",
+  "pie": "Derecho",
+  "nacimiento": "1999-03-07",
+  "camiseta": {
+   "44": {
+    "tipo": "liso",
+    "c1": "#c8102e",
+    "c2": "#c8102e",
+    "texto": "#ffffff",
+    "short": "#c8102e",
+    "fondo": [
+     "#c8102e",
+     "#3a0610",
+     "#f2c14e"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 925097,
+  "club": "Liverpool",
+  "fotmob_id": 921253,
+  "understat_equipo": "Liverpool",
+  "zona": "centro",
+  "cedido_por": "FC Barcelona"
  }
 ]

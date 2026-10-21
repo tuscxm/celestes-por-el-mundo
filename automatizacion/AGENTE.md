@@ -58,6 +58,9 @@ Están en `automatizacion/jugadores.json`. Cada uno tiene `sofascore_id`, placa,
 | Juan Manuel Rodríguez | Cagliari | 1485391 | centro |
 | Rodrigo Zalazar | Sporting CP | 966575 | centro |
 | Miguel Merentiel | Boca Juniors | 892275 | centro |
+| José María Giménez | Deportivo de A Coruña | 325355 | centro |
+| Kevin Amaro | Genk | 1392533 | centro |
+| Ronald Araújo | Liverpool (cedido por el Barcelona) | 925097 | centro |
 
 Para sumar un jugador, se agrega un bloque con su `sofascore_id`. Se saca de https://api.sofascore.com/api/v1/search/all?q=Nombre%20Apellido.
 
