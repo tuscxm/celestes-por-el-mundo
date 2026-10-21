@@ -7,7 +7,7 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
 - **Fuentes extra** (`automatizacion/fuentes.py`), se consultan todas cuando el jugador tiene un partido terminado en las fechas revisadas:
   - **FotMob** (www.fotmob.com/api/data): nota, minutos, estadísticas, alineación con notas, cambios y temporada. Sin clave.
   - **API-Football** (v3.football.api-sports.io): nota, minutos y estadísticas por jugador, notas del once y nota de la temporada. Con clave (secreto de red del entorno, encabezado `x-apisports-key`, o variable `API_FOOTBALL_KEY`). **Nunca más de 100 pedidos por día (UTC)**: el contador está en `automatizacion/cuotas.json` y se sube con cada revisión.
-  - **football-data.org** (api.football-data.org): resultado, fecha y jornada (el plan gratis no trae jugadores). Con clave (encabezado `X-Auth-Token` o `FOOTBALL_DATA_KEY`). **Nunca más de 10 pedidos por minuto** (el script espera 6,5 s entre pedidos).
+  - **football-data.org**: **no se usa desde el 21/10/2026** (solo traía resultado, fecha y jornada, que ya dan las otras fuentes; el usuario no cargó su clave). La función queda en `fuentes.py` por si se vuelve a sumar.
   - **TheSportsDB** (www.thesportsdb.com): resultado y alineación. Clave pública gratuita "123" o `THESPORTSDB_KEY`.
   - **Understat** (understat.com): minutos, xG, xA, tiros y pases clave. Solo LaLiga (no cubre Portugal).
   - **zerozero** (www.zerozero.pt): minutos y resultado de la ficha del jugador.

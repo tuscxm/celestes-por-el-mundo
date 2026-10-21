@@ -461,7 +461,9 @@ def besoccer(j, fechas):
 # ----------------------------------------------------------------- todo junto
 # Las fuentes extra (y BeSoccer como fuente más) se usan para los partidos desde esta fecha en adelante.
 DESDE = datetime.date(2026, 10, 18)
-FUENTES = [("fotmob", fotmob), ("besoccer", besoccer), ("api_football", api_football), ("football_data", football_data),
+# football-data.org quedó fuera desde el 21/10/2026 (solo trae resultado, fecha y jornada, que ya están): la función
+# sigue abajo por si se quiere volver a sumar, agregándola a esta lista.
+FUENTES = [("fotmob", fotmob), ("besoccer", besoccer), ("api_football", api_football),
            ("thesportsdb", thesportsdb), ("understat", understat), ("zerozero", zerozero)]
 
 
