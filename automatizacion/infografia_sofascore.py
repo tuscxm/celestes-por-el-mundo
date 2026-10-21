@@ -568,9 +568,12 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
         adelantados = [p["player"]["id"] for p in sorted(campo, key=lambda p: -avgx[p["player"]["id"]])[:4]]
     else:
         adelantados = [p["player"]["id"] for l in reversed(ls[1:] if len(ls) > 1 else []) for p in l][:4]
-    todas = enganche or por_afuera
-    con_ataque = todas or r == "delantero" or (titular and pid in adelantados)
-    con_volante = todas or r in ("mediocentro", "banda") or j.get("mixto")
+    # Su puesto en el 3-5-2 de la cuenta ("rol_352" de jugadores.json) suma lo de ese puesto, juegue donde juegue:
+    # enganche -> todo; delantero -> lo de ataque; carrilero o interno -> lo de volante (zagueros: lo del partido).
+    rol352 = j.get("rol_352")
+    todas = enganche or por_afuera or rol352 == "enganche"
+    con_ataque = todas or r == "delantero" or (titular and pid in adelantados) or rol352 == "delantero"
+    con_volante = todas or r in ("mediocentro", "banda") or j.get("mixto") or rol352 in ("carrilero", "interno")
     pos_filas = armar_totales(pos_filas, filas_ataque(s) if con_ataque else [],
                               extras_volante(rb) if con_volante else {}, tarjetas)
     # el bloque de su franja suma lo mismo que TOTALES (remates, asistencias, último tercio) pero de esa franja

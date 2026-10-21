@@ -19,7 +19,8 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
 - **Caras** (desde el 18/10/2026, v2): `caras.py` agranda la foto con superresolución (FSRCNN x4, `modelos/FSRCNN_x4.pb`) y recorta con dos modelos de rembg: `u2net_human_seg` (silueta entera de la persona: nunca come piel clara ni hombros) e `isnet-general-use` (detalle del pelo). Con la unión arma un trimapa y hace matting de forma cerrada con pymatting (transparencia pelo por pelo, también el blanco entre rulos, y color sin aureola). Los hombros salen de la silueta de personas, alisados. El contorno negro va solo por afuera de la figura (sin puntos ni líneas sueltas). Si el matting falla, usa el método anterior. Los modelos BiRefNet/BRIA no entran en la memoria de la nube (se probaron: se cortan).
 - **Resolución**: `render_v3.py` saca el PNG a 2160x2700 (mismo diseño de 1080x1350, al doble de nitidez). Los escudos se agrandan a 600 px con superresolución y el mapa de calor se dibuja a 230 dpi.
 - **Tarjetas en las tarjetas de datos**: "Su partido", el cuadro de la posición ("Como mediocentro", etc.) y "Temporada" muestran amarillas y rojas con su dibujo (`2[A] · 1[R]` en los datos).
-- **Su franja de la cancha** (campo `zona` de `jugadores.json`): Valverde `derecha`, Mouriño `centro`, Araújo `izquierda`, Bernal `centro`. En la tarjeta del mapa de calor, debajo del mapa, va "POR LA DERECHA / POR EL CENTRO / POR LA IZQUIERDA" con lo que hizo en esa franja: acciones (puntos del mapa de calor), pases precisos, pases clave, regates, recuperaciones, intercepciones · despejes y conducciones. Sale de las acciones con ubicación de SofaScore (rating-breakdown y mapa de calor; y < 33 derecha, 33-67 centro, > 67 izquierda, siempre desde el lado de su equipo). Duelos, faltas y toques no se pueden separar por franja: no van. Si no hay datos con ubicación, no se muestra y queda en los avisos.
+- **El 3-5-2 de la cuenta** (desde el 21/10/2026, campo `rol_352` de `jugadores.json`): las estadísticas separadas se arman como si su equipo jugara 3-5-2. Zagueros: J. M. Rodríguez, F. González, Cáceres, R. Araújo, J. M. Giménez, Mouriño (y Boselli). Carrileros por derecha: Valverde, Amaro, Canobbio; por izquierda: M. Araújo, J. M. Sanabria. Internos: Bernal, Bentancur, Ugarte (y Torreira, F. Díaz). Enganche: Zalazar. Delanteros: Á. Rodríguez, Petit, Satriano, Merentiel, Darwin Núñez. El puesto define la franja (carrileros por su banda, el resto por el centro) y suma lo de ese puesto en TOTALES y en el bloque de la franja, además de lo que le toque por dónde jugó el partido: enganche → todo; delantero → lo de ataque; carrilero o interno → lo de volante (carrileros también son `mixto`).
+- **Su franja de la cancha** (campo `zona` de `jugadores.json`, sale del puesto en el 3-5-2): carrileros por derecha `derecha`, por izquierda `izquierda`, el resto `centro`. En la tarjeta del mapa de calor, debajo del mapa, va "POR LA DERECHA / POR EL CENTRO / POR LA IZQUIERDA" con lo que hizo en esa franja: acciones (puntos del mapa de calor), pases precisos, pases clave, regates, recuperaciones, intercepciones · despejes y conducciones. Sale de las acciones con ubicación de SofaScore (rating-breakdown y mapa de calor; y < 33 derecha, 33-67 centro, > 67 izquierda, siempre desde el lado de su equipo). Duelos, faltas y toques no se pueden separar por franja: no van. Si no hay datos con ubicación, no se muestra y queda en los avisos.
 - **Volantes, mediocentros y mixtos** (puesto mediocentro o volante por banda en el partido, o `"mixto": true` en `jugadores.json`: Valverde y Araújo): en TOTALES se suman "Pases al último tercio" (pases precisos / intentados que terminaron en el último tercio de la cancha) y "Recup. def · med · ata" (recuperaciones en cada tercio). Salen de las acciones con ubicación de SofaScore; si no están, no se muestran.
 - **Lo de ataque en TOTALES** (remates al arco, afuera · bloqueados, al palo, xG, ocasiones claras falladas y creadas, pases clave, xA, centros): va si el jugador es delantero o está entre los 4 más adelantados de su equipo en ese partido (por posición media). **Todo junto** (ataque + último tercio + recuperaciones por tercio) va siempre a los que juegan en la línea del enganche (la línea detrás de los delanteros en dibujos de 4 líneas, como el "3" del 4-2-3-1) y a los dos de afuera de una línea de 4 volantes. Si no entra todo, se sacan primero velocidad, sprints, distancia y otros de defensa; las tarjetas van siempre.
 - **En el bloque de la franja** se repite lo de TOTALES pero solo de esa franja: "Pases al último tercio" (si lleva lo de volante), "Remates al arco" (si lleva lo de ataque; sale del mapa de remates, que mide el ancho al revés, ya contemplado) y "Asistencias" (solo si se puede saber sin suponer: si no tuvo, o si todas sus jugadas de pase clave registradas están dentro o todas fuera de la franja; si no, no se muestra).
@@ -42,25 +43,31 @@ Si entró de suplente, la infografía lo marca: la etiqueta dice "SUPLENTE · EN
 ## Jugadores
 Están en `automatizacion/jugadores.json`. Cada uno tiene `sofascore_id`, placa, altura, pie, nacimiento y colores de camiseta (club y Uruguay, clave "7").
 
-| Jugador | Club | SofaScore | Franja |
-|---|---|---|---|
-| Federico Valverde | Real Madrid | 831808 | derecha (mixto) |
-| Facundo Bernal | Real Betis | 1177404 | centro |
-| Santiago Mouriño | Villarreal | 1468046 | centro |
-| Maximiliano Araújo | Sporting CP | 929193 | izquierda (mixto) |
-| Álvaro Rodríguez | Bournemouth | 1154587 | centro |
-| Facundo González | Racing de Santander | 1085103 | centro |
-| Sebastián Cáceres | Celta de Vigo | 924889 | centro |
-| Gonzalo Petit | Cádiz | 1482378 | centro |
-| Rodrigo Bentancur | Tottenham | 791190 | centro |
-| Martín Satriano | Getafe | 973536 | centro |
-| Sebastián Boselli | Getafe | 1392092 | centro |
-| Juan Manuel Rodríguez | Cagliari | 1485391 | centro |
-| Rodrigo Zalazar | Sporting CP | 966575 | centro |
-| Miguel Merentiel | Boca Juniors | 892275 | centro |
-| José María Giménez | Deportivo de A Coruña | 325355 | centro |
-| Kevin Amaro | Genk | 1392533 | centro |
-| Ronald Araújo | Liverpool (cedido por el Barcelona) | 925097 | centro |
+| Jugador | Club | SofaScore | Puesto en el 3-5-2 | Franja |
+|---|---|---|---|---|
+| Federico Valverde | Real Madrid | 831808 | carrilero | derecha (mixto) |
+| Facundo Bernal | Real Betis | 1177404 | interno | centro |
+| Santiago Mouriño | Villarreal | 1468046 | zaguero | centro |
+| Maximiliano Araújo | Sporting CP | 929193 | carrilero | izquierda (mixto) |
+| Álvaro Rodríguez | Bournemouth | 1154587 | delantero | centro |
+| Facundo González | Racing de Santander | 1085103 | zaguero | centro |
+| Sebastián Cáceres | Celta de Vigo | 924889 | zaguero | centro |
+| Gonzalo Petit | Cádiz | 1482378 | delantero | centro |
+| Rodrigo Bentancur | Tottenham | 791190 | interno | centro |
+| Martín Satriano | Getafe | 973536 | delantero | centro |
+| Sebastián Boselli | Getafe | 1392092 | zaguero | centro |
+| Juan Manuel Rodríguez | Cagliari | 1485391 | zaguero | centro |
+| Rodrigo Zalazar | Sporting CP | 966575 | enganche | centro |
+| Miguel Merentiel | Boca Juniors | 892275 | delantero | centro |
+| José María Giménez | Deportivo de La Coruña | 325355 | zaguero | centro |
+| Kevin Amaro | Genk | 1392533 | carrilero | derecha (mixto) |
+| Ronald Araújo | Liverpool (cedido por el Barcelona) | 925097 | zaguero | centro |
+| Juan Manuel Sanabria | Real Salt Lake | 874568 | carrilero | izquierda (mixto) |
+| Manuel Ugarte | Manchester United | 846425 | interno | centro |
+| Agustín Canobbio | Fluminense | 846413 | carrilero | derecha (mixto) |
+| Darwin Núñez | Diriyah | 924871 | delantero | centro |
+| Fabricio Díaz | Al-Gharafa | 1017428 | interno | centro |
+| Lucas Torreira | Galatasaray | 754794 | interno | centro |
 
 Para sumar un jugador, se agrega un bloque con su `sofascore_id`. Se saca de https://api.sofascore.com/api/v1/search/all?q=Nombre%20Apellido.
 

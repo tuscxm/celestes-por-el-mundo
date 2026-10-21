@@ -44,7 +44,8 @@
   "footballdata_equipo": 86,
   "understat_equipo": "Real_Madrid",
   "zona": "derecha",
-  "mixto": true
+  "mixto": true,
+  "rol_352": "carrilero"
  },
  {
   "clave": "bernal",
@@ -91,7 +92,8 @@
   "apifootball_equipo": 543,
   "footballdata_equipo": 90,
   "understat_equipo": "Real_Betis",
-  "zona": "centro"
+  "zona": "centro",
+  "rol_352": "interno"
  },
  {
   "clave": "mourino",
@@ -138,7 +140,8 @@
   "apifootball_equipo": 533,
   "footballdata_equipo": 94,
   "understat_equipo": "Villarreal",
-  "zona": "centro"
+  "zona": "centro",
+  "rol_352": "zaguero"
  },
  {
   "clave": "araujo",
@@ -186,7 +189,8 @@
   "footballdata_equipo": 498,
   "zona": "izquierda",
   "mixto": true,
-  "apodo": "M. Araújo"
+  "apodo": "M. Araújo",
+  "rol_352": "carrilero"
  },
  {
   "clave": "alvaro_rodriguez",
@@ -232,7 +236,8 @@
   "zona": "centro",
   "apifootball_equipo": 35,
   "footballdata_equipo": 1044,
-  "understat_equipo": "Bournemouth"
+  "understat_equipo": "Bournemouth",
+  "rol_352": "delantero"
  },
  {
   "clave": "facundo_gonzalez",
@@ -274,7 +279,8 @@
   "sofascore_id": 1085103,
   "club": "Racing de Santander",
   "fotmob_id": 1212179,
-  "zona": "centro"
+  "zona": "centro",
+  "rol_352": "zaguero"
  },
  {
   "clave": "caceres",
@@ -319,7 +325,8 @@
   "zona": "centro",
   "apifootball_equipo": 538,
   "footballdata_equipo": 558,
-  "understat_equipo": "Celta_Vigo"
+  "understat_equipo": "Celta_Vigo",
+  "rol_352": "zaguero"
  },
  {
   "clave": "petit",
@@ -362,7 +369,8 @@
   "club": "Cádiz",
   "fotmob_id": 1648518,
   "zona": "centro",
-  "apifootball_equipo": 724
+  "apifootball_equipo": 724,
+  "rol_352": "delantero"
  },
  {
   "clave": "bentancur",
@@ -407,7 +415,8 @@
   "zona": "centro",
   "apifootball_equipo": 47,
   "footballdata_equipo": 73,
-  "understat_equipo": "Tottenham"
+  "understat_equipo": "Tottenham",
+  "rol_352": "interno"
  },
  {
   "clave": "satriano",
@@ -452,7 +461,8 @@
   "zona": "centro",
   "apifootball_equipo": 546,
   "footballdata_equipo": 82,
-  "understat_equipo": "Getafe"
+  "understat_equipo": "Getafe",
+  "rol_352": "delantero"
  },
  {
   "clave": "boselli",
@@ -497,7 +507,8 @@
   "zona": "centro",
   "apifootball_equipo": 546,
   "footballdata_equipo": 82,
-  "understat_equipo": "Getafe"
+  "understat_equipo": "Getafe",
+  "rol_352": "zaguero"
  },
  {
   "clave": "juan_rodriguez",
@@ -543,7 +554,8 @@
   "zona": "centro",
   "apifootball_equipo": 490,
   "footballdata_equipo": 104,
-  "understat_equipo": "Cagliari"
+  "understat_equipo": "Cagliari",
+  "rol_352": "zaguero"
  },
  {
   "clave": "zalazar",
@@ -587,7 +599,8 @@
   "fotmob_id": 1070776,
   "zona": "centro",
   "apifootball_equipo": 228,
-  "footballdata_equipo": 498
+  "footballdata_equipo": 498,
+  "rol_352": "enganche"
  },
  {
   "clave": "merentiel",
@@ -630,7 +643,8 @@
   "club": "Boca Juniors",
   "fotmob_id": 826418,
   "zona": "centro",
-  "apifootball_equipo": 451
+  "apifootball_equipo": 451,
+  "rol_352": "delantero"
  },
  {
   "clave": "gimenez",
@@ -673,7 +687,8 @@
   "sofascore_id": 325355,
   "club": "Deportivo de La Coruña",
   "fotmob_id": 474589,
-  "zona": "centro"
+  "zona": "centro",
+  "rol_352": "zaguero"
  },
  {
   "clave": "amaro",
@@ -715,7 +730,9 @@
   "sofascore_id": 1392533,
   "club": "Genk",
   "fotmob_id": 1437365,
-  "zona": "centro"
+  "zona": "derecha",
+  "rol_352": "carrilero",
+  "mixto": true
  },
  {
   "clave": "ronald_araujo",
@@ -760,6 +777,271 @@
   "fotmob_id": 921253,
   "understat_equipo": "Liverpool",
   "zona": "centro",
-  "cedido_por": "FC Barcelona"
+  "cedido_por": "FC Barcelona",
+  "rol_352": "zaguero"
+ },
+ {
+  "clave": "sanabria",
+  "placa": "JUAN MANUEL SANABRIA",
+  "apodo": "J. M. Sanabria",
+  "equipos": {
+   "5133": "Real Salt Lake",
+   "7": "Uruguay"
+  },
+  "posicion": "lateral",
+  "altura": "1,72 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2000-03-29",
+  "camiseta": {
+   "5133": {
+    "tipo": "liso",
+    "c1": "#b30838",
+    "c2": "#b30838",
+    "texto": "#ffffff",
+    "short": "#013a81",
+    "fondo": [
+     "#b30838",
+     "#2a0410",
+     "#f2c14e"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 874568,
+  "club": "Real Salt Lake",
+  "fotmob_id": 1053963,
+  "rol_352": "carrilero",
+  "zona": "izquierda",
+  "mixto": true
+ },
+ {
+  "clave": "ugarte",
+  "placa": "MANUEL UGARTE",
+  "equipos": {
+   "35": "Manchester United",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,82 m",
+  "pie": "Derecho",
+  "nacimiento": "2001-04-11",
+  "camiseta": {
+   "35": {
+    "tipo": "liso",
+    "c1": "#da291c",
+    "c2": "#da291c",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#da291c",
+     "#2b0705",
+     "#fbe122"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 846425,
+  "club": "Manchester United",
+  "fotmob_id": 1035614,
+  "understat_equipo": "Manchester_United",
+  "rol_352": "interno",
+  "zona": "centro"
+ },
+ {
+  "clave": "canobbio",
+  "placa": "AGUSTÍN CANOBBIO",
+  "equipos": {
+   "1961": "Fluminense",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,75 m",
+  "pie": "Derecho",
+  "nacimiento": "1998-10-01",
+  "camiseta": {
+   "1961": {
+    "tipo": "rayas",
+    "c1": "#7a0a1e",
+    "c2": "#006633",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#7a0a1e",
+     "#0a2b17",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 846413,
+  "club": "Fluminense",
+  "fotmob_id": 840212,
+  "rol_352": "carrilero",
+  "zona": "derecha",
+  "mixto": true
+ },
+ {
+  "clave": "darwin",
+  "placa": "DARWIN NÚÑEZ",
+  "apodo": "Darwin",
+  "equipos": {
+   "853574": "Diriyah",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,88 m",
+  "pie": "Derecho",
+  "nacimiento": "1999-06-24",
+  "camiseta": {
+   "853574": {
+    "tipo": "liso",
+    "c1": "#f3f3f3",
+    "c2": "#f3f3f3",
+    "texto": "#3e000c",
+    "short": "#3e000c",
+    "fondo": [
+     "#5a0a1a",
+     "#1f0207",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 924871,
+  "club": "Diriyah",
+  "fotmob_id": 950561,
+  "rol_352": "delantero",
+  "zona": "centro"
+ },
+ {
+  "clave": "fabricio_diaz",
+  "placa": "FABRICIO DÍAZ",
+  "apodo": "F. Díaz",
+  "equipos": {
+   "34312": "Al-Gharafa",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,79 m",
+  "pie": "Derecho",
+  "nacimiento": "2003-02-03",
+  "camiseta": {
+   "34312": {
+    "tipo": "liso",
+    "c1": "#ffd400",
+    "c2": "#ffd400",
+    "texto": "#0047ab",
+    "short": "#0047ab",
+    "fondo": [
+     "#f2cf1d",
+     "#0047ab",
+     "#0b1f4d"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1017428,
+  "club": "Al-Gharafa",
+  "fotmob_id": 1133113,
+  "rol_352": "interno",
+  "zona": "centro"
+ },
+ {
+  "clave": "torreira",
+  "placa": "LUCAS TORREIRA",
+  "equipos": {
+   "3061": "Galatasaray",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,68 m",
+  "pie": "Derecho",
+  "nacimiento": "1996-02-11",
+  "camiseta": {
+   "3061": {
+    "tipo": "rayas",
+    "c1": "#a90432",
+    "c2": "#fdb912",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#a90432",
+     "#3a0412",
+     "#fdb912"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 754794,
+  "club": "Galatasaray",
+  "fotmob_id": 592909,
+  "rol_352": "interno",
+  "zona": "centro"
  }
 ]
