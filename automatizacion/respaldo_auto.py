@@ -39,8 +39,21 @@ def armar(j, fechas, salida, proc_path):
                 x["partidos"] = [{"estado": "sin partido en esas fechas", "respaldo": "FotMob (SofaScore no respondió)"}]
         json.dump(res, open(rp, "w"), ensure_ascii=False, indent=1)
         return True
+    procesados = set(json.load(open(proc_path))) if proc_path and os.path.exists(proc_path) else set()
     for d in fm:
-        af = fuentes.del_partido(extra, d["fecha"], d["visita"] if fuentes.mismo_equipo(d["local"], _club(j)) else d["local"]).get("api_football") or {}
+        if f"{j['clave']}_{d['fecha']}" in procesados and d.get("minutos"):
+            # ya se armó en una revisión anterior: no se rehace (igual que el script principal)
+            res = json.load(open(rp))
+            for x in res["jugadores"]:
+                if x["clave"] == j["clave"]:
+                    x["partidos"] = [p for p in x["partidos"] if p.get("estado") != "error" and p.get("fecha") != d["fecha"]] + [
+                        {"estado": "ya procesado", "fecha": d["fecha"],
+                         "partido": f"{d['local']} {d.get('goles_local')}-{d.get('goles_visita')} {d['visita']}"}]
+            json.dump(res, open(rp, "w"), ensure_ascii=False, indent=1)
+            continue
+        dp = fuentes.del_partido(extra, d["fecha"], d["visita"] if fuentes.mismo_equipo(d["local"], _club(j)) else d["local"])
+        af = dp.get("api_football") or {}
+        bs = dp.get("besoccer") or {}
         b = {"clave": j["clave"], "fecha": d["fecha"], "fuente_respaldo": "FotMob", "apellido": j["placa"].split()[-1].title(),
              "equipo": _club(j), "avisos": [f"SofaScore no respondió; fuentes: " + ", ".join(f"{k} {v}" for k, v in extra["estado"].items())]}
         seleccion = "uruguay" in (fuentes.norm(d["local"]) + " " + fuentes.norm(d["visita"]))
@@ -55,17 +68,18 @@ def armar(j, fechas, salida, proc_path):
         else:
             b["estado"] = "jugó"
             st = d.get("stats") or {}
-            notas = [d.get("nota"), af.get("nota")]
+            notas = [d.get("nota"), af.get("nota"), bs.get("nota")]
             b["nota"] = fuentes.promedio(notas)
             if len([x for x in notas if x]) > 1:
-                b["avisos"].append(f"Nota = promedio de fotmob {d.get('nota')} · api_football {af.get('nota')} → {b['nota']}")
+                b["avisos"].append(f"Nota = promedio de fotmob {d.get('nota')} · api_football {af.get('nota')} · besoccer {bs.get('nota')} → {b['nota']}")
             b.update({"titular": bool(d.get("titular")), "minutos": d["minutos"], "dorsal": d.get("dorsal"),
                       "posicion": puesto(d.get("posicion_id")), "formacion": d.get("formacion") or ""})
             if d.get("entro") and not d.get("titular"):
                 b["entro"] = {"minuto": d["entro"]["minuto"], "por": d["entro"]["por"]}
             ao = af.get("notas_once") or {}
+            bo = {str(k): v for k, v in (bs.get("notas_once") or {}).items()}
             tj = d.get("tarjetas") or {}
-            b["once"] = [[[p[0], p[1], fuentes.promedio([d["notas_once"].get(p[0]), ao.get(p[0])]), tj.get(str(p[2])) or {}] for p in linea]
+            b["once"] = [[[p[0], p[1], fuentes.promedio([d["notas_once"].get(p[0]), ao.get(p[0]), bo.get(str(p[0]))]), tj.get(str(p[2])) or {}] for p in linea]
                          for linea in d.get("once") or []]
             mia = tj.get(str(j.get("fotmob_id"))) or {}
             if mia.get("roja"): b["roja"] = mia["roja"]

@@ -8,10 +8,10 @@
   "visita": "Boca Juniors",
   "goles_local": 1,
   "goles_visita": 3,
-  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_1974.png",
-  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3202.png",
-  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3202.png",
-  "meta": "COPA SUDAMERICANA · SEMIFINALES · 20 OCTUBRE 2026",
+  "escudo_local": null,
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_merentiel.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_merentiel.png",
+  "meta": "COPA SUDAMERICANA · SEMI-FINALS · 20 OCTUBRE 2026",
   "condicion": "TITULAR",
   "minutos": "77’",
   "nota": "7.9",
@@ -21,108 +21,119 @@
    "c2": "#061a40",
    "acento": "#f2c14e"
   },
+  "sustitucion": null,
   "formacion": "4-3-3",
   "once": [
    [
     {
      "dorsal": "1",
      "nombre": "Montero",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_926238.png",
+     "cara": null,
      "estrellas": 2,
      "yo": false,
-     "pid": 926238
+     "roja": null,
+     "amarillas": null
     }
    ],
    [
     {
      "dorsal": "3",
      "nombre": "Blanco",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_989865.png",
-     "estrellas": 4,
+     "cara": null,
+     "estrellas": 5,
      "yo": false,
-     "pid": 989865
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "42",
      "nombre": "Herrera",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2050768.png",
-     "estrellas": 3,
+     "cara": null,
+     "estrellas": 4,
      "yo": false,
-     "pid": 2050768
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "2",
-     "nombre": "Lollo",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1217939.png",
-     "estrellas": 4,
+     "nombre": "Di Lollo",
+     "cara": null,
+     "estrellas": 5,
      "yo": false,
-     "pid": 1217939
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "17",
      "nombre": "Lozano",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_981018.png",
+     "cara": null,
      "estrellas": 2,
      "yo": false,
-     "pid": 981018
+     "roja": null,
+     "amarillas": null
     }
    ],
    [
     {
      "dorsal": "18",
      "nombre": "Delgado",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1819597.png",
+     "cara": null,
      "estrellas": 4,
      "yo": false,
-     "pid": 1819597
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "6",
      "nombre": "Battaglia",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_158257.png",
+     "cara": null,
      "estrellas": 3,
      "yo": false,
-     "pid": 158257
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "25",
      "nombre": "Ascacíbar",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_830667.png",
-     "estrellas": 3,
+     "cara": null,
+     "estrellas": 4,
      "yo": false,
-     "pid": 830667
+     "roja": null,
+     "amarillas": null
     }
    ],
    [
     {
      "dorsal": "19",
      "nombre": "Flores",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2050769.png",
-     "estrellas": 2,
+     "cara": null,
+     "estrellas": 3,
      "yo": false,
-     "pid": 2050769
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "16",
      "nombre": "Merentiel",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_892275.png",
+     "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/merentiel.png",
      "estrellas": 4,
      "yo": true,
-     "pid": 892275
+     "roja": null,
+     "amarillas": null
     },
     {
      "dorsal": "22",
      "nombre": "Villa",
-     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_839983.png",
-     "estrellas": 4,
+     "cara": null,
+     "estrellas": 5,
      "yo": false,
-     "pid": 839983
+     "roja": null,
+     "amarillas": null
     }
    ]
   ],
-  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_892275.png",
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/merentiel.png",
   "foto": null,
-  "sustitucion": null,
   "generales": [
    [
     "Goles",
@@ -135,18 +146,8 @@
     false
    ],
    [
-    "Tiros (al arco)",
-    "1 (1)",
-    false
-   ],
-   [
     "Toques",
     "15",
-    false
-   ],
-   [
-    "Duelos ganados",
-    "0/3",
     false
    ],
    [
@@ -163,11 +164,6 @@
     "Tarjetas",
     "0[A] · 0[R]",
     false
-   ],
-   [
-    "Pérdidas de balón",
-    "3",
-    false
    ]
   ],
   "pos_titulo": "COMO DELANTERO",
@@ -180,41 +176,16 @@
    [
     "Precisión de pase",
     "92%",
-    true
-   ],
-   [
-    "Remates al arco",
-    "1/1",
-    true
-   ],
-   [
-    "Remates afuera · bloq.",
-    "0 · 0",
-    false
-   ],
-   [
-    "Goles esperados (xG)",
-    "0,18",
-    false
-   ],
-   [
-    "Ocasiones claras falladas",
-    "0",
     false
    ],
    [
     "Pases clave",
     "2",
-    true
+    false
    ],
    [
-    "Ocasiones claras creadas",
-    "0",
-    true
-   ],
-   [
-    "Asistencias esperadas (xA)",
-    "0,07",
+    "Pases largos precisos",
+    "1/1",
     false
    ],
    [
@@ -223,8 +194,18 @@
     false
    ],
    [
-    "Conducciones",
-    "6 (42 m)",
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
     false
    ],
    [
@@ -235,7 +216,7 @@
   ],
   "extra": {
    "titulo": "TEMPORADA",
-   "sub": "2026",
+   "sub": "26",
    "filas": [
     [
      "LIGA PROFESIONAL",
@@ -249,8 +230,8 @@
     ],
     [
      "Nota media",
-     "6.94",
-     true
+     "7.02",
+     false
     ],
     [
      "Goles · Asist.",
@@ -261,76 +242,10 @@
      "Tarjetas",
      "1[A] · 0[R]",
      false
-    ],
-    [
-     "COPA SUDAMERICANA",
-     " ",
-     false
-    ],
-    [
-     "PJ (tit.) · Min.",
-     "8 (7) · 591",
-     false
-    ],
-    [
-     "Nota media",
-     "6.95",
-     true
-    ],
-    [
-     "Goles · Asist.",
-     "4 · 1",
-     false
-    ],
-    [
-     "Tarjetas",
-     "0[A] · 0[R]",
-     false
     ]
    ]
   },
-  "heat_img": "mapas/merentiel_2026-10-20.png",
-  "heat_horizontal": true,
-  "zona": {
-   "titulo": "POR EL CENTRO",
-   "filas": [
-    [
-     "Acciones",
-     "8/20 (40%)",
-     true
-    ],
-    [
-     "Pases precisos",
-     "4/4",
-     false
-    ],
-    [
-     "Remates al arco",
-     "1/1",
-     true
-    ],
-    [
-     "Asistencias",
-     "0",
-     false
-    ],
-    [
-     "Pases clave",
-     "1",
-     true
-    ],
-    [
-     "Recuperaciones",
-     "1",
-     false
-    ],
-    [
-     "Conducciones",
-     "2",
-     false
-    ]
-   ]
-  },
+  "heat_img": null,
   "perfil": [
    [
     "DORSAL",
@@ -351,18 +266,8 @@
    [
     "POSICIÓN",
     "Delantero"
-   ],
-   [
-    "VALOR",
-    "4,1 M€"
    ]
   ],
-  "notas_por_fuente": {
-   "sofascore": 7.6,
-   "fotmob": 7.89,
-   "besoccer": 8.2
-  },
-  "amarillas_hero": 0,
   "roja": null
  }
 ]

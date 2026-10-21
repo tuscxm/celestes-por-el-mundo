@@ -1,0 +1,278 @@
+[
+ {
+  "archivo": "Araujo_SportingCP-LASK_2026-10-21",
+  "nombre": "MAXIMILIANO ARAÚJO",
+  "apellido": "Araújo",
+  "dorsal": "20",
+  "local": "Sporting CP",
+  "visita": "LASK",
+  "goles_local": 2,
+  "goles_visita": 3,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_araujo.png",
+  "escudo_visita": null,
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_araujo.png",
+  "meta": "CHAMPIONS LEAGUE · LEAGUE STAGE - ROUND 3 · 21 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.1",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "30",
+     "nombre": "Kaique",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Araújo",
+     "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/araujo.png",
+     "estrellas": 2,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Inácio",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "72",
+     "nombre": "Quaresma",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Fresneda",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "77",
+     "nombre": "Doumbia",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Altimira",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Simões",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Irankunda",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "97",
+     "nombre": "Suárez",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Catamo",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/araujo.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "79",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "6/11",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL IZQUIERDO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "44/55",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "80%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "2/4",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA PORTUGAL",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (6) · 560",
+     false
+    ],
+    [
+     "Nota media",
+     "7.51",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,76 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Izquierdo"
+   ]
+  ],
+  "roja": null
+ }
+]

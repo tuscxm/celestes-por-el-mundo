@@ -1,0 +1,280 @@
+[
+ {
+  "archivo": "Torreira_Lille-Galatasaray_2026-10-21",
+  "nombre": "LUCAS TORREIRA",
+  "apellido": "Torreira",
+  "dorsal": "34",
+  "local": "Lille",
+  "visita": "Galatasaray",
+  "goles_local": 2,
+  "goles_visita": 4,
+  "escudo_local": null,
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_torreira.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_torreira.png",
+  "meta": "CHAMPIONS LEAGUE · LEAGUE STAGE - ROUND 3 · 21 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.8",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#a90432",
+   "c2": "#3a0412",
+   "acento": "#fdb912"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Çakir",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "4",
+     "nombre": "Jakobs",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "42",
+     "nombre": "Bardakci",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Sánchez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "7",
+     "nombre": "Sallai",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Sara",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "34",
+     "nombre": "Torreira",
+     "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/torreira.png",
+     "estrellas": 3,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "53",
+     "nombre": "Yılmaz",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "83",
+     "nombre": "Batrakov",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Akgün",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "45",
+     "nombre": "Osimhen",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/torreira.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "55",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/7",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/2",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "44/49",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "90%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "4/5",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "2",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SUPER LIG",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (7) · 567",
+     false
+    ],
+    [
+     "Nota media",
+     "7.41",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 1[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "34"
+   ],
+   [
+    "EDAD",
+    "30 años"
+   ],
+   [
+    "ALTURA",
+    "1,68 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null
+ }
+]

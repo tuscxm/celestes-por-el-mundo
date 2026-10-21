@@ -1,0 +1,280 @@
+[
+ {
+  "archivo": "Valverde_RealMadrid-RBLeipzig_2026-10-21",
+  "nombre": "FEDERICO VALVERDE",
+  "apellido": "Valverde",
+  "dorsal": "8",
+  "local": "Real Madrid",
+  "visita": "RB Leipzig",
+  "goles_local": 4,
+  "goles_visita": 1,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_valverde.png",
+  "escudo_visita": null,
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_valverde.png",
+  "meta": "CHAMPIONS LEAGUE · LEAGUE STAGE - ROUND 3 · 21 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.7",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#2457b3",
+   "c2": "#0b1838",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Courtois",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Carreras",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Huijsen",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Rüdiger",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Valverde",
+     "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/valverde.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "6",
+     "nombre": "Camavinga",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Silva",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "7",
+     "nombre": "Júnior",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bellingham",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Güler",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Mbappé",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/valverde.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "116",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/12",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "81/93",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "87%",
+    false
+   ],
+   [
+    "Pases clave",
+    "3",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "2/5",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Entradas",
+    "4",
+    false
+   ],
+   [
+    "Despejes",
+    "5",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (9) · 739",
+     false
+    ],
+    [
+     "Nota media",
+     "7.35",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "8"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,81 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ]
+  ],
+  "roja": null
+ }
+]

@@ -1,0 +1,275 @@
+[
+ {
+  "archivo": "Araujo_Liverpool-Villarreal_2026-10-20",
+  "nombre": "RONALD ARAÚJO",
+  "apellido": "Araújo",
+  "dorsal": "33",
+  "local": "Liverpool",
+  "visita": "Villarreal",
+  "goles_local": 4,
+  "goles_visita": 3,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_ronald_araujo.png",
+  "escudo_visita": null,
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_ronald_araujo.png",
+  "meta": "CHAMPIONS LEAGUE · LEAGUE STAGE - ROUND 3 · 20 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "45’",
+  "nota": "7.4",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#c8102e",
+   "c2": "#3a0610",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Becker",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Tsimikas",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "van Dijk",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Jacquet",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "33",
+     "nombre": "Araujo",
+     "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/ronald_araujo.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "42",
+     "nombre": "Nyoni",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Mac Allister",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Gakpo",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "38",
+     "nombre": "Gravenberch",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "73",
+     "nombre": "Ngumoha",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "67",
+     "nombre": "Koumas",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/ronald_araujo.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "34",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "19/25",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "76%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "4",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (5) · 405",
+     false
+    ],
+    [
+     "Nota media",
+     "6.81",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "33"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,91 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ]
+  ],
+  "roja": null
+ }
+]
