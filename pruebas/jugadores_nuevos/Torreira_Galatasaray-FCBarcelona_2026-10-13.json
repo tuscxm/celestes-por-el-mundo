@@ -1,0 +1,369 @@
+[
+ {
+  "archivo": "Torreira_Galatasaray-FCBarcelona_2026-10-13",
+  "nombre": "LUCAS TORREIRA",
+  "apellido": "Torreira",
+  "dorsal": "34",
+  "local": "Galatasaray",
+  "visita": "FC Barcelona",
+  "goles_local": 1,
+  "goles_visita": 4,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/escudo_3061.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/escudo_2817.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/escudo_3061.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 2 · 13 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "81’",
+  "nota": "5.7",
+  "estrellas": 1,
+  "tema": {
+   "c1": "#a90432",
+   "c2": "#3a0412",
+   "acento": "#fdb912"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Çakır",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_754330.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 754330
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Elmalı",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_981483.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 981483
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Jakobs",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_897291.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 897291
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Sánchez",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_566102.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 566102
+    },
+    {
+     "dorsal": "53",
+     "nombre": "Yılmaz",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_904096.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 904096
+    }
+   ],
+   [
+    {
+     "dorsal": "99",
+     "nombre": "Lemina",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_307284.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 307284
+    },
+    {
+     "dorsal": "34",
+     "nombre": "Torreira",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_754794.png",
+     "estrellas": 1,
+     "yo": true,
+     "pid": 754794
+    }
+   ],
+   [
+    {
+     "dorsal": "27",
+     "nombre": "Leão",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_851284.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 851284,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "83",
+     "nombre": "Batrakov",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_1415147.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1415147
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Akgün",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_857738.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 857738
+    }
+   ],
+   [
+    {
+     "dorsal": "45",
+     "nombre": "Osimhen",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_822471.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 822471
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_torreira/recursos/cara_754794.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "22",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "0/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/2",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "11",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "9/17",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "53%",
+    true
+   ],
+   [
+    "Pases al último tercio",
+    "0/4",
+    true
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    true
+   ],
+   [
+    "Recup. def · med · ata",
+    "1 · 0 · 0",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Conducciones",
+    "1 (3 m)",
+    false
+   ],
+   [
+    "Distancia",
+    "9,66 km",
+    false
+   ],
+   [
+    "Sprints",
+    "2",
+    false
+   ],
+   [
+    "Velocidad máxima",
+    "27,9 km/h",
+    true
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "TRENDYOL SÜPER LIG",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (7) · 567",
+     false
+    ],
+    [
+     "Nota media",
+     "7.03",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 1[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (2) · 166",
+     false
+    ],
+    [
+     "Nota media",
+     "6.45",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/torreira_2026-10-13.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "14/28 (50%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "7/8",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "0/0",
+     true
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "1 · 0",
+     false
+    ],
+    [
+     "Conducciones",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "34"
+   ],
+   [
+    "EDAD",
+    "30 años"
+   ],
+   [
+    "ALTURA",
+    "1,68 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ],
+   [
+    "VALOR",
+    "9,3 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 5.7
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

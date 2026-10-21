@@ -1,0 +1,356 @@
+[
+ {
+  "archivo": "Nunez_Diriyah-Al-Taawoun_2026-10-17",
+  "nombre": "DARWIN NÚÑEZ",
+  "apellido": "Núñez",
+  "dorsal": "29",
+  "local": "Diriyah",
+  "visita": "Al-Taawoun",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/escudo_853574.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/escudo_56021.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/escudo_853574.png",
+  "meta": "SAUDI PRO LEAGUE · JORNADA 9 · 17 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "5.8",
+  "estrellas": 1,
+  "tema": {
+   "c1": "#5a0a1a",
+   "c2": "#1f0207",
+   "acento": "#f3f6f3"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "97",
+     "nombre": "Al-Bukhari",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_818493.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 818493
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Alsebyani",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_1152012.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1152012,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "99",
+     "nombre": "Mbemba",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_238612.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 238612
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Djimsiti",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_151003.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 151003
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Al-Faraj",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_1217915.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1217915
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Millot",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_957889.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 957889,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Gueye",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_106337.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 106337
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Boulbina",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_1094482.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 1094482
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Rodríguez",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_794948.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 794948
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Diandy",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_1597194.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1597194,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "29",
+     "nombre": "Núñez",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_924871.png",
+     "estrellas": 1,
+     "yo": true,
+     "pid": 924871
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_darwin/recursos/cara_924871.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "3 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "20",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "5",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "6/9",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "67%",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/3",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "2 · 1",
+    false
+   ],
+   [
+    "Remates al palo",
+    "1",
+    true
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,96",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "1",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,01",
+    false
+   ],
+   [
+    "Regates exitosos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Conducciones",
+    "8 (129 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SAUDI PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (8) · 700",
+     false
+    ],
+    [
+     "Nota media",
+     "6.81",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "3 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/darwin_2026-10-17.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "11/25 (44%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "2/3",
+     false
+    ],
+    [
+     "Remates al arco",
+     "0/2",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "0 · 2",
+     false
+    ],
+    [
+     "Conducciones",
+     "3",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "29"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,88 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ],
+   [
+    "VALOR",
+    "18,2 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 5.8
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

@@ -1,0 +1,353 @@
+[
+ {
+  "archivo": "Sanabria_RealSaltLake-SanJoseEarthquakes_2026-10-14",
+  "nombre": "JUAN MANUEL SANABRIA",
+  "apellido": "Sanabria",
+  "dorsal": "8",
+  "local": "Real Salt Lake",
+  "visita": "San Jose Earthquakes",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/escudo_5133.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/escudo_21825.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/escudo_5133.png",
+  "meta": "MLS · 14 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "8.2",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#b30838",
+   "c2": "#2a0410",
+   "acento": "#f2c14e"
+  },
+  "formacion": "3-4-2-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Cabral",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_124980.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 124980
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Henry",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_1035512.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1035512
+    },
+    {
+     "dorsal": "26",
+     "nombre": "Quinton",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_1172487.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1172487
+    },
+    {
+     "dorsal": "44",
+     "nombre": "Fougerolles",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_1413129.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 1413129
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Sanabria",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_874568.png",
+     "estrellas": 5,
+     "yo": true,
+     "pid": 874568
+    },
+    {
+     "dorsal": "92",
+     "nombre": "Caliskan",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_1489304.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1489304
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Spierings",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_788977.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 788977
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Marczuk",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_1090059.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1090059
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Guilavogui",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_990743.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 990743
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Lobzhanidze",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_286923.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 286923
+    }
+   ],
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Solans",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_2456862.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 2456862
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_sanabria/recursos/cara_874568.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "1",
+    true
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "81",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "16",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO VOLANTE POR IZQUIERDA",
+  "posicion": [
+   [
+    "Pases precisos",
+    "40/48",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "83%",
+    true
+   ],
+   [
+    "Pases al último tercio",
+    "28/37",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/0",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "5",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "1",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,79",
+    false
+   ],
+   [
+    "Centros precisos",
+    "4/10",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    false
+   ],
+   [
+    "Recup. def · med · ata",
+    "1 · 4 · 1",
+    false
+   ],
+   [
+    "Conducciones",
+    "19 (179 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "2026",
+   "filas": [
+    [
+     "MLS",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "25 (21) · 1971",
+     false
+    ],
+    [
+     "Nota media",
+     "7.03",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 5",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/sanabria_2026-10-14.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA IZQUIERDA",
+   "filas": [
+    [
+     "Acciones",
+     "76/90 (84%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "37/48",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "23/29",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Pases clave",
+     "3",
+     true
+    ],
+    [
+     "Recuperaciones",
+     "6",
+     false
+    ],
+    [
+     "Conducciones",
+     "17",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "8"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,72 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Volante Por Izquierda"
+   ],
+   [
+    "VALOR",
+    "3,8 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 8.2
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

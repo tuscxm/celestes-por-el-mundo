@@ -1,0 +1,379 @@
+[
+ {
+  "archivo": "Canobbio_Fluminense-Palmeiras_2026-10-14",
+  "nombre": "AGUSTÍN CANOBBIO",
+  "apellido": "Canobbio",
+  "dorsal": "17",
+  "local": "Fluminense",
+  "visita": "Palmeiras",
+  "goles_local": 1,
+  "goles_visita": 2,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/escudo_1961.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/escudo_1963.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/escudo_1961.png",
+  "meta": "COPA LIBERTADORES · SEMIFINALES · 14 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "63’",
+  "nota": "5.8",
+  "estrellas": 1,
+  "tema": {
+   "c1": "#7a0a1e",
+   "c2": "#0a2b17",
+   "acento": "#f3f6f3"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Fábio",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_17785.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 17785
+    }
+   ],
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Arana",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_1127439.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1127439
+    },
+    {
+     "dorsal": "29",
+     "nombre": "Millán",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_839085.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 839085
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Silva",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_33541.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 33541
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Guga",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_928134.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 928134
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Martinelli",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_1067671.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1067671
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Nonato",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_922566.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 922566,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "11",
+     "nombre": "Savarino",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_874739.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 874739
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Canobbio",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_846413.png",
+     "estrellas": 1,
+     "yo": true,
+     "pid": 846413
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Ganso",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_116853.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 116853
+    }
+   ],
+   [
+    {
+     "dorsal": "7",
+     "nombre": "Hulk",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_34705.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 34705
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_canobbio/recursos/cara_846413.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "3 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "41",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/10",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/5",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "10",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "24/29",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "83%",
+    true
+   ],
+   [
+    "Pases al último tercio",
+    "8/13",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/3",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "3 · 0",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,20",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,02",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    true
+   ],
+   [
+    "Recup. def · med · ata",
+    "1 · 1 · 0",
+    false
+   ],
+   [
+    "Conducciones",
+    "7 (46 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "2026",
+   "filas": [
+    [
+     "CAMPEONATO BRASILEIRO SÉRIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "23 (21) · 1674",
+     false
+    ],
+    [
+     "Nota media",
+     "6.94",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "5 · 3",
+     false
+    ],
+    [
+     "Tarjetas",
+     "8[A] · 1[R]",
+     false
+    ],
+    [
+     "COPA LIBERTADORES",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "10 (9) · 712",
+     false
+    ],
+    [
+     "Nota media",
+     "6.63",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 2[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/canobbio_2026-10-14.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA DERECHA",
+   "filas": [
+    [
+     "Acciones",
+     "22/52 (42%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "15/15",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "6/6",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Conducciones",
+     "2",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "17"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,75 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ],
+   [
+    "VALOR",
+    "9,3 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 5.8
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

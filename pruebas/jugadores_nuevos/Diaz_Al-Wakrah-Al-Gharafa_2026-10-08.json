@@ -1,0 +1,345 @@
+[
+ {
+  "archivo": "Diaz_Al-Wakrah-Al-Gharafa_2026-10-08",
+  "nombre": "FABRICIO DÍAZ",
+  "apellido": "Díaz",
+  "dorsal": "29",
+  "local": "Al-Wakrah",
+  "visita": "Al-Gharafa",
+  "goles_local": 3,
+  "goles_visita": 2,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/escudo_44440.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/escudo_34312.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/escudo_34312.png",
+  "meta": "STARS LEAGUE · JORNADA 5 · 8 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.4",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#f2cf1d",
+   "c2": "#0047ab",
+   "acento": "#0b1f4d"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "N'Diaye",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_826963.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 826963
+    }
+   ],
+   [
+    {
+     "dorsal": "23",
+     "nombre": "Fadlalla",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_1120007.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1120007
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Sano",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_1470029.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1470029,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Oui",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_1396639.png",
+     "estrellas": 1,
+     "yo": false,
+     "pid": 1396639
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Rashidi",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_758452.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 758452,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Sassi",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_332537.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 332537
+    },
+    {
+     "dorsal": "29",
+     "nombre": "Díaz",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_1017428.png",
+     "estrellas": 4,
+     "yo": true,
+     "pid": 1017428
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Brahimi",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_39066.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 39066
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Bennacer",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_823733.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 823733
+    },
+    {
+     "dorsal": "96",
+     "nombre": "Ounas",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_818440.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 818440
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Magri",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_1169436.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1169436
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/p2_fabricio_diaz/recursos/cara_1017428.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "69",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "6/8",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "6",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "53/58",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "91%",
+    true
+   ],
+   [
+    "Pases al último tercio",
+    "9/12",
+    true
+   ],
+   [
+    "Pases clave",
+    "1",
+    true
+   ],
+   [
+    "Pases largos precisos",
+    "4/6",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    true
+   ],
+   [
+    "Recup. def · med · ata",
+    "5 · 1 · 0",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "3/4",
+    false
+   ],
+   [
+    "Regates exitosos",
+    "2/2",
+    false
+   ],
+   [
+    "Conducciones",
+    "37 (255 m)",
+    false
+   ],
+   [
+    "Distancia",
+    "9,63 km",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "DOHA BANK STARS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "6 (6) · 540",
+     false
+    ],
+    [
+     "Nota media",
+     "7.15",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/fabricio_diaz_2026-10-08.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "39/81 (48%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "28/32",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "3/5",
+     true
+    ],
+    [
+     "Regates exitosos",
+     "1/1",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "2",
+     false
+    ],
+    [
+     "Conducciones",
+     "24",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "29"
+   ],
+   [
+    "EDAD",
+    "23 años"
+   ],
+   [
+    "ALTURA",
+    "1,79 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ],
+   [
+    "VALOR",
+    "3,9 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 7.4
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

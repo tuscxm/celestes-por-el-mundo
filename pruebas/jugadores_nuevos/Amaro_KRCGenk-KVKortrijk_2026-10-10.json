@@ -1,0 +1,324 @@
+[
+ {
+  "archivo": "Amaro_KRCGenk-KVKortrijk_2026-10-10",
+  "nombre": "KEVIN AMARO",
+  "apellido": "Amaro",
+  "dorsal": "20",
+  "local": "KRC Genk",
+  "visita": "KV Kortrijk",
+  "goles_local": 3,
+  "goles_visita": 0,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/escudo_2890.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/escudo_4858.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/escudo_2890.png",
+  "meta": "PRO LEAGUE · JORNADA 8 · 10 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.2",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#1f3fd1",
+   "c2": "#070f3d",
+   "acento": "#f2c14e"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "28",
+     "nombre": "Brughmans",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1529975.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1529975
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Kayembe",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_354046.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 354046,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "44",
+     "nombre": "N. Kongolo",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1396029.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1396029
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Smets",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1392905.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1392905
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Amaro",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1392533.png",
+     "estrellas": 3,
+     "yo": true,
+     "pid": 1392533
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Heynen",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_801025.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 801025
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Tahirović",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1102659.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1102659
+    }
+   ],
+   [
+    {
+     "dorsal": "32",
+     "nombre": "Adedeji-Sternberg",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1512197.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1512197
+    },
+    {
+     "dorsal": "38",
+     "nombre": "Heymans",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_845344.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 845344
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Ito",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_783278.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 783278
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Durosinmi",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1152386.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1152386
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_amaro2/recursos/cara_1392533.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "84",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "6/9",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "19",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "51/59",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "86%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "30/36",
+    false
+   ],
+   [
+    "Centros precisos",
+    "0/5",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "2/2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    true
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Conducciones",
+    "23 (169 m)",
+    false
+   ],
+   [
+    "Distancia",
+    "9,88 km",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "5 (4) · 367",
+     false
+    ],
+    [
+     "Nota media",
+     "7.14",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/amaro_2026-10-10.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "7/91 (8%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "3/4",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Conducciones",
+     "1",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,77 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ],
+   [
+    "VALOR",
+    "2,3 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 7.2
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

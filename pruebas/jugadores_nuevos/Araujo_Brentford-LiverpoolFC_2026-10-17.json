@@ -1,0 +1,346 @@
+[
+ {
+  "archivo": "Araujo_Brentford-LiverpoolFC_2026-10-17",
+  "nombre": "RONALD ARAÚJO",
+  "apellido": "Araújo",
+  "dorsal": "33",
+  "local": "Brentford",
+  "visita": "Liverpool FC",
+  "goles_local": 1,
+  "goles_visita": 2,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/escudo_50.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/escudo_44.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/escudo_44.png",
+  "meta": "PREMIER LEAGUE · JORNADA 7 · 17 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "45’",
+  "nota": "6.4",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#c8102e",
+   "c2": "#3a0610",
+   "acento": "#f2c14e"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Alisson",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_243609.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 243609
+    }
+   ],
+   [
+    {
+     "dorsal": "6",
+     "nombre": "Kerkez",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_1097425.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1097425
+    },
+    {
+     "dorsal": "4",
+     "nombre": "van Dijk",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_151545.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 151545
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Jacquet",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_1445625.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1445625,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "33",
+     "nombre": "Araújo",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_925097.png",
+     "estrellas": 2,
+     "yo": true,
+     "pid": 925097
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Szoboszlai",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_869856.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 869856
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Mac Allister",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_895324.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 895324,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "29",
+     "nombre": "Barcola",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_996952.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 996952,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "7",
+     "nombre": "Wirtz",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_1019322.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1019322
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Muñoz",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_1145642.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1145642
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Isak",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_823941.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 823941
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_ronald_araujo/recursos/cara_925097.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "25",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "6",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "12/17",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "71%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "8/13",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    true
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Conducciones",
+    "3 (15 m)",
+    false
+   ],
+   [
+    "Distancia",
+    "5,93 km",
+    false
+   ],
+   [
+    "Sprints",
+    "6",
+    false
+   ],
+   [
+    "Velocidad máxima",
+    "29,0 km/h",
+    true
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (5) · 405",
+     false
+    ],
+    [
+     "Nota media",
+     "6.93",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (3) · 197",
+     false
+    ],
+    [
+     "Nota media",
+     "7.43",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/ronald_araujo_2026-10-17.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "4/34 (12%)",
+     true
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Conducciones",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "33"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,91 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ],
+   [
+    "VALOR",
+    "27,0 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 6.4
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

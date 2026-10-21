@@ -1,0 +1,328 @@
+[
+ {
+  "archivo": "Gimenez_DeportivodeACoruna-LevanteUD_2026-10-16",
+  "nombre": "JOSÉ MARÍA GIMÉNEZ",
+  "apellido": "Giménez",
+  "dorsal": "20",
+  "local": "Deportivo de A Coruña",
+  "visita": "Levante UD",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/escudo_2832.png",
+  "escudo_visita": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/escudo_2849.png",
+  "escudo_club": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/escudo_2832.png",
+  "meta": "LALIGA · JORNADA 9 · 16 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.1",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#1f4fb8",
+   "c2": "#06163f",
+   "acento": "#f3f6f3"
+  },
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Román",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_1131909.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1131909
+    }
+   ],
+   [
+    {
+     "dorsal": "12",
+     "nombre": "Quagliata",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_973300.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 973300
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Ede",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_1978292.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1978292
+    },
+    {
+     "dorsal": "20",
+     "nombre": "M. Giménez",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_325355.png",
+     "estrellas": 3,
+     "yo": true,
+     "pid": 325355,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Navarro",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_150864.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 150864
+    }
+   ],
+   [
+    {
+     "dorsal": "14",
+     "nombre": "Rodríguez",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_950110.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 950110
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Villares",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_964849.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 964849
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Soriano",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_984622.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 984622
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Cruz",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_966526.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 966526,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "32",
+     "nombre": "Nsongo",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_2335487.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 2335487
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Hernández",
+     "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_1096950.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1096950
+    }
+   ]
+  ],
+  "cara": "/tmp/claude-0/-home-claude-celestes-por-el-mundo/856c9920-e906-58d6-90a3-1e3aa13cff22/scratchpad/prueba_gimenez/recursos/cara_325355.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "0 (0)",
+    false
+   ],
+   [
+    "Toques",
+    "70",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/8",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "8",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "46/52",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "88%",
+    true
+   ],
+   [
+    "Pases en campo rival",
+    "24/28",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "4/7",
+    false
+   ],
+   [
+    "Entradas ganadas",
+    "1/2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    true
+   ],
+   [
+    "Despejes",
+    "9",
+    false
+   ],
+   [
+    "Conducciones",
+    "19 (175 m)",
+    false
+   ],
+   [
+    "Distancia",
+    "9,24 km",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (6) · 544",
+     false
+    ],
+    [
+     "Nota media",
+     "6.84",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/gimenez_2026-10-16.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "36/80 (45%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "20/22",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercep. · Despejes",
+     "0 · 6",
+     false
+    ],
+    [
+     "Conducciones",
+     "8",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "31 años"
+   ],
+   [
+    "ALTURA",
+    "1,85 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ],
+   [
+    "VALOR",
+    "5,8 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 7.1
+  },
+  "amarillas_hero": 1,
+  "roja": null
+ }
+]
