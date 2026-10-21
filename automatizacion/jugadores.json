@@ -644,7 +644,8 @@
   "fotmob_id": 826418,
   "zona": "centro",
   "apifootball_equipo": 451,
-  "rol_352": "delantero"
+  "rol_352": "delantero",
+  "besoccer": "https://es.besoccer.com/jugador/miguel-merentiel-a-361855"
  },
  {
   "clave": "gimenez",
@@ -778,7 +779,8 @@
   "understat_equipo": "Liverpool",
   "zona": "centro",
   "cedido_por": "FC Barcelona",
-  "rol_352": "zaguero"
+  "rol_352": "zaguero",
+  "besoccer": "https://es.besoccer.com/jugador/ronald-federicoaraujo-da-silva-355710"
  },
  {
   "clave": "sanabria",
@@ -955,7 +957,8 @@
   "club": "Diriyah",
   "fotmob_id": 950561,
   "rol_352": "delantero",
-  "zona": "centro"
+  "zona": "centro",
+  "besoccer": "https://es.besoccer.com/jugador/d-nunez-462860"
  },
  {
   "clave": "fabricio_diaz",

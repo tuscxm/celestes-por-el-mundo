@@ -1,5 +1,5 @@
 {
- "revisado": "2026-10-20T18:33-03:00",
+ "revisado": "2026-10-20T23:46-03:00",
  "fechas": [
   "2026-10-19",
   "2026-10-20"
@@ -7,8 +7,8 @@
  "lineas": [
   "Valverde: sin partido hoy ni ayer",
   "Bernal: sin partido hoy ni ayer",
-  "**Mouriño** jugó 90' (titular, nota 6.1, de lateral derecho) en Liverpool FC 4-3 Villarreal · UEFA Champions League",
-  "Araújo: sin partido hoy ni ayer",
+  "Mouriño: ya procesado · Liverpool FC 4-3 Villarreal",
+  "M. Araújo: sin partido hoy ni ayer",
   "Á. Rodríguez: sin partido hoy ni ayer",
   "González: sin partido hoy ni ayer",
   "Cáceres: sin partido hoy ni ayer",
@@ -18,13 +18,24 @@
   "Boselli: ya procesado · Getafe 1-1 Rayo Vallecano",
   "J. Rodríguez: ya procesado · Monza 4-0 Cagliari",
   "Zalazar: sin partido hoy ni ayer",
-  "Merentiel: sin partido hoy ni ayer"
+  "**Merentiel** jugó 77' (titular, nota 7.9, de delantero) en Vasco da Gama 1-3 Boca Juniors · CONMEBOL Sudamericana, Knockout stage",
+  "Giménez: sin partido hoy ni ayer",
+  "Amaro: sin partido hoy ni ayer",
+  "**R. Araújo** jugó 45' (titular, nota 7.5, de lateral derecho) en Liverpool FC 4-3 Villarreal · UEFA Champions League",
+  "J. M. Sanabria: sin partido hoy ni ayer",
+  "Ugarte: sin partido hoy ni ayer",
+  "Canobbio: sin partido hoy ni ayer",
+  "**Darwin** jugó 80' (titular, nota 6.8, de delantero) en Diriyah 1-0 Al-Riyadh · Saudi Pro League",
+  "F. Díaz: sin partido hoy ni ayer",
+  "Torreira: sin partido hoy ni ayer",
+  "Brizuela: sin partido hoy ni ayer",
+  "Piquerez: sin partido hoy ni ayer"
  ],
  "jugadores": [
   "Valverde",
   "Bernal",
   "Mouriño",
-  "Araújo",
+  "M. Araújo",
   "Á. Rodríguez",
   "González",
   "Cáceres",
@@ -34,6 +45,17 @@
   "Boselli",
   "J. Rodríguez",
   "Zalazar",
-  "Merentiel"
+  "Merentiel",
+  "Giménez",
+  "Amaro",
+  "R. Araújo",
+  "J. M. Sanabria",
+  "Ugarte",
+  "Canobbio",
+  "Darwin",
+  "F. Díaz",
+  "Torreira",
+  "Brizuela",
+  "Piquerez"
  ]
 }

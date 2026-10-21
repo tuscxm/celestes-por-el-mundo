@@ -1,1 +1,12 @@
-{"fecha_revision": "2026-10-20", "jugadores": {}}
+{"fecha_revision": "2026-10-20",
+ "jugadores": {
+  "ronald_araujo": [{"fecha": "2026-10-20", "local": "Liverpool", "visita": "Villarreal", "goles_local": 4, "goles_visita": 3,
+                     "minutos": 46, "titular": true, "nota": 7.5,
+                     "notas_once": {"1": 6.1, "4": 6.4, "5": 6.5, "21": 7.7, "33": 7.5, "42": 7.7, "10": 9.4, "38": 6.6, "18": 7.8, "73": 8.8, "67": 6.4}}],
+  "merentiel": [{"fecha": "2026-10-20", "local": "Vasco da Gama", "visita": "Boca Juniors", "goles_local": 1, "goles_visita": 3,
+                 "minutos": 77, "titular": true, "nota": 8.2,
+                 "notas_once": {"1": 6.2, "42": 6.8, "2": 7.6, "3": 7.0, "17": 5.9, "6": 6.7, "18": 7.3, "25": 6.7, "19": 6.2, "16": 8.2, "22": 7.4}}],
+  "darwin": [{"fecha": "2026-10-20", "local": "Al-Diriyah", "visita": "Al-Riyadh", "goles_local": 1, "goles_visita": 0,
+              "minutos": 80, "titular": true, "nota": 6.7,
+              "notas_once": {"97": 8.5, "99": 7.5, "19": 6.8, "16": 6.9, "12": 6.9, "88": 7.0, "20": 7.0, "14": 8.1, "17": 7.1, "29": 6.7, "25": 6.4}}]
+ }}

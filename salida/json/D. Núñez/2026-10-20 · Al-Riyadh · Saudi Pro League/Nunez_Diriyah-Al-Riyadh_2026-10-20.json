@@ -1,0 +1,350 @@
+[
+ {
+  "archivo": "Nunez_Diriyah-Al-Riyadh_2026-10-20",
+  "nombre": "DARWIN NÚÑEZ",
+  "apellido": "Núñez",
+  "dorsal": "29",
+  "local": "Diriyah",
+  "visita": "Al-Riyadh",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_853574.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_168088.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_853574.png",
+  "meta": "SAUDI PRO LEAGUE · JORNADA 10 · 20 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "80’",
+  "nota": "6.8",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#5a0a1a",
+   "c2": "#1f0207",
+   "acento": "#f3f6f3"
+  },
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "97",
+     "nombre": "Al-Bukhari",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_818493.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 818493
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Alsebyani",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1152012.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1152012
+    },
+    {
+     "dorsal": "99",
+     "nombre": "Mbemba",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_238612.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 238612
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Djimsiti",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_151003.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 151003
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Wadi",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1548486.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1548486
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Millot",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_957889.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 957889,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "88",
+     "nombre": "Al-Malki",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_818840.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 818840
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Rodríguez",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_794948.png",
+     "estrellas": 5,
+     "yo": false,
+     "pid": 794948
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Diandy",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1597194.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 1597194
+    },
+    {
+     "dorsal": "29",
+     "nombre": "Núñez",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_924871.png",
+     "estrellas": 3,
+     "yo": true,
+     "pid": 924871
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Chelfi",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1801391.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 1801391,
+     "amarillas": 1
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_924871.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "4 (2)",
+    false
+   ],
+   [
+    "Toques",
+    "22",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "3/6",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/2",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "7",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "7/8",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "88%",
+    true
+   ],
+   [
+    "Remates al arco",
+    "2/4",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 2",
+    false
+   ],
+   [
+    "Remates al palo",
+    "1",
+    true
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,14",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,07",
+    false
+   ],
+   [
+    "Regates exitosos",
+    "1/2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "0",
+    false
+   ],
+   [
+    "Conducciones",
+    "9 (53 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SAUDI PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (8) · 700",
+     false
+    ],
+    [
+     "Nota media",
+     "6.89",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "3 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/darwin_2026-10-20.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "10/29 (34%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "1/1",
+     false
+    ],
+    [
+     "Remates al arco",
+     "1/3",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Conducciones",
+     "3",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "29"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,88 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ],
+   [
+    "VALOR",
+    "18,2 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 6.8,
+   "fotmob": 6.92,
+   "besoccer": 6.7
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]

@@ -1,0 +1,368 @@
+[
+ {
+  "archivo": "Merentiel_VascodaGama-BocaJuniors_2026-10-20",
+  "nombre": "MIGUEL MERENTIEL",
+  "apellido": "Merentiel",
+  "dorsal": "16",
+  "local": "Vasco da Gama",
+  "visita": "Boca Juniors",
+  "goles_local": 1,
+  "goles_visita": 3,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_1974.png",
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3202.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/escudo_3202.png",
+  "meta": "COPA SUDAMERICANA · SEMIFINALES · 20 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "77’",
+  "nota": "7.9",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#0a3d91",
+   "c2": "#061a40",
+   "acento": "#f2c14e"
+  },
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Montero",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_926238.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 926238
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Blanco",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_989865.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 989865
+    },
+    {
+     "dorsal": "42",
+     "nombre": "Herrera",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2050768.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 2050768
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Lollo",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1217939.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1217939
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Lozano",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_981018.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 981018
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Delgado",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_1819597.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 1819597
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Battaglia",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_158257.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 158257
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Ascacíbar",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_830667.png",
+     "estrellas": 3,
+     "yo": false,
+     "pid": 830667
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Flores",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_2050769.png",
+     "estrellas": 2,
+     "yo": false,
+     "pid": 2050769
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Merentiel",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_892275.png",
+     "estrellas": 4,
+     "yo": true,
+     "pid": 892275
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Villa",
+     "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_839983.png",
+     "estrellas": 4,
+     "yo": false,
+     "pid": 839983
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/salida_hoy/recursos/cara_892275.png",
+  "foto": null,
+  "sustitucion": null,
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tiros (al arco)",
+    "1 (1)",
+    false
+   ],
+   [
+    "Toques",
+    "15",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "0/3",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ],
+   [
+    "Pérdidas de balón",
+    "3",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "11/12",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "92%",
+    true
+   ],
+   [
+    "Remates al arco",
+    "1/1",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,18",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "2",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,07",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Conducciones",
+    "6 (42 m)",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "2026",
+   "filas": [
+    [
+     "LIGA PROFESIONAL",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "25 (19) · 1634",
+     false
+    ],
+    [
+     "Nota media",
+     "6.94",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "10 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ],
+    [
+     "COPA SUDAMERICANA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (7) · 591",
+     false
+    ],
+    [
+     "Nota media",
+     "6.95",
+     true
+    ],
+    [
+     "Goles · Asist.",
+     "4 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/merentiel_2026-10-20.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "8/20 (40%)",
+     true
+    ],
+    [
+     "Pases precisos",
+     "4/4",
+     false
+    ],
+    [
+     "Remates al arco",
+     "1/1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Pases clave",
+     "1",
+     true
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Conducciones",
+     "2",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "16"
+   ],
+   [
+    "EDAD",
+    "30 años"
+   ],
+   [
+    "ALTURA",
+    "1,76 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ],
+   [
+    "VALOR",
+    "4,1 M€"
+   ]
+  ],
+  "notas_por_fuente": {
+   "sofascore": 7.6,
+   "fotmob": 7.89,
+   "besoccer": 8.2
+  },
+  "amarillas_hero": 0,
+  "roja": null
+ }
+]
