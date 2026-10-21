@@ -3,7 +3,7 @@ y deja listo el aviso si hubo infografías nuevas o errores.
 
 Uso: GITHUB_REPOSITORY=tuscxm/celestes-por-el-mundo GITHUB_REPOSITORY_OWNER=tuscxm python3 automatizacion/publicar.py salida_hoy
 Lee  salida_hoy/resumen.json (lo escribe infografia_sofascore.py).
-Mueve PNG/JSON/_copy.txt a salida/, mapas a mapas/, figuras a salida/fotos/.
+Mueve PNG/JSON/_copy.txt a salida/png|json|txt/<jugador>/<fecha · rival · competencia>/, mapas a mapas/, figuras a salida/fotos/.
 Escribe automatizacion/ultima_revision.json, README.md, y si corresponde avisos/<fecha_hora>.md
 (primera línea = título). Al subirlo, el workflow .github/workflows/aviso.yml abre un issue y GitHub manda el mail."""
 import json, os, re, shutil, sys, glob, datetime
@@ -32,11 +32,101 @@ def apodo(nombre):
     return APODOS.get(nombre) or nombre.split()[-1].title()
 
 
+TIPOS = {"png": ".png", "json": ".json", "txt": "_copy.txt"}
+COMPETICIONES = {"LALIGA": "LaLiga", "LALIGA2": "LaLiga 2", "LALIGA HYPERMOTION": "LaLiga Hypermotion", "UEFA": "UEFA"}
+CARPETAS = {}  # archivo -> "<jugador>/<partido>"
+
+
+def _limpio(t):
+    return re.sub(r'[\\/:*?"<>|]', "", str(t)).strip()
+
+
+def carpeta_jugador(nombre):
+    """"SANTIAGO MOURIÑO" -> "S. Mouriño"; "JUAN MANUEL RODRÍGUEZ" -> "J. M. Rodríguez"."""
+    partes = nombre.split()
+    if len(partes) < 2:
+        return _limpio(nombre.title())
+    return _limpio(" ".join(p[0].upper() + "." for p in partes[:-1]) + " " + partes[-1].title())
+
+
+def _competicion(meta):
+    c = (meta or "").split("·")[0].strip()
+    if c in COMPETICIONES:
+        return COMPETICIONES[c]
+    return " ".join(COMPETICIONES.get(w, w if w.isdigit() else w.capitalize()) for w in c.split())
+
+
+def _club(nombre):
+    try:
+        for j in json.load(open(os.path.join(RAIZ, "automatizacion", "jugadores.json"))):
+            if j.get("placa") == nombre:
+                return j.get("club", "")
+    except Exception:
+        pass
+    return ""
+
+
+def _norm(t):
+    return re.sub(r"[^a-z0-9]", "", str(t).lower())
+
+
+def carpeta_partido(d):
+    """"<jugador>/<fecha> · <rival> · <competencia>" a partir del JSON de la infografía."""
+    archivo = d["archivo"]
+    m = re.search(r"_(\d{4}-\d{2}-\d{2})(?:_|$)", archivo)
+    fecha = m.group(1) if m else ""
+    local, visita = d.get("local"), d.get("visita")
+    ec, el, ev = d.get("escudo_club"), d.get("escudo_visita"), d.get("escudo_local")
+    rival = None
+    if local and visita and ec:
+        if ec == el and ec != ev:
+            rival = local
+        elif ec == ev and ec != el:
+            rival = visita
+    if rival is None:  # por el nombre del archivo y el club de jugadores.json
+        mm = re.match(r"[^_]+_([^-_]+)-([^_]+)_", archivo)
+        loc, vis = (local, visita) if local and visita else ((mm.group(1), mm.group(2)) if mm else ("", ""))
+        club = _norm(_club(d.get("nombre", "")))
+        if club and (club in _norm(loc) or _norm(loc) in club):
+            rival = vis
+        elif club and (club in _norm(vis) or _norm(vis) in club):
+            rival = loc
+        else:
+            rival = f"{loc}-{vis}"
+    partido = " · ".join(x for x in (fecha, _limpio(rival), _limpio(_competicion(d.get("meta")))) if x)
+    return f"{carpeta_jugador(d.get('nombre', archivo.split('_')[0]))}/{partido}"
+
+
+def ruta_salida(tipo, archivo):
+    """Ruta relativa a la raíz del repositorio de un archivo de salida (tipo: png, json o txt)."""
+    sub = CARPETAS.get(archivo)
+    if sub is None:
+        for f in glob.glob(os.path.join(RAIZ, "salida", "json", "*", "*", archivo + ".json")):
+            sub = os.path.relpath(os.path.dirname(f), os.path.join(RAIZ, "salida", "json"))
+    return f"salida/{tipo}/{sub}/{archivo}{TIPOS[tipo]}" if sub else f"salida/{archivo}{TIPOS[tipo]}"
+
+
+def guardar(archivo, origenes):
+    """Copia (o mueve) los archivos de una infografía a salida/<tipo>/<jugador>/<partido>/.
+    origenes: {"png": ruta, "json": ruta, "txt": ruta} (los que existan)."""
+    d = json.load(open(origenes["json"]))
+    d = d[0] if isinstance(d, list) else d
+    sub = carpeta_partido(d)
+    CARPETAS[archivo] = sub
+    for tipo, f in origenes.items():
+        if f and os.path.exists(f):
+            dest = os.path.join(RAIZ, "salida", tipo, sub)
+            os.makedirs(dest, exist_ok=True)
+            shutil.copy2(f, os.path.join(dest, archivo + TIPOS[tipo]))
+    return sub
+
+
 def mover(salida_hoy):
-    for f in glob.glob(os.path.join(salida_hoy, "*")):
-        b = os.path.basename(f)
-        if b.endswith((".png", "_copy.txt")) or (b.endswith(".json") and b != "resumen.json"):
-            shutil.copy2(f, os.path.join(RAIZ, "salida", b))
+    for f in glob.glob(os.path.join(salida_hoy, "*.json")):
+        b = os.path.basename(f)[:-5]
+        if b == "resumen":
+            continue
+        guardar(b, {"json": f, "png": os.path.join(salida_hoy, b + ".png"), "txt": os.path.join(salida_hoy, b + "_copy.txt")})
     for sub, dest in (("mapas", "mapas"), ("fotos", os.path.join("salida", "fotos"))):
         os.makedirs(os.path.join(RAIZ, dest), exist_ok=True)
         for f in glob.glob(os.path.join(salida_hoy, sub, "*")):
@@ -63,7 +153,7 @@ def linea_jugador(j, p):
 
 
 def url_img(ruta):
-    return f"https://github.com/{REPO}/blob/{RAMA}/{ruta}?raw=true" if REPO else ruta
+    return f"https://github.com/{REPO}/blob/{RAMA}/{_url(ruta)}?raw=true" if REPO else _url(ruta)
 
 
 def aviso(resumen, salida_hoy):
@@ -109,12 +199,12 @@ def aviso(resumen, salida_hoy):
         for j, p in fu:
             md.append(f"- {apodo(j['nombre'])}: " + " · ".join(f"{k} {v}" for k, v in p["fuentes"].items()))
     for j, p, _ in jugaron:
-        png = f"salida/{p['png']}"
-        copy_path = os.path.join(RAIZ, "salida", p["archivo"] + "_copy.txt")
+        png = ruta_salida("png", p["archivo"])
+        copy_path = os.path.join(RAIZ, ruta_salida("txt", p["archivo"]))
         copy = open(copy_path).read().strip() if os.path.exists(copy_path) else ""
         md.append(f"\n## {apodo(j['nombre'])} · {p['partido']}")
         md.append(f"![{p['archivo']}]({url_img(png)})")
-        md.append(f"[Abrir la imagen en tamaño completo](https://github.com/{REPO}/blob/{RAMA}/{png})" if REPO else "")
+        md.append(f"[Abrir la imagen en tamaño completo](https://github.com/{REPO}/blob/{RAMA}/{_url(png)})" if REPO else "")
         if copy:
             md.append("\nTexto para el posteo:\n```\n" + copy + "\n```")
     md.append("\n---\nNo se publicó nada en Instagram. Cerrá este aviso cuando la publiques o la descartes.")
@@ -130,25 +220,31 @@ def aviso(resumen, salida_hoy):
 
 def galeria():
     items = []
-    for png in glob.glob(os.path.join(RAIZ, "salida", "*.png")):
+    for png in glob.glob(os.path.join(RAIZ, "salida", "png", "**", "*.png"), recursive=True):
         b = os.path.basename(png)[:-4]
         m = re.search(r"_(\d{4}-\d{2}-\d{2})(?:_|$)", b)
         if not m or b.startswith(("PRUEBA", "EJEMPLO")):
             continue
-        cp = os.path.join(RAIZ, "salida", b + "_copy.txt")
+        rel = os.path.relpath(png, RAIZ)
+        cp = os.path.join(RAIZ, "salida", "txt", os.path.relpath(os.path.dirname(png), os.path.join(RAIZ, "salida", "png")), b + "_copy.txt")
         primera = open(cp).read().splitlines()[0] if os.path.exists(cp) else b.replace("_", " ")
-        items.append((m.group(1), b, primera, os.path.exists(cp)))
+        items.append((m.group(1), b, primera, os.path.relpath(cp, RAIZ) if os.path.exists(cp) else None, rel))
     items.sort(key=lambda x: (x[0], x[1]), reverse=True)
     return items[:MAX_GALERIA], len(items)
+
+
+def _url(rel):
+    from urllib.parse import quote
+    return quote(rel)
 
 
 def readme(ultima):
     items, total = galeria()
     filas, celdas = [], []
-    for fecha, b, primera, tiene_copy in items:
+    for fecha, b, primera, cp, png in items:
         texto = primera.replace("🇺🇾 ", "")
-        celdas.append(f'<td align="center" valign="top" width="33%"><a href="salida/{b}.png"><img src="salida/{b}.png" width="300"></a><br>'
-                      f'<sub>{texto}<br>{fecha}' + (f' · <a href="salida/{b}_copy.txt">texto del posteo</a>' if tiene_copy else '') + '</sub></td>')
+        celdas.append(f'<td align="center" valign="top" width="33%"><a href="{_url(png)}"><img src="{_url(png)}" width="300"></a><br>'
+                      f'<sub>{texto}<br>{fecha}' + (f' · <a href="{_url(cp)}">texto del posteo</a>' if cp else '') + '</sub></td>')
         if len(celdas) == 3:
             filas.append("<tr>" + "".join(celdas) + "</tr>"); celdas = []
     if celdas:
@@ -167,7 +263,7 @@ Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
 {rev}
-## Últimas infografías ({total} en total, todas en [`salida/`](salida))
+## Últimas infografías ({total} en total, en [`salida/png/`](salida/png); datos en [`salida/json/`](salida/json) y textos del posteo en [`salida/txt/`](salida/txt), cada uno por jugador y por partido)
 
 <table>
 {chr(10).join(filas)}

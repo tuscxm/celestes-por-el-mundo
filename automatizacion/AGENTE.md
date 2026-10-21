@@ -69,7 +69,9 @@ Si el jugador jugó (más de 0 minutos), se arma la infografía y se indica si f
    - Por cada partido terminado en el que jugaron deja PNG, JSON, `_copy.txt`, mapa de calor y figura.
    - La infografía trae: alineación con caras y el jugador resaltado; minutos y nota; "Su partido"; el cuadro según dónde jugó (decidido por su posición media); el mapa de calor real; y la temporada por competición.
    - Nunca se inventa nada: lo que SofaScore no trae se omite y queda en "avisos". Si SofaScore no responde, sale como error (nunca como "sin partido").
-2. `publicar.py` guarda todo en `salida/`, `mapas/` y `salida/fotos/`, actualiza `procesados.json`, `ultima_revision.json` y la galería del README, y si hubo infografías nuevas o errores escribe `avisos/<fecha_hora>.md` (primera línea = título, que empieza por quién jugó).
+2. `publicar.py` guarda las infografías ordenadas por tipo, jugador y partido (desde el 21/10/2026):
+   - `salida/png/<jugador>/<fecha> · <rival> · <competencia>/` la imagen, `salida/json/...` los datos y `salida/txt/...` el texto del posteo (`_copy.txt`). La carpeta del jugador lleva las iniciales del nombre y el apellido (`S. Mouriño`, `J. M. Rodríguez`, `Á. Rodríguez`) para que no se mezclen apellidos repetidos. Ej.: `salida/png/S. Mouriño/2026-10-20 · Liverpool FC · Champions League/Mourino_LiverpoolFC-Villarreal_2026-10-20.png`.
+   - Los mapas de calor siguen en `mapas/` y las figuras en `salida/fotos/`. Además actualiza `procesados.json`, `ultima_revision.json` y la galería del README, y si hubo infografías nuevas o errores escribe `avisos/<fecha_hora>.md` (primera línea = título, que empieza por quién jugó).
 3. Claude mira cada PNG (textos cortados o encimados, jugador resaltado, números razonables). Si ve un problema, lo agrega al aviso.
 4. Claude hace commit y push. Al llegar un archivo nuevo a `avisos/`, el workflow `aviso.yml` abre un issue y GitHub manda el mail.
 5. `control.yml` revisa a las 23:30 que la revisión del día haya llegado; si no, abre un issue.
