@@ -1,0 +1,280 @@
+[
+ {
+  "archivo": "Rodriguez_AFCBournemouth-Milan_2026-10-22",
+  "nombre": "ÁLVARO RODRÍGUEZ",
+  "apellido": "Rodríguez",
+  "dorsal": "30",
+  "local": "AFC Bournemouth",
+  "visita": "Milan",
+  "goles_local": 3,
+  "goles_visita": 0,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_alvaro_rodriguez.png",
+  "escudo_visita": null,
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_alvaro_rodriguez.png",
+  "meta": "EUROPA LEAGUE · JORNADA 3 · 22 OCTUBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "24’",
+  "nota": "5.9",
+  "estrellas": 1,
+  "tema": {
+   "c1": "#c8102e",
+   "c2": "#1a0a0c",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": {
+   "minuto": "66’",
+   "por": "Evanilson",
+   "apellido": "Rodríguez",
+   "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/alvaro_rodriguez.png",
+   "rol": ""
+  },
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Di Gregorio",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Truffert",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Silva",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Diakité",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Hill",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Tavernier",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Adams",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Christie",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Gannon-Doak",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Evanilson",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Kluivert",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/alvaro_rodriguez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "8",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/3",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "3/5",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "60%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "0",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "4 (0) · 39",
+     false
+    ],
+    [
+     "Nota media",
+     "6.06",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "30"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,93 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null
+ }
+]

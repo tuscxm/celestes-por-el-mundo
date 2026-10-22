@@ -1,0 +1,287 @@
+[
+ {
+  "archivo": "Satriano_Getafe-Lugano_2026-10-22",
+  "nombre": "MARTÍN SATRIANO",
+  "apellido": "Satriano",
+  "dorsal": "10",
+  "local": "Getafe",
+  "visita": "Lugano",
+  "goles_local": 2,
+  "goles_visita": 5,
+  "escudo_local": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_satriano.png",
+  "escudo_visita": null,
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_satriano.png",
+  "meta": "CONFERENCE LEAGUE · JORNADA 2 · 22 OCTUBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "45’",
+  "nota": "6.4",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#1f56c4",
+   "c2": "#0a1f4d",
+   "acento": "#e2001a"
+  },
+  "sustitucion": {
+   "minuto": "46’",
+   "por": "Kiko",
+   "apellido": "Satriano",
+   "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/satriano.png",
+   "rol": ""
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Soria",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Davinchi",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "26",
+     "nombre": "Valou",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Abqar",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Kiko",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Serrano",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Djené",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "28",
+     "nombre": "Risco",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Mayoral",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "21",
+     "nombre": "García",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Azon",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/satriano.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "23",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "11/13",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "85%",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (8) · 659",
+     false
+    ],
+    [
+     "Nota media",
+     "6.76",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "10"
+   ],
+   [
+    "EDAD",
+    "25 años"
+   ],
+   [
+    "ALTURA",
+    "1,87 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null
+ }
+]

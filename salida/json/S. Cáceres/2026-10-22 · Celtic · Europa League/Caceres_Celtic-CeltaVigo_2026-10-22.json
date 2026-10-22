@@ -1,0 +1,278 @@
+[
+ {
+  "archivo": "Caceres_Celtic-CeltaVigo_2026-10-22",
+  "nombre": "SEBASTIÁN CÁCERES",
+  "apellido": "Cáceres",
+  "dorsal": "21",
+  "local": "Celtic",
+  "visita": "Celta Vigo",
+  "goles_local": 1,
+  "goles_visita": 2,
+  "escudo_local": null,
+  "escudo_visita": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_caceres.png",
+  "escudo_club": "/home/claude/celestes-por-el-mundo/automatizacion/escudos/club_caceres.png",
+  "meta": "EUROPA LEAGUE · JORNADA 3 · 22 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.0",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#6cace4",
+   "c2": "#0f3c6e",
+   "acento": "#e2001a"
+  },
+  "sustitucion": null,
+  "formacion": "3-4-3",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Radu",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Alonso",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Cáceres",
+     "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/caceres.png",
+     "estrellas": 3,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Rodríguez",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "5",
+     "nombre": "Carreira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "30",
+     "nombre": "Burcio",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Febas",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Rueda",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "23",
+     "nombre": "Álvarez",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Jutglà",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Aspas",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/claude/celestes-por-el-mundo/automatizacion/caras/caceres.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "81",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/6",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "63/69",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "91%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "2/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "7",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (3) · 257",
+     false
+    ],
+    [
+     "Nota media",
+     "7.55",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "21"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,83 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null
+ }
+]

@@ -1,0 +1,280 @@
+[
+ {
+  "archivo": "Piquerez_Palmeiras-Fluminense_2026-10-21",
+  "nombre": "JOAQUÍN PIQUEREZ",
+  "apellido": "Piquerez",
+  "dorsal": "22",
+  "local": "Palmeiras",
+  "visita": "Fluminense",
+  "goles_local": 0,
+  "goles_visita": 1,
+  "escudo_local": null,
+  "escudo_visita": null,
+  "escudo_club": null,
+  "meta": "COPA LIBERTADORES · SEMI-FINALS · 21 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.0",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#0b7a45",
+   "c2": "#032414",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "3-4-2-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Miguel",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "2",
+     "nombre": "Barboza",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Gómez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "26",
+     "nombre": "Murilo",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Piquerez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Freitas",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "30",
+     "nombre": "Evangelista",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Giay",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Pereira",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Arias",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "42",
+     "nombre": "López",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": null,
+  "foto": "/home/claude/celestes-por-el-mundo/salida_hoy/fotos/piquerez_2026-10-21.svg",
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "58",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "3/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "34/42",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "81%",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "2/4",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26",
+   "filas": [
+    [
+     "SÉRIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "16 (15) · 1249",
+     false
+    ],
+    [
+     "Nota media",
+     "7.44",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 4",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "22"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,83 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null
+ }
+]
