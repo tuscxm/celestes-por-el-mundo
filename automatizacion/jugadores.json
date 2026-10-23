@@ -1141,5 +1141,92 @@
   "zona": "centro",
   "rol_352": "carrilero",
   "apifootball_equipo": 121
+ },
+ {
+  "clave": "matturro",
+  "placa": "ALAN MATTURRO",
+  "equipos": {
+   "3313": "Shakhtar Donetsk",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,89 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2004-10-11",
+  "camiseta": {
+   "3313": {
+    "tipo": "liso",
+    "c1": "#f47b20",
+    "c2": "#f47b20",
+    "texto": "#111111",
+    "short": "#111111",
+    "fondo": [
+     "#f47b20",
+     "#2a1406",
+     "#111111"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1177401,
+  "club": "Shakhtar Donetsk",
+  "fotmob_id": 1412942,
+  "zona": "centro",
+  "rol_352": "zaguero"
+ },
+ {
+  "clave": "olivera",
+  "placa": "MATHÍAS OLIVERA",
+  "equipos": {
+   "2714": "Napoli",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,85 m",
+  "pie": "Izquierdo",
+  "nacimiento": "1997-10-31",
+  "camiseta": {
+   "2714": {
+    "tipo": "liso",
+    "c1": "#12a0d7",
+    "c2": "#12a0d7",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#12a0d7",
+     "#0a3a5e",
+     "#ffffff"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 805078,
+  "club": "Napoli",
+  "fotmob_id": 729093,
+  "zona": "centro",
+  "understat_equipo": "Napoli",
+  "rol_352": "zaguero"
  }
 ]
