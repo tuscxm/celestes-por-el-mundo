@@ -217,9 +217,8 @@ def texto_352(j, p, b, st, lado, pct, rival, tipo):
     puesto = "enganche" if tipo == "enganche" else (respaldo_auto.donde_jugo(p, str(j["fotmob_id"]))["puesto"] or "titular")
     hs = hechos(st, pct, lado, rival)
     claves, plantilla = ROLES_352.get(j.get("rol_352"), ([], ""))
-    # lo que dice el párrafo del 3-5-2 no se repite arriba (salvo los goles)
-    del_rol = [k for k in claves if hs.get(k)][:3]
-    primeras = [k for k in ("lado", "goals", "pases", "duelos", "recoveries", "passes_into_final_third", "chances_created") if k == "goals" or k not in del_rol]
+    # si el rol usa de qué lado jugó (carrilero), eso va en el párrafo del 3-5-2 y no se repite arriba
+    primeras = [k for k in ("lado", "goals", "pases", "duelos", "recoveries", "passes_into_final_third", "chances_created") if not (k == "lado" and "lado" in claves)]
     partido = lista([hs.get(k) for k in primeras if hs.get(k)][:4])
     usados = set()
     rol = plantilla.format(lado={"izquierda": " por izquierda", "derecha": " por derecha"}.get(lado, ""),
