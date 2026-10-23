@@ -20,6 +20,5 @@ jobs:
             "https://www.sofascore.com/api/v1/player/924889/events/last/0" \
             "https://api.sofascore.app/api/v1/player/924889/events/last/0"; do
             code=$(curl -sS --compressed -o out.json -w "%{http_code}" -m 20 -A "$UA" "$u" || echo "fallo")
-            echo "$code $u"
-            head -c 200 out.json; echo
+            echo "::notice title=SofaScore $code::$u $(head -c 120 out.json | tr -d '\n')"
           done
