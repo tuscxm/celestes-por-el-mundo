@@ -702,7 +702,7 @@ def main():
     for j in respaldos:
         try:
             import respaldo_auto
-            respaldo_auto.armar(j, fechas, salida, proc_path)
+            respaldo_auto.armar(j, fechas, salida, proc_path, forzar="--forzar" in a)
             resumen = json.load(open(os.path.join(salida, "resumen.json")))
         except Exception as ex:
             print(f"respaldo automático de {j['clave']} falló: {ex!r}")

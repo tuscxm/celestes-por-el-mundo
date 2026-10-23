@@ -93,7 +93,7 @@ def stats_como_sofascore(st):
     return s
 
 
-def armar(j, fechas, salida, proc_path):
+def armar(j, fechas, salida, proc_path, forzar=False):
     extra = fuentes.consultar(j, fechas)
     fm = extra["partidos"].get("fotmob") or []
     if extra["estado"].get("fotmob") != "ok":
@@ -109,7 +109,7 @@ def armar(j, fechas, salida, proc_path):
         return True
     procesados = set(json.load(open(proc_path))) if proc_path and os.path.exists(proc_path) else set()
     for d in fm:
-        if f"{j['clave']}_{d['fecha']}" in procesados and d.get("minutos"):
+        if f"{j['clave']}_{d['fecha']}" in procesados and d.get("minutos") and not forzar:
             # ya se armó en una revisión anterior: no se rehace (igual que el script principal)
             res = json.load(open(rp))
             for x in res["jugadores"]:
