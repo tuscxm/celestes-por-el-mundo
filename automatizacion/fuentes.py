@@ -117,6 +117,15 @@ _AF_SIN_PLAN = None  # si el plan no cubre la temporada, no se gastan más pedid
 FM = "https://www.fotmob.com/api/data"
 
 
+def _tipo_remate(t):
+    """Tipo de un remate de FotMob para marcarlo en el mapa: gol / bloqueado / al_arco / afuera (incluye palo)."""
+    if t.get("eventType") == "Goal" and not t.get("isOwnGoal"):
+        return "gol"
+    if t.get("isBlocked"):
+        return "bloqueado"
+    return "al_arco" if t.get("isOnTarget") else "afuera"
+
+
 def fotmob(j, fechas):
     """Partidos del jugador en `fechas` (date) según FotMob. Devuelve lista de dicts normalizados."""
     pid = j.get("fotmob_id")
@@ -184,6 +193,10 @@ def fotmob(j, fechas):
             ps = (c.get("playerStats") or {}).get(str(pid)) or {}
             r["puesto_habitual"] = ps.get("usualPosition")      # 0 arquero, 1 defensor, 2 volante, 3 delantero
             r["remates"] = ps.get("shotmap")                     # cada remate con x (0-105, ataca a la derecha) e y (0-68)
+            # remates en la escala del mapa de calor (abajo). Su y viene al revés que la del mapa de calor
+            # (comprobado con 5 partidos y más de 80 jugadores): y = y_remate / 68 * 100.
+            r["remates_mapa"] = [{"x": round(t["x"] / 105 * 100, 2), "y": round(t["y"] / 68 * 100, 2), "tipo": _tipo_remate(t)}
+                                 for t in r["remates"] or [] if t.get("x") is not None and t.get("y") is not None]
             # mapa de calor del partido: círculos en una cancha de 105 x 68 que ataca a la derecha, con el costado
             # derecho del equipo ABAJO (y alto). Se pasa a la escala de SofaScore: x 0-100 hacia el arco rival,
             # y 0-100 con 0 = costado derecho del equipo.

@@ -69,10 +69,20 @@ def dibujar(puntos, salida):
     fig.savefig(salida, dpi=110, facecolor=fig.get_facecolor())
     plt.close(fig)
 
-def dibujar_horizontal(puntos, salida, zona=None):
+# El mapa se ve a ~30 % de su tamaño en la infografía: marcas y leyenda van grandes para que se lean ahí.
+REMATES = {  # tipo: (marcador, tamaño, relleno, borde, ancho de borde, leyenda)
+    "gol": ("*", 1500, "#f2c14e", "#1b1d1f", 2.2, "Gol"),
+    "al_arco": ("o", 520, "#ffffff", "#1b1d1f", 2.4, "Al arco"),
+    "afuera": ("o", 520, "none", "#ffffff", 4.5, "Afuera"),
+    "bloqueado": ("X", 560, "#8fd0ff", "#1b1d1f", 1.8, "Bloqueado"),
+}
+
+
+def dibujar_horizontal(puntos, salida, zona=None, remates=None):
     """Mapa de calor con la cancha acostada: ataca hacia la DERECHA, así que el costado derecho del equipo
     queda ABAJO y el izquierdo ARRIBA. Si se da `zona` (derecha / centro / izquierda) se marca esa franja
-    con un recuadro y se oscurece un poco el resto."""
+    con un recuadro y se oscurece un poco el resto. `remates`: [{x, y, tipo}] en la misma escala que `puntos`
+    (tipo: gol / al_arco / afuera / bloqueado); se marcan encima con una leyenda arriba a la izquierda."""
     L, W = 105.0, 68.0
     xs = np.array([p["x"] for p in puntos]) / 100 * L
     ys = np.array([p["y"] for p in puntos]) / 100 * W      # y=0 (derecha del equipo) abajo
@@ -101,6 +111,22 @@ def dibujar_horizontal(puntos, salida, zona=None):
             if (a0, a1) != (y0, y1):
                 ax.add_patch(Rectangle((0, a0), L, a1 - a0, fc=(0.08, 0.09, 0.1, .38), ec="none", zorder=4))
         ax.add_patch(Rectangle((0.4, y0 + 0.4), L - 0.8, y1 - y0 - 0.8, fill=False, lw=2.6, ec="#f2c14e", ls=(0, (6, 3)), zorder=5))
+    tipos = [t for t in REMATES if any(r.get("tipo") == t for r in remates or [])]
+    for t in tipos:
+        mk, sz, fc, ec, ew, _ = REMATES[t]
+        rs = [r for r in remates if r.get("tipo") == t]
+        ax.scatter([r["x"] / 100 * L for r in rs], [r["y"] / 100 * W for r in rs], marker=mk, s=sz, c=fc, edgecolors=ec,
+                   linewidths=ew, zorder=7 if t == "gol" else 6)
+    if tipos:
+        x, y = 2.6, W - 5.6
+        rend = fig.canvas.get_renderer()
+        for t in tipos:
+            mk, sz, fc, ec, ew, txt = REMATES[t]
+            ax.scatter([x + 1.8], [y], marker=mk, s=sz * 0.6, c=fc, edgecolors=ec, linewidths=ew, zorder=9)
+            tx = ax.text(x + 4.4, y, txt, color="white", fontsize=19, fontweight="bold", va="center", zorder=9)
+            fin = ax.transData.inverted().transform(tx.get_window_extent(rend))[1][0]
+            x = fin + 3.4
+        ax.add_patch(Rectangle((1.2, W - 10.4), x - 1.2 - 2.2, 9.6, fc=(0.1, 0.11, 0.12, .78), ec="none", zorder=8))
     fig.savefig(salida, dpi=230, facecolor=fig.get_facecolor())
     plt.close(fig)
 

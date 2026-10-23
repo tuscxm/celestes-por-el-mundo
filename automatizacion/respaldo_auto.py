@@ -224,21 +224,29 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             b["estadisticas"] = es
             # mapa de calor y su franja (acciones del mapa de calor y, si lleva lo de ataque, remates al arco)
             calor = d.get("calor") or []
+            tiros = d.get("remates")
+            # los remates se marcan en el mapa solo si están todos los que cuenta la estadística y los goles marcados
+            # son los goles del jugador (FotMob a veces trae como gol uno anulado o de la tanda de penales)
+            rm = d.get("remates_mapa") or []
+            completos = isinstance(tiros, list) and (ss.get("totalShots") is None or len(tiros) == ss.get("totalShots")) \
+                and (d.get("goles") is None or sum(1 for r in rm if r["tipo"] == "gol") == d.get("goles"))
+            if rm and not completos:
+                b["avisos"].append("No se marcaron los remates en el mapa: no coinciden con la estadística del partido")
             if len(calor) >= 5:
                 from mapa_sofascore import dibujar_horizontal
                 os.makedirs(os.path.join(salida, "mapas"), exist_ok=True)
                 mapa = f"mapas/{j['clave']}_{d['fecha']}.png"
-                dibujar_horizontal(calor, os.path.join(salida, mapa), j.get("zona"))
+                dibujar_horizontal(calor, os.path.join(salida, mapa), j.get("zona"),
+                                   remates=rm if completos else None)
                 b["heat_img"] = mapa
                 if j.get("zona") in ZONAS:
                     titulo, en = ZONAS[j["zona"]]
                     k = sum(1 for p in calor if en(p["y"]))
                     zf = [["Acciones", f"{k}/{len(calor)} ({round(k * 100 / len(calor))}%)", True]]
-                    tiros = d.get("remates")
-                    # remates: solo si el mapa de remates trae todos los que cuenta la estadística; por el centro no
-                    # importa de qué lado se mida el ancho, por las bandas no está confirmado: no se ponen
-                    if con_ataque and isinstance(tiros, list) and len(tiros) == ss.get("totalShots") and j["zona"] == "centro":
-                        tz = [t for t in tiros if t.get("y") is not None and en(100 - t["y"] / 68 * 100)]
+                    # remates: solo si el mapa de remates trae todos los que cuenta la estadística. Su ancho viene al
+                    # revés que el del mapa de calor (comprobado con 5 partidos): y = y_remate / 68 * 100
+                    if con_ataque and isinstance(tiros, list) and len(tiros) == ss.get("totalShots"):
+                        tz = [t for t in tiros if t.get("y") is not None and en(t["y"] / 68 * 100)]
                         zf.append(["Remates al arco", f"{sum(1 for t in tz if t.get('isOnTarget') and not t.get('isBlocked'))}/{len(tz)}", True])
                     if con_ataque and d.get("asistencias") == 0:
                         zf.append(["Asistencias", "0", False])
