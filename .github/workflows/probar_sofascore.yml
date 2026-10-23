@@ -1,0 +1,25 @@
+name: Probar SofaScore
+
+# Prueba a mano si SofaScore responde desde los servidores de GitHub (desde la nube de Claude da 403).
+# No cambia nada del repositorio: solo muestra qué contesta.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Consultar SofaScore
+        run: |
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+          for u in \
+            "https://api.sofascore.com/api/v1/player/924889/events/last/0" \
+            "https://www.sofascore.com/api/v1/player/924889/events/last/0" \
+            "https://api.sofascore.app/api/v1/player/924889/events/last/0"; do
+            code=$(curl -sS --compressed -o out.json -w "%{http_code}" -m 20 -A "$UA" "$u" || echo "fallo")
+            echo "$code $u"
+            head -c 200 out.json; echo
+          done
