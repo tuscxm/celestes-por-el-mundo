@@ -52,6 +52,10 @@ def main():
         if not seleccion:
             from caras import cara_oficial
             cara = cara_oficial(j["clave"], os.path.join(salida, "recursos"), j.get("foto_oficial")) or cara
+        if not cara and j.get("sofascore_id"):
+            # sin cara guardada: se baja la de SofaScore (img.sofascore.com responde aunque la API no) y queda en caras/
+            from caras import cara as bajar_cara
+            cara = bajar_cara(j["sofascore_id"], os.path.join(salida, "recursos"), j["clave"])
         esc = os.path.join(AQUI, "escudos", ("uruguay" if seleccion else f"club_{j['clave']}") + ".png")
         esc = esc if os.path.exists(esc) else None
         # escudo del rival, si está guardado (escudos/fotmob_<id>.png, lo baja respaldo_auto.py)
