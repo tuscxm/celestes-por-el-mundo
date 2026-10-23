@@ -1,7 +1,7 @@
 name: Probar SofaScore
 
-# Prueba a mano si SofaScore responde desde los servidores de GitHub (desde la nube de Claude da 403).
-# No cambia nada del repositorio: solo muestra qué contesta.
+# Prueba a mano si SofaScore responde desde los servidores de GitHub (desde la nube de Claude, api.sofascore.com da 403).
+# No cambia nada del repositorio: deja el resultado como anotaciones de la corrida.
 on:
   workflow_dispatch:
 
@@ -15,10 +15,13 @@ jobs:
       - name: Consultar SofaScore
         run: |
           UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-          for u in \
-            "https://api.sofascore.com/api/v1/player/924889/events/last/0" \
-            "https://www.sofascore.com/api/v1/player/924889/events/last/0" \
-            "https://api.sofascore.app/api/v1/player/924889/events/last/0"; do
-            code=$(curl -sS --compressed -o out.json -w "%{http_code}" -m 20 -A "$UA" "$u" || echo "fallo")
-            echo "::notice title=SofaScore $code::$u $(head -c 120 out.json | tr -d '\n')"
+          probar() {
+            code=$(curl -sS --compressed -o out.json -w "%{http_code}" -m 20 -A "$UA" "$1" || echo "fallo")
+            echo "::notice title=SofaScore $code::$1 → $(python3 -c "import json,sys;d=json.load(open('out.json'));print(sys.argv[1] and eval(sys.argv[1]))" "$2" 2>&1 | head -c 200)"
+          }
+          for h in api.sofascore.app api.sofascore.com; do
+            probar "https://$h/api/v1/player/924889/events/last/0" "len(d.get('events',[]))"
+            probar "https://$h/api/v1/event/16938800/player/1468046/rating-breakdown" "{k: len(v) for k, v in d.items()}"
+            probar "https://$h/api/v1/event/16938800/player/1468046/heatmap" "len(d.get('heatmap',[]))"
+            probar "https://$h/api/v1/event/16938800/player/1468046/statistics" "d.get('statistics',{}).get('rating')"
           done
