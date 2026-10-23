@@ -609,6 +609,24 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
         import shutil
         os.makedirs(os.path.join(AQUI, "escudos"), exist_ok=True)
         shutil.copy2(esc_club, os.path.join(AQUI, "escudos", ("uruguay" if equipo.get("national") else f"club_{clave}") + ".png"))
+    # Parte de abajo por puesto (abajo_puesto.py): estadísticas de SofaScore (lo que falte, de FotMob), acciones del mapa
+    # de SofaScore (si no hay, las de FotMob) y remates de FotMob. Si algo falla, sale con el diseño anterior.
+    abajo = texto_352 = None
+    try:
+        import abajo_puesto
+        fm = datos.get("fotmob") or {}
+        central_l = False
+        if linea_i is not None and enganche:
+            lo = orden(ls[linea_i]); central_l = len(lo) == 1 or (lo[0]["player"]["id"] != pid and lo[-1]["player"]["id"] != pid)
+        pj = dict(fm); pj["stats"] = abajo_puesto.stats_sofascore(s, fm.get("stats"))
+        pj["posicion_id"] = fm.get("posicion_id") or (85 if r == "mediocentro" and enganche and central_l else None)
+        ap = abajo_puesto.armar(j, pj, {"puesto": pos_titulo.replace("COMO ", "").lower() if r != "otro" else "", "enganche": enganche},
+                                salida, mapa or f"mapas/{clave}_{fecha}.png", generales, calor=puntos if len(puntos) >= 5 else None)
+        if ap:
+            abajo, texto_352 = ap["abajo"], abajo_puesto.texto_352(j, ap)
+            mapa = ap["abajo"].get("heat_img") or mapa
+    except Exception as ex:
+        avisos.append(f"No se pudo armar la parte de abajo por puesto ({type(ex).__name__}: {ex}); sale con el diseño anterior")
     d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido_placa(player, j["placa"]), "dorsal": dorsal,
          "local": home, "visita": away, "goles_local": hs, "goles_visita": as_,
          "escudo_local": escudo(e["homeTeam"]["id"], recursos), "escudo_visita": escudo(e["awayTeam"]["id"], recursos),
@@ -624,7 +642,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
          "generales": generales, "pos_titulo": pos_titulo, "posicion": pos_filas,
          "extra": {"titulo": "TEMPORADA", "sub": str(year) if year else "", "filas": filas_t},
          "heat_img": mapa, "heat_horizontal": True, "zona": zona, "perfil": perfil, "notas_por_fuente": notas, "amarillas_hero": amar,
-         "roja": (min_roja or True) if roja else None}
+         "roja": (min_roja or True) if roja else None, "abajo": abajo}
     jp = os.path.join(salida, archivo + ".json")
     json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
     subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
@@ -644,7 +662,10 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
         copy += "🟥 Expulsado" + (f" al {min_roja.replace('’', chr(39))}" if isinstance(min_roja, str) else "") + "\n"
     if sustitucion:
         copy += f"🔁 Entró al {sustitucion['minuto'].replace('’', chr(39))} por {sustitucion['por']}, como {pos_titulo.replace('COMO ', '').lower()}\n"
-    copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
+    if texto_352:  # qué hizo y cómo encajaría en una Uruguay 3-5-2 con enganche (abajo_puesto.py)
+        copy += "\n" + "\n".join(texto_352) + "\n" + f"#CelestesPorElMundo #Uruguay #{club_tag} #352\n"
+    else:
+        copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
     open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
     return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo, "notas_por_fuente": notas,
             "archivo": archivo, "png": archivo + ".png", "mapa": mapa, "figura": fig, "avisos": avisos,

@@ -109,7 +109,8 @@ def main():
              "tema": tema(cam, {}), "sustitucion": sustitucion, "formacion": b.get("formacion", ""), "once": once, "cara": cara, "foto": fig,
              "generales": generales, "pos_titulo": pos, "posicion": [[x[0], str(x[1]), bool(x[2]) if len(x) > 2 else False] for x in (b.get("estadisticas") or [])],
              "extra": {"titulo": "TEMPORADA", "sub": b.get("temporada_sub", ""), "filas": [[k, str(v), False] for k, v in (b.get("temporada") or [])]},
-             "heat_img": b.get("heat_img"), "heat_horizontal": True, "zona": b.get("zona"), "perfil": perfil, "roja": b.get("roja")}
+             "heat_img": b.get("heat_img"), "heat_horizontal": True, "zona": b.get("zona"), "perfil": perfil, "roja": b.get("roja"),
+             "abajo": b.get("abajo")}
         jp = os.path.join(salida, archivo + ".json")
         json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
         subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
@@ -121,9 +122,12 @@ def main():
             copy += f"🔁 Entró" + (f" al {en.get('minuto')}'" if en.get("minuto") is not None else "") + f" por {en['por']}" + (f", como {sustitucion['rol']}" if sustitucion["rol"] else "") + "\n"
         if b.get("roja"):
             copy += "🟥 Expulsado" + (f" al {str(b['roja']).replace('’', chr(39))}" if isinstance(b["roja"], str) else "") + "\n"
-        if b.get("linea_posteo"):
+        if b.get("texto_352"):
+            # qué hizo y cómo encajaría en una Uruguay 3-5-2 con enganche (abajo_puesto.py)
+            copy += "\n" + "\n".join(b["texto_352"]) + "\n"
+        elif b.get("linea_posteo"):
             copy += b["linea_posteo"] + "\n"
-        copy += f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
+        copy += f"#CelestesPorElMundo #Uruguay #{club_tag}" + (" #352" if b.get("texto_352") else "") + "\n"
         open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
         info.update({"titular": bool(b.get("titular")), "minutos": b.get("minutos"), "nota": float(nota) if nota else None,
                      "rol": pos, "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None), "archivo": archivo, "png": archivo + ".png", "mapa": None, "figura": None})

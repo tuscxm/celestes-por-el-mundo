@@ -12,6 +12,8 @@ Campos de cada bloque del json (lista):
  cara (ruta a la cara recortada del jugador) o foto (figura de respaldo, svg/png),
  generales [[etiqueta, valor, dorado]], pos_titulo, posicion [[...]],
  extra {titulo, sub, filas}, heat_img (ruta) o null, perfil [[etiqueta, valor]].
+ abajo (opcional, desde el 23/10/2026, lo arma abajo_puesto.py): {su_partido, esperados, mas, heat_img, lados, campo_rival,
+   zona {titulo, filas}, perfil {titulo, filas}}. Si está, la parte de abajo sale por puesto en lugar de generales/posicion/zona.
 Las rutas son relativas al json. Nunca muestra de dónde salen los datos."""
 import json, os, sys, asyncio, base64, mimetypes, html as H
 
@@ -168,6 +170,22 @@ h1{position:absolute;top:70px;width:100%;text-align:center;font-weight:900;line-
 .mc{display:inline-block;width:11px;height:15px;border-radius:2px;margin-left:3px;vertical-align:-1px;border:1px solid rgba(0,0,0,.5)}
 .mc.am{background:#f7d117}.mc.ro{background:#e0252b}
 .row.c{font-size:17px;padding:1px 0 1px}.row.c b{font-size:18.5px}
+/* parte de abajo por puesto (desde el 23/10/2026) */
+.cards.a .card.dos .row.c{font-size:15.5px;padding:0 0 .5px}.cards.a .card.dos .row.c b{font-size:17px}
+.card.sp{flex:1.2}.card.esp{flex:1}.cols{display:flex;gap:26px}.cols > div{flex:1;min-width:0}
+.card.calor2{flex:2.1;display:flex;flex-direction:column}
+.calor2 .cuerpo{display:flex;gap:18px;flex:1;min-height:0}
+.calor2 .izq{display:flex;flex-direction:column;gap:7px}
+.calor2 .izq img{height:194px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.barra{display:flex;height:22px;border-radius:6px;overflow:hidden;font-weight:800;font-size:14px;letter-spacing:.5px}
+.barra div{display:flex;align-items:center;justify-content:center;color:#14171a;background:#9aa4ab;white-space:nowrap;overflow:hidden}
+.barra div.max{background:#f2c14e}.barra div + div{border-left:2px solid rgba(15,18,21,.86)}
+.donde{display:flex;justify-content:space-between;font-weight:700;font-size:15px;color:#cfd8de;letter-spacing:.3px}
+.donde b{color:#fff;font-weight:800}
+.calor2 .der{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.calor2 .der .zt{font-size:17px;margin:0 0 1px}
+.calor2 .der .row{font-size:16.5px;padding:3px 0 2px}.calor2 .der .row b{font-size:18px}
+.calor2 .der .sep{height:8px}
 """
 
 
@@ -299,6 +317,36 @@ def fondo_html(estilo, wm):
             + (f'<img class="wm" src="{wm}" style="right:-150px;top:40px">' if wm else ''))
 
 
+def abajo_html(d, base):
+    """Parte de abajo por puesto (d["abajo"], lo arma abajo_puesto.py): fila del medio SU PARTIDO + ESPERADOS Y MÁS;
+    fila de abajo MAPA DE CALOR (barra de dónde jugó, SU ZONA y PERFIL del puesto) + TEMPORADA. Devuelve (fila del medio, fila de abajo)."""
+    a = d["abajo"]
+    medio = (f'<div class="card dos sp apretado"><h3>SU PARTIDO</h3><div class="lista">{rows(a.get("su_partido") or [], True)}</div></div>'
+             f'<div class="card dos esp apretado"><h3>ESPERADOS Y MÁS</h3><div class="cols"><div>{rows(a.get("esperados") or [], True)}</div>'
+             f'<div>{rows(a.get("mas") or [], True)}</div></div></div>')
+    perfil = a.get("perfil") or {}
+    hi = b64(os.path.join(base, a["heat_img"])) if a.get("heat_img") else None
+    if hi and a.get("lados"):
+        pct = a["lados"]
+        barra = "".join(f'<div class="{"max" if pct[l] == max(pct.values()) else ""}" style="flex:{pct[l]}">{f"{pct[l]}%" if pct[l] >= 10 else ""}</div>'
+                        for l in ("izquierda", "centro", "derecha") if pct[l] > 0)
+        izq = (f'<img src="{hi}"><div class="barra">{barra}</div>'
+               f'<div class="donde"><span>IZQ <b>{pct["izquierda"]}%</b> · CENTRO <b>{pct["centro"]}%</b> · DER <b>{pct["derecha"]}%</b></span>'
+               f'<span>CAMPO RIVAL <b>{a.get("campo_rival", 0)}%</b></span></div>')
+        zona = a.get("zona") or {}
+        der = ((f'<div class="zt">{esc(zona["titulo"])}</div>{rows(zona.get("filas") or [])}<div class="sep"></div>' if zona.get("filas") else "")
+               + (f'<div class="zt">{esc(perfil["titulo"])}</div>{rows(perfil["filas"])}' if perfil.get("filas") else ""))
+        mapa = f'<div class="card calor2"><h3>MAPA DE CALOR<small>DÓNDE JUGÓ</small></h3><div class="cuerpo"><div class="izq">{izq}</div><div class="der">{der}</div></div></div>'
+    elif perfil.get("filas"):
+        mapa = f'<div class="card calor"><h3>{esc(perfil["titulo"])}</h3>{rows(perfil["filas"])}</div>'
+    else:
+        mapa = f'<div class="card calor"><h3>PERFIL</h3>{rows([[k, v, False] for k, v in d.get("perfil") or []])}</div>'
+    ex = d.get("extra") or {}
+    temporada = (f'<div class="card"><h3>{esc(ex.get("titulo","TEMPORADA"))}<small>{esc(ex.get("sub",""))}</small></h3>{rows(ex["filas"][:10], True)}</div>'
+                 if ex.get("filas") else "")
+    return medio, mapa + temporada
+
+
 def html(d, base):
     t = d.get("tema") or {}
     c1, c2, ac = t.get("c1", "#2a6fb0"), t.get("c2", "#0d2440"), t.get("acento", "#6fb7e6")
@@ -333,6 +381,9 @@ def html(d, base):
     if d.get("posicion"):
         pf = d["posicion"][:14]
         fila_b.append(f'<div class="card dos{" apretado" if len(pf) > 12 else ""}"><h3>TOTALES</h3><div class="lista">{rows(pf, True)}</div></div>')
+    if d.get("abajo"):
+        medio, abajo = abajo_html(d, base)
+        fila_b, fila_a = [medio], [abajo]
     cond = d.get("condicion", "")
     if d.get("sustitucion") and d["sustitucion"].get("rol"):
         cond = f'SUPLENTE · ENTRÓ DE {d["sustitucion"]["rol"].upper()}'

@@ -293,6 +293,16 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             if st.get("duel_won"): lp.append(f"{st['duel_won']} duelo" + ("s ganados" if st["duel_won"] > 1 else " ganado"))
             if st.get("recoveries"): lp.append(f"{st['recoveries']} recuperaci" + ("ones" if st["recoveries"] > 1 else "ón"))
             b["linea_posteo"] = " · ".join(lp)
+            # parte de abajo por puesto y texto del 3-5-2 (abajo_puesto.py); si falla, sale con el diseño anterior
+            try:
+                import abajo_puesto
+                ap = abajo_puesto.armar(j, d, dj, salida, f"mapas/{j['clave']}_{d['fecha']}.png", b.get("su_partido") or [])
+                if ap:
+                    b["abajo"] = ap["abajo"]
+                    b["heat_img"] = ap["abajo"].get("heat_img") or b.get("heat_img")
+                    b["texto_352"] = abajo_puesto.texto_352(j, ap)
+            except Exception as ex:
+                b["avisos"].append(f"No se pudo armar la parte de abajo por puesto ({type(ex).__name__}: {ex}); sale con el diseño anterior")
             if not b["posicion"]: b["avisos"].append("No se pudo saber el puesto en el que jugó")
         os.makedirs(os.path.join(salida, "respaldo"), exist_ok=True)
         jp = os.path.join(salida, "respaldo", f"{j['clave']}_{d['fecha']}.json")
