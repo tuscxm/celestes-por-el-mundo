@@ -14,15 +14,15 @@ jobs:
     steps:
       - name: Consultar SofaScore
         run: |
-          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
-          probar() {
-            code=$(curl -sS --compressed -D h.txt -o out.json -w "%{http_code} %{content_type} %{size_download}B" -m 20 -A "$UA" "$1" || echo "fallo")
-            echo "::notice title=Cabeceras $code::$1 $(grep -i -E '^(content-encoding|server|cf-|x-cache|location)' h.txt | tr -d '\r' | tr '\n' ' ') primeros bytes: $(head -c 80 out.json | od -An -c | tr -s ' ' | head -c 160 | tr -d '\n')"
-            echo "::notice title=SofaScore $code::$1 → $(python3 -c "import json,sys;d=json.load(open('out.json'));print(sys.argv[1] and eval(sys.argv[1]))" "$2" 2>&1 | head -c 200)"
-          }
-          for h in api.sofascore.app api.sofascore.com; do
-            probar "https://$h/api/v1/player/924889/events/last/0" "len(d.get('events',[]))"
-            probar "https://$h/api/v1/event/16938800/player/1468046/rating-breakdown" "{k: len(v) for k, v in d.items()}"
-            probar "https://$h/api/v1/event/16938800/player/1468046/heatmap" "len(d.get('heatmap',[]))"
-            probar "https://$h/api/v1/event/16938800/player/1468046/statistics" "d.get('statistics',{}).get('rating')"
-          done
+          U="https://api.sofascore.app/api/v1/player/924889/events/last/0"
+          while IFS='|' read -r nombre ua; do
+            r=$(curl -sS --compressed -o out.json -w "%{http_code} %{size_download}B" -m 20 -A "$ua" -H "Accept: application/json" "$U" || echo "fallo")
+            echo "::notice title=SofaScore app ($nombre)::$r $(head -c 100 out.json | tr -d '\n')"
+          done <<'LISTA'
+          okhttp|okhttp/4.12.0
+          android|SofaScore/25.10.1 (Android 14; Pixel 8)
+          ios|SofaScore/25.10.1 (iPhone; iOS 18.0; Scale/3.00)
+          dalvik|Dalvik/2.1.0 (Linux; U; Android 14; Pixel 8 Build/AP2A.240905.003)
+          LISTA
+          code=$(curl -sS --compressed -o out.json -w "%{http_code} %{size_download}B" -m 20 "https://api.sofascore.com/api/v1/player/924889/events/last/0" -A "okhttp/4.12.0")
+          echo "::notice title=SofaScore com (okhttp)::$code $(head -c 100 out.json | tr -d '\n')"
