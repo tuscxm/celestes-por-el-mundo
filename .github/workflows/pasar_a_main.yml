@@ -1,0 +1,41 @@
+name: Pasar revisión a main
+
+# Si la tarea de Claude no pudo subir a main y subió la revisión a una rama claude/..., esto la pasa a main y borra la rama.
+# Solo actúa si todos los commits nuevos de la rama son de la tarea ("Revisión ..." o "Prueba fuentes...").
+on:
+  push:
+    branches: ["claude/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pasar-a-main
+  cancel-in-progress: false
+
+jobs:
+  pasar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Juntar la rama con main
+        env:
+          RAMA: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$RAMA"
+          OTROS=$(git log --format=%s "main..origin/$RAMA" | grep -Ev '^(Revisión |Prueba fuentes)' || true)
+          if [ -n "$OTROS" ]; then
+            echo "La rama tiene commits que no son de la tarea; no se toca:"
+            echo "$OTROS"
+            exit 0
+          fi
+          if ! git merge --ff-only "origin/$RAMA"; then
+            git merge --no-edit -X theirs "origin/$RAMA" -m "Pasar $RAMA a main"
+          fi
+          git push origin main
+          git push origin --delete "$RAMA"

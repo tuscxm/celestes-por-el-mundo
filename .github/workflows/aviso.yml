@@ -1,9 +1,10 @@
 name: Aviso de infografías nuevas
 
 # Cuando la tarea de Claude sube un archivo nuevo en avisos/, se abre un issue y GitHub manda el mail.
+# También mira las ramas claude/... (si la tarea no pudo subir a main); el paso a main que hace pasar_a_main.yml no lo vuelve a disparar.
 on:
   push:
-    branches: [main]
+    branches: [main, "claude/**"]
     paths: ["avisos/**"]
 
 permissions:
