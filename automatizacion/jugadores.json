@@ -280,7 +280,8 @@
   "club": "Racing de Santander",
   "fotmob_id": 1212179,
   "zona": "centro",
-  "rol_352": "zaguero"
+  "rol_352": "zaguero",
+  "besoccer": "https://es.besoccer.com/jugador/facundo-950132"
  },
  {
   "clave": "caceres",
@@ -370,7 +371,8 @@
   "fotmob_id": 1648518,
   "zona": "centro",
   "apifootball_equipo": 724,
-  "rol_352": "delantero"
+  "rol_352": "delantero",
+  "besoccer": "https://es.besoccer.com/jugador/g-petit-3256604"
  },
  {
   "clave": "bentancur",
@@ -416,7 +418,8 @@
   "apifootball_equipo": 47,
   "footballdata_equipo": 73,
   "understat_equipo": "Tottenham",
-  "rol_352": "interno"
+  "rol_352": "interno",
+  "besoccer": "https://es.besoccer.com/jugador/rodrigo-betancur-248693"
  },
  {
   "clave": "satriano",
@@ -600,7 +603,8 @@
   "zona": "centro",
   "apifootball_equipo": 228,
   "footballdata_equipo": 498,
-  "rol_352": "enganche"
+  "rol_352": "enganche",
+  "besoccer": "https://es.besoccer.com/jugador/rodri-772784"
  },
  {
   "clave": "merentiel",
@@ -689,7 +693,8 @@
   "club": "Deportivo de La Coruña",
   "fotmob_id": 474589,
   "zona": "centro",
-  "rol_352": "zaguero"
+  "rol_352": "zaguero",
+  "besoccer": "https://es.besoccer.com/jugador/j-gimenez-150773"
  },
  {
   "clave": "amaro",
@@ -869,7 +874,8 @@
   "fotmob_id": 1035614,
   "understat_equipo": "Manchester_United",
   "rol_352": "interno",
-  "zona": "centro"
+  "zona": "centro",
+  "besoccer": "https://es.besoccer.com/jugador/manuelugarte-ribeiro-372220"
  },
  {
   "clave": "canobbio",
@@ -913,7 +919,8 @@
   "fotmob_id": 840212,
   "rol_352": "carrilero",
   "zona": "derecha",
-  "mixto": true
+  "mixto": true,
+  "besoccer": "https://es.besoccer.com/jugador/agustincanobbio-graviz-340145"
  },
  {
   "clave": "darwin",
@@ -1045,7 +1052,8 @@
   "club": "Galatasaray",
   "fotmob_id": 592909,
   "rol_352": "interno",
-  "zona": "centro"
+  "zona": "centro",
+  "besoccer": "https://es.besoccer.com/jugador/l-torreia-241280"
  },
  {
   "clave": "brizuela",

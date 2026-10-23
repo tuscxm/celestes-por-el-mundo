@@ -143,6 +143,11 @@ def fotmob(j, fechas):
                     r["dorsal"] = str(p.get("shirtNumber") or "")
                     r["titular"] = p in titulares
                     r["posicion_id"] = p.get("positionId")
+            r["rival_id"] = m.get("opponentTeamId")
+            r["liga_id"] = m.get("leagueId")
+            # ubicación de cada titular en el dibujo: verticalLayout x (0 = costado derecho del equipo, 1 = izquierdo)
+            r["dibujo"] = {str(p.get("id")): {"pos": p.get("positionId"), "x": (p.get("verticalLayout") or {}).get("x"),
+                                              "y": (p.get("verticalLayout") or {}).get("y")} for p in titulares}
             # once por líneas (del arco al ataque, de izquierda a derecha como se ve en la cancha)
             filas = {}
             for p in titulares:
@@ -166,6 +171,20 @@ def fotmob(j, fechas):
                     r["entro"] = {"minuto": f"{ev.get('time')}+{ot}" if ot else ev.get("time"),
                                   "por": (sw[1].get("name") or "").split(" ")[-1], "por_id": sw[1].get("id")}
             ps = (c.get("playerStats") or {}).get(str(pid)) or {}
+            r["puesto_habitual"] = ps.get("usualPosition")      # 0 arquero, 1 defensor, 2 volante, 3 delantero
+            r["remates"] = ps.get("shotmap")                     # cada remate con x (0-105, ataca a la derecha) e y (0-68)
+            # mapa de calor del partido: círculos en una cancha de 105 x 68 que ataca a la derecha, con el costado
+            # derecho del equipo ABAJO (y alto). Se pasa a la escala de SofaScore: x 0-100 hacia el arco rival,
+            # y 0-100 con 0 = costado derecho del equipo.
+            r["calor"] = None
+            if c.get("heatmapUrl") and ps.get("optaId"):
+                try:
+                    hm = http("https://www.fotmob.com" + c["heatmapUrl"])
+                    circ = ((hm.get("players") or {}).get(f"p{ps['optaId']}") or "")
+                    pts = re.findall(r'cx="([\d.]+)" cy="([\d.]+)"', circ)
+                    r["calor"] = [{"x": round(float(a) / 105 * 100, 2), "y": round(100 - float(b) / 68 * 100, 2)} for a, b in pts]
+                except Exception as ex:
+                    r["aviso_calor"] = f"sin mapa de calor ({type(ex).__name__})"
             for bloque in ps.get("stats") or []:
                 for _, v in (bloque.get("stats") or {}).items():
                     k, s = v.get("key"), v.get("stat") or {}
@@ -185,8 +204,30 @@ def fotmob(j, fechas):
         temp[ml["leagueName"]] = {"nota": fnum(st.get("rating")), "pj": st.get("matches_uppercase"), "tit": st.get("started"),
                                   "min": st.get("minutes_played"), "goles": st.get("goals"), "asist": st.get("assists"),
                                   "amarillas": st.get("yellow_cards"), "rojas": st.get("red_cards"), "season": ml.get("season")}
+    # copas internacionales de la temporada (Champions, Europa, Conference, Libertadores, Sudamericana)
+    copas = {}
+    torneos = ((pd.get("statSeasons") or [{}])[0] or {}).get("tournaments") or []
+    for t in torneos:
+        nm = norm(t.get("name") or "")
+        if not any(k in nm for k in ("champions league", "europa league", "conference league", "libertadores", "sudamericana")):
+            continue
+        if "concacaf" in nm or "afc" in nm.split() or "caf" in nm.split(): continue
+        try:
+            x = http(f"{FM}/playerStats?playerId={pid}&seasonId={t['entryId']}&isFirstSeason=false")
+        except Exception:
+            continue
+        v = {i.get("localizedTitleId"): i.get("statValue") for i in ((x.get("topStatCard") or {}).get("items") or [])}
+        for sec in ((x.get("statsSection") or {}).get("items") or []):
+            for i in sec.get("items") or []:
+                v.setdefault(i.get("localizedTitleId"), i.get("statValue"))
+        ent = lambda k: int(float(v[k])) if v.get(k) not in (None, "") else None
+        copas[t["name"]] = {"nota": fnum(v.get("rating")), "pj": ent("matches_uppercase"), "tit": ent("player_started_matches"),
+                            "min": ent("minutes_played"), "goles": ent("goals"), "asist": ent("assists"),
+                            "amarillas": ent("yellow_cards"), "rojas": ent("red_cards"),
+                            "season": ((pd.get("statSeasons") or [{}])[0] or {}).get("seasonName"), "liga_id": t.get("tournamentId"), "copa": True}
     for r in out:
         r["temporada"] = temp
+        r["copas"] = copas
     return out, None
 
 

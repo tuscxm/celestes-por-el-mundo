@@ -52,6 +52,8 @@ def main():
             cara = cara_oficial(j["clave"], os.path.join(salida, "recursos"), j.get("foto_oficial")) or cara
         esc = os.path.join(AQUI, "escudos", ("uruguay" if seleccion else f"club_{j['clave']}") + ".png")
         esc = esc if os.path.exists(esc) else None
+        # escudo del rival, si está guardado (escudos/fotmob_<id>.png, lo baja respaldo_auto.py)
+        esc_rival = b.get("escudo_rival") if b.get("escudo_rival") and os.path.exists(b["escudo_rival"]) else None
         fig = None
         if not cara:
             from figura import figura
@@ -92,14 +94,14 @@ def main():
         archivo = sin_tildes(f"{apellido}_{pa.get('local','').replace(' ', '')}-{pa.get('visita','').replace(' ', '')}_{fecha}")
         d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido, "dorsal": b.get("dorsal"),
              "local": pa.get("local", ""), "visita": pa.get("visita", ""), "goles_local": pa.get("goles_local", ""), "goles_visita": pa.get("goles_visita", ""),
-             "escudo_local": esc if local_es_mio else None, "escudo_visita": None if local_es_mio else esc, "escudo_club": esc,
+             "escudo_local": esc if local_es_mio else esc_rival, "escudo_visita": esc_rival if local_es_mio else esc, "escudo_club": esc,
              "meta": " · ".join(x for x in [pa.get("torneo", "").upper(), (pa.get("ronda") or "").upper(), f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
              "condicion": "TITULAR" if b.get("titular") else "SUPLENTE",
              "minutos": f"{b.get('minutos', '')}’", "nota": f"{float(nota):.1f}" if nota else None, "estrellas": estrellas(float(nota)) if nota else 0,
              "tema": tema(cam, {}), "sustitucion": sustitucion, "formacion": b.get("formacion", ""), "once": once, "cara": cara, "foto": fig,
-             "generales": generales, "pos_titulo": pos, "posicion": [[k, str(v), False] for k, v in (b.get("estadisticas") or [])],
+             "generales": generales, "pos_titulo": pos, "posicion": [[x[0], str(x[1]), bool(x[2]) if len(x) > 2 else False] for x in (b.get("estadisticas") or [])],
              "extra": {"titulo": "TEMPORADA", "sub": b.get("temporada_sub", ""), "filas": [[k, str(v), False] for k, v in (b.get("temporada") or [])]},
-             "heat_img": None, "perfil": perfil, "roja": b.get("roja")}
+             "heat_img": b.get("heat_img"), "heat_horizontal": True, "zona": b.get("zona"), "perfil": perfil, "roja": b.get("roja")}
         jp = os.path.join(salida, archivo + ".json")
         json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
         subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
