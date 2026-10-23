@@ -105,6 +105,14 @@ class SinCuota(Exception):
     pass
 
 
+class SinPlan(Exception):
+    """El plan de la API no cubre lo pedido (p. ej. el plan gratis de API-Football no trae la temporada actual)."""
+    pass
+
+
+_AF_SIN_PLAN = None  # si el plan no cubre la temporada, no se gastan más pedidos en esta corrida
+
+
 # ----------------------------------------------------------------- FotMob
 FM = "https://www.fotmob.com/api/data"
 
@@ -244,6 +252,9 @@ AF = "https://v3.football.api-sports.io"
 
 
 def _af(path):
+    global _AF_SIN_PLAN
+    if _AF_SIN_PLAN:
+        raise SinPlan(_AF_SIN_PLAN)
     if not _usar("api_football", LIMITE_API_FOOTBALL):
         raise SinCuota("API-Football: ya se usaron los 100 pedidos de hoy")
     h = {"Accept": "application/json"}
@@ -261,6 +272,9 @@ def _af(path):
             raise RuntimeError("API-Football: falta la clave (secreto de red o API_FOOTBALL_KEY)")
         if "request" in msg.lower() and "limit" in msg.lower():
             _agotar("api_football")
+        if "free plans do not have access" in msg.lower():
+            _AF_SIN_PLAN = "el plan gratis de API-Football no cubre esta temporada (" + msg + ")"
+            raise SinPlan(_AF_SIN_PLAN)
         raise RuntimeError("API-Football: " + msg)
     return d.get("response") or []
 
@@ -284,7 +298,14 @@ def api_football(j, fechas, equipo_af=None):
                 eq = t["team"]["id"]; _guardar_id(j["clave"], "apifootball_equipo", eq); j["apifootball_equipo"] = eq; break
     if not eq:
         return [], "sin apifootball_equipo en jugadores.json"
-    fx = _af(f"/fixtures?team={eq}&last=3&timezone=America/Montevideo")
+    # El plan gratis no deja usar last=N: se piden los partidos entre las fechas, por temporada (1 pedido por temporada).
+    # Temporada = año en que empieza: en Europa la de agosto a mayo; en enero-junio también la del año (ligas de año calendario).
+    desde, hasta = min(fechas), max(fechas)
+    fx, vistos = [], set()
+    for temporada in sorted({f.year if f.month >= 7 else f.year - 1 for f in fechas} | {f.year for f in fechas}):
+        for f in _af(f"/fixtures?team={eq}&season={temporada}&from={desde}&to={hasta}&timezone=America/Montevideo"):
+            if f["fixture"]["id"] not in vistos:
+                vistos.add(f["fixture"]["id"]); fx.append(f)
     out = []
     for f in fx:
         fecha = datetime.date.fromisoformat(f["fixture"]["date"][:10])
@@ -540,6 +561,8 @@ def consultar(j, fechas, solo=None):
             est[nombre] = "ok" if motivo is None else f"sin datos: {motivo}"
         except SinCuota as ex:
             res[nombre] = []; est[nombre] = f"cuota: {ex}"
+        except SinPlan as ex:
+            res[nombre] = []; est[nombre] = f"sin datos: {ex}"
         except urllib.error.HTTPError as ex:
             res[nombre] = []
             est[nombre] = (f"error HTTP {ex.code}: falta la clave o no es válida" if ex.code in (401, 403) and nombre in ("api_football", "football_data")
