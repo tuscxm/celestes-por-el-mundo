@@ -69,11 +69,12 @@ def _sin_fondo_matting(im):
     lowd = dist < 18
     semillas = np.zeros_like(lowd); semillas[0, :] = True
     h7 = int(H * 0.7); semillas[:h7, 0] = True; semillas[:h7, -1] = True
-    fondo = ndi.binary_propagation(semillas & lowd, mask=lowd)
     # trimapa
     r_in, r_out = max(3, int(lado * 0.014)), max(3, int(lado * 0.012))
     nucleo = ndi.binary_erosion(base, iterations=r_in)
     nucleo_h = ndi.binary_erosion(m_h > 0.5, iterations=r_in)          # cara/hombros seguros del modelo de personas
+    # el fondo claro no entra en la cara/hombros seguros: con fondo blanco y piel clara se comía mejillas y orejas
+    fondo = ndi.binary_propagation(semillas & lowd & ~nucleo_h, mask=lowd & ~nucleo_h)
     seguro_fg = (nucleo | nucleo_h) & ~fondo
     seguro_bg = ~ndi.binary_dilation(base, iterations=r_out) | (fondo & ~ndi.binary_erosion(base, iterations=r_in * 3))
     tri = np.full((H, W), 0.5)
