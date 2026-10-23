@@ -483,6 +483,16 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
                  ["Duelos aéreos ganados", f"{n(s,'aerialWon')}/{n(s,'aerialWon')+n(s,'aerialLost')}", False],
                  ["Faltas cometidas", str(n(s, "fouls")), False], ["Tarjetas", tarjetas, False],
                  ["Pérdidas de balón", str(n(s, "possessionLostCtrl")), False]]
+    # tanda de penales: el resultado lo trae SofaScore; si pateó, de FotMob (no cuenta como gol ni como remate)
+    tanda = None
+    if e.get("homeScore", {}).get("penalties") is not None and e.get("awayScore", {}).get("penalties") is not None:
+        tfm = (datos.get("fotmob") or {}).get("tanda") or {}
+        tanda = {"local": e["homeScore"]["penalties"], "visita": e["awayScore"]["penalties"], "global": tfm.get("global"), "pateo": tfm.get("pateo")}
+        if tanda["pateo"]:
+            generales.insert(2, ["Penal en la tanda", tanda["pateo"]["resultado"].capitalize(), tanda["pateo"]["resultado"] == "convirtió"])
+            avisos.append(f"Hubo tanda de penales ({tanda['local']}-{tanda['visita']}): {tanda['pateo']['resultado']} su penal; no cuenta como gol ni como remate")
+        else:
+            avisos.append(f"Hubo tanda de penales ({tanda['local']}-{tanda['visita']}): no figura que haya pateado (revisar)")
 
     # Jugador, temporada y figura
     player = get(f"/player/{pid}").get("player", {})
@@ -603,7 +613,8 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
          "local": home, "visita": away, "goles_local": hs, "goles_visita": as_,
          "escudo_local": escudo(e["homeTeam"]["id"], recursos), "escudo_visita": escudo(e["awayTeam"]["id"], recursos),
          "escudo_club": esc_club,
-         "meta": " · ".join(x for x in [torneo, ronda, f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
+         "meta": " · ".join(x for x in [torneo, ronda, f"PENALES {tanda['local']}-{tanda['visita']}" if tanda else "",
+                                        f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
          "condicion": "TITULAR" if titular else "SUPLENTE",
          "minutos": f"{minutos}’", "nota": f"{rating:.1f}" if rating else None, "estrellas": estrellas(rating),
          "tema": tema(cam, equipo), "formacion": form, "once": once,
@@ -621,12 +632,14 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     linea = []
     if goles: linea.append(f"{goles} gol" + ("es" if goles > 1 else ""))
     if n(s, "goalAssist"): linea.append(f"{n(s,'goalAssist')} asistencia" + ("s" if n(s, "goalAssist") > 1 else ""))
+    if tanda and tanda["pateo"]: linea.append(f"{tanda['pateo']['resultado']} su penal en la tanda")
     if s.get("totalPass"): linea.append(f"{n(s,'accuratePass')}/{n(s,'totalPass')} pases")
     if n(s, "duelWon"): linea.append(f"{n(s,'duelWon')} duelo" + ("s" if n(s, "duelWon") > 1 else "") + " ganado" + ("s" if n(s, "duelWon") > 1 else ""))
     if n(s, "ballRecovery"): linea.append(f"{n(s,'ballRecovery')} recuperaci" + ("ones" if n(s, "ballRecovery") > 1 else "ón"))
     club_tag = "".join(ch for ch in (equipo["name"] if not equipo.get("national") else "Uruguay") if ch.isalnum())
-    copy = (f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n"
-            f"⏱ {minutos}' · ⭐ {rating:.1f}\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}\n⏱ {minutos}'\n")
+    pen = f" ({fuentes.texto_tanda(tanda, largo=True)})" if tanda else ""
+    copy = (f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}{pen}\n"
+            f"⏱ {minutos}' · ⭐ {rating:.1f}\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}{pen}\n⏱ {minutos}'\n")
     if roja:
         copy += "🟥 Expulsado" + (f" al {min_roja.replace('’', chr(39))}" if isinstance(min_roja, str) else "") + "\n"
     if sustitucion:
@@ -678,7 +691,9 @@ def main():
         for e in evs:
             if e["id"] in vistos or fecha_local(e) not in fechas: continue
             vistos.add(e["id"])
-            info = {"partido": f"{nombre_equipo(e['homeTeam'])} {e.get('homeScore',{}).get('current','')}-{e.get('awayScore',{}).get('current','')} {nombre_equipo(e['awayTeam'])}",
+            pen = (f" ({e['homeScore']['penalties']}-{e['awayScore']['penalties']} en penales)"
+                   if e.get("homeScore", {}).get("penalties") is not None and e.get("awayScore", {}).get("penalties") is not None else "")
+            info = {"partido": f"{nombre_equipo(e['homeTeam'])} {e.get('homeScore',{}).get('current','')}-{e.get('awayScore',{}).get('current','')} {nombre_equipo(e['awayTeam'])}{pen}",
                     "torneo": e["tournament"]["name"], "fecha": str(fecha_local(e)), "evento": e["id"]}
             tipo = e["status"]["type"]
             if tipo != "finished":

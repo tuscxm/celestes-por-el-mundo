@@ -76,6 +76,15 @@ Para sumar un jugador, se agrega un bloque con su `sofascore_id`. Se saca de htt
 ## Regla
 Si el jugador jugó (más de 0 minutos), se arma la infografía y se indica si fue TITULAR o SUPLENTE. Si no jugó o su equipo no jugó, no se arma nada y solo se avisa. Cada partido se procesa una sola vez (`procesados.json`).
 
+## Tanda de penales
+Si el partido se definió por penales, el resultado es el del partido (90' o alargue) y la tanda va aparte; el script la detecta solo:
+- Debajo del marcador: `… · PENALES 5-3 · …` (local-visita). En el posteo: `Palmeiras 0-1 Fluminense (5-3 en penales, global 2-2)`.
+- Un penal de la tanda **nunca** es gol, remate ni entra en las estadísticas del partido o el mapa. Si el jugador pateó, va en SU PARTIDO
+  como `Penal en la tanda: Convirtió / Erró` y en el posteo como `convirtió su penal en la tanda` (o `erró`).
+- En los avisos queda `Hubo tanda de penales (5-3): convirtió su penal (el 7º de la tanda, quedó 4-3)…` o `… y no pateó`.
+- Al revisar: si el partido se definió por penales y no está explicado así, o si el gol de un penal de la tanda aparece contado como gol,
+  anotarlo en `## Revisión visual` y explicarlo en el resumen final (quién ganó la tanda, si el jugador pateó y si convirtió).
+
 ## Qué hace cada día
 1. La tarea de Claude trae el repositorio y corre `bash automatizacion/correr.sh` (hoy y ayer, hora de Uruguay). Eso instala lo que falte, corre `infografia_sofascore.py` y después `publicar.py`.
    - Por cada partido terminado en el que jugaron deja PNG, JSON, `_copy.txt`, mapa de calor y figura.
@@ -119,10 +128,10 @@ Si nadie jugó o BeSoccer no responde, dejá `{"fecha_revision": "<hoy>", "jugad
 
 ## Texto del posteo (lo genera el script en `_copy.txt`)
 ```
-🇺🇾 {NOMBRE} · {Local} {goles}-{goles} {Visitante}
+🇺🇾 {NOMBRE} · {Local} {goles}-{goles} {Visitante}   (+ " (5-3 en penales, global 2-2)" si hubo tanda)
 ⏱ {minutos}' · ⭐ {nota}
 🔁 Entró al {minuto}' por {jugador que salió}, como {puesto}   (solo si fue suplente)
-{goles, asistencias, pases, duelos, recuperaciones}
+{goles, asistencias, penal en la tanda, pases, duelos, recuperaciones}
 #CelestesPorElMundo #Uruguay #{club}
 ```
 Sin mencionar la fuente de los datos.

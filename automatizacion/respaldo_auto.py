@@ -126,7 +126,7 @@ def armar(j, fechas, salida, proc_path, forzar=False):
              "equipo": _club(j), "avisos": [f"SofaScore no respondió; fuentes: " + ", ".join(f"{k} {v}" for k, v in extra["estado"].items())]}
         seleccion = "uruguay" in (fuentes.norm(d["local"]) + " " + fuentes.norm(d["visita"]))
         b["partido"] = {"local": d["local"], "visita": d["visita"], "goles_local": d.get("goles_local"), "goles_visita": d.get("goles_visita"),
-                        "torneo": d.get("torneo") or "", "ronda": ronda(d.get("ronda")),
+                        "torneo": d.get("torneo") or "", "ronda": ronda(d.get("ronda")), "tanda": d.get("tanda"),
                         "seleccion": seleccion,
                         "local_es_su_equipo": fuentes.mismo_equipo(d["local"], "Uruguay" if seleccion else _club(j))}
         if d.get("terminado") is False:
@@ -170,6 +170,14 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             am, ro = d.get("amarillas") or 0, d.get("rojas") or 0
             tarj = f"{am}[A] · {ro}[R]"
             sp = [["Goles", d.get("goles"), bool(d.get("goles"))], ["Asistencias", d.get("asistencias"), bool(d.get("asistencias"))]]
+            # penal en la tanda: no es gol ni remate del partido, va aparte
+            pateo = (d.get("tanda") or {}).get("pateo")
+            if pateo:
+                sp.append(["Penal en la tanda", pateo["resultado"].capitalize(), pateo["resultado"] == "convirtió"])
+                b["avisos"].append(f"Hubo tanda de penales ({d['tanda']['local']}-{d['tanda']['visita']}): {pateo['resultado']} su penal "
+                                   f"(el {pateo['orden']}º de la tanda, quedó {pateo['marcador']}); no cuenta como gol ni como remate")
+            elif d.get("tanda"):
+                b["avisos"].append(f"Hubo tanda de penales ({d['tanda']['local']}-{d['tanda']['visita']}) y no pateó")
             if st.get("touches") is not None: sp.append(["Toques", st["touches"]])
             if st.get("duel_won") is not None and st.get("duel_lost") is not None:
                 sp.append(["Duelos ganados", f"{st['duel_won']}/{st['duel_won'] + st['duel_lost']}"])
@@ -280,6 +288,7 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             lp = []
             if d.get("goles"): lp.append(f"{d['goles']} gol" + ("es" if d["goles"] > 1 else ""))
             if d.get("asistencias"): lp.append(f"{d['asistencias']} asistencia" + ("s" if d["asistencias"] > 1 else ""))
+            if pateo: lp.append(f"{pateo['resultado']} su penal en la tanda")
             if isinstance(st.get("accurate_passes"), (list, tuple)): lp.append(f"{st['accurate_passes'][0]}/{st['accurate_passes'][1]} pases")
             if st.get("duel_won"): lp.append(f"{st['duel_won']} duelo" + ("s ganados" if st["duel_won"] > 1 else " ganado"))
             if st.get("recoveries"): lp.append(f"{st['recoveries']} recuperaci" + ("ones" if st["recoveries"] > 1 else "ón"))

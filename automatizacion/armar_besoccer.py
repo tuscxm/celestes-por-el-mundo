@@ -12,6 +12,7 @@ import json, os, sys, shutil, subprocess, datetime
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 from infografia_sofascore import MESES, estrellas, tema
+import fuentes
 
 ROLES = {"arquero": "COMO ARQUERO", "lateral derecho": "COMO LATERAL DERECHO", "lateral izquierdo": "COMO LATERAL IZQUIERDO",
          "defensor central": "COMO DEFENSOR CENTRAL", "mediocentro": "COMO MEDIOCENTRO", "volante por derecha": "COMO VOLANTE POR DERECHA",
@@ -36,7 +37,8 @@ def main():
     fecha = datetime.date.fromisoformat(b["fecha"])
     pa = b.get("partido") or {}
     info = {"estado": b.get("estado", "jugó"), "fecha": b["fecha"], "fuente_respaldo": True,
-            "partido": f"{pa.get('local','')} {pa.get('goles_local','')}-{pa.get('goles_visita','')} {pa.get('visita','')}".strip(),
+            "partido": (f"{pa.get('local','')} {pa.get('goles_local','')}-{pa.get('goles_visita','')} {pa.get('visita','')}".strip()
+                        + (f" ({fuentes.texto_tanda(pa['tanda'])})" if pa.get("tanda") else "")),
             "torneo": pa.get("torneo", "")}
     avisos = list(b.get("avisos") or []) + ([] if b.get("estado", "jugó") != "jugó" else [f"Armada con datos de respaldo ({b.get('fuente_respaldo', 'BeSoccer')}): hay menos estadísticas que de costumbre, revisala antes de publicar"])
 
@@ -95,7 +97,9 @@ def main():
         d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido, "dorsal": b.get("dorsal"),
              "local": pa.get("local", ""), "visita": pa.get("visita", ""), "goles_local": pa.get("goles_local", ""), "goles_visita": pa.get("goles_visita", ""),
              "escudo_local": esc if local_es_mio else esc_rival, "escudo_visita": esc_rival if local_es_mio else esc, "escudo_club": esc,
-             "meta": " · ".join(x for x in [pa.get("torneo", "").upper(), (pa.get("ronda") or "").upper(), f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
+             "meta": " · ".join(x for x in [pa.get("torneo", "").upper(), (pa.get("ronda") or "").upper(),
+                                            f"PENALES {pa['tanda']['local']}-{pa['tanda']['visita']}" if pa.get("tanda") else "",
+                                            f"{fecha.day} {MESES[fecha.month-1]} {fecha.year}"] if x),
              "condicion": "TITULAR" if b.get("titular") else "SUPLENTE",
              "minutos": f"{b.get('minutos', '')}’", "nota": f"{float(nota):.1f}" if nota else None, "estrellas": estrellas(float(nota)) if nota else 0,
              "tema": tema(cam, {}), "sustitucion": sustitucion, "formacion": b.get("formacion", ""), "once": once, "cara": cara, "foto": fig,
@@ -106,7 +110,8 @@ def main():
         json.dump([d], open(jp, "w"), ensure_ascii=False, indent=1)
         subprocess.run([sys.executable, os.path.join(AQUI, "render_v3.py"), jp], check=True)
         club_tag = "Uruguay" if seleccion else "".join(ch for ch in (b.get("equipo") or pa.get("local", "")) if ch.isalnum())
-        copy = f"🇺🇾 {j['placa']} · {pa.get('local','')} {pa.get('goles_local','')}-{pa.get('goles_visita','')} {pa.get('visita','')}\n"
+        copy = (f"🇺🇾 {j['placa']} · {pa.get('local','')} {pa.get('goles_local','')}-{pa.get('goles_visita','')} {pa.get('visita','')}"
+                + (f" ({fuentes.texto_tanda(pa['tanda'], largo=True)})" if pa.get("tanda") else "") + "\n")
         copy += f"⏱ {b.get('minutos','')}'" + (f" · ⭐ {float(nota):.1f}" if nota else "") + "\n"
         if sustitucion:
             copy += f"🔁 Entró" + (f" al {en.get('minuto')}'" if en.get("minuto") is not None else "") + f" por {en['por']}" + (f", como {sustitucion['rol']}" if sustitucion["rol"] else "") + "\n"

@@ -67,6 +67,16 @@ def fnum(v):
         return None
 
 
+def texto_tanda(t, largo=False):
+    """Tanda de penales para mostrar: "5-3 en penales" (local-visita); largo: con el global, si lo hay."""
+    if not t:
+        return ""
+    txt = f"{t['local']}-{t['visita']} en penales"
+    if largo and t.get("global"):
+        txt += f", global {t['global'].replace(' ', '')}"
+    return txt
+
+
 def promedio(valores):
     v = [x for x in valores if x is not None and x > 0]
     return round(sum(v) / len(v), 2) if v else None
@@ -150,6 +160,18 @@ def fotmob(j, fechas):
             c = md.get("content") or {}
             hdr = md.get("header") or {}
             r["terminado"] = bool((hdr.get("status") or {}).get("finished"))
+            # tanda de penales: resultado (local-visita), global si lo hay y el penal del jugador (convirtió / erró)
+            r["tanda"] = None
+            razon = (hdr.get("status") or {}).get("reason") or {}
+            pen = razon.get("penalties")
+            if isinstance(pen, list) and len(pen) == 2:
+                r["tanda"] = {"local": pen[0], "visita": pen[1], "gano_local": pen[0] > pen[1],
+                              "global": (hdr.get("status") or {}).get("aggregatedStr"), "pateo": None}
+                for i, ev in enumerate(((c.get("matchFacts") or {}).get("events") or {}).get("penaltyShootoutEvents") or []):
+                    if str((ev.get("player") or {}).get("id")) == str(pid):
+                        sc = ev.get("penShootoutScore") or []
+                        r["tanda"]["pateo"] = {"resultado": "convirtió" if ev.get("type") == "Goal" else "erró", "orden": i + 1,
+                                               "marcador": f"{sc[0]}-{sc[1]}" if len(sc) == 2 else None}
             lado = "homeTeam" if m.get("isHomeTeam") else "awayTeam"
             eq = (c.get("lineup") or {}).get(lado) or {}
             r["formacion"] = eq.get("formation")
@@ -192,7 +214,8 @@ def fotmob(j, fechas):
                                   "por": (sw[1].get("name") or "").split(" ")[-1], "por_id": sw[1].get("id")}
             ps = (c.get("playerStats") or {}).get(str(pid)) or {}
             r["puesto_habitual"] = ps.get("usualPosition")      # 0 arquero, 1 defensor, 2 volante, 3 delantero
-            r["remates"] = ps.get("shotmap")                     # cada remate con x (0-105, ataca a la derecha) e y (0-68)
+            # cada remate con x (0-105, ataca a la derecha) e y (0-68); los penales de la tanda no son remates del partido
+            r["remates"] = [t for t in ps["shotmap"] if t.get("period") != "PenaltyShootout"] if isinstance(ps.get("shotmap"), list) else None
             # remates en la escala del mapa de calor (abajo). Su y viene al revés que la del mapa de calor
             # (comprobado con 5 partidos y más de 80 jugadores): y = y_remate / 68 * 100.
             r["remates_mapa"] = [{"x": round(t["x"] / 105 * 100, 2), "y": round(t["y"] / 68 * 100, 2), "tipo": _tipo_remate(t)}
