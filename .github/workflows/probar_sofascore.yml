@@ -16,7 +16,8 @@ jobs:
         run: |
           UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
           probar() {
-            code=$(curl -sS --compressed -o out.json -w "%{http_code}" -m 20 -A "$UA" "$1" || echo "fallo")
+            code=$(curl -sS --compressed -D h.txt -o out.json -w "%{http_code} %{content_type} %{size_download}B" -m 20 -A "$UA" "$1" || echo "fallo")
+            echo "::notice title=Cabeceras $code::$1 $(grep -i -E '^(content-encoding|server|cf-|x-cache|location)' h.txt | tr -d '\r' | tr '\n' ' ') primeros bytes: $(head -c 80 out.json | od -An -c | tr -s ' ' | head -c 160 | tr -d '\n')"
             echo "::notice title=SofaScore $code::$1 → $(python3 -c "import json,sys;d=json.load(open('out.json'));print(sys.argv[1] and eval(sys.argv[1]))" "$2" 2>&1 | head -c 200)"
           }
           for h in api.sofascore.app api.sofascore.com; do
