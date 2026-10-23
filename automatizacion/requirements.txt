@@ -1,7 +1,8 @@
 numpy
 scipy
 matplotlib
-playwright
+# Fijado: tiene que coincidir con el Chromium que trae la nube en /opt/pw-browsers (build 1194).
+playwright==1.56.0
 pillow
 rembg[cpu]
 opencv-contrib-python-headless
