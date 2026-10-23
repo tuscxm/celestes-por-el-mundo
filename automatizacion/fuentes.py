@@ -17,7 +17,7 @@ Claves: API-Football y football-data.org piden clave. Se leen de las variables d
 API_FOOTBALL_KEY y FOOTBALL_DATA_KEY o las agrega el proxy de la nube (secreto de red del entorno).
 TheSportsDB usa THESPORTSDB_KEY o la clave pública gratuita "123".
 """
-import json, os, re, time, html, datetime, urllib.request, urllib.error, urllib.parse, unicodedata
+import json, os, re, time, html, gzip, datetime, urllib.request, urllib.error, urllib.parse, unicodedata
 from collections import deque
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
@@ -51,7 +51,10 @@ def http(url, headers=None, timeout=25, crudo=False):
     h.update(headers or {})
     req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        cuerpo = r.read().decode("utf-8", "replace")
+        crudo_b = r.read()
+        if r.headers.get("Content-Encoding", "").lower() == "gzip" or crudo_b[:2] == b"\x1f\x8b":
+            crudo_b = gzip.decompress(crudo_b)  # Understat manda gzip aunque no se pida
+        cuerpo = crudo_b.decode("utf-8", "replace")
         if crudo:
             return cuerpo, dict(r.headers)
         return json.loads(cuerpo)
@@ -416,27 +419,41 @@ def thesportsdb(j, fechas):
 
 
 # ----------------------------------------------------------------- Understat (solo ligas grandes: LaLiga sí, Portugal no)
+US = "https://understat.com"
+
+
+def _understat_datos(ruta_json, ruta_html, variable):
+    """Desde fines de 2025 Understat sirve los datos aparte (getTeamData/..., getMatchData/...; piden X-Requested-With).
+    Si eso falla, se prueba el formato viejo: la variable JSON.parse('...') dentro de la página."""
+    try:
+        return http(f"{US}/{ruta_json}", {"Accept": "application/json", "X-Requested-With": "XMLHttpRequest",
+                                          "Referer": f"{US}/{ruta_html}"})
+    except (urllib.error.HTTPError, ValueError):
+        pass
+    txt = http(f"{US}/{ruta_html}", {"Accept": "text/html"}, crudo=True)[0]
+    mm = re.search(variable + r"\s*=\s*JSON\.parse\('(.*?)'\)", txt)
+    return json.loads(mm.group(1).encode().decode("unicode_escape")) if mm else None
+
+
 def understat(j, fechas):
     eq = j.get("understat_equipo")
     if not eq:
         return [], "sin understat_equipo (Understat no cubre esa liga)"
     out = []
     for anio in sorted({f.year if f.month >= 7 else f.year - 1 for f in fechas}):
-        txt = http(f"https://understat.com/team/{eq}/{anio}", {"Accept": "text/html"}, crudo=True)[0]
-        mm = re.search(r"datesData\s*=\s*JSON\.parse\('(.*?)'\)", txt)
-        if not mm:
+        d = _understat_datos(f"getTeamData/{eq}/{anio}", f"team/{eq}/{anio}", "datesData")
+        partidos = d.get("dates") if isinstance(d, dict) else d
+        if not isinstance(partidos, list):
             return [], "formato de página no reconocido"
-        partidos = json.loads(mm.group(1).encode().decode("unicode_escape"))
         for p in partidos:
             if not p.get("isResult"): continue
             f = datetime.date.fromisoformat(p["datetime"][:10])
             if f not in fechas: continue
             r = {"fuente": "understat", "fecha": str(f), "partido_id": p["id"], "local": p["h"]["title"], "visita": p["a"]["title"],
                  "goles_local": fnum(p["goals"]["h"]), "goles_visita": fnum(p["goals"]["a"]), "terminado": True, "stats": {}}
-            t2 = http(f"https://understat.com/match/{p['id']}", {"Accept": "text/html"}, crudo=True)[0]
-            m2 = re.search(r"rostersData\s*=\s*JSON\.parse\('(.*?)'\)", t2)
-            if m2:
-                ro = json.loads(m2.group(1).encode().decode("unicode_escape"))
+            d2 = _understat_datos(f"getMatchData/{p['id']}", f"match/{p['id']}", "rostersData")
+            ro = d2.get("rosters", d2) if isinstance(d2, dict) else None
+            if ro:
                 for lado in ("h", "a"):
                     for x in (ro.get(lado) or {}).values():
                         if mismo_nombre(x.get("player"), j["placa"]):

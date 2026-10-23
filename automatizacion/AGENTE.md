@@ -9,7 +9,7 @@ Desde el 15/10/2026 este repositorio de GitHub (tuscxm/celestes-por-el-mundo) es
   - **API-Football** (v3.football.api-sports.io): nota, minutos y estadísticas por jugador, notas del once y nota de la temporada. Con clave (secreto de red del entorno, encabezado `x-apisports-key`, o variable `API_FOOTBALL_KEY`). **Nunca más de 100 pedidos por día (UTC)**: el contador está en `automatizacion/cuotas.json` y se sube con cada revisión.
   - **football-data.org**: **no se usa desde el 21/10/2026** (solo traía resultado, fecha y jornada, que ya dan las otras fuentes; el usuario no cargó su clave). La función queda en `fuentes.py` por si se vuelve a sumar.
   - **TheSportsDB** (www.thesportsdb.com): resultado y alineación. Clave pública gratuita "123" o `THESPORTSDB_KEY`.
-  - **Understat** (understat.com): minutos, xG, xA, tiros y pases clave. Solo LaLiga (no cubre Portugal).
+  - **Understat** (understat.com): minutos, xG, xA, tiros y pases clave. Solo las ligas grandes (Inglaterra, España, Italia, Alemania, Francia y Rusia): no cubre copas, torneos internacionales ni Portugal.
   - **zerozero** (www.zerozero.pt): minutos y resultado de la ficha del jugador.
   - Si a un jugador le falta el ID de API-Football o de football-data.org, el script lo busca una sola vez por el nombre del club (`club`) y lo guarda en `jugadores.json`.
   - Los IDs de cada fuente están en `jugadores.json` (`fotmob_id`, `apifootball_equipo`, `footballdata_equipo`, `understat_equipo`, `club`).

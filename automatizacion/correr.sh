@@ -8,6 +8,8 @@ python3 -c "import numpy, scipy, matplotlib, playwright, rembg, cv2, pymatting; 
   || { echo "Instalando dependencias (rembg, opencv, pymatting...): puede tardar varios minutos"; \
        timeout 1200 pip install --progress-bar off --break-system-packages -r automatizacion/requirements.txt \
        || echo "AVISO: la instalación de dependencias no terminó (se sigue igual; las caras pueden salir sin recortar)"; }
+# Playwright tiene que coincidir con el Chromium de la nube (/opt/pw-browsers); si no, busca la versión que sí
+python3 automatizacion/ajustar_playwright.py || true
 if [ $# -eq 0 ]; then set -- --dias 2; fi
 rm -rf salida_hoy
 python3 automatizacion/infografia_sofascore.py automatizacion/jugadores.json "$@" \
