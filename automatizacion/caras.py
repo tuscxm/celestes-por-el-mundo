@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
-BASE = "https://api.sofascore.com/api/v1"
+BASE = "https://img.sofascore.com/api/v1"  # las imágenes salen de img.; api. le da 403 a la nube
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36"
 _sesion = None
 
