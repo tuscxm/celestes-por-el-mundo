@@ -1,20 +1,20 @@
 {
- "revisado": "2026-10-22T18:33-03:00",
+ "revisado": "2026-10-23T18:36-03:00",
  "fechas": [
-  "2026-10-21",
-  "2026-10-22"
+  "2026-10-22",
+  "2026-10-23"
  ],
  "lineas": [
-  "Valverde: ya procesado · Real Madrid 4-1 RB Leipzig",
-  "Bernal: no jugó en Real Betis 1-0 Feyenoord (no entró)",
+  "Valverde: sin partido hoy ni ayer",
+  "Bernal: sin partido hoy ni ayer",
   "Mouriño: sin partido hoy ni ayer",
-  "M. Araújo: ya procesado · Sporting CP 2-3 LASK",
-  "**Á. Rodríguez** jugó 24' (suplente, entró al 66' por Evanilson, nota 5.9, su juego) en AFC Bournemouth 3-0 Milan · Europa League",
+  "M. Araújo: sin partido hoy ni ayer",
+  "Á. Rodríguez: ya procesado · AFC Bournemouth 3-0 Milan",
   "González: sin partido hoy ni ayer",
-  "**Cáceres** jugó 90' (titular, nota 7.0, de defensor central) en Celtic 1-2 Celta Vigo · Europa League",
+  "Cáceres: ya procesado · Celtic 1-2 Celta Vigo",
   "Petit: sin partido hoy ni ayer",
   "Bentancur: sin partido hoy ni ayer",
-  "**Satriano** jugó 45' (suplente, entró al 46' por Kiko, nota 6.4, su juego) en Getafe 2-5 Lugano · Conference League",
+  "Satriano: ya procesado · Getafe 2-5 Lugano",
   "Boselli: no jugó en Getafe 2-5 Lugano (no entró)",
   "J. Rodríguez: sin partido hoy ni ayer",
   "Zalazar: sin partido hoy ni ayer",
@@ -24,12 +24,14 @@
   "R. Araújo: sin partido hoy ni ayer",
   "J. M. Sanabria: sin partido hoy ni ayer",
   "Ugarte: sin partido hoy ni ayer",
-  "**Canobbio** jugó 79' (titular, nota 6.8, de volante por izquierda) en Palmeiras 0-1 Fluminense · Copa Libertadores",
-  "Darwin: sin partido hoy ni ayer",
-  "**F. Díaz** jugó 90' (titular, nota 7.4, de mediocentro) en Al-Gharafa 2-2 Al-Ahli · Qatar Stars League",
-  "Torreira: ya procesado · Lille 2-4 Galatasaray",
+  "Canobbio: sin partido hoy ni ayer",
+  "**Darwin** jugó 32' (suplente, entró al 58' por Nemer, nota 6.2, de delantero) en Al Ittihad 2-0 Al Diriyah · Saudi Pro League",
+  "F. Díaz: ya procesado · Al-Gharafa 2-2 Al-Ahli",
+  "Torreira: sin partido hoy ni ayer",
   "Brizuela: sin partido hoy ni ayer",
-  "**Piquerez** jugó 90' (titular, nota 7.0, de mediocentro) en Palmeiras 0-1 Fluminense · Copa Libertadores"
+  "Piquerez: sin partido hoy ni ayer",
+  "Matturro: sin partido hoy ni ayer",
+  "Olivera: sin partido hoy ni ayer"
  ],
  "jugadores": [
   "Valverde",
@@ -56,6 +58,8 @@
   "F. Díaz",
   "Torreira",
   "Brizuela",
-  "Piquerez"
+  "Piquerez",
+  "Matturro",
+  "Olivera"
  ]
 }
