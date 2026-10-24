@@ -1,0 +1,474 @@
+[
+ {
+  "archivo": "Rodriguez_Cagliari-Bologna_2026-10-24",
+  "nombre": "JUAN MANUEL RODRÍGUEZ",
+  "apellido": "Rodríguez",
+  "dorsal": "15",
+  "local": "Cagliari",
+  "visita": "Bologna",
+  "goles_local": 0,
+  "goles_visita": 2,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_juan_rodriguez.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_9857.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_juan_rodriguez.png",
+  "meta": "SERIE A · JORNADA 8 · 24 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.6",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#a3001e",
+   "c2": "#0d1f4d",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-3-2-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Caprile",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "33",
+     "nombre": "Obert",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Rodríguez",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/juan_rodriguez.png",
+     "estrellas": 2,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Deiola",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Pedro",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Adopo",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Winks",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Romano",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "70",
+     "nombre": "Maldini",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "79",
+     "nombre": "Massolin",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "31",
+     "nombre": "Mendy",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/juan_rodriguez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "102",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/10",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "5",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "80/90",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "89%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "7/13",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas",
+    "2",
+    false
+   ],
+   [
+    "Despejes",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SERIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (8) · 620",
+     false
+    ],
+    [
+     "Nota media",
+     "6.84",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/juan_rodriguez_2026-10-24.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "33/115 (29%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "21 años"
+   ],
+   [
+    "ALTURA",
+    "1,90 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "102",
+     false
+    ],
+    [
+     "Pases precisos",
+     "80/90 (89%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "5/10 (50%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "2/3 (67%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "5",
+     false
+    ],
+    [
+     "Intercepciones",
+     "2",
+     false
+    ],
+    [
+     "Entradas",
+     "2",
+     false
+    ],
+    [
+     "Despejes",
+     "4",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "5",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,01",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "7",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Centros precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "3/7 (43%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Duelos aéreos ganados",
+      "2/3 (67%)",
+      true
+     ],
+     [
+      "Duelos ganados",
+      "5/10 (50%)",
+      false
+     ],
+     [
+      "Despejes",
+      "4",
+      false
+     ],
+     [
+      "Intercepciones",
+      "2",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "7/13 (54%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/juan_rodriguez_2026-10-24.png",
+   "lados": {
+    "izquierda": 70,
+    "centro": 29,
+    "derecha": 2
+   },
+   "campo_rival": 16,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "80/115 (70%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "16/80 (20%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
