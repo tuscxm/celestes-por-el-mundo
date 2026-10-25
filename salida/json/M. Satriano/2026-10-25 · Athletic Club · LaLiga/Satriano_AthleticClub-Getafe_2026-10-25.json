@@ -1,0 +1,549 @@
+[
+ {
+  "archivo": "Satriano_AthleticClub-Getafe_2026-10-25",
+  "nombre": "MARTÍN SATRIANO",
+  "apellido": "Satriano",
+  "dorsal": "10",
+  "local": "Athletic Club",
+  "visita": "Getafe",
+  "goles_local": 4,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8315.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_satriano.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_satriano.png",
+  "meta": "LALIGA · JORNADA 10 · 25 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "5.9",
+  "estrellas": 1,
+  "tema": {
+   "c1": "#1f56c4",
+   "c2": "#0a1f4d",
+   "acento": "#e2001a"
+  },
+  "sustitucion": null,
+  "formacion": "5-4-1",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Soria",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Valou",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Gudelj",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Carvajal",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Mojica",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Kiko",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Satriano",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/satriano.png",
+     "estrellas": 1,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Serrano",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Martín",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": "86’",
+     "amarillas": 0
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Terrats",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Azon",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/satriano.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "38",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "7/13",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO VOLANTE POR IZQUIERDA",
+  "posicion": [
+   [
+    "Pases precisos",
+    "15/20",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "75%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "3",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/1",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 1",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,14",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,01",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "10 (9) · 749",
+     false
+    ],
+    [
+     "Nota media",
+     "6.68",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "CONFERENCE LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (1) · 135",
+     false
+    ],
+    [
+     "Nota media",
+     "6.76",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/satriano_2026-10-25.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "21/46 (46%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "10"
+   ],
+   [
+    "EDAD",
+    "25 años"
+   ],
+   [
+    "ALTURA",
+    "1,87 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Volante Por Izquierda"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "38",
+     false
+    ],
+    [
+     "Pases precisos",
+     "15/20 (75%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "7/13 (54%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "2/4 (50%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/3 (33%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "3",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "4",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "4",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,14",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,14",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,15",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "0 · 0 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "2",
+     false
+    ],
+    [
+     "Fuera de juego",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "1/2 (50%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE VOLANTE POR FUERA",
+    "filas": [
+     [
+      "Regates",
+      "1/3 (33%)",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "3",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "7/13 (54%)",
+      false
+     ],
+     [
+      "Recuperaciones",
+      "3",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/satriano_2026-10-25.png",
+   "lados": {
+    "izquierda": 39,
+    "centro": 46,
+    "derecha": 15
+   },
+   "campo_rival": 70,
+   "zona": {
+    "titulo": "SU ZONA: POR EL CENTRO",
+    "filas": [
+     [
+      "Acciones",
+      "21/46 (46%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "12/21 (57%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "1 · 0",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
