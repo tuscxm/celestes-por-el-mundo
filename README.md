@@ -7,31 +7,31 @@ Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-10-26 18:29-03:00 (hora de Uruguay) · fechas 2026-10-25, 2026-10-26
+**Última revisión:** 2026-10-27 18:31-03:00 (hora de Uruguay) · fechas 2026-10-26, 2026-10-27
 
-- **Valverde** jugó 62' (titular, nota 7.0, de lateral derecho) en Barcelona 1-2 Real Madrid · LaLiga
+- Valverde: sin partido hoy ni ayer
 - Bernal: sin partido hoy ni ayer
 - Mouriño: sin partido hoy ni ayer
-- **M. Araújo** jugó 90' (titular, nota 7.8, de lateral izquierdo) en Sporting CP 1-2 Académico Viseu · Liga Portugal
-- Á. Rodríguez: no jugó en Manchester United 0-3 AFC Bournemouth (no entró)
+- M. Araújo: sin partido hoy ni ayer
+- Á. Rodríguez: sin partido hoy ni ayer
 - González: sin partido hoy ni ayer
-- Cáceres: no jugó en Celta Vigo 0-0 Real Betis (no entró)
+- Cáceres: sin partido hoy ni ayer
 - Petit: sin partido hoy ni ayer
 - Bentancur: sin partido hoy ni ayer
-- Satriano: ya procesado · Athletic Club 4-0 Getafe
-- Boselli: no jugó en Athletic Club 4-0 Getafe (no entró)
+- Satriano: sin partido hoy ni ayer
+- Boselli: sin partido hoy ni ayer
 - J. Rodríguez: sin partido hoy ni ayer
 - Zalazar: sin partido hoy ni ayer
-- **Merentiel** jugó 66' (titular, nota 6.7, de delantero) en Independiente 0-1 Boca Juniors · Liga Profesional
+- Merentiel: sin partido hoy ni ayer
 - Giménez: sin partido hoy ni ayer
-- Amaro: ya procesado · Genk 2-1 Standard Liège
-- R. Araújo: ya procesado · Liverpool 2-0 Brighton & Hove Albion
+- Amaro: sin partido hoy ni ayer
+- R. Araújo: sin partido hoy ni ayer
 - J. M. Sanabria: sin partido hoy ni ayer
 - Ugarte: sin partido hoy ni ayer
 - Canobbio: sin partido hoy ni ayer
 - Darwin: sin partido hoy ni ayer
-- **F. Díaz** jugó 90' (titular, nota 6.2, de mediocentro) en Al Ahli 2-1 Al-Gharafa · AFC Champions League Elite
-- **Torreira** jugó 90' (titular, nota 7.2, de mediocentro) en Galatasaray 2-1 Fenerbahçe · Süper Lig
+- F. Díaz: ya procesado · Al Ahli 2-1 Al-Gharafa
+- Torreira: ya procesado · Galatasaray 2-1 Fenerbahçe
 - Brizuela: sin partido hoy ni ayer
 - Piquerez: sin partido hoy ni ayer
 - Matturro: sin partido hoy ni ayer
