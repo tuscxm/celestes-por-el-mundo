@@ -1,0 +1,509 @@
+[
+ {
+  "archivo": "Araujo_Liverpool-Chelsea_2026-10-28",
+  "nombre": "RONALD ARAÚJO",
+  "apellido": "Araújo",
+  "dorsal": "33",
+  "local": "Liverpool",
+  "visita": "Chelsea",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_ronald_araujo.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8455.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_ronald_araujo.png",
+  "meta": "EFL CUP · JORNADA 4 · PENALES 6-5 · 28 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.8",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#c8102e",
+   "c2": "#3a0610",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Mamardashvili",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Tsimikas",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "van Dijk",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "33",
+     "nombre": "Araujo",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/ronald_araujo.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Gomez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "42",
+     "nombre": "Nyoni",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "38",
+     "nombre": "Gravenberch",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "73",
+     "nombre": "Ngumoha",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "53",
+     "nombre": "McConnell",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "67",
+     "nombre": "Koumas",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Gakpo",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/ronald_araujo.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "77",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/9",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "5/8",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "46/59",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "78%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "4/9",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "7",
+    false
+   ],
+   [
+    "Intercepciones",
+    "3",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "10",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (6) · 495",
+     false
+    ],
+    [
+     "Nota media",
+     "6.95",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (3) · 197",
+     false
+    ],
+    [
+     "Nota media",
+     "7.62",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/ronald_araujo_2026-10-28.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "41/96 (43%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "33"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,91 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "77",
+     false
+    ],
+    [
+     "Pases precisos",
+     "46/59 (78%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "5/9 (56%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "5/8 (62%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "7",
+     false
+    ],
+    [
+     "Intercepciones",
+     "3",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "10",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,50",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,50",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,50",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,51",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 1 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "6",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "4",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "1",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "0/1 (0%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Duelos aéreos ganados",
+      "5/8 (62%)",
+      true
+     ],
+     [
+      "Duelos ganados",
+      "5/9 (56%)",
+      false
+     ],
+     [
+      "Despejes",
+      "10",
+      true
+     ],
+     [
+      "Intercepciones",
+      "3",
+      true
+     ],
+     [
+      "Pases largos precisos",
+      "4/9 (44%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/ronald_araujo_2026-10-28.png",
+   "lados": {
+    "izquierda": 11,
+    "centro": 43,
+    "derecha": 46
+   },
+   "campo_rival": 31,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "44/96 (46%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "8/44 (18%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
