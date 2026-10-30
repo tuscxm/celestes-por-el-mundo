@@ -1,0 +1,514 @@
+[
+ {
+  "archivo": "Nunez_AlDiriyah-NeomSC_2026-10-30",
+  "nombre": "DARWIN NÚÑEZ",
+  "apellido": "Núñez",
+  "dorsal": "29",
+  "local": "Al Diriyah",
+  "visita": "Neom SC",
+  "goles_local": 1,
+  "goles_visita": 2,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_darwin.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_1699505.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_darwin.png",
+  "meta": "SAUDI PRO LEAGUE · JORNADA 12 · 30 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.2",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#5a0a1a",
+   "c2": "#1f0207",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "97",
+     "nombre": "Al Bukhari",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Al Sibyani",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "99",
+     "nombre": "Mbemba",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Djimsiti",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Wadi",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Millot",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Gueye",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Boulbina",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Rodríguez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Diandy",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "29",
+     "nombre": "Núñez",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/darwin.png",
+     "estrellas": 3,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/darwin.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "1",
+    true
+   ],
+   [
+    "Toques",
+    "35",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/12",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/5",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "10/17",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "59%",
+    false
+   ],
+   [
+    "Remates al arco",
+    "1/3",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 2",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,19",
+    false
+   ],
+   [
+    "Pases clave",
+    "2",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,04",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SAUDI PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "10 (9) · 822",
+     false
+    ],
+    [
+     "Nota media",
+     "6.93",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "3 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/darwin_2026-10-30.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "21/50 (42%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/1",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "29"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,88 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "1",
+     true
+    ],
+    [
+     "Toques",
+     "35",
+     false
+    ],
+    [
+     "Pases precisos",
+     "10/17 (59%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "2/12 (17%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "2/5 (40%)",
+     false
+    ],
+    [
+     "Regates",
+     "0/3 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "5",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "2",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,19",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,19",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,10",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,04",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,23",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 2",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "2",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "1",
+     false
+    ],
+    [
+     "Fuera de juego",
+     "2",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "0/7 (0%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Remates al arco",
+      "1/3 (33%)",
+      false
+     ],
+     [
+      "Goles · xG",
+      "0 · 0,19",
+      false
+     ],
+     [
+      "Toques en el área rival",
+      "4",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "2/12 (17%)",
+      false
+     ],
+     [
+      "Regates",
+      "0/3 (0%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/darwin_2026-10-30.png",
+   "lados": {
+    "izquierda": 44,
+    "centro": 42,
+    "derecha": 14
+   },
+   "campo_rival": 72,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "22/50 (44%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "17/22 (77%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "2 · 1",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
