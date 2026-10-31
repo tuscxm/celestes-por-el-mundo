@@ -1,0 +1,499 @@
+[
+ {
+  "archivo": "Araujo_CasaPiaAC-SportingCP_2026-10-30",
+  "nombre": "MAXIMILIANO ARAÚJO",
+  "apellido": "Araújo",
+  "dorsal": "20",
+  "local": "Casa Pia AC",
+  "visita": "Sporting CP",
+  "goles_local": 0,
+  "goles_visita": 2,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_212821.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_araujo.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_araujo.png",
+  "meta": "LIGA PORTUGAL · JORNADA 10 · 30 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "8.2",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "30",
+     "nombre": "Pereira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Araújo",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/araujo.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Inácio",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "72",
+     "nombre": "Quaresma",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Fresneda",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "4",
+     "nombre": "Andersen",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Altimira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Irankunda",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Lima",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "31",
+     "nombre": "Guilherme",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "97",
+     "nombre": "Suárez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/araujo.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "70",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "8/12",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/2",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL IZQUIERDO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "34/41",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "83%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "2",
+    true
+   ],
+   [
+    "Pases clave",
+    "3",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "4",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "6",
+    false
+   ],
+   [
+    "Despejes",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA PORTUGAL",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (8) · 740",
+     false
+    ],
+    [
+     "Nota media",
+     "7.61",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "4[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (3) · 270",
+     false
+    ],
+    [
+     "Nota media",
+     "6.69",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/araujo_2026-10-30.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA IZQUIERDA",
+   "filas": [
+    [
+     "Acciones",
+     "76/80 (95%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,76 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Izquierdo"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "70",
+     false
+    ],
+    [
+     "Pases precisos",
+     "34/41 (83%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "8/12 (67%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/2 (50%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "4",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "6",
+     false
+    ],
+    [
+     "Despejes",
+     "4",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,25",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,25",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "3",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "2",
+     false
+    ],
+    [
+     "Fuera de juego",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/3 (0%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "7/10 (70%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE LATERAL",
+    "filas": [
+     [
+      "Duelos ganados",
+      "8/12 (67%)",
+      true
+     ],
+     [
+      "Centros precisos",
+      "1/2 (50%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "4",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "2",
+      false
+     ],
+     [
+      "Lo regatearon",
+      "2",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/araujo_2026-10-30.png",
+   "lados": {
+    "izquierda": 95,
+    "centro": 5,
+    "derecha": 0
+   },
+   "campo_rival": 40,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "76/80 (95%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "32/76 (42%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

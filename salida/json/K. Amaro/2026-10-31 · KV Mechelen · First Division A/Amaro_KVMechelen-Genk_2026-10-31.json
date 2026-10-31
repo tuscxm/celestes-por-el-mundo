@@ -1,0 +1,474 @@
+[
+ {
+  "archivo": "Amaro_KVMechelen-Genk_2026-10-31",
+  "nombre": "KEVIN AMARO",
+  "apellido": "Amaro",
+  "dorsal": "20",
+  "local": "KV Mechelen",
+  "visita": "Genk",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8203.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_amaro.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_amaro.png",
+  "meta": "FIRST DIVISION A · JORNADA 10 · 31 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "79’",
+  "nota": "7.3",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#1f3fd1",
+   "c2": "#070f3d",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "28",
+     "nombre": "Brughmans",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Ditu",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "44",
+     "nombre": "Kongolo",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Smets",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Amaro",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/amaro.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Heynen",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Tahirović",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "32",
+     "nombre": "Adedeji-Sternberg",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Erenbjerg",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Ito",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Durosinmi",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/amaro.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "52",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "6/10",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "35/38",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "92%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "7",
+    true
+   ],
+   [
+    "Pases clave",
+    "2",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Entradas",
+    "2",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "BELGIAN PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (6) · 533",
+     false
+    ],
+    [
+     "Nota media",
+     "7.48",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/amaro_2026-10-31.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA DERECHA",
+   "filas": [
+    [
+     "Acciones",
+     "58/59 (98%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,77 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "52",
+     false
+    ],
+    [
+     "Pases precisos",
+     "35/38 (92%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "6/10 (60%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercepciones",
+     "1",
+     false
+    ],
+    [
+     "Entradas",
+     "2",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "2",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "3",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,11",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,11",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "2",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "6/9 (67%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE LATERAL",
+    "filas": [
+     [
+      "Duelos ganados",
+      "6/10 (60%)",
+      true
+     ],
+     [
+      "Centros precisos",
+      "2/2 (100%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "1",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "7",
+      true
+     ],
+     [
+      "Lo regatearon",
+      "1",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/amaro_2026-10-31.png",
+   "lados": {
+    "izquierda": 0,
+    "centro": 2,
+    "derecha": 98
+   },
+   "campo_rival": 59,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "58/59 (98%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "35/58 (60%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
