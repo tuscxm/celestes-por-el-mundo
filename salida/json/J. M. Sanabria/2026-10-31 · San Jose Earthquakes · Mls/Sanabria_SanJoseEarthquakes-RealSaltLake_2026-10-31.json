@@ -1,0 +1,517 @@
+[
+ {
+  "archivo": "Sanabria_SanJoseEarthquakes-RealSaltLake_2026-10-31",
+  "nombre": "JUAN MANUEL SANABRIA",
+  "apellido": "Sanabria",
+  "dorsal": "8",
+  "local": "San Jose Earthquakes",
+  "visita": "Real Salt Lake",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_6603.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_sanabria.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_sanabria.png",
+  "meta": "MLS · 31 OCTUBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "8.0",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#b30838",
+   "c2": "#2a0410",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "3-4-3",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Cabral",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Quinton",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Glad",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "44",
+     "nombre": "De Fougerolles",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "29",
+     "nombre": "Junqua",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Spierings",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "92",
+     "nombre": "Çalışkan",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Marczuk",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "12",
+     "nombre": "Lobjanidze",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Solans",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Sanabria",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/sanabria.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/sanabria.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "64",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/6",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "33/40",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "82%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "5",
+    true
+   ],
+   [
+    "Remates al arco",
+    "1/3",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "1 · 1",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,44",
+    false
+   ],
+   [
+    "Pases clave",
+    "4",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "1",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,27",
+    false
+   ],
+   [
+    "Centros precisos",
+    "4/10",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26",
+   "filas": [
+    [
+     "MAJOR LEAGUE SOCCER",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "28 (24) · 2241",
+     false
+    ],
+    [
+     "Nota media",
+     "7.35",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 6",
+     false
+    ],
+    [
+     "Tarjetas",
+     "4[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/sanabria_2026-10-31.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA IZQUIERDA",
+   "filas": [
+    [
+     "Acciones",
+     "44/72 (61%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "8"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,72 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "64",
+     false
+    ],
+    [
+     "Pases precisos",
+     "33/40 (82%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "2/6 (33%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "0/3 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "3",
+     false
+    ],
+    [
+     "Intercepciones",
+     "1",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "2",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,44",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,44",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,92",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,27",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,71",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 1 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "4",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "5",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "1/4 (25%)",
+     false
+    ],
+    [
+     "Centros precisos",
+     "4/10 (40%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Remates al arco",
+      "1/3 (33%)",
+      false
+     ],
+     [
+      "Goles · xG",
+      "1 · 0,44",
+      false
+     ],
+     [
+      "Toques en el área rival",
+      "1",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "2/6 (33%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/sanabria_2026-10-31.png",
+   "lados": {
+    "izquierda": 61,
+    "centro": 21,
+    "derecha": 18
+   },
+   "campo_rival": 78,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "44/72 (61%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "33/44 (75%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

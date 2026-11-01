@@ -1,0 +1,509 @@
+[
+ {
+  "archivo": "Boselli_Getafe-Sevilla_2026-11-01",
+  "nombre": "SEBASTIÁN BOSELLI",
+  "apellido": "Boselli",
+  "dorsal": "15",
+  "local": "Getafe",
+  "visita": "Sevilla",
+  "goles_local": 3,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_boselli.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8302.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_boselli.png",
+  "meta": "LALIGA · JORNADA 11 · 1 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "8.4",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#1f56c4",
+   "c2": "#0a1f4d",
+   "acento": "#e2001a"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Soria",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Valou",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Djené",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Boselli",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/boselli.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Carvajal",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Serrano",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Gudelj",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Satriano",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Terrats",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "García",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Ünal",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/boselli.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "67",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "15/18",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "7/8",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "27/45",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "60%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "13/24",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "8",
+    false
+   ],
+   [
+    "Intercepciones",
+    "4",
+    false
+   ],
+   [
+    "Entradas",
+    "5",
+    false
+   ],
+   [
+    "Despejes",
+    "5",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (2) · 245",
+     false
+    ],
+    [
+     "Nota media",
+     "6.83",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "CONFERENCE LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "1 (0) · 8",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/boselli_2026-11-01.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "45/85 (53%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,83 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "67",
+     false
+    ],
+    [
+     "Pases precisos",
+     "27/45 (60%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "15/18 (83%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "7/8 (88%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "8",
+     false
+    ],
+    [
+     "Intercepciones",
+     "4",
+     false
+    ],
+    [
+     "Entradas",
+     "5",
+     false
+    ],
+    [
+     "Despejes",
+     "5",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "3",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,08",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,08",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,36",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,02",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,10",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 1 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "17",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Centros precisos",
+     "0/1 (0%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Duelos aéreos ganados",
+      "7/8 (88%)",
+      true
+     ],
+     [
+      "Duelos ganados",
+      "15/18 (83%)",
+      true
+     ],
+     [
+      "Despejes",
+      "5",
+      true
+     ],
+     [
+      "Intercepciones",
+      "4",
+      true
+     ],
+     [
+      "Pases largos precisos",
+      "13/24 (54%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/boselli_2026-11-01.png",
+   "lados": {
+    "izquierda": 15,
+    "centro": 53,
+    "derecha": 32
+   },
+   "campo_rival": 14,
+   "zona": {
+    "titulo": "SU ZONA: POR EL CENTRO",
+    "filas": [
+     [
+      "Acciones",
+      "45/85 (53%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "4/45 (9%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "2 · 1",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
