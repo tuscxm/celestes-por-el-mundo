@@ -1,0 +1,544 @@
+[
+ {
+  "archivo": "Araujo_ShakhtarDonetsk-SportingCP_2026-11-03",
+  "nombre": "MAXIMILIANO ARAÚJO",
+  "apellido": "Araújo",
+  "dorsal": "20",
+  "local": "Shakhtar Donetsk",
+  "visita": "Sporting CP",
+  "goles_local": 0,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_matturro.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_araujo.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_araujo.png",
+  "meta": "CHAMPIONS LEAGUE · JORNADA 4 · 3 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "88’",
+  "nota": "7.4",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "3-4-1-2",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Silva",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Inácio",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "73",
+     "nombre": "Felicíssimo",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "72",
+     "nombre": "Quaresma",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Araújo",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/araujo.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Altimira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Andersen",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Catamo",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "77",
+     "nombre": "Doumbia",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "7",
+     "nombre": "Ioannidis",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "97",
+     "nombre": "Suárez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/araujo.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "61",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/12",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO VOLANTE POR IZQUIERDA",
+  "posicion": [
+   [
+    "Pases precisos",
+    "29/34",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "85%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "4",
+    true
+   ],
+   [
+    "Remates al arco",
+    "1/2",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "1 · 0",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,05",
+    false
+   ],
+   [
+    "Pases clave",
+    "2",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "1",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,47",
+    false
+   ],
+   [
+    "Centros precisos",
+    "3/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "9",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "4 (4) · 358",
+     false
+    ],
+    [
+     "Nota media",
+     "6.86",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ],
+    [
+     "LIGA PORTUGAL",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (8) · 740",
+     false
+    ],
+    [
+     "Nota media",
+     "7.61",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "4[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/araujo_2026-11-03.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA IZQUIERDA",
+   "filas": [
+    [
+     "Acciones",
+     "69/76 (91%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "1/1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,76 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Volante Por Izquierda"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "61",
+     false
+    ],
+    [
+     "Pases precisos",
+     "29/34 (85%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/12 (33%)",
+     false
+    ],
+    [
+     "Regates",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "9",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "4",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "4",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,05",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,05",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,47",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,52",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 1 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "2",
+     false
+    ],
+    [
+     "Pases que rompen líneas",
+     "4",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "2/4 (50%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE VOLANTE POR FUERA",
+    "filas": [
+     [
+      "Centros precisos",
+      "3/3 (100%)",
+      true
+     ],
+     [
+      "Regates",
+      "0/1 (0%)",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "4",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "4/12 (33%)",
+      false
+     ],
+     [
+      "Recuperaciones",
+      "9",
+      true
+     ]
+    ]
+   },
+   "heat_img": "mapas/araujo_2026-11-03.png",
+   "lados": {
+    "izquierda": 91,
+    "centro": 7,
+    "derecha": 3
+   },
+   "campo_rival": 41,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "69/76 (91%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "27/69 (39%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "1 · 1",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,464 @@
+[
+ {
+  "archivo": "Gimenez_DeportivoACoruna-Osasuna_2026-11-02",
+  "nombre": "JOSÉ MARÍA GIMÉNEZ",
+  "apellido": "Giménez",
+  "dorsal": "20",
+  "local": "Deportivo A Coruña",
+  "visita": "Osasuna",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8371.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_gimenez.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_gimenez.png",
+  "meta": "LALIGA · JORNADA 11 · 2 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.9",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#1f4fb8",
+   "c2": "#06163f",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Román",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "12",
+     "nombre": "Quagliata",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Giménez",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/gimenez.png",
+     "estrellas": 3,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Loureiro",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Altimira",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Amatucci",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Soriano",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Hernández",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Cruz",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Mella",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "32",
+     "nombre": "Nsongo",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/gimenez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "84",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/8",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/6",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "66/75",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "88%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "5/8",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "10 (8) · 724",
+     false
+    ],
+    [
+     "Nota media",
+     "6.72",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/gimenez_2026-11-02.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "42/94 (45%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "31 años"
+   ],
+   [
+    "ALTURA",
+    "1,85 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "84",
+     false
+    ],
+    [
+     "Pases precisos",
+     "66/75 (88%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "2/8 (25%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/6 (17%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "3",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "4",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,02",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,02",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "12",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "1/2 (50%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Duelos aéreos ganados",
+      "1/6 (17%)",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "2/8 (25%)",
+      false
+     ],
+     [
+      "Despejes",
+      "4",
+      false
+     ],
+     [
+      "Intercepciones",
+      "0",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "5/8 (62%)",
+      true
+     ]
+    ]
+   },
+   "heat_img": "mapas/gimenez_2026-11-02.png",
+   "lados": {
+    "izquierda": 53,
+    "centro": 45,
+    "derecha": 2
+   },
+   "campo_rival": 30,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "50/94 (53%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "19/50 (38%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
