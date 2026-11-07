@@ -1,0 +1,475 @@
+[
+ {
+  "archivo": "Bentancur_LeedsUnited-TottenhamHotspur_2026-11-07",
+  "nombre": "RODRIGO BENTANCUR",
+  "apellido": "Bentancur",
+  "dorsal": "30",
+  "local": "Leeds United",
+  "visita": "Tottenham Hotspur",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8463.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_bentancur.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_bentancur.png",
+  "meta": "PREMIER LEAGUE · JORNADA 10 · 7 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "25’",
+  "nota": "6.9",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#1d2f6f",
+   "c2": "#060b22",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": {
+   "minuto": "65’",
+   "por": "Fernandes",
+   "apellido": "Bentancur",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/bentancur.png",
+   "rol": ""
+  },
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "31",
+     "nombre": "Kinský",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Robertson",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "37",
+     "nombre": "van de Ven",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "6",
+     "nombre": "van Hecke",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Porro",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "14",
+     "nombre": "Gray",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Fernandes",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Tonali",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "11",
+     "nombre": "Tel",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Marmoush",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Kudus",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/bentancur.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "44",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/7",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "30/31",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "97%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "3",
+    true
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "3",
+    false
+   ],
+   [
+    "Despejes",
+    "3",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "7 (4) · 409",
+     false
+    ],
+    [
+     "Nota media",
+     "6.50",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 1[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/bentancur_2026-11-07.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "25/48 (52%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "30"
+   ],
+   [
+    "EDAD",
+    "29 años"
+   ],
+   [
+    "ALTURA",
+    "1,87 m"
+   ],
+   [
+    "PIE",
+    "Ambidiestro"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "44",
+     false
+    ],
+    [
+     "Pases precisos",
+     "30/31 (97%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/7 (57%)",
+     false
+    ],
+    [
+     "Regates",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "2",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "3",
+     false
+    ],
+    [
+     "Despejes",
+     "3",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,34",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,34",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,36",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,04",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,38",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "3",
+     false
+    ],
+    [
+     "Pases que rompen líneas",
+     "2",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "1",
+     false
+    ]
+   ],
+   "perfil": null,
+   "heat_img": "mapas/bentancur_2026-11-07.png",
+   "lados": {
+    "izquierda": 27,
+    "centro": 52,
+    "derecha": 21
+   },
+   "campo_rival": 44,
+   "zona": {
+    "titulo": "SU ZONA: POR EL CENTRO",
+    "filas": [
+     [
+      "Acciones",
+      "25/48 (52%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "8/25 (32%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "1 · 1",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

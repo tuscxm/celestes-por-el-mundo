@@ -1,0 +1,423 @@
+[
+ {
+  "archivo": "Diaz_Al-Gharafa-Al-DuhailSC_2026-11-07",
+  "nombre": "FABRICIO DÍAZ",
+  "apellido": "Díaz",
+  "dorsal": "29",
+  "local": "Al-Gharafa",
+  "visita": "Al-Duhail SC",
+  "goles_local": 1,
+  "goles_visita": 2,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_fabricio_diaz.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_203826.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_fabricio_diaz.png",
+  "meta": "QATAR STARS LEAGUE · JORNADA 9 · 7 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.4",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#f2cf1d",
+   "c2": "#0047ab",
+   "acento": "#0b1f4d"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Ababacar",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "23",
+     "nombre": "Fadlalla",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Traoré",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Hyun-Soo",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Al Oui",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "29",
+     "nombre": "Díaz",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/fabricio_diaz.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "13",
+     "nombre": "Sassi",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Brahimi",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Bennacer",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Surag",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "7",
+     "nombre": "Coman",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/fabricio_diaz.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "55",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/7",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "38/45",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "84%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "12",
+    true
+   ],
+   [
+    "Pases clave",
+    "1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "7/10",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "7",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "QATAR STARS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (9) · 810",
+     false
+    ],
+    [
+     "Nota media",
+     "7.50",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "29"
+   ],
+   [
+    "EDAD",
+    "23 años"
+   ],
+   [
+    "ALTURA",
+    "1,79 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "55",
+     false
+    ],
+    [
+     "Pases precisos",
+     "38/45 (84%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "5/7 (71%)",
+     false
+    ],
+    [
+     "Regates",
+     "2/3 (67%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "7",
+     false
+    ],
+    [
+     "Intercepciones",
+     "2",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "2",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "2 · 0 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "1",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "12",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE MEDIOCENTRO",
+    "filas": [
+     [
+      "Pases precisos",
+      "38/45 (84%)",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "7/10 (70%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "7",
+      true
+     ],
+     [
+      "Duelos en el piso",
+      "5/7 (71%)",
+      true
+     ]
+    ]
+   }
+  }
+ }
+]
