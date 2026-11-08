@@ -1,0 +1,492 @@
+[
+ {
+  "archivo": "Amaro_UnionSt.Gilloise-Genk_2026-11-08",
+  "nombre": "KEVIN AMARO",
+  "apellido": "Amaro",
+  "dorsal": "20",
+  "local": "Union St.Gilloise",
+  "visita": "Genk",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_7978.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_amaro.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_amaro.png",
+  "meta": "FIRST DIVISION A · JORNADA 11 · 8 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "71’",
+  "nota": "6.8",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#1f3fd1",
+   "c2": "#070f3d",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "3-4-3",
+  "once": [
+   [
+    {
+     "dorsal": "28",
+     "nombre": "Brughmans",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "44",
+     "nombre": "Kongolo",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Ravych",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Smets",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Ditu",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Heynen",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Tahirović",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Amaro",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/amaro.png",
+     "estrellas": 3,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Durosinmi",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "38",
+     "nombre": "Heymans",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Bibout",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/amaro.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "41",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/6",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO VOLANTE POR DERECHA",
+  "posicion": [
+   [
+    "Pases precisos",
+    "21/26",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "81%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "3",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/0",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,06",
+    false
+   ],
+   [
+    "Centros precisos",
+    "1/5",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "3/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "3",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "BELGIAN PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (7) · 604",
+     false
+    ],
+    [
+     "Nota media",
+     "7.38",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/amaro_2026-11-08.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA DERECHA",
+   "filas": [
+    [
+     "Acciones",
+     "47/50 (94%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "20"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,77 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Volante Por Derecha"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "41",
+     false
+    ],
+    [
+     "Pases precisos",
+     "21/26 (81%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/6 (67%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "5",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "3",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,06",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,06",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "1",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "1",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "3/3 (100%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "3/5 (60%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE VOLANTE POR FUERA",
+    "filas": [
+     [
+      "Centros precisos",
+      "1/5 (20%)",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "3",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "4/6 (67%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "5",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/amaro_2026-11-08.png",
+   "lados": {
+    "izquierda": 0,
+    "centro": 6,
+    "derecha": 94
+   },
+   "campo_rival": 48,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "47/50 (94%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "22/47 (47%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

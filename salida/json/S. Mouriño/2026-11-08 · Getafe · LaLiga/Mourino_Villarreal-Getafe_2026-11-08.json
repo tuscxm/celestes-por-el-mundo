@@ -1,0 +1,499 @@
+[
+ {
+  "archivo": "Mourino_Villarreal-Getafe_2026-11-08",
+  "nombre": "SANTIAGO MOURIÑO",
+  "apellido": "Mouriño",
+  "dorsal": "15",
+  "local": "Villarreal",
+  "visita": "Getafe",
+  "goles_local": 2,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_mourino.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_satriano.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_mourino.png",
+  "meta": "LALIGA · JORNADA 12 · 8 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "64’",
+  "nota": "7.7",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#f2cf1d",
+   "c2": "#0f5d8c",
+   "acento": "#0d3b8c"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Gulácsi",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Romero",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Veiga",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Costa",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Mouriño",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/mourino.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Gueye",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Maciá",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Oluwaseyi",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Moleiro",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Buchanan",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Mikautadze",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/mourino.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "78",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/6",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "51/59",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "86%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "2/6",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "4",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas",
+    "4",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (7) · 581",
+     false
+    ],
+    [
+     "Nota media",
+     "6.96",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "4 (4) · 360",
+     false
+    ],
+    [
+     "Nota media",
+     "6.70",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/mourino_2026-11-08.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "10/85 (12%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "24 años"
+   ],
+   [
+    "ALTURA",
+    "1,86 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "78",
+     false
+    ],
+    [
+     "Pases precisos",
+     "51/59 (86%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/6 (67%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "4",
+     false
+    ],
+    [
+     "Intercepciones",
+     "2",
+     false
+    ],
+    [
+     "Entradas",
+     "4",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,19",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,19",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,75",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,03",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,22",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "2",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "2/6 (33%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "4/5 (80%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE LATERAL",
+    "filas": [
+     [
+      "Duelos ganados",
+      "4/6 (67%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "4",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "16",
+      true
+     ],
+     [
+      "Lo regatearon",
+      "0",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/mourino_2026-11-08.png",
+   "lados": {
+    "izquierda": 0,
+    "centro": 12,
+    "derecha": 88
+   },
+   "campo_rival": 48,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "75/85 (88%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "35/75 (47%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

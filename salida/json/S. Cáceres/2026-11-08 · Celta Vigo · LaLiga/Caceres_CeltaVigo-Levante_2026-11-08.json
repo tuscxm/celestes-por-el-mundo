@@ -1,0 +1,492 @@
+[
+ {
+  "archivo": "Caceres_CeltaVigo-Levante_2026-11-08",
+  "nombre": "SEBASTIÁN CÁCERES",
+  "apellido": "Cáceres",
+  "dorsal": "21",
+  "local": "Celta Vigo",
+  "visita": "Levante",
+  "goles_local": 0,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8581.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_caceres.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_caceres.png",
+  "meta": "LALIGA · JORNADA 12 · 8 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.3",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#6cace4",
+   "c2": "#0f3c6e",
+   "acento": "#e2001a"
+  },
+  "sustitucion": null,
+  "formacion": "3-4-3",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Radu",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Alonso",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Cáceres",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/caceres.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Rodríguez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "5",
+     "nombre": "Carreira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Moriba",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "28",
+     "nombre": "Antañón",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Rueda",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "24",
+     "nombre": "Driouech",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Durán",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Aspas",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/caceres.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "88",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "7/9",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "6/8",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "75/80",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "94%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "5",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "5 (5) · 408",
+     false
+    ],
+    [
+     "Nota media",
+     "7.16",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ],
+    [
+     "EUROPA LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "1 (1) · 90",
+     false
+    ],
+    [
+     "Nota media",
+     "7.03",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/caceres_2026-11-08.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "65/102 (64%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "21"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,83 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "88",
+     false
+    ],
+    [
+     "Pases precisos",
+     "75/80 (94%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "7/9 (78%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "6/8 (75%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "6",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "5",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,01",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "1",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "1/1 (100%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Duelos aéreos ganados",
+      "6/8 (75%)",
+      true
+     ],
+     [
+      "Duelos ganados",
+      "7/9 (78%)",
+      true
+     ],
+     [
+      "Despejes",
+      "5",
+      true
+     ],
+     [
+      "Intercepciones",
+      "0",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "1/3 (33%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/caceres_2026-11-08.png",
+   "lados": {
+    "izquierda": 10,
+    "centro": 64,
+    "derecha": 26
+   },
+   "campo_rival": 15,
+   "zona": {
+    "titulo": "SU ZONA: POR EL CENTRO",
+    "filas": [
+     [
+      "Acciones",
+      "65/102 (64%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "11/65 (17%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

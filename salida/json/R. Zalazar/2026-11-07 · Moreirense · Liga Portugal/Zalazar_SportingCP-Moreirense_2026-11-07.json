@@ -1,0 +1,519 @@
+[
+ {
+  "archivo": "Zalazar_SportingCP-Moreirense_2026-11-07",
+  "nombre": "RODRIGO ZALAZAR",
+  "apellido": "Zalazar",
+  "dorsal": "17",
+  "local": "Sporting CP",
+  "visita": "Moreirense",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_zalazar.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8348.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_zalazar.png",
+  "meta": "LIGA PORTUGAL · JORNADA 11 · 7 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "28’",
+  "nota": "6.7",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": {
+   "minuto": "62’",
+   "por": "Irankunda",
+   "apellido": "Zalazar",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/zalazar.png",
+   "rol": "delantero"
+  },
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "30",
+     "nombre": "Pereira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Araújo",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Inácio",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "72",
+     "nombre": "Quaresma",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Fresneda",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "77",
+     "nombre": "Doumbia",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Altimira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Andersen",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Irankunda",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    },
+    {
+     "dorsal": "97",
+     "nombre": "Suárez",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "31",
+     "nombre": "Guilherme",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/zalazar.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "30",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "20/22",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "91%",
+    false
+   ],
+   [
+    "Remates al arco",
+    "0/1",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 1",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,02",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Pases largos precisos",
+    "3/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "3",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA PORTUGAL",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (6) · 562",
+     false
+    ],
+    [
+     "Nota media",
+     "7.16",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (1) · 86",
+     false
+    ],
+    [
+     "Nota media",
+     "7.20",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/zalazar_2026-11-07.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "7/32 (22%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "17"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,74 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "30",
+     false
+    ],
+    [
+     "Pases precisos",
+     "20/22 (91%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/5 (80%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "3",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,02",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,02",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,02",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "0 · 0 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "3/3 (100%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "4/5 (80%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Remates al arco",
+      "0/1 (0%)",
+      false
+     ],
+     [
+      "Goles · xG",
+      "0 · 0,02",
+      false
+     ],
+     [
+      "Toques en el área rival",
+      "0",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "4/5 (80%)",
+      true
+     ]
+    ]
+   },
+   "heat_img": "mapas/zalazar_2026-11-07.png",
+   "lados": {
+    "izquierda": 59,
+    "centro": 22,
+    "derecha": 19
+   },
+   "campo_rival": 47,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "19/32 (59%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "10/19 (53%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

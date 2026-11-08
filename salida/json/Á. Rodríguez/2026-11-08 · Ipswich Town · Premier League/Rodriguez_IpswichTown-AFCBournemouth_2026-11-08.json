@@ -1,0 +1,531 @@
+[
+ {
+  "archivo": "Rodriguez_IpswichTown-AFCBournemouth_2026-11-08",
+  "nombre": "ÁLVARO RODRÍGUEZ",
+  "apellido": "Rodríguez",
+  "dorsal": "30",
+  "local": "Ipswich Town",
+  "visita": "AFC Bournemouth",
+  "goles_local": 1,
+  "goles_visita": 2,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_9902.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_alvaro_rodriguez.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_alvaro_rodriguez.png",
+  "meta": "PREMIER LEAGUE · JORNADA 10 · 8 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "5’",
+  "nota": null,
+  "estrellas": 0,
+  "tema": {
+   "c1": "#c8102e",
+   "c2": "#1a0a0c",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": {
+   "minuto": "85’",
+   "por": "Evanilson",
+   "apellido": "Rodríguez",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/alvaro_rodriguez.png",
+   "rol": "delantero"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Petrović",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Truffert",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Silva",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Hill",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Smith",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Christie",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Adams",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Tavernier",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Kluivert",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "37",
+     "nombre": "Rayan",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Evanilson",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/alvaro_rodriguez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "10",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/4",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "4/4",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "100%",
+    false
+   ],
+   [
+    "Remates al arco",
+    "1/1",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,30",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "1",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,01",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "0",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "6 (0) · 58",
+     false
+    ],
+    [
+     "Nota media",
+     "6.27",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "EUROPA LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "4 (2) · 224",
+     false
+    ],
+    [
+     "Nota media",
+     "6.64",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/alvaro_rodriguez_2026-11-08.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "8/14 (57%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "1/1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "30"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,93 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "10",
+     false
+    ],
+    [
+     "Pases precisos",
+     "4/4 (100%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "1/4 (25%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/4 (25%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,30",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,30",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,30",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,31",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Remates al arco",
+      "1/1 (100%)",
+      true
+     ],
+     [
+      "Goles · xG",
+      "0 · 0,30",
+      false
+     ],
+     [
+      "Toques en el área rival",
+      "1",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "1/4 (25%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/alvaro_rodriguez_2026-11-08.png",
+   "lados": {
+    "izquierda": 14,
+    "centro": 57,
+    "derecha": 29
+   },
+   "campo_rival": 79,
+   "zona": {
+    "titulo": "SU ZONA: POR EL CENTRO",
+    "filas": [
+     [
+      "Acciones",
+      "8/14 (57%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "6/8 (75%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "1 · 1",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
