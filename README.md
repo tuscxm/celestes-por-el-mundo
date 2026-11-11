@@ -7,25 +7,25 @@ Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-11-09 18:35-03:00 (hora de Uruguay) · fechas 2026-11-08, 2026-11-09
+**Última revisión:** 2026-11-11 18:35-03:00 (hora de Uruguay) · fechas 2026-11-10, 2026-11-11
 
 - Valverde: sin partido hoy ni ayer
 - Bernal: sin partido hoy ni ayer
-- Mouriño: ya procesado · Villarreal 2-0 Getafe
+- Mouriño: sin partido hoy ni ayer
 - M. Araújo: sin partido hoy ni ayer
-- Á. Rodríguez: ya procesado · Ipswich Town 1-2 AFC Bournemouth
+- Á. Rodríguez: sin partido hoy ni ayer
 - González: sin partido hoy ni ayer
-- Cáceres: ya procesado · Celta Vigo 0-0 Levante
+- Cáceres: sin partido hoy ni ayer
 - Petit: sin partido hoy ni ayer
 - Bentancur: sin partido hoy ni ayer
-- Satriano: ya procesado · Villarreal 2-0 Getafe
-- Boselli: ya procesado · Villarreal 2-0 Getafe
+- Satriano: sin partido hoy ni ayer
+- Boselli: sin partido hoy ni ayer
 - J. Rodríguez: sin partido hoy ni ayer
 - Zalazar: sin partido hoy ni ayer
 - Merentiel: sin partido hoy ni ayer
 - Giménez: sin partido hoy ni ayer
-- Amaro: ya procesado · Union St.Gilloise 1-0 Genk
-- R. Araújo: ya procesado · Crystal Palace 1-3 Liverpool
+- Amaro: sin partido hoy ni ayer
+- R. Araújo: sin partido hoy ni ayer
 - J. M. Sanabria: sin partido hoy ni ayer
 - Ugarte: sin partido hoy ni ayer
 - Canobbio: sin partido hoy ni ayer
@@ -33,9 +33,9 @@ Cerrá el aviso cuando la publiques o la descartes.
 - F. Díaz: sin partido hoy ni ayer
 - Torreira: sin partido hoy ni ayer
 - Brizuela: sin partido hoy ni ayer
-- **Piquerez** jugó 80' (titular, nota 7.9, de volante por izquierda) en Vasco da Gama 2-1 Palmeiras (4-5 en penales) · Copa do Brasil
-- Matturro: no jugó en Shakhtar Donetsk 0-0 Dynamo Kyiv (no entró)
-- Olivera: ya procesado · Napoli 1-1 Lazio
+- Piquerez: sin partido hoy ni ayer
+- Matturro: sin partido hoy ni ayer
+- Olivera: sin partido hoy ni ayer
 
 ## Últimas infografías (99 en total, en [`salida/png/`](salida/png); datos en [`salida/json/`](salida/json) y textos del posteo en [`salida/txt/`](salida/txt), cada uno por jugador y por partido)
 
