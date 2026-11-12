@@ -1,0 +1,105 @@
+name: Publicar en X
+
+# Cuando la tarea de Claude sube infografías nuevas ("Revisión ..."), las publica en X: la imagen con el texto del posteo,
+# en un hilo corto si no entra en un posteo (automatizacion/publicar_x.py).
+# Necesita los secretos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN y X_ACCESS_SECRET; sin ellos no publica nada.
+# Pausar: variable del repositorio X_PUBLICAR = no. Lo que la revisión visual anotó en "## No publicar en X" del aviso no se publica.
+# A mano (Actions → Publicar en X → Run workflow): probar sin publicar, o publicar una infografía puntual.
+# Lo publicado queda en automatizacion/publicados_x.json (en main) y no se repite.
+on:
+  push:
+    branches: [main, "claude/**"]
+    paths: ["salida/png/**"]
+  workflow_dispatch:
+    inputs:
+      png:
+        description: "Infografía (ruta salida/png/.../archivo.png). Vacío = la más nueva"
+        required: false
+        default: ""
+      probar:
+        description: "Solo probar: arma los textos y revisa las claves, sin publicar"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+
+# la misma fila que pasar_a_main.yml: así no suben a main a la vez
+concurrency:
+  group: pasar-a-main
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: vars.X_PUBLICAR != 'no' && (github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'Revisión '))
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # por el commit y no por la rama: pasar_a_main.yml puede haber borrado la rama claude/... antes de que esto corra
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - name: Instalar
+        run: pip install --quiet requests-oauthlib pillow
+      - name: Ver qué infografías son nuevas
+        if: github.event_name == 'push'
+        env:
+          ANTES: ${{ github.event.before }}
+        run: |
+          # la tarea sube todo en un solo commit; si la rama es nueva no hay "antes": se compara con el commit anterior
+          if git cat-file -e "$ANTES^{commit}" 2>/dev/null; then BASE="$ANTES"; else BASE="$GITHUB_SHA^"; fi
+          git -c core.quotepath=false diff --name-only --diff-filter=A "$BASE" "$GITHUB_SHA" -- salida/png > "$RUNNER_TEMP/nuevas.txt"
+          git -c core.quotepath=false diff --name-only --diff-filter=A "$BASE" "$GITHUB_SHA" -- avisos > "$RUNNER_TEMP/avisos.txt"
+          cat "$RUNNER_TEMP/nuevas.txt"
+      - name: Publicar
+        id: publicar
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          X_PREMIUM: ${{ vars.X_PREMIUM }}
+          PNG: ${{ inputs.png }}
+          PROBAR: ${{ inputs.probar }}
+        run: |
+          # el registro de lo publicado vive en main
+          git show origin/main:automatizacion/publicados_x.json > "$RUNNER_TEMP/publicados_x.json" 2>/dev/null || echo '{}' > "$RUNNER_TEMP/publicados_x.json"
+          ARGS=(--registro "$RUNNER_TEMP/publicados_x.json")
+          if [ "$GITHUB_EVENT_NAME" = workflow_dispatch ]; then
+            if [ "$PROBAR" = true ]; then ARGS+=(--probar); fi
+            if [ -n "$PNG" ]; then ARGS+=("$PNG"); else ARGS+=(--ultima); fi
+          else
+            ARGS+=(--lista "$RUNNER_TEMP/nuevas.txt" --lista-avisos "$RUNNER_TEMP/avisos.txt")
+          fi
+          python3 automatizacion/publicar_x.py "${ARGS[@]}" 2>&1 | tee "$RUNNER_TEMP/log.txt"
+      - name: Guardar en main lo publicado
+        if: always() && steps.publicar.outcome != 'skipped'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -f -B main origin/main
+          cp "$RUNNER_TEMP/publicados_x.json" automatizacion/publicados_x.json
+          git add automatizacion/publicados_x.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Publicado en X"
+          for i in 1 2 3; do
+            if git push -q origin main; then exit 0; fi
+            sleep 5
+            git pull -q --rebase origin main
+          done
+          exit 1
+      - name: Avisar si no se pudo publicar
+        if: failure() && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            printf '@%s\n\nNo se pudo publicar en X (lo que sí salió quedó en `automatizacion/publicados_x.json`).\n\n' "${{ github.repository_owner }}"
+            printf '```\n%s\n```\n\n' "$(grep -E '^(ERROR|::)' "$RUNNER_TEMP/log.txt" 2>/dev/null | head -20)"
+            printf 'Detalle: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID"
+          } > cuerpo.md
+          gh issue create --title "⚠️ No se pudo publicar en X" --body-file cuerpo.md

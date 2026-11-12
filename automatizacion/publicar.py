@@ -207,7 +207,8 @@ def aviso(resumen, salida_hoy):
         md.append(f"[Abrir la imagen en tamaño completo](https://github.com/{REPO}/blob/{RAMA}/{_url(png)})" if REPO else "")
         if copy:
             md.append("\nTexto para el posteo:\n```\n" + copy + "\n```")
-    md.append("\n---\nNo se publicó nada en Instagram. Cerrá este aviso cuando la publiques o la descartes.")
+    md.append("\n---\nEn X se publican solas en unos minutos (menos las que la revisión ponga en *No publicar en X*); "
+              "en Instagram no se publicó nada. Cerrá este aviso cuando la publiques o la descartes.")
     if CORRIDA:
         md.append(f"Detalle de la corrida: {CORRIDA}")
     os.makedirs(os.path.join(RAIZ, "avisos"), exist_ok=True)
@@ -256,7 +257,7 @@ def readme(ultima):
     return f"""# Celestes por el mundo · infografías
 
 Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa si **{', '.join(ultima['jugadores']) if ultima else 'los jugadores'}** jugaron hoy o ayer
-y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **No publica nada**: la publicación la hacés vos.
+y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **Las publica solas en X** (si están las claves de X en el repositorio); en Instagram la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
@@ -276,6 +277,7 @@ Cerrá el aviso cuando la publiques o la descartes.
 - **Sumar o sacar jugadores:** editá [`automatizacion/jugadores.json`](automatizacion/jugadores.json) (cómo, en [`automatizacion/AGENTE.md`](automatizacion/AGENTE.md)).
 - **Qué ya se procesó:** [`automatizacion/procesados.json`](automatizacion/procesados.json). Si borrás una línea, ese partido se vuelve a armar.
 - Los mapas de calor quedan en [`mapas/`](mapas) y las figuras en [`salida/fotos/`](salida/fotos).
+- **X:** lo publicado queda en [`automatizacion/publicados_x.json`](automatizacion/publicados_x.json) con el enlace. Para publicar una a mano o probar: Actions → *Publicar en X* → *Run workflow*. Para pausar: variable del repositorio `X_PUBLICAR` = `no`.
 
 Datos: SofaScore. Las figuras son ilustraciones, no fotos de los jugadores.
 """

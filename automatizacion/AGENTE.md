@@ -107,9 +107,27 @@ Si el partido se definió por penales, el resultado es el del partido (90' o ala
    - `salida/png/<jugador>/<fecha> · <rival> · <competencia>/` la imagen, `salida/json/...` los datos y `salida/txt/...` el texto del posteo (`_copy.txt`). La carpeta del jugador lleva las iniciales del nombre y el apellido (`S. Mouriño`, `J. M. Rodríguez`, `Á. Rodríguez`) para que no se mezclen apellidos repetidos. Ej.: `salida/png/S. Mouriño/2026-10-20 · Liverpool FC · Champions League/Mourino_LiverpoolFC-Villarreal_2026-10-20.png`.
    - Los mapas de calor siguen en `mapas/` y las figuras en `salida/fotos/`. Además actualiza `procesados.json`, `ultima_revision.json` y la galería del README, y si hubo infografías nuevas o errores escribe `avisos/<fecha_hora>.md` (primera línea = título, que empieza por quién jugó).
 3. Claude mira cada PNG (textos cortados o encimados, jugador resaltado, números razonables). Si ve un problema, lo agrega al aviso.
+   Si el problema hace que no se pueda publicar así, además pone la infografía en `## No publicar en X` (ver *Publicación en X*).
 4. Claude hace commit y push. Al llegar un archivo nuevo a `avisos/`, el workflow `aviso.yml` abre un issue y GitHub manda el mail.
 5. `control.yml` revisa a las 23:30 que la revisión del día haya llegado; si no, abre un issue.
-6. **No publica nada.** La publicación en Instagram se hace solo con la aprobación del usuario.
+6. GitHub publica en X las infografías nuevas (`publicar_x.yml`, ver *Publicación en X*). Claude no publica nada en ninguna red,
+   y en Instagram la publicación la hace el usuario.
+
+## Publicación en X (desde el 12/11/2026, `publicar_x.py` + `.github/workflows/publicar_x.yml`)
+- Cuando llega a GitHub un commit `Revisión ...` con PNG nuevos en `salida/png/`, el workflow publica cada uno en X: la imagen
+  (con texto alternativo) y el texto del `_copy.txt`. Si no entra en 280 caracteres va en un hilo corto: 1.º partido, minutos, nota,
+  "Jugó de…" y los hashtags (con la imagen); 2.º el 3-5-2 con la pregunta de cierre (o la pregunta sola); si no entra, un 3.º.
+  Con la variable `X_PREMIUM = si` (cuenta con Premium) va todo en un solo posteo. Nunca se agregan enlaces (en X cuestan más).
+- **No publicar en X:** si la revisión visual encuentra algo que hay que corregir antes de publicar (dato o texto equivocado,
+  escudos invertidos, puesto o PERFIL que no corresponde, números que no cierran, algo cortado o encimado, una cara mal recortada),
+  agrega al aviso nuevo una sección `## No publicar en X` con una línea por infografía: `- <archivo sin .png>: <motivo>`
+  (ej. `- Caceres_CeltaVigo-Levante_2026-11-08: escudos invertidos`). Esas no se publican; las demás sí. Detalles menores no van ahí.
+- Para publicarla después de corregirla: GitHub → Actions → *Publicar en X* → *Run workflow*, con la ruta del PNG y *probar* destildado.
+  Con *probar* tildado no publica: muestra los textos y revisa las claves.
+- Lo publicado queda en `automatizacion/publicados_x.json` (en main, con el enlace) y no se repite. Si algo falla, se abre un issue.
+- Claves: secretos del repositorio `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET` (OAuth 1.0a de la cuenta que
+  publica, app con permiso *Read and write*). Sin ellos no publica. Pausar: variable del repositorio `X_PUBLICAR = no`.
+- La API de X cobra por uso (crédito cargado en la consola de desarrollador de X): cada posteo, la subida de la imagen y el texto alternativo.
 
 ## Respaldo con BeSoccer (cuando SofaScore y FotMob no responden)
 Si en `salida_hoy/resumen.json` un jugador sigue con `"estado": "error"` (el respaldo automático tampoco pudo):
