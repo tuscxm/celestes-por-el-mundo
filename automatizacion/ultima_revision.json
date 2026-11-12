@@ -1,8 +1,8 @@
 {
- "revisado": "2026-11-11T18:35-03:00",
+ "revisado": "2026-11-12T18:28-03:00",
  "fechas": [
-  "2026-11-10",
-  "2026-11-11"
+  "2026-11-11",
+  "2026-11-12"
  ],
  "lineas": [
   "Valverde: sin partido hoy ni ayer",
@@ -31,7 +31,24 @@
   "Brizuela: sin partido hoy ni ayer",
   "Piquerez: sin partido hoy ni ayer",
   "Matturro: sin partido hoy ni ayer",
-  "Olivera: sin partido hoy ni ayer"
+  "Olivera: sin partido hoy ni ayer",
+  "Varela: sin partido hoy ni ayer",
+  "Nández: sin partido hoy ni ayer",
+  "Bueno: sin partido hoy ni ayer",
+  "Pereira: sin partido hoy ni ayer",
+  "Marichal: sin partido hoy ni ayer",
+  "Barboza: sin partido hoy ni ayer",
+  "Olaza: sin partido hoy ni ayer",
+  "Fonseca: sin partido hoy ni ayer",
+  "E. Martínez: sin partido hoy ni ayer",
+  "De la Cruz: ERROR al revisar (no se pudo consultar SofaScore) → `<HTTPError 403: 'Forbidden'>`",
+  "Arrascaeta: sin partido hoy ni ayer",
+  "Pellistri: sin partido hoy ni ayer",
+  "Rossi: sin partido hoy ni ayer",
+  "B. Rodríguez: sin partido hoy ni ayer",
+  "Damiani: sin partido hoy ni ayer",
+  "Aguirre: sin partido hoy ni ayer",
+  "Viñas: sin partido hoy ni ayer"
  ],
  "jugadores": [
   "Valverde",
@@ -60,6 +77,23 @@
   "Brizuela",
   "Piquerez",
   "Matturro",
-  "Olivera"
+  "Olivera",
+  "Varela",
+  "Nández",
+  "Bueno",
+  "Pereira",
+  "Marichal",
+  "Barboza",
+  "Olaza",
+  "Fonseca",
+  "E. Martínez",
+  "De la Cruz",
+  "Arrascaeta",
+  "Pellistri",
+  "Rossi",
+  "B. Rodríguez",
+  "Damiani",
+  "Aguirre",
+  "Viñas"
  ]
 }

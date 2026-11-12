@@ -1,13 +1,13 @@
 # Celestes por el mundo · infografías
 
-Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa si **Valverde, Bernal, Mouriño, M. Araújo, Á. Rodríguez, González, Cáceres, Petit, Bentancur, Satriano, Boselli, J. Rodríguez, Zalazar, Merentiel, Giménez, Amaro, R. Araújo, J. M. Sanabria, Ugarte, Canobbio, Darwin, F. Díaz, Torreira, Brizuela, Piquerez, Matturro, Olivera** jugaron hoy o ayer
+Todos los días a las 18:30 (hora de Uruguay) una tarea programada de Claude revisa si **Valverde, Bernal, Mouriño, M. Araújo, Á. Rodríguez, González, Cáceres, Petit, Bentancur, Satriano, Boselli, J. Rodríguez, Zalazar, Merentiel, Giménez, Amaro, R. Araújo, J. M. Sanabria, Ugarte, Canobbio, Darwin, F. Díaz, Torreira, Brizuela, Piquerez, Matturro, Olivera, Varela, Nández, Bueno, Pereira, Marichal, Barboza, Olaza, Fonseca, E. Martínez, De la Cruz, Arrascaeta, Pellistri, Rossi, B. Rodríguez, Damiani, Aguirre, Viñas** jugaron hoy o ayer
 y arma una infografía por cada partido, la revisa y la guarda acá. Corre en la nube: no depende de ninguna computadora prendida. **Las publica solas en X** (si están las claves de X en el repositorio); en Instagram la publicación la hacés vos.
 
 Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../issues) y GitHub te manda un mail.
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-11-11 18:35-03:00 (hora de Uruguay) · fechas 2026-11-10, 2026-11-11
+**Última revisión:** 2026-11-12 18:28-03:00 (hora de Uruguay) · fechas 2026-11-11, 2026-11-12
 
 - Valverde: sin partido hoy ni ayer
 - Bernal: sin partido hoy ni ayer
@@ -36,6 +36,23 @@ Cerrá el aviso cuando la publiques o la descartes.
 - Piquerez: sin partido hoy ni ayer
 - Matturro: sin partido hoy ni ayer
 - Olivera: sin partido hoy ni ayer
+- Varela: sin partido hoy ni ayer
+- Nández: sin partido hoy ni ayer
+- Bueno: sin partido hoy ni ayer
+- Pereira: sin partido hoy ni ayer
+- Marichal: sin partido hoy ni ayer
+- Barboza: sin partido hoy ni ayer
+- Olaza: sin partido hoy ni ayer
+- Fonseca: sin partido hoy ni ayer
+- E. Martínez: sin partido hoy ni ayer
+- De la Cruz: ERROR al revisar (no se pudo consultar SofaScore) → `<HTTPError 403: 'Forbidden'>`
+- Arrascaeta: sin partido hoy ni ayer
+- Pellistri: sin partido hoy ni ayer
+- Rossi: sin partido hoy ni ayer
+- B. Rodríguez: sin partido hoy ni ayer
+- Damiani: sin partido hoy ni ayer
+- Aguirre: sin partido hoy ni ayer
+- Viñas: sin partido hoy ni ayer
 
 ## Últimas infografías (99 en total, en [`salida/png/`](salida/png); datos en [`salida/json/`](salida/json) y textos del posteo en [`salida/txt/`](salida/txt), cada uno por jugador y por partido)
 
