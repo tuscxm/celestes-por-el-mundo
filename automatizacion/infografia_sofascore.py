@@ -654,7 +654,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     if s.get("totalPass"): linea.append(f"{n(s,'accuratePass')}/{n(s,'totalPass')} pases")
     if n(s, "duelWon"): linea.append(f"{n(s,'duelWon')} duelo" + ("s" if n(s, "duelWon") > 1 else "") + " ganado" + ("s" if n(s, "duelWon") > 1 else ""))
     if n(s, "ballRecovery"): linea.append(f"{n(s,'ballRecovery')} recuperaci" + ("ones" if n(s, "ballRecovery") > 1 else "ón"))
-    club_tag = "".join(ch for ch in (equipo["name"] if not equipo.get("national") else "Uruguay") if ch.isalnum())
+    tags = "#CelestesPorElMundo #Uruguay" + ("" if equipo.get("national") else " #" + "".join(ch for ch in equipo["name"] if ch.isalnum()))
     pen = f" ({fuentes.texto_tanda(tanda, largo=True)})" if tanda else ""
     copy = (f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}{pen}\n"
             f"⏱ {minutos}' · ⭐ {rating:.1f}\n" if rating else f"🇺🇾 {j['placa']} · {home} {hs}-{as_} {away}{pen}\n⏱ {minutos}'\n")
@@ -663,9 +663,9 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
     if sustitucion:
         copy += f"🔁 Entró al {sustitucion['minuto'].replace('’', chr(39))} por {sustitucion['por']}, como {pos_titulo.replace('COMO ', '').lower()}\n"
     if texto_352:  # qué hizo y cómo encajaría en una Uruguay 3-5-2 con enganche (abajo_puesto.py)
-        copy += "\n" + "\n".join(texto_352) + "\n" + f"#CelestesPorElMundo #Uruguay #{club_tag} #352\n"
+        copy += "\n" + "\n".join(texto_352) + "\n" + f"{tags} #352\n"
     else:
-        copy += (" · ".join(linea) + "\n" if linea else "") + f"#CelestesPorElMundo #Uruguay #{club_tag}\n"
+        copy += (" · ".join(linea) + "\n" if linea else "") + f"{tags}\n"
     open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
     return {"estado": "jugó", "titular": titular, "minutos": minutos, "nota": rating, "rol": pos_titulo, "notas_por_fuente": notas,
             "archivo": archivo, "png": archivo + ".png", "mapa": mapa, "figura": fig, "avisos": avisos,
@@ -711,6 +711,8 @@ def main():
             extra = fuentes.consultar(j, fechas)
         for e in evs:
             if e["id"] in vistos or fecha_local(e) not in fechas: continue
+            # los amistosos de club no van; los de la selección sí (todos sus partidos)
+            if "club friendl" in ((e["tournament"].get("uniqueTournament") or e["tournament"]).get("name") or "").lower(): continue
             vistos.add(e["id"])
             pen = (f" ({e['homeScore']['penalties']}-{e['awayScore']['penalties']} en penales)"
                    if e.get("homeScore", {}).get("penalties") is not None and e.get("awayScore", {}).get("penalties") is not None else "")

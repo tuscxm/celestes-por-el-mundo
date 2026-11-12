@@ -42,11 +42,15 @@ def _limpio(t):
 
 
 def carpeta_jugador(nombre):
-    """"SANTIAGO MOURIÑO" -> "S. Mouriño"; "JUAN MANUEL RODRÍGUEZ" -> "J. M. Rodríguez"."""
+    """"SANTIAGO MOURIÑO" -> "S. Mouriño"; "JUAN MANUEL RODRÍGUEZ" -> "J. M. Rodríguez"; "NICOLÁS DE LA CRUZ" -> "N. De la Cruz"."""
     partes = nombre.split()
     if len(partes) < 2:
         return _limpio(nombre.title())
-    return _limpio(" ".join(p[0].upper() + "." for p in partes[:-1]) + " " + partes[-1].title())
+    i = len(partes) - 1
+    while i > 1 and partes[i - 1].upper() in ("DE", "DEL", "LA", "LAS", "LOS"):
+        i -= 1
+    ap = " ".join(w.title() if k == 0 or w.upper() not in ("DE", "DEL", "LA", "LAS", "LOS") else w.lower() for k, w in enumerate(partes[i:]))
+    return _limpio(" ".join(p[0].upper() + "." for p in partes[:i]) + " " + ap)
 
 
 def _competicion(meta):

@@ -46,7 +46,7 @@ def main():
         seleccion = bool(pa.get("seleccion"))
         cams = j.get("camiseta", {})
         cam = (cams.get("7") if seleccion else next((v for k, v in cams.items() if k != "7"), None)) or next(iter(cams.values()))
-        apellido = b.get("apellido") or j["placa"].split()[-1].title()
+        apellido = b.get("apellido") or fuentes.apellido(j["placa"])
         cara = os.path.join(AQUI, "caras", f"{j['clave']}.png")
         cara = cara if os.path.exists(cara) else None
         if not seleccion:
@@ -97,7 +97,7 @@ def main():
         pos = ROLES.get((b.get("posicion") or "").lower(), "SU JUEGO")
         perfil = [["DORSAL", b.get("dorsal") or "—"], ["EDAD", f"{edad} años" if edad else "—"], ["ALTURA", j.get("altura", "—")],
                   ["PIE", j.get("pie", "—")], ["POSICIÓN", pos.replace("COMO ", "").title()]]
-        archivo = sin_tildes(f"{apellido}_{pa.get('local','').replace(' ', '')}-{pa.get('visita','').replace(' ', '')}_{fecha}")
+        archivo = sin_tildes(f"{apellido.replace(' ', '')}_{pa.get('local','').replace(' ', '')}-{pa.get('visita','').replace(' ', '')}_{fecha}")
         d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido, "dorsal": b.get("dorsal"),
              "local": pa.get("local", ""), "visita": pa.get("visita", ""), "goles_local": pa.get("goles_local", ""), "goles_visita": pa.get("goles_visita", ""),
              "escudo_local": esc if local_es_mio else esc_rival, "escudo_visita": esc_rival if local_es_mio else esc, "escudo_club": esc,
@@ -127,7 +127,7 @@ def main():
             copy += "\n" + "\n".join(b["texto_352"]) + "\n"
         elif b.get("linea_posteo"):
             copy += b["linea_posteo"] + "\n"
-        copy += f"#CelestesPorElMundo #Uruguay #{club_tag}" + (" #352" if b.get("texto_352") else "") + "\n"
+        copy += "#CelestesPorElMundo #Uruguay" + ("" if seleccion else f" #{club_tag}") + (" #352" if b.get("texto_352") else "") + "\n"
         open(os.path.join(salida, archivo + "_copy.txt"), "w").write(copy)
         info.update({"titular": bool(b.get("titular")), "minutos": b.get("minutos"), "nota": float(nota) if nota else None,
                      "rol": pos, "entro": ({"minuto": sustitucion["minuto"], "por": sustitucion["por"]} if sustitucion else None), "archivo": archivo, "png": archivo + ".png", "mapa": None, "figura": None})

@@ -28,6 +28,18 @@ LIMITE_FOOTBALL_DATA_MIN = 10      # pedidos por minuto
 
 
 # ----------------------------------------------------------------- utilidades
+PARTICULAS = {"DE", "DEL", "LA", "LAS", "LOS"}
+
+
+def apellido(placa):
+    """"SANTIAGO MOURIÑO" -> "Mouriño"; "NICOLÁS DE LA CRUZ" -> "De la Cruz" (el apellido con sus partículas)."""
+    p = placa.split()
+    i = len(p) - 1
+    while i > 1 and p[i - 1].upper() in PARTICULAS:
+        i -= 1
+    return " ".join(w.title() if k == 0 or w.upper() not in PARTICULAS else w.lower() for k, w in enumerate(p[i:]))
+
+
 def norm(t):
     t = unicodedata.normalize("NFKD", str(t or "")).encode("ascii", "ignore").decode().lower()
     return re.sub(r"[^a-z0-9 ]", " ", t).strip()
@@ -148,6 +160,8 @@ def fotmob(j, fechas):
         if not utc: continue
         f = datetime.datetime.fromisoformat(utc.replace("Z", "+00:00")).astimezone(_TZ()).date()
         if f not in fechas: continue
+        # los amistosos de club no van; los de la selección sí (todos sus partidos)
+        if m.get("leagueId") == 489 or "club friendl" in norm(m.get("leagueName") or ""): continue
         r = {"fuente": "fotmob", "fecha": str(f), "partido_id": m.get("id"),
              "local": m["teamName"] if m.get("isHomeTeam") else m.get("opponentTeamName"),
              "visita": m.get("opponentTeamName") if m.get("isHomeTeam") else m["teamName"],

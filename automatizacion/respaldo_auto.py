@@ -12,6 +12,10 @@ sys.path.insert(0, AQUI)
 import fuentes
 
 # positionId de FotMob -> puesto (solo los que están claros; si no, queda "SU JUEGO")
+# torneos de selecciones (nombres de FotMob) en español
+TORNEOS = {"Friendlies": "Amistoso internacional", "World Cup": "Mundial", "Copa America": "Copa América",
+           "World Cup Qualification CONMEBOL": "Eliminatorias", "World Cup Qualification": "Eliminatorias"}
+
 def puesto(pid):
     if pid is None: return ""
     if pid == 11: return "arquero"
@@ -122,11 +126,11 @@ def armar(j, fechas, salida, proc_path, forzar=False):
         dp = fuentes.del_partido(extra, d["fecha"], d["visita"] if fuentes.mismo_equipo(d["local"], _club(j)) else d["local"])
         af = dp.get("api_football") or {}
         bs = dp.get("besoccer") or {}
-        b = {"clave": j["clave"], "fecha": d["fecha"], "fuente_respaldo": "FotMob", "apellido": j["placa"].split()[-1].title(),
+        b = {"clave": j["clave"], "fecha": d["fecha"], "fuente_respaldo": "FotMob", "apellido": fuentes.apellido(j["placa"]),
              "equipo": _club(j), "avisos": [f"SofaScore no respondió; fuentes: " + ", ".join(f"{k} {v}" for k, v in extra["estado"].items())]}
         seleccion = "uruguay" in (fuentes.norm(d["local"]) + " " + fuentes.norm(d["visita"]))
         b["partido"] = {"local": d["local"], "visita": d["visita"], "goles_local": d.get("goles_local"), "goles_visita": d.get("goles_visita"),
-                        "torneo": d.get("torneo") or "", "ronda": ronda(d.get("ronda")), "tanda": d.get("tanda"),
+                        "torneo": TORNEOS.get(d.get("torneo"), d.get("torneo") or ""), "ronda": ronda(d.get("ronda")), "tanda": d.get("tanda"),
                         "seleccion": seleccion,
                         "local_es_su_equipo": fuentes.mismo_equipo(d["local"], "Uruguay" if seleccion else _club(j))}
         if d.get("terminado") is False:
@@ -140,14 +144,16 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             b["nota"] = fuentes.promedio(notas)
             if len([x for x in notas if x]) > 1:
                 b["avisos"].append(f"Nota = promedio de fotmob {d.get('nota')} · api_football {af.get('nota')} · besoccer {bs.get('nota')} → {b['nota']}")
+            er = None
             if not seleccion:
                 rival = d["visita"] if fuentes.mismo_equipo(d["local"], _club(j)) else d["local"]
                 # si el rival es el club de otro de los jugadores seguidos, su escudo ya está guardado
                 er = next((os.path.join(AQUI, "escudos", f"club_{o['clave']}.png") for o in json.load(open(os.path.join(AQUI, "jugadores.json")))
                            if o["clave"] != j["clave"] and _club(o) and fuentes.mismo_equipo(rival, _club(o))
                            and os.path.exists(os.path.join(AQUI, "escudos", f"club_{o['clave']}.png"))), None)
-                er = er or (escudo_fotmob(d["rival_id"]) if d.get("rival_id") else None)
-                if er: b["escudo_rival"] = er
+            # el de otra selección, o el de un club que no es de los seguidos, sale de FotMob
+            er = er or (escudo_fotmob(d["rival_id"]) if d.get("rival_id") else None)
+            if er: b["escudo_rival"] = er
             fid = str(j.get("fotmob_id"))
             dj = donde_jugo(d, fid)
             b.update({"titular": bool(d.get("titular")), "minutos": d["minutos"], "dorsal": d.get("dorsal"),

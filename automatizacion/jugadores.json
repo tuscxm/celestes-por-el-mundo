@@ -1228,5 +1228,740 @@
   "zona": "centro",
   "understat_equipo": "Napoli",
   "rol_352": "zaguero"
+ },
+ {
+  "clave": "varela",
+  "placa": "GUILLERMO VARELA",
+  "equipos": {
+   "5981": "Flamengo",
+   "7": "Uruguay"
+  },
+  "posicion": "lateral",
+  "altura": "1,73 m",
+  "pie": "Derecho",
+  "nacimiento": "1993-03-24",
+  "camiseta": {
+   "5981": {
+    "tipo": "aros",
+    "c1": "#c80010",
+    "c2": "#111111",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#c80010",
+     "#1a0507",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 311456,
+  "club": "Flamengo",
+  "fotmob_id": 465614,
+  "zona": "derecha",
+  "rol_352": "carrilero"
+ },
+ {
+  "clave": "nandez",
+  "placa": "NAHITAN NÁNDEZ",
+  "equipos": {
+   "56027": "Al-Qadsiah",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,72 m",
+  "pie": "Derecho",
+  "nacimiento": "1995-12-28",
+  "camiseta": {
+   "56027": {
+    "tipo": "liso",
+    "c1": "#a01010",
+    "c2": "#a01010",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#a01010",
+     "#2a0505",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 589620,
+  "club": "Al-Qadsiah",
+  "fotmob_id": 643573,
+  "zona": "centro",
+  "rol_352": "interno"
+ },
+ {
+  "clave": "bueno",
+  "placa": "SANTIAGO BUENO",
+  "equipos": {
+   "1939": "Club América",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,90 m",
+  "pie": "Derecho",
+  "nacimiento": "1998-11-09",
+  "camiseta": {
+   "1939": {
+    "tipo": "liso",
+    "c1": "#f4c300",
+    "c2": "#f4c300",
+    "texto": "#0b1f3a",
+    "short": "#0b1f3a",
+    "fondo": [
+     "#e3b100",
+     "#3a2c00",
+     "#0b1f3a"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 846308,
+  "club": "Club América",
+  "fotmob_id": 848034,
+  "zona": "centro",
+  "rol_352": "zaguero"
+ },
+ {
+  "clave": "federico_pereira",
+  "placa": "FEDERICO PEREIRA",
+  "equipos": {
+   "1931": "Toluca",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,87 m",
+  "pie": "Derecho",
+  "nacimiento": "2000-02-24",
+  "camiseta": {
+   "1931": {
+    "tipo": "liso",
+    "c1": "#c41230",
+    "c2": "#c41230",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#c41230",
+     "#3a0510",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 982552,
+  "club": "Toluca",
+  "fotmob_id": 1053836,
+  "zona": "centro",
+  "rol_352": "zaguero"
+ },
+ {
+  "clave": "marichal",
+  "placa": "NICOLÁS MARICHAL",
+  "equipos": {
+   "2315": "Dynamo Moscow",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,86 m",
+  "pie": "Derecho",
+  "nacimiento": "2001-03-17",
+  "camiseta": {
+   "2315": {
+    "tipo": "liso",
+    "c1": "#1b4f9c",
+    "c2": "#1b4f9c",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#1f5fbf",
+     "#06163f",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1015289,
+  "club": "Dynamo Moscow",
+  "fotmob_id": 1248976,
+  "zona": "centro",
+  "rol_352": "zaguero"
+ },
+ {
+  "clave": "barboza",
+  "placa": "ALEXANDER BARBOZA",
+  "equipos": {
+   "1963": "Palmeiras",
+   "7": "Uruguay"
+  },
+  "posicion": "defensor central",
+  "altura": "1,93 m",
+  "pie": "Izquierdo",
+  "nacimiento": "1995-03-16",
+  "camiseta": {
+   "1963": {
+    "tipo": "liso",
+    "c1": "#006437",
+    "c2": "#006437",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#0b7a45",
+     "#032414",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 801044,
+  "club": "Palmeiras",
+  "fotmob_id": 657969,
+  "zona": "centro",
+  "rol_352": "zaguero"
+ },
+ {
+  "clave": "olaza",
+  "placa": "LUCAS OLAZA",
+  "equipos": {
+   "34425": "FC Krasnodar",
+   "7": "Uruguay"
+  },
+  "posicion": "lateral",
+  "altura": "1,73 m",
+  "pie": "Izquierdo",
+  "nacimiento": "1994-07-21",
+  "camiseta": {
+   "34425": {
+    "tipo": "liso",
+    "c1": "#00843d",
+    "c2": "#00843d",
+    "texto": "#ffffff",
+    "short": "#111111",
+    "fondo": [
+     "#0a8a45",
+     "#03240f",
+     "#111111"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 333595,
+  "club": "FC Krasnodar",
+  "fotmob_id": 390235,
+  "zona": "izquierda",
+  "rol_352": "carrilero"
+ },
+ {
+  "clave": "fonseca",
+  "placa": "NICOLÁS FONSECA",
+  "equipos": {
+   "1982": "Coritiba",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,81 m",
+  "pie": "Derecho",
+  "nacimiento": "1998-10-19",
+  "camiseta": {
+   "1982": {
+    "tipo": "liso",
+    "c1": "#00736c",
+    "c2": "#00736c",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#00877e",
+     "#02231f",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 944629,
+  "club": "Coritiba",
+  "fotmob_id": 950599,
+  "zona": "centro",
+  "rol_352": "interno"
+ },
+ {
+  "clave": "emiliano_martinez",
+  "placa": "EMILIANO MARTÍNEZ",
+  "equipos": {
+   "1963": "Palmeiras",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,85 m",
+  "pie": "Derecho",
+  "nacimiento": "1999-08-17",
+  "camiseta": {
+   "1963": {
+    "tipo": "liso",
+    "c1": "#006437",
+    "c2": "#006437",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#0b7a45",
+     "#032414",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 973533,
+  "club": "Palmeiras",
+  "fotmob_id": 1137909,
+  "zona": "centro",
+  "rol_352": "interno",
+  "apodo": "E. Martínez"
+ },
+ {
+  "clave": "de_la_cruz",
+  "placa": "NICOLÁS DE LA CRUZ",
+  "equipos": {
+   "5981": "Flamengo",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,67 m",
+  "pie": "Derecho",
+  "nacimiento": "1997-06-01",
+  "camiseta": {
+   "5981": {
+    "tipo": "aros",
+    "c1": "#c80010",
+    "c2": "#111111",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#c80010",
+     "#1a0507",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 877513,
+  "club": "Flamengo",
+  "fotmob_id": 751198,
+  "zona": "centro",
+  "rol_352": "interno",
+  "apodo": "De la Cruz"
+ },
+ {
+  "clave": "arrascaeta",
+  "placa": "GIORGIAN DE ARRASCAETA",
+  "equipos": {
+   "5981": "Flamengo",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "altura": "1,73 m",
+  "pie": "Derecho",
+  "nacimiento": "1994-06-01",
+  "camiseta": {
+   "5981": {
+    "tipo": "aros",
+    "c1": "#c80010",
+    "c2": "#111111",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#c80010",
+     "#1a0507",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 333587,
+  "club": "Flamengo",
+  "fotmob_id": 438647,
+  "zona": "centro",
+  "rol_352": "enganche",
+  "apodo": "Arrascaeta"
+ },
+ {
+  "clave": "pellistri",
+  "placa": "FACUNDO PELLISTRI",
+  "equipos": {
+   "3248": "Panathinaikos",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,74 m",
+  "pie": "Derecho",
+  "nacimiento": "2001-12-20",
+  "camiseta": {
+   "3248": {
+    "tipo": "liso",
+    "c1": "#007a3d",
+    "c2": "#007a3d",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#13a45a",
+     "#06331d",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 989803,
+  "club": "Panathinaikos",
+  "fotmob_id": 1073402,
+  "zona": "derecha",
+  "rol_352": "carrilero"
+ },
+ {
+  "clave": "diego_rossi",
+  "placa": "DIEGO ROSSI",
+  "equipos": {
+   "1932": "CF Monterrey",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,70 m",
+  "pie": "Derecho",
+  "nacimiento": "1998-03-05",
+  "camiseta": {
+   "1932": {
+    "tipo": "rayas",
+    "c1": "#0b2240",
+    "c2": "#ffffff",
+    "texto": "#ffffff",
+    "short": "#0b2240",
+    "fondo": [
+     "#163a6b",
+     "#050f1f",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 831809,
+  "club": "CF Monterrey",
+  "fotmob_id": 743534,
+  "zona": "centro",
+  "rol_352": "delantero"
+ },
+ {
+  "clave": "brian_rodriguez",
+  "placa": "BRIAN RODRÍGUEZ",
+  "equipos": {
+   "1939": "Club América",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,74 m",
+  "pie": "Derecho",
+  "nacimiento": "2000-05-20",
+  "camiseta": {
+   "1939": {
+    "tipo": "liso",
+    "c1": "#f4c300",
+    "c2": "#f4c300",
+    "texto": "#0b1f3a",
+    "short": "#0b1f3a",
+    "fondo": [
+     "#e3b100",
+     "#3a2c00",
+     "#0b1f3a"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 932233,
+  "club": "Club América",
+  "fotmob_id": 941660,
+  "zona": "izquierda",
+  "rol_352": "carrilero",
+  "apodo": "B. Rodríguez"
+ },
+ {
+  "clave": "damiani",
+  "placa": "BRUNO DAMIANI",
+  "equipos": {
+   "39833": "Philadelphia Union",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,85 m",
+  "pie": "Izquierdo",
+  "nacimiento": "2002-04-18",
+  "camiseta": {
+   "39833": {
+    "tipo": "liso",
+    "c1": "#002850",
+    "c2": "#002850",
+    "texto": "#b19b69",
+    "short": "#002850",
+    "fondo": [
+     "#0b3a6b",
+     "#05121f",
+     "#b19b69"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 1512461,
+  "club": "Philadelphia Union",
+  "fotmob_id": 1441866,
+  "zona": "centro",
+  "rol_352": "delantero"
+ },
+ {
+  "clave": "aguirre",
+  "placa": "RODRIGO AGUIRRE",
+  "equipos": {
+   "1940": "Tigres UANL",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,82 m",
+  "pie": "Izquierdo",
+  "nacimiento": "1994-10-01",
+  "camiseta": {
+   "1940": {
+    "tipo": "liso",
+    "c1": "#fdb913",
+    "c2": "#fdb913",
+    "texto": "#0053a2",
+    "short": "#0053a2",
+    "fondo": [
+     "#f2a900",
+     "#3a2a00",
+     "#0053a2"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 155974,
+  "club": "Tigres UANL",
+  "fotmob_id": 401095,
+  "zona": "centro",
+  "rol_352": "delantero"
+ },
+ {
+  "clave": "vinas",
+  "placa": "FEDERICO VIÑAS",
+  "equipos": {
+   "1931": "Toluca",
+   "7": "Uruguay"
+  },
+  "posicion": "delantero",
+  "altura": "1,80 m",
+  "pie": "Izquierdo",
+  "nacimiento": "1998-06-30",
+  "camiseta": {
+   "1931": {
+    "tipo": "liso",
+    "c1": "#c41230",
+    "c2": "#c41230",
+    "texto": "#ffffff",
+    "short": "#ffffff",
+    "fondo": [
+     "#c41230",
+     "#3a0510",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 976104,
+  "club": "Toluca",
+  "fotmob_id": 1032811,
+  "zona": "centro",
+  "rol_352": "delantero"
  }
 ]

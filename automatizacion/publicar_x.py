@@ -125,14 +125,19 @@ def no_publicar(avisos):
             if ln.startswith("## "):
                 dentro = _norm(ln) == "nopublicarenx"
             elif dentro:
-                m = re.match(r"\s*[-*]\s*`?([^\s`:,]+)", ln)
+                m = re.match(r"\s*[-*]\s*(.+)", ln)
                 if m:
-                    fuera.add(m.group(1).removesuffix(".png"))
+                    t = re.split(r"[:(]", m.group(1))[0].replace("`", "").strip()
+                    if t and "_" in t.split()[0]:  # nombre de archivo: hasta el primer espacio
+                        t = t.split()[0]
+                    if t:
+                        fuera.add(t.removesuffix(".png"))
     return fuera
 
 
 def marcada(archivo, fuera):
-    return any(f == archivo if "_" in f else _norm(f) == _norm(archivo.split("_")[0]) for f in fuera)
+    """Por nombre de archivo, o por apellido ("Arrascaeta" marca "DeArrascaeta_...")."""
+    return any(f == archivo if "_" in f else _norm(f) and _norm(archivo.split("_")[0]).endswith(_norm(f)) for f in fuera)
 
 
 def fecha(png):
