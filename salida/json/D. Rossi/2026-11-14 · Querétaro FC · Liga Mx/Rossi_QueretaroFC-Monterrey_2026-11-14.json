@@ -1,0 +1,524 @@
+[
+ {
+  "archivo": "Rossi_QueretaroFC-Monterrey_2026-11-14",
+  "nombre": "DIEGO ROSSI",
+  "apellido": "Rossi",
+  "dorsal": "9",
+  "local": "Querétaro FC",
+  "visita": "Monterrey",
+  "goles_local": 0,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_1943.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_diego_rossi.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_diego_rossi.png",
+  "meta": "LIGA MX · JORNADA 7 · 14 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "76’",
+  "nota": "8.0",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#163a6b",
+   "c2": "#050f1f",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Andrada",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Arteaga",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Aceves",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Guzmán",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Chávez",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Pineda",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Garza",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "7",
+     "nombre": "Ocampos",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Rossi",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/diego_rossi.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Aguirre",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "27",
+     "nombre": "de la Rosa",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/diego_rossi.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "35",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/11",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "20/25",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "80%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "3",
+    true
+   ],
+   [
+    "Remates al arco",
+    "2/2",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Goles esperados (xG)",
+    "0,76",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,05",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA MX",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "15 (13) · 1100",
+     false
+    ],
+    [
+     "Nota media",
+     "7.16",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "6 · 3",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/diego_rossi_2026-11-14.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "8/42 (19%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "2/2",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "9"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,70 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "35",
+     false
+    ],
+    [
+     "Pases precisos",
+     "20/25 (80%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "5/11 (45%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/4 (25%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/2 (50%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "2",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "3",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,76",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,76",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "1,03",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,05",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,81",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "2 · 0 · 0",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "3",
+     false
+    ],
+    [
+     "Fuera de juego",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "4/7 (57%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE ENGANCHE",
+    "filas": [
+     [
+      "Ocasiones creadas",
+      "1",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "3",
+      false
+     ],
+     [
+      "Regates",
+      "1/2 (50%)",
+      false
+     ],
+     [
+      "Asistencias esperadas (xA)",
+      "0,05",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/diego_rossi_2026-11-14.png",
+   "lados": {
+    "izquierda": 36,
+    "centro": 19,
+    "derecha": 45
+   },
+   "campo_rival": 74,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "19/42 (45%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "14/19 (74%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

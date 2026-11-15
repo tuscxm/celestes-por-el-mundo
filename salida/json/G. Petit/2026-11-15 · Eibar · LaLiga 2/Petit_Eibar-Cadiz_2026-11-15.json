@@ -1,0 +1,469 @@
+[
+ {
+  "archivo": "Petit_Eibar-Cadiz_2026-11-15",
+  "nombre": "GONZALO PETIT",
+  "apellido": "Petit",
+  "dorsal": "25",
+  "local": "Eibar",
+  "visita": "Cádiz",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8372.png",
+  "escudo_visita": null,
+  "escudo_club": null,
+  "meta": "LALIGA2 · JORNADA 14 · 15 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "18’",
+  "nota": "6.1",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#f2cf1d",
+   "c2": "#001d43",
+   "acento": "#001d43"
+  },
+  "sustitucion": {
+   "minuto": "72’",
+   "por": "Gocholeishvili",
+   "apellido": "Petit",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/petit.png",
+   "rol": "delantero"
+  },
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Gil",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "3",
+     "nombre": "Arribas",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "33",
+     "nombre": "Rivera",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "31",
+     "nombre": "Obioma",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Gocholeishvili",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    }
+   ],
+   [
+    {
+     "dorsal": "20",
+     "nombre": "Vázquez",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "28",
+     "nombre": "Zárate",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Doué",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Cordero",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Izeta",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Kopotun",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/petit.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "7",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/2",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "1/1",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "100%",
+    false
+   ],
+   [
+    "Remates al arco",
+    "0/0",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Centros precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "0",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA2",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (0) · 26",
+     false
+    ],
+    [
+     "Nota media",
+     "6.09",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/petit_2026-11-15.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "2/8 (25%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "25"
+   ],
+   [
+    "EDAD",
+    "20 años"
+   ],
+   [
+    "ALTURA",
+    "1,89 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "7",
+     false
+    ],
+    [
+     "Pases precisos",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "1/2 (50%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Centros precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "1/1 (100%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Toques en el área rival",
+      "0",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "1/2 (50%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/petit_2026-11-15.png",
+   "lados": {
+    "izquierda": 12,
+    "centro": 25,
+    "derecha": 62
+   },
+   "campo_rival": 62,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "5/8 (62%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "3/5 (60%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
