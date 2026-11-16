@@ -7,7 +7,7 @@ Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-11-15 18:28-03:00 (hora de Uruguay) · fechas 2026-11-14, 2026-11-15
+**Última revisión:** 2026-11-16 18:28-03:00 (hora de Uruguay) · fechas 2026-11-15, 2026-11-16
 
 - Valverde: sin partido hoy ni ayer
 - Bernal: sin partido hoy ni ayer
@@ -16,13 +16,13 @@ Cerrá el aviso cuando la publiques o la descartes.
 - Á. Rodríguez: sin partido hoy ni ayer
 - González: sin partido hoy ni ayer
 - Cáceres: sin partido hoy ni ayer
-- **Petit** jugó 18' (suplente, entró al 72' por Gocholeishvili, nota 6.1, de delantero) en Eibar 1-1 Cádiz · LaLiga2
+- Petit: ya procesado · Eibar 1-1 Cádiz
 - Bentancur: sin partido hoy ni ayer
 - Satriano: sin partido hoy ni ayer
 - Boselli: sin partido hoy ni ayer
 - J. Rodríguez: sin partido hoy ni ayer
 - Zalazar: sin partido hoy ni ayer
-- **Merentiel** jugó 56' (titular, nota 6.8, de delantero) en Banfield 0-3 Boca Juniors · Copa Argentina
+- Merentiel: sin partido hoy ni ayer
 - Giménez: sin partido hoy ni ayer
 - Amaro: sin partido hoy ni ayer
 - R. Araújo: sin partido hoy ni ayer
@@ -48,7 +48,7 @@ Cerrá el aviso cuando la publiques o la descartes.
 - De la Cruz: ERROR al revisar (no se pudo consultar SofaScore) → `<HTTPError 403: 'Forbidden'>`
 - Arrascaeta: sin partido hoy ni ayer
 - Pellistri: sin partido hoy ni ayer
-- **Rossi** jugó 76' (titular, nota 8.0, de mediocentro) en Querétaro FC 0-1 Monterrey · Liga MX
+- Rossi: sin partido hoy ni ayer
 - B. Rodríguez: sin partido hoy ni ayer
 - Damiani: sin partido hoy ni ayer
 - Aguirre: sin partido hoy ni ayer
