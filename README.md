@@ -7,7 +7,7 @@ Cuando hay infografías nuevas (o un error), se abre un aviso en [Issues](../../
 Si a las 23:30 la revisión del día no llegó, GitHub también abre un aviso.
 Cerrá el aviso cuando la publiques o la descartes.
 
-**Última revisión:** 2026-11-16 18:28-03:00 (hora de Uruguay) · fechas 2026-11-15, 2026-11-16
+**Última revisión:** 2026-11-17 18:29-03:00 (hora de Uruguay) · fechas 2026-11-16, 2026-11-17
 
 - Valverde: sin partido hoy ni ayer
 - Bernal: sin partido hoy ni ayer
@@ -16,7 +16,7 @@ Cerrá el aviso cuando la publiques o la descartes.
 - Á. Rodríguez: sin partido hoy ni ayer
 - González: sin partido hoy ni ayer
 - Cáceres: sin partido hoy ni ayer
-- Petit: ya procesado · Eibar 1-1 Cádiz
+- Petit: sin partido hoy ni ayer
 - Bentancur: sin partido hoy ni ayer
 - Satriano: sin partido hoy ni ayer
 - Boselli: sin partido hoy ni ayer
