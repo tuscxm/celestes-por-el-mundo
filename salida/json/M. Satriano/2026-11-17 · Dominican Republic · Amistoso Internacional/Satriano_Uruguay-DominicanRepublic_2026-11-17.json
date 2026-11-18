@@ -1,0 +1,421 @@
+[
+ {
+  "archivo": "Satriano_Uruguay-DominicanRepublic_2026-11-17",
+  "nombre": "MARTÍN SATRIANO",
+  "apellido": "Satriano",
+  "dorsal": "26",
+  "local": "Uruguay",
+  "visita": "Dominican Republic",
+  "goles_local": 5,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_262134.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "meta": "AMISTOSO INTERNACIONAL · 17 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "15’",
+  "nota": "6.5",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#6fb7e6",
+   "c2": "#14365f",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Mele",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Sanabria",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Cáceres",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Giménez",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Mouriño",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Zalazar",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Bentancur",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bernal",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Canobbio",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Aguirre",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Viñas",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/satriano.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "13",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "2/3",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "7/9",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "78%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "12 (None) · 929",
+     false
+    ],
+    [
+     "Nota media",
+     "6.79",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "3 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "CONFERENCE LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (2) · 220",
+     false
+    ],
+    [
+     "Nota media",
+     "6.72",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "26"
+   ],
+   [
+    "EDAD",
+    "25 años"
+   ],
+   [
+    "ALTURA",
+    "1,87 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "13",
+     false
+    ],
+    [
+     "Pases precisos",
+     "7/9 (78%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "2/3 (67%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "3",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "1/2 (50%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Toques en el área rival",
+      "1",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "2/3 (67%)",
+      true
+     ],
+     [
+      "Regates",
+      "1/1 (100%)",
+      true
+     ]
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,401 @@
+[
+ {
+  "archivo": "Nunez_Uruguay-DominicanRepublic_2026-11-17",
+  "nombre": "DARWIN NÚÑEZ",
+  "apellido": "Núñez",
+  "dorsal": "9",
+  "local": "Uruguay",
+  "visita": "Dominican Republic",
+  "goles_local": 5,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_262134.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "meta": "AMISTOSO INTERNACIONAL · 17 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "28’",
+  "nota": "7.3",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#6fb7e6",
+   "c2": "#14365f",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Mele",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Sanabria",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Cáceres",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Giménez",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Mouriño",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Zalazar",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Bentancur",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bernal",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Canobbio",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Aguirre",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Viñas",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/darwin.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "1",
+    true
+   ],
+   [
+    "Toques",
+    "8",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DELANTERO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "3/4",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "75%",
+    false
+   ],
+   [
+    "Remates al arco",
+    "1/1",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Pases clave",
+    "2",
+    true
+   ],
+   [
+    "Centros precisos",
+    "1/1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SAUDI PRO LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "10 (None) · 822",
+     false
+    ],
+    [
+     "Nota media",
+     "6.93",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "3 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "9"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,88 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Delantero"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "1",
+     true
+    ],
+    [
+     "Toques",
+     "8",
+     false
+    ],
+    [
+     "Pases precisos",
+     "3/4 (75%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "2",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Centros precisos",
+     "1/1 (100%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DELANTERO",
+    "filas": [
+     [
+      "Remates al arco",
+      "1/1 (100%)",
+      true
+     ],
+     [
+      "Toques en el área rival",
+      "3",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,367 @@
+[
+ {
+  "archivo": "Rodriguez_Uruguay-DominicanRepublic_2026-11-17",
+  "nombre": "JUAN MANUEL RODRÍGUEZ",
+  "apellido": "Rodríguez",
+  "dorsal": "24",
+  "local": "Uruguay",
+  "visita": "Dominican Republic",
+  "goles_local": 5,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_262134.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "meta": "AMISTOSO INTERNACIONAL · 17 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "15’",
+  "nota": "6.3",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#6fb7e6",
+   "c2": "#14365f",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Mele",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Sanabria",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Cáceres",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Giménez",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Mouriño",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Zalazar",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Bentancur",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bernal",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Canobbio",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Aguirre",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Viñas",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/juan_rodriguez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "15",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "10/12",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "83%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SERIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "11 (None) · 890",
+     false
+    ],
+    [
+     "Nota media",
+     "6.81",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "24"
+   ],
+   [
+    "EDAD",
+    "21 años"
+   ],
+   [
+    "ALTURA",
+    "1,90 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "15",
+     false
+    ],
+    [
+     "Pases precisos",
+     "10/12 (83%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "2",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/1 (0%)",
+     false
+    ]
+   ],
+   "perfil": null
+  }
+ }
+]
