@@ -1,0 +1,529 @@
+[
+ {
+  "archivo": "DeArrascaeta_Flamengo-AthleticoParanaense_2026-11-18",
+  "nombre": "GIORGIAN DE ARRASCAETA",
+  "apellido": "De Arrascaeta",
+  "dorsal": "10",
+  "local": "Flamengo",
+  "visita": "Athletico Paranaense",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_arrascaeta.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_10273.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_arrascaeta.png",
+  "meta": "SÉRIE A · JORNADA 35 · 18 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "80’",
+  "nota": "7.6",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#c80010",
+   "c2": "#1a0507",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Rossi",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Sandro",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Pereira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Ortiz",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Varela",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Jorginho",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Pulgar",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Lino",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "De Arrascaeta",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/arrascaeta.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Carrascal",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Pedro",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/arrascaeta.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "80",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "57/64",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "89%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "5",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/0",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    true
+   ],
+   [
+    "Ocasiones claras creadas",
+    "1",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,14",
+    false
+   ],
+   [
+    "Centros precisos",
+    "1/8",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "5",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26",
+   "filas": [
+    [
+     "SÉRIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "25 (None) · 1690",
+     false
+    ],
+    [
+     "Nota media",
+     "7.42",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "4 · 4",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ],
+    [
+     "COPA LIBERTADORES",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (5) · 346",
+     false
+    ],
+    [
+     "Nota media",
+     "7.26",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "4 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/arrascaeta_2026-11-18.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "18/86 (21%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "10"
+   ],
+   [
+    "EDAD",
+    "32 años"
+   ],
+   [
+    "ALTURA",
+    "1,73 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "80",
+     false
+    ],
+    [
+     "Pases precisos",
+     "57/64 (89%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/4 (100%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "5",
+     false
+    ],
+    [
+     "Intercepciones",
+     "1",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "2",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,14",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,14",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Toques en el área rival",
+     "4",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Centros precisos",
+     "1/8 (12%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "3/3 (100%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE ENGANCHE",
+    "filas": [
+     [
+      "Ocasiones creadas",
+      "1",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "5",
+      true
+     ],
+     [
+      "Pases que rompen líneas",
+      "11",
+      true
+     ],
+     [
+      "Regates",
+      "1/1 (100%)",
+      true
+     ],
+     [
+      "Asistencias esperadas (xA)",
+      "0,14",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/arrascaeta_2026-11-18.png",
+   "lados": {
+    "izquierda": 38,
+    "centro": 21,
+    "derecha": 41
+   },
+   "campo_rival": 79,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "35/86 (41%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "33/35 (94%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

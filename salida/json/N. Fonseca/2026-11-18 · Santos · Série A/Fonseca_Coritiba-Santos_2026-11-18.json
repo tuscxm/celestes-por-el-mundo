@@ -1,0 +1,487 @@
+[
+ {
+  "archivo": "Fonseca_Coritiba-Santos_2026-11-18",
+  "nombre": "NICOLÁS FONSECA",
+  "apellido": "Fonseca",
+  "dorsal": "5",
+  "local": "Coritiba",
+  "visita": "Santos",
+  "goles_local": 0,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_fonseca.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8514.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_fonseca.png",
+  "meta": "SÉRIE A · JORNADA 35 · 18 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "66’",
+  "nota": "6.6",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#00877e",
+   "c2": "#02231f",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Rangel",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Melo",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "55",
+     "nombre": "Jacy",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Tiago",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Tinga",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "19",
+     "nombre": "Gómez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Santos",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Fonseca",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/fonseca.png",
+     "estrellas": 2,
+     "yo": true,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "32",
+     "nombre": "Rocha",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Josué",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "77",
+     "nombre": "Lopes",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/fonseca.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "47",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "32/36",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "89%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "6",
+    true
+   ],
+   [
+    "Remates al arco",
+    "0/0",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "0 · 0",
+    false
+   ],
+   [
+    "Ocasiones claras falladas",
+    "0",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    true
+   ],
+   [
+    "Asistencias esperadas (xA)",
+    "0,01",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "3/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "4",
+    false
+   ],
+   [
+    "Intercepciones",
+    "4",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "1[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26",
+   "filas": [
+    [
+     "SÉRIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "8 (None) · 461",
+     false
+    ],
+    [
+     "Nota media",
+     "6.40",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "3[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/fonseca_2026-11-18.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "15/57 (26%)",
+     true
+    ],
+    [
+     "Remates al arco",
+     "0/0",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "5"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,81 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "47",
+     false
+    ],
+    [
+     "Pases precisos",
+     "32/36 (89%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "1/5 (20%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "4",
+     false
+    ],
+    [
+     "Intercepciones",
+     "4",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "4",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,01",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "6",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE MEDIOCENTRO",
+    "filas": [
+     [
+      "Pases precisos",
+      "32/36 (89%)",
+      true
+     ],
+     [
+      "Pases largos precisos",
+      "3/3 (100%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "4",
+      false
+     ],
+     [
+      "Duelos en el piso",
+      "1/5 (20%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/fonseca_2026-11-18.png",
+   "lados": {
+    "izquierda": 5,
+    "centro": 26,
+    "derecha": 68
+   },
+   "campo_rival": 44,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "39/57 (68%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "14/39 (36%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

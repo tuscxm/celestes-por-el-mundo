@@ -1,0 +1,489 @@
+[
+ {
+  "archivo": "Varela_Flamengo-AthleticoParanaense_2026-11-18",
+  "nombre": "GUILLERMO VARELA",
+  "apellido": "Varela",
+  "dorsal": "2",
+  "local": "Flamengo",
+  "visita": "Athletico Paranaense",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_varela.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_10273.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_varela.png",
+  "meta": "SÉRIE A · JORNADA 35 · 18 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "8.2",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#c80010",
+   "c2": "#1a0507",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Rossi",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Sandro",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Pereira",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Ortiz",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Varela",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/varela.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Jorginho",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Pulgar",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Lino",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "De Arrascaeta",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Carrascal",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Pedro",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/varela.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "1",
+    true
+   ],
+   [
+    "Toques",
+    "83",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "3/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/2",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL DERECHO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "54/65",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "83%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "7",
+    true
+   ],
+   [
+    "Pases clave",
+    "2",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "7",
+    false
+   ],
+   [
+    "Intercepciones",
+    "1",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26",
+   "filas": [
+    [
+     "SÉRIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "27 (None) · 2239",
+     false
+    ],
+    [
+     "Nota media",
+     "7.32",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 7",
+     false
+    ],
+    [
+     "Tarjetas",
+     "4[A] · 0[R]",
+     false
+    ],
+    [
+     "COPA LIBERTADORES",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "5 (0) · 22",
+     false
+    ],
+    [
+     "Nota media",
+     "6.34",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/varela_2026-11-18.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA DERECHA",
+   "filas": [
+    [
+     "Acciones",
+     "87/95 (92%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "2"
+   ],
+   [
+    "EDAD",
+    "33 años"
+   ],
+   [
+    "ALTURA",
+    "1,73 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Derecho"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "1",
+     true
+    ],
+    [
+     "Toques",
+     "83",
+     false
+    ],
+    [
+     "Pases precisos",
+     "54/65 (83%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "3/5 (60%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "2/2 (100%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "7",
+     false
+    ],
+    [
+     "Intercepciones",
+     "1",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "2",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,11",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,11",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "2",
+     false
+    ],
+    [
+     "Pases que rompen líneas",
+     "6",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "2",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "0/3 (0%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "1/3 (33%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE LATERAL",
+    "filas": [
+     [
+      "Duelos ganados",
+      "3/5 (60%)",
+      true
+     ],
+     [
+      "Centros precisos",
+      "1/2 (50%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "7",
+      true
+     ],
+     [
+      "Pases al último tercio",
+      "7",
+      true
+     ],
+     [
+      "Lo regatearon",
+      "0",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/varela_2026-11-18.png",
+   "lados": {
+    "izquierda": 1,
+    "centro": 7,
+    "derecha": 92
+   },
+   "campo_rival": 64,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "87/95 (92%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "59/87 (68%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
