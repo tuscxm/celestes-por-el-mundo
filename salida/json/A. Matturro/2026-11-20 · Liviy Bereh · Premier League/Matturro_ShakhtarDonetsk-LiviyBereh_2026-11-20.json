@@ -1,0 +1,218 @@
+[
+ {
+  "archivo": "Matturro_ShakhtarDonetsk-LiviyBereh_2026-11-20",
+  "nombre": "ALAN MATTURRO",
+  "apellido": "Matturro",
+  "dorsal": "28",
+  "local": "Shakhtar Donetsk",
+  "visita": "Liviy Bereh",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_matturro.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_1507991.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_matturro.png",
+  "meta": "PREMIER LEAGUE · JORNADA 13 · 20 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "46’",
+  "nota": null,
+  "estrellas": 0,
+  "tema": {
+   "c1": "#f47b20",
+   "c2": "#2a1406",
+   "acento": "#111111"
+  },
+  "sustitucion": null,
+  "formacion": "4-1-4-1",
+  "once": [
+   [
+    {
+     "dorsal": "31",
+     "nombre": "Riznyk",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Azarovi",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "28",
+     "nombre": "Matturro",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/matturro.png",
+     "estrellas": 0,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bondar",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Karavaev",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Kryskiv",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "11",
+     "nombre": "Newerton",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "25",
+     "nombre": "Carvalho",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "27",
+     "nombre": "Ocheretko",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "37",
+     "nombre": "Ferreira",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "49",
+     "nombre": "Meirelles",
+     "cara": null,
+     "estrellas": 0,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/matturro.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "3 (None) · 112",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "28"
+   ],
+   [
+    "EDAD",
+    "22 años"
+   ],
+   [
+    "ALTURA",
+    "1,89 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": null
+ }
+]
