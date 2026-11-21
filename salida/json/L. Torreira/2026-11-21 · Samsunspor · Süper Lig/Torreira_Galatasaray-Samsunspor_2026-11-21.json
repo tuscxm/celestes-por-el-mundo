@@ -1,0 +1,509 @@
+[
+ {
+  "archivo": "Torreira_Galatasaray-Samsunspor_2026-11-21",
+  "nombre": "LUCAS TORREIRA",
+  "apellido": "Torreira",
+  "dorsal": "34",
+  "local": "Galatasaray",
+  "visita": "Samsunspor",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_torreira.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_9750.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_torreira.png",
+  "meta": "SÜPER LIG · JORNADA 12 · 21 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "80’",
+  "nota": "8.1",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#a90432",
+   "c2": "#3a0412",
+   "acento": "#fdb912"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Çakır",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Elmalı",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "42",
+     "nombre": "Bardakci",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "90",
+     "nombre": "Singo",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Ayhan",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "8",
+     "nombre": "Sara",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "34",
+     "nombre": "Torreira",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/torreira.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "53",
+     "nombre": "Yılmaz",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "83",
+     "nombre": "Batrakov",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "Akgün",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Gül",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/torreira.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "52",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "3/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "36/43",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "84%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "10",
+    true
+   ],
+   [
+    "Pases clave",
+    "1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "4/8",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "3",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "2",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SÜPER LIG",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "11 (None) · 867",
+     false
+    ],
+    [
+     "Nota media",
+     "7.50",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 3",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 1[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "4 (4) · 346",
+     false
+    ],
+    [
+     "Nota media",
+     "6.76",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/torreira_2026-11-21.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "34/58 (59%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "34"
+   ],
+   [
+    "EDAD",
+    "30 años"
+   ],
+   [
+    "ALTURA",
+    "1,68 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "1",
+     true
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "52",
+     false
+    ],
+    [
+     "Pases precisos",
+     "36/43 (84%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "3/5 (60%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "3",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "2",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "2",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,56",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,56",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,83",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,06",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,62",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "1",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "10",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "3",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "1",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE MEDIOCENTRO",
+    "filas": [
+     [
+      "Pases precisos",
+      "36/43 (84%)",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "4/8 (50%)",
+      false
+     ],
+     [
+      "Recuperaciones",
+      "3",
+      false
+     ],
+     [
+      "Duelos en el piso",
+      "3/5 (60%)",
+      true
+     ]
+    ]
+   },
+   "heat_img": "mapas/torreira_2026-11-21.png",
+   "lados": {
+    "izquierda": 17,
+    "centro": 59,
+    "derecha": 24
+   },
+   "campo_rival": 45,
+   "zona": {
+    "titulo": "SU ZONA: POR EL CENTRO",
+    "filas": [
+     [
+      "Acciones",
+      "34/58 (59%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "14/34 (41%)",
+      false
+     ],
+     [
+      "Remates · al arco",
+      "2 · 1",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
