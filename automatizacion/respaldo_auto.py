@@ -282,7 +282,12 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             for comp, v in list(comps.items())[:2]:
                 otras = [x.get("nota") for c2, x in (af.get("temporada") or {}).items() if _comp(c2) == _comp(comp)]
                 tm.append([comp.upper(), " "])
-                if v.get("pj") is not None: tm.append(["PJ (tit.) · Min.", f"{v['pj']} ({v.get('tit', '?')}) · {v.get('min', '?')}"])
+                if v.get("pj") is not None:
+                    # lo que FotMob no trae (partidos de titular, minutos) no se muestra: nunca "None" ni "?"
+                    et, val = "PJ", f"{v['pj']}"
+                    if v.get("tit") is not None: et, val = "PJ (tit.)", f"{v['pj']} ({v['tit']})"
+                    if v.get("min") is not None: et, val = et + " · Min.", f"{val} · {v['min']}"
+                    tm.append([et, val])
                 nota_t = fuentes.promedio([v.get("nota")] + otras)
                 if nota_t: tm.append(["Nota media", f"{nota_t:.2f}"])
                 if v.get("goles") is not None: tm.append(["Goles · Asist.", f"{v['goles']} · {v.get('asist', 0)}"])

@@ -255,8 +255,12 @@ def texto_352(j, armado):
     partido = lista([hs.get(k) for k in primeras if hs.get(k)][:4])
     lado = {"izquierda": " por izquierda", "derecha": " por derecha"}.get(info.get("lado"), "")
     rol = plantilla.format(lado=lado, hechos=lista([hs[k] for k in claves if hs.get(k)][:3])) if plantilla else ""
-    puesto = info.get("puesto") or "titular"
-    lineas = [f"Jugó de {puesto}: {partido}." if partido else f"Jugó de {puesto}."]
+    # sin puesto conocido (por ejemplo, un suplente en el respaldo) no se dice "de titular": va lo que hizo y nada más
+    puesto = info.get("puesto")
+    if puesto:
+        lineas = [f"Jugó de {puesto}: {partido}." if partido else f"Jugó de {puesto}."]
+    else:
+        lineas = [f"En su partido: {partido}."] if partido else []
     if rol and "{hechos}" not in rol and ": ." not in rol:
         lineas += ["", "🧩 ¿Y en una Uruguay 3-5-2 con enganche?", rol, "", CIERRE_352]
     return lineas
