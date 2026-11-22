@@ -14,7 +14,7 @@
   "meta": "SÉRIE A · JORNADA 36 · 21 NOVIEMBRE 2026",
   "condicion": "TITULAR",
   "minutos": "90’",
-  "nota": "7.3",
+  "nota": "7.2",
   "estrellas": 3,
   "tema": {
    "c1": "#c80010",
@@ -49,7 +49,7 @@
      "dorsal": "13",
      "nombre": "Danilo",
      "cara": null,
-     "estrellas": 2,
+     "estrellas": 3,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -78,7 +78,7 @@
      "dorsal": "21",
      "nombre": "Jorginho",
      "cara": null,
-     "estrellas": 3,
+     "estrellas": 4,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -154,7 +154,7 @@
    ],
    [
     "Duelos ganados",
-    "6/9",
+    "6/10",
     false
    ],
    [
@@ -177,12 +177,12 @@
   "posicion": [
    [
     "Pases precisos",
-    "30/47",
+    "30/45",
     false
    ],
    [
     "Precisión de pase",
-    "64%",
+    "67%",
     false
    ],
    [
@@ -212,17 +212,17 @@
    ],
    [
     "Asistencias esperadas (xA)",
-    "0,04",
+    "0,05",
     false
    ],
    [
     "Centros precisos",
-    "0/4",
+    "1/5",
     false
    ],
    [
     "Pases largos precisos",
-    "1/5",
+    "1/3",
     false
    ],
    [
@@ -256,8 +256,8 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "26 (None) · 1780",
+     "PJ · Min.",
+     "26 · 1780",
      false
     ],
     [
@@ -309,7 +309,7 @@
    "filas": [
     [
      "Acciones",
-     "26/70 (37%)",
+     "26/72 (36%)",
      true
     ],
     [
@@ -366,12 +366,12 @@
     ],
     [
      "Pases precisos",
-     "30/47 (64%)",
+     "30/45 (67%)",
      false
     ],
     [
      "Duelos ganados",
-     "6/9 (67%)",
+     "6/10 (60%)",
      false
     ],
     [
@@ -447,12 +447,12 @@
     ],
     [
      "Asistencias esperadas (xA)",
-     "0,04",
+     "0,05",
      false
     ],
     [
      "xG + xA",
-     "0,10",
+     "0,11",
      false
     ]
    ],
@@ -473,7 +473,7 @@
     ],
     [
      "Lo regatearon",
-     "1",
+     "2",
      false
     ],
     [
@@ -483,17 +483,17 @@
     ],
     [
      "Pases largos precisos",
-     "1/5 (20%)",
+     "1/3 (33%)",
      false
     ],
     [
      "Centros precisos",
-     "0/4 (0%)",
+     "1/5 (20%)",
      false
     ],
     [
      "Duelos en el piso",
-     "5/8 (62%)",
+     "5/9 (56%)",
      false
     ]
    ],
@@ -511,35 +511,40 @@
       true
      ],
      [
+      "Pases que rompen líneas",
+      "7",
+      true
+     ],
+     [
       "Regates",
       "2/3 (67%)",
       true
      ],
      [
       "Asistencias esperadas (xA)",
-      "0,04",
+      "0,05",
       false
      ]
     ]
    },
    "heat_img": "mapas/arrascaeta_2026-11-21.png",
    "lados": {
-    "izquierda": 44,
-    "centro": 37,
-    "derecha": 19
+    "izquierda": 46,
+    "centro": 36,
+    "derecha": 18
    },
-   "campo_rival": 77,
+   "campo_rival": 74,
    "zona": {
     "titulo": "SU ZONA: POR LA IZQUIERDA",
     "filas": [
      [
       "Acciones",
-      "31/70 (44%)",
+      "33/72 (46%)",
       true
      ],
      [
       "En campo rival",
-      "24/31 (77%)",
+      "24/33 (73%)",
       false
      ]
     ]

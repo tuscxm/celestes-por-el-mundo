@@ -152,12 +152,12 @@
    ],
    [
     "Duelos ganados",
-    "7/16",
+    "7/15",
     false
    ],
    [
     "Duelos aéreos ganados",
-    "4/9",
+    "4/8",
     false
    ],
    [
@@ -195,7 +195,7 @@
    ],
    [
     "Goles esperados (xG)",
-    "0,04",
+    "0,03",
     false
    ],
    [
@@ -244,8 +244,8 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "34 (None) · 2685",
+     "PJ · Min.",
+     "34 · 2685",
      false
     ],
     [
@@ -272,7 +272,7 @@
    "filas": [
     [
      "Acciones",
-     "19/57 (33%)",
+     "18/56 (32%)",
      true
     ],
     [
@@ -334,12 +334,12 @@
     ],
     [
      "Duelos ganados",
-     "7/16 (44%)",
+     "7/15 (47%)",
      false
     ],
     [
      "Duelos aéreos ganados",
-     "4/9 (44%)",
+     "4/8 (50%)",
      false
     ],
     [
@@ -390,12 +390,12 @@
     ],
     [
      "Goles esperados (xG)",
-     "0,04",
+     "0,03",
      false
     ],
     [
      "xG sin penales",
-     "0,04",
+     "0,03",
      false
     ],
     [
@@ -405,7 +405,7 @@
     ],
     [
      "xG + xA",
-     "0,06",
+     "0,05",
      false
     ]
    ],
@@ -460,7 +460,7 @@
      ],
      [
       "Goles · xG",
-      "0 · 0,04",
+      "0 · 0,03",
       false
      ],
      [
@@ -470,7 +470,7 @@
      ],
      [
       "Duelos ganados",
-      "7/16 (44%)",
+      "7/15 (47%)",
       false
      ],
      [
@@ -483,7 +483,7 @@
    "heat_img": "mapas/damiani_2026-11-21.png",
    "lados": {
     "izquierda": 46,
-    "centro": 33,
+    "centro": 32,
     "derecha": 21
    },
    "campo_rival": 82,
@@ -492,7 +492,7 @@
     "filas": [
      [
       "Acciones",
-      "26/57 (46%)",
+      "26/56 (46%)",
       true
      ],
      [

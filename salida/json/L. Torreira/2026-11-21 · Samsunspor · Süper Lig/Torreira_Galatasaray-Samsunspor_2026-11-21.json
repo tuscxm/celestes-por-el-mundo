@@ -236,8 +236,8 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "11 (None) · 867",
+     "PJ · Min.",
+     "11 · 867",
      false
     ],
     [
@@ -464,6 +464,11 @@
       "Pases largos precisos",
       "4/8 (50%)",
       false
+     ],
+     [
+      "Pases que rompen líneas",
+      "8",
+      true
      ],
      [
       "Recuperaciones",

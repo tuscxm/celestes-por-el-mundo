@@ -58,7 +58,7 @@
      "dorsal": "5",
      "nombre": "Jacquet",
      "cara": null,
-     "estrellas": 3,
+     "estrellas": 4,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -149,7 +149,7 @@
    ],
    [
     "Toques",
-    "60",
+    "61",
     false
    ],
    [
@@ -177,7 +177,7 @@
   "posicion": [
    [
     "Pases precisos",
-    "36/43",
+    "37/44",
     false
    ],
    [
@@ -231,8 +231,8 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "11 (None) · 750",
+     "PJ · Min.",
+     "11 · 750",
      false
     ],
     [
@@ -284,7 +284,7 @@
    "filas": [
     [
      "Acciones",
-     "4/70 (6%)",
+     "4/71 (6%)",
      true
     ]
    ]
@@ -326,12 +326,12 @@
     ],
     [
      "Toques",
-     "60",
+     "61",
      false
     ],
     [
      "Pases precisos",
-     "36/43 (84%)",
+     "37/44 (84%)",
      false
     ],
     [
@@ -473,18 +473,18 @@
     "centro": 6,
     "derecha": 94
    },
-   "campo_rival": 53,
+   "campo_rival": 52,
    "zona": {
     "titulo": "SU ZONA: POR LA DERECHA",
     "filas": [
      [
       "Acciones",
-      "66/70 (94%)",
+      "67/71 (94%)",
       true
      ],
      [
       "En campo rival",
-      "35/66 (53%)",
+      "35/67 (52%)",
       false
      ]
     ]

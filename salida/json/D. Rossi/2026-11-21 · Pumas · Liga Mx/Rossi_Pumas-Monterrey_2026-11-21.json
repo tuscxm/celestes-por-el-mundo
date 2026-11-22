@@ -14,7 +14,7 @@
   "meta": "LIGA MX · JORNADA 17 · 21 NOVIEMBRE 2026",
   "condicion": "TITULAR",
   "minutos": "45’",
-  "nota": "6.3",
+  "nota": "6.4",
   "estrellas": 2,
   "tema": {
    "c1": "#163a6b",
@@ -29,7 +29,7 @@
      "dorsal": "22",
      "nombre": "Cárdenas",
      "cara": null,
-     "estrellas": 4,
+     "estrellas": 5,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -149,7 +149,7 @@
    ],
    [
     "Toques",
-    "14",
+    "15",
     false
    ],
    [
@@ -187,7 +187,7 @@
    ],
    [
     "Remates al arco",
-    "0/0",
+    "1/1",
     true
    ],
    [
@@ -196,8 +196,8 @@
     false
    ],
    [
-    "Ocasiones claras falladas",
-    "0",
+    "Goles esperados (xG)",
+    "0,04",
     false
    ],
    [
@@ -246,8 +246,8 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "16 (None) · 1145",
+     "PJ · Min.",
+     "16 · 1145",
      false
     ],
     [
@@ -274,12 +274,12 @@
    "filas": [
     [
      "Acciones",
-     "3/14 (21%)",
+     "4/15 (27%)",
      true
     ],
     [
      "Remates al arco",
-     "0/0",
+     "1/1",
      true
     ],
     [
@@ -326,7 +326,7 @@
     ],
     [
      "Toques",
-     "14",
+     "15",
      false
     ],
     [
@@ -381,13 +381,28 @@
      " "
     ],
     [
+     "Goles esperados (xG)",
+     "0,04",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,04",
+     false
+    ],
+    [
+     "xG de sus remates al arco",
+     "0,04",
+     false
+    ],
+    [
      "Asistencias esperadas (xA)",
      "0,01",
      false
     ],
     [
      "xG + xA",
-     "0,01",
+     "0,05",
      false
     ]
    ],
@@ -395,6 +410,11 @@
     [
      "MÁS DEL PARTIDO",
      " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 0 · 0",
+     false
     ],
     [
      "Toques en el área rival",
@@ -444,17 +464,17 @@
    },
    "heat_img": "mapas/diego_rossi_2026-11-21.png",
    "lados": {
-    "izquierda": 50,
-    "centro": 21,
-    "derecha": 29
+    "izquierda": 47,
+    "centro": 27,
+    "derecha": 27
    },
-   "campo_rival": 79,
+   "campo_rival": 80,
    "zona": {
     "titulo": "SU ZONA: POR LA IZQUIERDA",
     "filas": [
      [
       "Acciones",
-      "7/14 (50%)",
+      "7/15 (47%)",
       true
      ],
      [

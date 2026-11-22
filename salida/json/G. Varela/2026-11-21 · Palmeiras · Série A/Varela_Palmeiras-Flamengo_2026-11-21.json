@@ -14,7 +14,7 @@
   "meta": "SÉRIE A · JORNADA 36 · 21 NOVIEMBRE 2026",
   "condicion": "TITULAR",
   "minutos": "90’",
-  "nota": "7.4",
+  "nota": "7.6",
   "estrellas": 4,
   "tema": {
    "c1": "#c80010",
@@ -49,7 +49,7 @@
      "dorsal": "13",
      "nombre": "Danilo",
      "cara": null,
-     "estrellas": 2,
+     "estrellas": 3,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -78,7 +78,7 @@
      "dorsal": "21",
      "nombre": "Jorginho",
      "cara": null,
-     "estrellas": 3,
+     "estrellas": 4,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -149,12 +149,12 @@
    ],
    [
     "Toques",
-    "66",
+    "68",
     false
    ],
    [
     "Duelos ganados",
-    "5/8",
+    "5/7",
     false
    ],
    [
@@ -177,7 +177,7 @@
   "posicion": [
    [
     "Pases precisos",
-    "40/45",
+    "42/47",
     false
    ],
    [
@@ -187,7 +187,7 @@
    ],
    [
     "Pases al último tercio",
-    "2",
+    "1",
     true
    ],
    [
@@ -197,7 +197,7 @@
    ],
    [
     "Pases largos precisos",
-    "0/1",
+    "1/2",
     false
    ],
    [
@@ -217,7 +217,7 @@
    ],
    [
     "Despejes",
-    "2",
+    "3",
     false
    ],
    [
@@ -236,8 +236,8 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "28 (None) · 2329",
+     "PJ · Min.",
+     "28 · 2329",
      false
     ],
     [
@@ -284,7 +284,7 @@
    "filas": [
     [
      "Acciones",
-     "64/72 (89%)",
+     "66/74 (89%)",
      true
     ]
    ]
@@ -326,17 +326,17 @@
     ],
     [
      "Toques",
-     "66",
+     "68",
      false
     ],
     [
      "Pases precisos",
-     "40/45 (89%)",
+     "42/47 (89%)",
      false
     ],
     [
      "Duelos ganados",
-     "5/8 (62%)",
+     "5/7 (71%)",
      false
     ],
     [
@@ -366,7 +366,7 @@
     ],
     [
      "Despejes",
-     "2",
+     "3",
      false
     ],
     [
@@ -381,7 +381,7 @@
     ],
     [
      "Pérdidas de balón",
-     "1",
+     "0",
      false
     ],
     [
@@ -417,6 +417,11 @@
      false
     ],
     [
+     "Pases que rompen líneas",
+     "6",
+     false
+    ],
+    [
      "Toques en el área rival",
      "1",
      false
@@ -428,12 +433,12 @@
     ],
     [
      "Pases largos precisos",
-     "0/1 (0%)",
+     "1/2 (50%)",
      false
     ],
     [
      "Duelos en el piso",
-     "5/7 (71%)",
+     "5/6 (83%)",
      false
     ]
    ],
@@ -442,13 +447,13 @@
     "filas": [
      [
       "Duelos ganados",
-      "5/8 (62%)",
+      "5/7 (71%)",
       true
      ],
      [
       "Centros precisos",
-      "1/2 (50%)",
-      true
+      "1/3 (33%)",
+      false
      ],
      [
       "Recuperaciones",
@@ -457,7 +462,7 @@
      ],
      [
       "Pases al último tercio",
-      "2",
+      "1",
       false
      ],
      [
@@ -473,18 +478,18 @@
     "centro": 11,
     "derecha": 89
    },
-   "campo_rival": 61,
+   "campo_rival": 64,
    "zona": {
     "titulo": "SU ZONA: POR LA DERECHA",
     "filas": [
      [
       "Acciones",
-      "64/72 (89%)",
+      "66/74 (89%)",
       true
      ],
      [
       "En campo rival",
-      "41/64 (64%)",
+      "44/66 (67%)",
       false
      ]
     ]

@@ -14,8 +14,8 @@
   "meta": "QATAR STARS LEAGUE · JORNADA 10 · 20 NOVIEMBRE 2026",
   "condicion": "TITULAR",
   "minutos": "90’",
-  "nota": "8.0",
-  "estrellas": 4,
+  "nota": "8.1",
+  "estrellas": 5,
   "tema": {
    "c1": "#f2cf1d",
    "c2": "#0047ab",
@@ -96,7 +96,7 @@
      "dorsal": "11",
      "nombre": "Surag",
      "cara": null,
-     "estrellas": 5,
+     "estrellas": 4,
      "yo": false,
      "roja": null,
      "amarillas": null
@@ -147,12 +147,12 @@
    ],
    [
     "Toques",
-    "62",
+    "63",
     false
    ],
    [
     "Duelos ganados",
-    "7/9",
+    "8/10",
     false
    ],
    [
@@ -185,7 +185,7 @@
    ],
    [
     "Pases al último tercio",
-    "5",
+    "3",
     true
    ],
    [
@@ -210,7 +210,7 @@
    ],
    [
     "Entradas",
-    "1",
+    "2",
     false
    ],
    [
@@ -234,13 +234,13 @@
      false
     ],
     [
-     "PJ (tit.) · Min.",
-     "10 (None) · 900",
+     "PJ · Min.",
+     "10 · 900",
      false
     ],
     [
      "Nota media",
-     "7.56",
+     "7.57",
      false
     ],
     [
@@ -295,7 +295,7 @@
     ],
     [
      "Toques",
-     "62",
+     "63",
      false
     ],
     [
@@ -305,7 +305,7 @@
     ],
     [
      "Duelos ganados",
-     "7/9 (78%)",
+     "8/10 (80%)",
      false
     ],
     [
@@ -330,7 +330,7 @@
     ],
     [
      "Entradas",
-     "1",
+     "2",
      false
     ],
     [
@@ -377,7 +377,7 @@
     ],
     [
      "Pases al último tercio",
-     "5",
+     "3",
      false
     ],
     [
@@ -421,7 +421,7 @@
      ],
      [
       "Duelos en el piso",
-      "4/5 (80%)",
+      "5/6 (83%)",
       true
      ]
     ]
