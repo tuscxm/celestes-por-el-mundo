@@ -62,6 +62,7 @@ def tipo_perfil(dj, posicion_id):
     línea de tres detrás de la punta (positionId 84-86 de FotMob)."""
     pu = dj.get("puesto")
     if pu == "delantero": return "delantero"
+    if pu == "enganche": return "enganche"  # suplente cuyo puesto principal es el de enganche
     if pu in ("volante por izquierda", "volante por derecha"): return "por_fuera"
     if pu == "defensor central": return "central"
     if pu in ("lateral izquierdo", "lateral derecho"): return "lateral"

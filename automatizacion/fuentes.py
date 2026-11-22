@@ -53,9 +53,53 @@ def mismo_nombre(a, b):
     return a.split()[-1] == b.split()[-1] and a.split()[0][0] == b.split()[0][0]
 
 
+# selecciones en español (FotMob y SofaScore las nombran en inglés); los juveniles "U17" pasan a "Sub-17"
+PAISES_ES = {
+    "Uruguay": "Uruguay", "Argentina": "Argentina", "Brazil": "Brasil", "Chile": "Chile", "Paraguay": "Paraguay",
+    "Bolivia": "Bolivia", "Peru": "Perú", "Ecuador": "Ecuador", "Colombia": "Colombia", "Venezuela": "Venezuela",
+    "Mexico": "México", "United States": "Estados Unidos", "USA": "Estados Unidos", "Canada": "Canadá",
+    "Costa Rica": "Costa Rica", "Panama": "Panamá", "Honduras": "Honduras", "El Salvador": "El Salvador",
+    "Guatemala": "Guatemala", "Jamaica": "Jamaica", "Haiti": "Haití", "Curacao": "Curazao", "Cuba": "Cuba",
+    "Dominican Republic": "República Dominicana", "Trinidad and Tobago": "Trinidad y Tobago", "Nicaragua": "Nicaragua",
+    "Spain": "España", "Portugal": "Portugal", "France": "Francia", "Germany": "Alemania", "England": "Inglaterra",
+    "Italy": "Italia", "Netherlands": "Países Bajos", "Belgium": "Bélgica", "Switzerland": "Suiza", "Austria": "Austria",
+    "Croatia": "Croacia", "Serbia": "Serbia", "Denmark": "Dinamarca", "Sweden": "Suecia", "Norway": "Noruega",
+    "Finland": "Finlandia", "Iceland": "Islandia", "Poland": "Polonia", "Czechia": "Chequia", "Czech Republic": "Chequia",
+    "Slovakia": "Eslovaquia", "Slovenia": "Eslovenia", "Hungary": "Hungría", "Romania": "Rumania", "Greece": "Grecia",
+    "Turkey": "Turquía", "Türkiye": "Turquía", "Ukraine": "Ucrania", "Russia": "Rusia", "Scotland": "Escocia",
+    "Wales": "Gales", "Ireland": "Irlanda", "Republic of Ireland": "Irlanda", "Northern Ireland": "Irlanda del Norte",
+    "Albania": "Albania", "Georgia": "Georgia", "Bosnia and Herzegovina": "Bosnia y Herzegovina", "Montenegro": "Montenegro",
+    "North Macedonia": "Macedonia del Norte", "Morocco": "Marruecos", "Algeria": "Argelia", "Tunisia": "Túnez",
+    "Egypt": "Egipto", "Senegal": "Senegal", "Nigeria": "Nigeria", "Ghana": "Ghana", "Cameroon": "Camerún", "Mali": "Malí",
+    "Ivory Coast": "Costa de Marfil", "South Africa": "Sudáfrica", "Cape Verde": "Cabo Verde", "Burkina Faso": "Burkina Faso",
+    "DR Congo": "RD del Congo", "Japan": "Japón", "South Korea": "Corea del Sur", "Korea Republic": "Corea del Sur",
+    "North Korea": "Corea del Norte", "China": "China", "Australia": "Australia", "New Zealand": "Nueva Zelanda",
+    "New Caledonia": "Nueva Caledonia", "Saudi Arabia": "Arabia Saudita", "Qatar": "Catar", "Iran": "Irán", "Iraq": "Irak",
+    "Jordan": "Jordania", "United Arab Emirates": "Emiratos Árabes Unidos", "Uzbekistan": "Uzbekistán",
+    "Indonesia": "Indonesia", "India": "India", "Fiji": "Fiyi", "Tahiti": "Tahití"}
+
+
+def equipo_es(nombre):
+    """Nombre de una selección en español: "Saudi Arabia U17" -> "Arabia Saudita Sub-17". Si no la conoce, la deja igual."""
+    n = str(nombre or "").strip()
+    m = re.match(r"^(.*?)\s*U-?(\d{2})$", n)
+    base, sub = (m.group(1).strip(), f" Sub-{m.group(2)}") if m else (n, "")
+    return PAISES_ES.get(base, base) + sub
+
+
+_SIN_PESO = {"de", "del", "la", "el", "los", "las", "a", "fc", "cf", "cd", "sc", "ac", "afc", "club", "sd", "ud"}
+
+
 def mismo_equipo(a, b):
     a, b = norm(a).replace(" fc", "").replace("fc ", ""), norm(b).replace(" fc", "").replace("fc ", "")
-    return bool(a and b) and (a == b or a in b or b in a)
+    if not (a and b):
+        return False
+    if a == b or a in b or b in a:
+        return True
+    # "Racing Santander" = "Racing de Santander", "Deportivo A Coruña" = "Deportivo de La Coruña"
+    ta = {t for t in re.split(r"[^a-z0-9]+", a) if t and t not in _SIN_PESO}
+    tb = {t for t in re.split(r"[^a-z0-9]+", b) if t and t not in _SIN_PESO}
+    return bool(ta and tb) and (ta <= tb or tb <= ta)
 
 
 def http(url, headers=None, timeout=25, crudo=False):
@@ -154,15 +198,54 @@ def fotmob(j, fechas):
     if not pid:
         return [], "sin fotmob_id en jugadores.json"
     pd = http(f"{FM}/playerData?id={pid}")
+    # puesto principal del jugador según FotMob (centerback, rightback, striker...): para los suplentes
+    principal = (((pd.get("positionDescription") or {}).get("primaryPosition") or {}).get("key"))
+    opta = str(j.get("fotmob_opta") or "")
+    nombre_n = norm(j.get("placa") or "")
+
+    def es_el(p):
+        """El jugador en una alineación, un evento o las estadísticas: por su id de FotMob, por su id de Opta o
+        (en juveniles, donde FotMob a veces no lo vincula y le pone id 0) por su nombre."""
+        p = p or {}
+        if p.get("id") and str(p.get("id")) == str(pid): return True
+        if opta and str(p.get("optaId") or "") == opta: return True
+        return not p.get("id") and bool(nombre_n) and norm(p.get("name") or "") == nombre_n
+
+    def clave_p(p):
+        p = p or {}
+        return str(p.get("id") or p.get("name") or "")
+
+    candidatos = list(pd.get("recentMatches") or [])
+    # partidos de equipos extra (fotmob_equipos de jugadores.json, p. ej. Uruguay Sub-17): en los juveniles FotMob no
+    # siempre los cuelga de la ficha del jugador, así que se buscan en el calendario del equipo
+    ya = {mm.get("id") for mm in candidatos}
+    for tid in j.get("fotmob_equipos") or []:
+        try:
+            fx = ((((http(f"{FM}/teams?id={tid}") or {}).get("fixtures") or {}).get("allFixtures") or {}).get("fixtures")) or []
+        except Exception:
+            continue
+        for fi in fx:
+            stt = fi.get("status") or {}
+            if fi.get("id") in ya or not stt.get("utcTime"): continue
+            loc = str((fi.get("home") or {}).get("id")) == str(tid)
+            yo, el = (fi.get("home") or {}, fi.get("away") or {}) if loc else (fi.get("away") or {}, fi.get("home") or {})
+            candidatos.append({"id": fi.get("id"), "matchDate": {"utcTime": stt["utcTime"]}, "isHomeTeam": loc,
+                               "teamName": yo.get("name"), "teamId": yo.get("id"), "opponentTeamName": el.get("name"),
+                               "opponentTeamId": el.get("id"), "homeScore": (fi.get("home") or {}).get("score"),
+                               "awayScore": (fi.get("away") or {}).get("score"),
+                               "leagueId": (fi.get("tournament") or {}).get("leagueId"),
+                               "leagueName": (fi.get("tournament") or {}).get("name"), "extra": True})
+            ya.add(fi.get("id"))
     out = []
-    for m in pd.get("recentMatches") or []:
+    for m in candidatos:
         utc = (m.get("matchDate") or {}).get("utcTime")
         if not utc: continue
         f = datetime.datetime.fromisoformat(utc.replace("Z", "+00:00")).astimezone(_TZ()).date()
         if f not in fechas: continue
         # los amistosos de club no van; los de la selección sí (todos sus partidos)
         if m.get("leagueId") == 489 or "club friendl" in norm(m.get("leagueName") or ""): continue
-        r = {"fuente": "fotmob", "fecha": str(f), "partido_id": m.get("id"),
+        r = {"fuente": "fotmob", "fecha": str(f), "partido_id": m.get("id"), "es_local": bool(m.get("isHomeTeam")),
+             "equipo_id": m.get("teamId"), "puesto_principal": principal,
              "local": m["teamName"] if m.get("isHomeTeam") else m.get("opponentTeamName"),
              "visita": m.get("opponentTeamName") if m.get("isHomeTeam") else m["teamName"],
              "goles_local": m.get("homeScore"), "goles_visita": m.get("awayScore"), "torneo": m.get("leagueName"),
@@ -182,7 +265,7 @@ def fotmob(j, fechas):
                 r["tanda"] = {"local": pen[0], "visita": pen[1], "gano_local": pen[0] > pen[1],
                               "global": (hdr.get("status") or {}).get("aggregatedStr"), "pateo": None}
                 for i, ev in enumerate(((c.get("matchFacts") or {}).get("events") or {}).get("penaltyShootoutEvents") or []):
-                    if str((ev.get("player") or {}).get("id")) == str(pid):
+                    if es_el(ev.get("player")):
                         sc = ev.get("penShootoutScore") or []
                         r["tanda"]["pateo"] = {"resultado": "convirtió" if ev.get("type") == "Goal" else "erró", "orden": i + 1,
                                                "marcador": f"{sc[0]}-{sc[1]}" if len(sc) == 2 else None}
@@ -191,18 +274,21 @@ def fotmob(j, fechas):
             r["formacion"] = eq.get("formation")
             r["ronda"] = (md.get("general") or {}).get("matchRound")
             titulares = eq.get("starters") or []
+            yo_p = None
             for p in titulares + (eq.get("subs") or []):
                 nt = fnum((p.get("performance") or {}).get("rating"))
                 if p.get("shirtNumber") and nt:
                     r["notas_once"][str(p["shirtNumber"])] = nt
-                if str(p.get("id")) == str(pid):
+                if es_el(p):
+                    yo_p = p
+                    r["mi_clave"] = clave_p(p)
                     r["dorsal"] = str(p.get("shirtNumber") or "")
                     r["titular"] = p in titulares
                     r["posicion_id"] = p.get("positionId")
             r["rival_id"] = m.get("opponentTeamId")
             r["liga_id"] = m.get("leagueId")
             # ubicación de cada titular en el dibujo: verticalLayout x (0 = costado derecho del equipo, 1 = izquierdo)
-            r["dibujo"] = {str(p.get("id")): {"pos": p.get("positionId"), "x": (p.get("verticalLayout") or {}).get("x"),
+            r["dibujo"] = {clave_p(p): {"pos": p.get("positionId"), "x": (p.get("verticalLayout") or {}).get("x"),
                                               "y": (p.get("verticalLayout") or {}).get("y")} for p in titulares}
             # once por líneas (del arco al ataque, de izquierda a derecha como se ve en la cancha)
             filas = {}
@@ -210,23 +296,25 @@ def fotmob(j, fechas):
                 vl = p.get("verticalLayout") or {}
                 if vl.get("y") is None: filas = {}; break
                 filas.setdefault(round(vl["y"], 2), []).append(p)
-            r["once"] = [[[str(p.get("shirtNumber") or ""), p.get("lastName") or p.get("name"), p.get("id")]
+            r["once"] = [[[str(p.get("shirtNumber") or ""), p.get("lastName") or p.get("name"), clave_p(p)]
                           for p in sorted(filas[y], key=lambda q: -(q.get("verticalLayout") or {}).get("x", 0))]
                          for y in sorted(filas)] if filas else []
             # tarjetas de cada jugador (para la cancha) y, si entró, minuto y a quién reemplazó
             r["tarjetas"] = {}
             for ev in ((c.get("matchFacts") or {}).get("events") or {}).get("events") or []:
-                if ev.get("type") == "Card" and (ev.get("player") or {}).get("id"):
-                    t = r["tarjetas"].setdefault(str(ev["player"]["id"]), {"amarillas": 0, "roja": None})
+                if ev.get("type") == "Card" and clave_p(ev.get("player")):
+                    t = r["tarjetas"].setdefault(clave_p(ev.get("player")), {"amarillas": 0, "roja": None})
                     mi = f"{ev.get('time')}+{ev['overloadTime']}’" if ev.get("overloadTime") else f"{ev.get('time')}’"
                     if ev.get("card") == "Yellow": t["amarillas"] += 1
                     elif ev.get("card") in ("Red", "YellowRed"): t["roja"] = mi
                 sw = ev.get("swap") or []
-                if ev.get("type") == "Substitution" and len(sw) == 2 and str(sw[0].get("id")) == str(pid):
+                if ev.get("type") == "Substitution" and len(sw) == 2 and es_el(sw[0]):
                     ot = ev.get("overloadTime")
                     r["entro"] = {"minuto": f"{ev.get('time')}+{ot}" if ot else ev.get("time"),
                                   "por": (sw[1].get("name") or "").split(" ")[-1], "por_id": sw[1].get("id")}
-            ps = (c.get("playerStats") or {}).get(str(pid)) or {}
+            pst = c.get("playerStats") or {}
+            ps = pst.get(str(pid)) or (pst.get(str(yo_p.get("optaId"))) if yo_p and yo_p.get("optaId") else None) \
+                or next((v for v in pst.values() if isinstance(v, dict) and es_el(v)), None) or {}
             r["puesto_habitual"] = ps.get("usualPosition")      # 0 arquero, 1 defensor, 2 volante, 3 delantero
             # cada remate con x (0-105, ataca a la derecha) e y (0-68); los penales de la tanda no son remates del partido
             r["remates"] = [t for t in ps["shotmap"] if t.get("period") != "PenaltyShootout"] if isinstance(ps.get("shotmap"), list) else None
@@ -254,42 +342,98 @@ def fotmob(j, fechas):
             nota_fina = r["stats"].get("rating_title")
             if isinstance(nota_fina, (int, float)):
                 r["nota"] = round(float(nota_fina), 2)
+            if m.get("extra"):
+                # partido sacado del calendario del equipo: lo que la ficha no trae sale del partido
+                if not yo_p:
+                    r["fuera"] = True  # no estuvo en la lista del partido
+                else:
+                    mins = r["stats"].get("minutes_played")
+                    tj = r["tarjetas"].get(r.get("mi_clave")) or {}
+                    r.update({"minutos": mins, "jugo": bool(mins), "banco": not mins,
+                              "goles": r["stats"].get("goals"), "asistencias": r["stats"].get("assists"),
+                              "amarillas": tj.get("amarillas", 0), "rojas": 1 if tj.get("roja") else 0})
         except Exception as ex:
             r["aviso"] = f"sin detalle del partido ({ex!r})"
+            if m.get("extra"):
+                r["fuera"] = True
+        if r.get("fuera"):
+            continue
         out.append(r)
-    # temporada: nota media de la liga principal
+    # temporada: la liga de la temporada actual del jugador (statSeasons[0] es la más nueva que tiene FotMob)
     ml = pd.get("mainLeague") or {}
+    actual = ((pd.get("statSeasons") or [{}])[0] or {})
     temp = {}
-    if ml.get("leagueName"):
+    if ml.get("leagueName") and (not actual.get("seasonName") or ml.get("season") == actual.get("seasonName")):
         st = {x.get("localizedTitleId") or x.get("title"): x.get("value") for x in ml.get("stats") or []}
-        temp[ml["leagueName"]] = {"nota": fnum(st.get("rating")), "pj": st.get("matches_uppercase"), "tit": st.get("started"),
+        tit = st.get("player_started_matches", st.get("started"))
+        temp[ml["leagueName"]] = {"nota": fnum(st.get("rating")), "pj": st.get("matches_uppercase"), "tit": tit,
                                   "min": st.get("minutes_played"), "goles": st.get("goals"), "asist": st.get("assists"),
-                                  "amarillas": st.get("yellow_cards"), "rojas": st.get("red_cards"), "season": ml.get("season")}
+                                  "amarillas": st.get("yellow_cards"), "rojas": st.get("red_cards"), "season": ml.get("season"),
+                                  "liga_id": ml.get("leagueId")}
+    else:
+        # la "liga principal" de FotMob es de otra temporada u otro club (pasa con los que cambiaron de equipo o
+        # todavía no jugaron esta temporada): se busca la liga de la temporada actual; si no hay, no se muestra
+        liga = next((t for t in actual.get("tournaments") or [] if _es_liga(t.get("name"))), None)
+        v = _stats_torneo(pid, liga["entryId"]) if liga and liga.get("entryId") else None
+        if v and _entero(v, "matches_uppercase"):
+            temp[liga["name"]] = {"nota": fnum(v.get("rating")), "pj": _entero(v, "matches_uppercase"),
+                                  "tit": _entero(v, "player_started_matches"), "min": _entero(v, "minutes_played"),
+                                  "goles": _entero(v, "goals"), "asist": _entero(v, "assists"),
+                                  "amarillas": _entero(v, "yellow_cards"), "rojas": _entero(v, "red_cards"),
+                                  "season": actual.get("seasonName"), "liga_id": liga.get("tournamentId")}
     # copas internacionales de la temporada (Champions, Europa, Conference, Libertadores, Sudamericana)
     copas = {}
-    torneos = ((pd.get("statSeasons") or [{}])[0] or {}).get("tournaments") or []
-    for t in torneos:
+    for t in actual.get("tournaments") or []:
         nm = norm(t.get("name") or "")
         if not any(k in nm for k in ("champions league", "europa league", "conference league", "libertadores", "sudamericana")):
             continue
         if "concacaf" in nm or "afc" in nm.split() or "caf" in nm.split(): continue
-        try:
-            x = http(f"{FM}/playerStats?playerId={pid}&seasonId={t['entryId']}&isFirstSeason=false")
-        except Exception:
+        v = _stats_torneo(pid, t.get("entryId"))
+        if not v:  # FotMob a veces devuelve vacío (null) para una copa: se saltea esa copa
             continue
-        v = {i.get("localizedTitleId"): i.get("statValue") for i in ((x.get("topStatCard") or {}).get("items") or [])}
-        for sec in ((x.get("statsSection") or {}).get("items") or []):
-            for i in sec.get("items") or []:
-                v.setdefault(i.get("localizedTitleId"), i.get("statValue"))
-        ent = lambda k: int(float(v[k])) if v.get(k) not in (None, "") else None
-        copas[t["name"]] = {"nota": fnum(v.get("rating")), "pj": ent("matches_uppercase"), "tit": ent("player_started_matches"),
-                            "min": ent("minutes_played"), "goles": ent("goals"), "asist": ent("assists"),
-                            "amarillas": ent("yellow_cards"), "rojas": ent("red_cards"),
-                            "season": ((pd.get("statSeasons") or [{}])[0] or {}).get("seasonName"), "liga_id": t.get("tournamentId"), "copa": True}
+        copas[t["name"]] = {"nota": fnum(v.get("rating")), "pj": _entero(v, "matches_uppercase"), "tit": _entero(v, "player_started_matches"),
+                            "min": _entero(v, "minutes_played"), "goles": _entero(v, "goals"), "asist": _entero(v, "assists"),
+                            "amarillas": _entero(v, "yellow_cards"), "rojas": _entero(v, "red_cards"),
+                            "season": actual.get("seasonName"), "liga_id": t.get("tournamentId"), "copa": True}
     for r in out:
         r["temporada"] = temp
         r["copas"] = copas
     return out, None
+
+
+def _stats_torneo(pid, entry):
+    """Números del jugador en un torneo de FotMob (playerStats). None si FotMob no responde o no trae nada."""
+    if entry in (None, ""):
+        return None
+    try:
+        x = http(f"{FM}/playerStats?playerId={pid}&seasonId={entry}&isFirstSeason=false")
+    except Exception:
+        return None
+    if not isinstance(x, dict):
+        return None
+    v = {i.get("localizedTitleId"): i.get("statValue") for i in ((x.get("topStatCard") or {}).get("items") or [])}
+    for sec in ((x.get("statsSection") or {}).get("items") or []):
+        for i in sec.get("items") or []:
+            v.setdefault(i.get("localizedTitleId"), i.get("statValue"))
+    return v or None
+
+
+def _entero(v, k):
+    try:
+        return int(float(v[k])) if v.get(k) not in (None, "") else None
+    except (TypeError, ValueError):
+        return None
+
+
+# torneos que no son la liga del club: de selecciones, copas internacionales y copas nacionales
+_NO_LIGA = ("world cup", "friendl", "copa america", "qualification", "nations league", "olympic", "euro", "u17", "u20",
+            "u23", "champions league", "europa league", "conference league", "libertadores", "sudamericana", "cup",
+            "copa", "taca", "coppa", "coupe", "pokal", "trophy", "playoff")
+
+
+def _es_liga(nombre):
+    n = norm(nombre or "")
+    return bool(n) and not any(k in n for k in _NO_LIGA)
 
 
 def _TZ():

@@ -97,7 +97,9 @@ def main():
         pos = ROLES.get((b.get("posicion") or "").lower(), "SU JUEGO")
         perfil = [["DORSAL", b.get("dorsal") or "—"], ["EDAD", f"{edad} años" if edad else "—"], ["ALTURA", j.get("altura", "—")],
                   ["PIE", j.get("pie", "—")], ["POSICIÓN", pos.replace("COMO ", "").title()]]
-        archivo = sin_tildes(f"{apellido.replace(' ', '')}_{pa.get('local','').replace(' ', '')}-{pa.get('visita','').replace(' ', '')}_{fecha}")
+        # en el nombre del archivo "Sub-17" va sin guion (el guion separa local y visitante)
+        archivo = sin_tildes(f"{apellido.replace(' ', '')}_{pa.get('local','').replace(' ', '').replace('Sub-', 'Sub')}-"
+                             f"{pa.get('visita','').replace(' ', '').replace('Sub-', 'Sub')}_{fecha}")
         d = {"archivo": archivo, "nombre": j["placa"], "apellido": apellido, "dorsal": b.get("dorsal"),
              "local": pa.get("local", ""), "visita": pa.get("visita", ""), "goles_local": pa.get("goles_local", ""), "goles_visita": pa.get("goles_visita", ""),
              "escudo_local": esc if local_es_mio else esc_rival, "escudo_visita": esc_rival if local_es_mio else esc, "escudo_club": esc,

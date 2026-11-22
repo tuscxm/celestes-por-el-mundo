@@ -1096,7 +1096,55 @@
   "club": "Liverpool (Uruguay)",
   "fotmob_id": 1970886,
   "zona": "centro",
-  "rol_352": "enganche"
+  "rol_352": "enganche",
+  "fotmob_equipos": [
+   5970
+  ]
+ },
+ {
+  "clave": "barreiro",
+  "placa": "PABLO BARREIRO",
+  "equipos": {
+   "6879": "Liverpool UY",
+   "7": "Uruguay"
+  },
+  "posicion": "mediocentro",
+  "nacimiento": "2009-01-06",
+  "camiseta": {
+   "6879": {
+    "tipo": "rayas",
+    "c1": "#082543",
+    "c2": "#111111",
+    "texto": "#ffffff",
+    "short": "#111111",
+    "fondo": [
+     "#0b3a6b",
+     "#05121f",
+     "#f3f6f3"
+    ]
+   },
+   "7": {
+    "tipo": "liso",
+    "c1": "#6fb7e6",
+    "c2": "#6fb7e6",
+    "texto": "#0b1f15",
+    "short": "#111",
+    "fondo": [
+     "#6fb7e6",
+     "#14365f",
+     "#f2c14e"
+    ]
+   }
+  },
+  "sofascore_id": 2206711,
+  "club": "Liverpool (Uruguay)",
+  "fotmob_id": 2130423,
+  "zona": "centro",
+  "rol_352": "interno",
+  "fotmob_equipos": [
+   5970
+  ],
+  "fotmob_opta": "736534"
  },
  {
   "clave": "piquerez",

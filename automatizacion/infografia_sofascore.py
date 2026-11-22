@@ -29,7 +29,10 @@ NOMBRES_TORNEO = {"CONMEBOL Libertadores": "COPA LIBERTADORES", "CONMEBOL Sudame
                   "Liga Profesional de Fútbol": "LIGA PROFESIONAL", "LaLiga": "LALIGA", "UEFA Champions League": "CHAMPIONS LEAGUE", "UEFA Europa League": "EUROPA LEAGUE",
                   "UEFA Europa Conference League": "CONFERENCE LEAGUE", "UEFA Conference League": "CONFERENCE LEAGUE",
                   "Liga Portugal Betclic": "LIGA PORTUGAL", "Liga Portugal": "LIGA PORTUGAL",
-                  "International Friendly Games": "AMISTOSO INTERNACIONAL", "Copa del Rey": "COPA DEL REY"}
+                  "International Friendly Games": "AMISTOSO INTERNACIONAL", "Copa del Rey": "COPA DEL REY",
+                  "FIFA U17 World Cup": "MUNDIAL SUB-17", "U17 World Cup": "MUNDIAL SUB-17", "World Cup U17": "MUNDIAL SUB-17",
+                  "FIFA U20 World Cup": "MUNDIAL SUB-20", "U20 World Cup": "MUNDIAL SUB-20", "World Cup U20": "MUNDIAL SUB-20",
+                  "CONMEBOL U17": "SUDAMERICANO SUB-17", "CONMEBOL U20": "SUDAMERICANO SUB-20"}
 PAISES = {"Uruguay": "Uruguay", "Japan": "Japón", "South Korea": "Corea del Sur", "India": "India", "Brazil": "Brasil",
           "Argentina": "Argentina", "Spain": "España", "Portugal": "Portugal", "France": "Francia", "Germany": "Alemania",
           "England": "Inglaterra", "Italy": "Italia", "United States": "Estados Unidos", "Mexico": "México",
@@ -56,7 +59,8 @@ def tema(cam, equipo):
     return {"c1": p, "c2": s2 if _lum(s2) < 0.85 else "#0d1726", "acento": "#9fd6f7"}
 
 def nombre_equipo(t):
-    return PAISES.get(t["name"], t["name"]) if t.get("national") else t["name"]
+    # selecciones en español, también las juveniles ("Saudi Arabia U17" -> "Arabia Saudita Sub-17")
+    return PAISES.get(t["name"]) or fuentes.equipo_es(t["name"]) if t.get("national") else t["name"]
 
 def fecha_local(e):
     return datetime.datetime.fromtimestamp(e["startTimestamp"], datetime.timezone.utc).astimezone(TZ).date()
@@ -603,7 +607,7 @@ def armar_partido(j, e, salida, plantilla_fig, extra=None):
         if xg is None: xg = (datos.get("fotmob") or {}).get("stats", {}).get("expected_goals")
         if isinstance(xg, (int, float)) and len(pos_filas) < 10:
             pos_filas.append(["Goles esperados (xG)", f"{xg:.2f}".replace(".", ","), False])
-    archivo = f"{apellido(player)}_{home.replace(' ', '')}-{away.replace(' ', '')}_{fecha}".replace("ñ", "n").replace("ú", "u").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o")
+    archivo = f"{apellido(player)}_{home.replace(' ', '').replace('Sub-', 'Sub')}-{away.replace(' ', '').replace('Sub-', 'Sub')}_{fecha}".replace("ñ", "n").replace("ú", "u").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o")
     esc_club = escudo(equipo["id"], recursos)
     if esc_club:  # copia para cuando haya que armarla con BeSoccer
         import shutil

@@ -14,7 +14,26 @@ import fuentes
 # positionId de FotMob -> puesto (solo los que están claros; si no, queda "SU JUEGO")
 # torneos de selecciones (nombres de FotMob) en español
 TORNEOS = {"Friendlies": "Amistoso internacional", "World Cup": "Mundial", "Copa America": "Copa América",
-           "World Cup Qualification CONMEBOL": "Eliminatorias", "World Cup Qualification": "Eliminatorias"}
+           "World Cup Qualification CONMEBOL": "Eliminatorias", "World Cup Qualification": "Eliminatorias",
+           "World Cup U17": "Mundial Sub-17", "U17 World Cup": "Mundial Sub-17", "FIFA U17 World Cup": "Mundial Sub-17",
+           "World Cup U20": "Mundial Sub-20", "U20 World Cup": "Mundial Sub-20", "FIFA U20 World Cup": "Mundial Sub-20",
+           "South American U17 Championship": "Sudamericano Sub-17", "CONMEBOL U17": "Sudamericano Sub-17",
+           "South American U20 Championship": "Sudamericano Sub-20", "CONMEBOL U20": "Sudamericano Sub-20",
+           "Olympic Games": "Juegos Olímpicos", "Pan American Games": "Juegos Panamericanos"}
+# ligas que FotMob nombra en inglés o que se confunden con otras (por id de liga de FotMob)
+LIGAS_ES = {63: "Liga Premier de Rusia", 441: "Liga Premier de Ucrania", 40: "Pro League de Bélgica",
+            135: "Superliga de Grecia", 306: "Mundial Sub-17"}
+
+# puesto principal de FotMob (positionDescription.primaryPosition.key) -> puesto; se usa solo para los suplentes
+PUESTO_PRINCIPAL = {"keeper": "arquero", "goalkeeper": "arquero", "centerback": "defensor central",
+                    "rightback": "lateral derecho", "right_wing_back": "lateral derecho", "rightwingback": "lateral derecho",
+                    "leftback": "lateral izquierdo", "left_wing_back": "lateral izquierdo", "leftwingback": "lateral izquierdo",
+                    "centerdefensivemidfielder": "mediocentro", "defensivemidfielder": "mediocentro", "centermidfielder": "mediocentro",
+                    "centerattackingmidfielder": "enganche", "attackingmidfielder": "enganche",
+                    "rightmidfielder": "volante por derecha", "rightwinger": "volante por derecha",
+                    "leftmidfielder": "volante por izquierda", "leftwinger": "volante por izquierda",
+                    "striker": "delantero", "centerforward": "delantero", "secondstriker": "delantero"}
+
 
 def puesto(pid):
     if pid is None: return ""
@@ -73,7 +92,7 @@ def donde_jugo(d, fid):
         enganche = len(ls) >= 5 and linea_i == len(ls) - 2
     habitual = False
     if not r and not d.get("titular"):
-        r = {0: "arquero", 1: "", 2: "", 3: "delantero"}.get(d.get("puesto_habitual"), "")
+        r = PUESTO_PRINCIPAL.get(d.get("puesto_principal")) or {0: "arquero", 1: "", 2: "", 3: "delantero"}.get(d.get("puesto_habitual"), "")
         habitual = bool(r)
     # los 4 más adelantados del equipo (por línea del dibujo)
     adelantados = [i for l in reversed(ls[1:]) for i in l][:4] if ls else []
@@ -123,16 +142,27 @@ def armar(j, fechas, salida, proc_path, forzar=False):
                          "partido": f"{d['local']} {d.get('goles_local')}-{d.get('goles_visita')} {d['visita']}"}]
             json.dump(res, open(rp, "w"), ensure_ascii=False, indent=1)
             continue
-        dp = fuentes.del_partido(extra, d["fecha"], d["visita"] if fuentes.mismo_equipo(d["local"], _club(j)) else d["local"])
+        # de qué lado jugó su equipo: lo dice FotMob (es_local); si no viniera, se compara el nombre del club
+        su_local = d["es_local"] if d.get("es_local") is not None else fuentes.mismo_equipo(d["local"], _club(j))
+        # escudo de su club: si no está guardado (salía de SofaScore), se baja de FotMob con el id de su equipo
+        propio = os.path.join(AQUI, "escudos", f"club_{j['clave']}.png")
+        if not os.path.exists(propio) and d.get("equipo_id") and "uruguay" not in fuentes.norm(str(d.get("local")) + " " + str(d.get("visita"))):
+            bajado = escudo_fotmob(d["equipo_id"])
+            if bajado:
+                import shutil
+                shutil.copyfile(bajado, propio)
+        dp = fuentes.del_partido(extra, d["fecha"], d["visita"] if su_local else d["local"])
         af = dp.get("api_football") or {}
         bs = dp.get("besoccer") or {}
         b = {"clave": j["clave"], "fecha": d["fecha"], "fuente_respaldo": "FotMob", "apellido": fuentes.apellido(j["placa"]),
              "equipo": _club(j), "avisos": [f"SofaScore no respondió; fuentes: " + ", ".join(f"{k} {v}" for k, v in extra["estado"].items())]}
         seleccion = "uruguay" in (fuentes.norm(d["local"]) + " " + fuentes.norm(d["visita"]))
-        b["partido"] = {"local": d["local"], "visita": d["visita"], "goles_local": d.get("goles_local"), "goles_visita": d.get("goles_visita"),
-                        "torneo": TORNEOS.get(d.get("torneo"), d.get("torneo") or ""), "ronda": ronda(d.get("ronda")), "tanda": d.get("tanda"),
+        # en los partidos de la selección, los nombres van en español ("Arabia Saudita Sub-17")
+        nom = fuentes.equipo_es if seleccion else (lambda x: x)
+        b["partido"] = {"local": nom(d["local"]), "visita": nom(d["visita"]), "goles_local": d.get("goles_local"), "goles_visita": d.get("goles_visita"),
+                        "torneo": LIGAS_ES.get(d.get("liga_id")) or TORNEOS.get(d.get("torneo"), d.get("torneo") or ""), "ronda": ronda(d.get("ronda")), "tanda": d.get("tanda"),
                         "seleccion": seleccion,
-                        "local_es_su_equipo": fuentes.mismo_equipo(d["local"], "Uruguay" if seleccion else _club(j))}
+                        "local_es_su_equipo": su_local}
         if d.get("terminado") is False:
             b["estado"] = "no terminó"
         elif not d.get("minutos"):
@@ -146,7 +176,7 @@ def armar(j, fechas, salida, proc_path, forzar=False):
                 b["avisos"].append(f"Nota = promedio de fotmob {d.get('nota')} · api_football {af.get('nota')} · besoccer {bs.get('nota')} → {b['nota']}")
             er = None
             if not seleccion:
-                rival = d["visita"] if fuentes.mismo_equipo(d["local"], _club(j)) else d["local"]
+                rival = d["visita"] if su_local else d["local"]
                 # si el rival es el club de otro de los jugadores seguidos, su escudo ya está guardado
                 er = next((os.path.join(AQUI, "escudos", f"club_{o['clave']}.png") for o in json.load(open(os.path.join(AQUI, "jugadores.json")))
                            if o["clave"] != j["clave"] and _club(o) and fuentes.mismo_equipo(rival, _club(o))
@@ -154,7 +184,8 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             # el de otra selección, o el de un club que no es de los seguidos, sale de FotMob
             er = er or (escudo_fotmob(d["rival_id"]) if d.get("rival_id") else None)
             if er: b["escudo_rival"] = er
-            fid = str(j.get("fotmob_id"))
+            # su clave en el dibujo y en las tarjetas: su id de FotMob (o su nombre, si FotMob no lo vinculó)
+            fid = d.get("mi_clave") or str(j.get("fotmob_id"))
             dj = donde_jugo(d, fid)
             b.update({"titular": bool(d.get("titular")), "minutos": d["minutos"], "dorsal": d.get("dorsal"),
                       "posicion": dj["puesto"], "formacion": d.get("formacion") or ""})
@@ -167,7 +198,7 @@ def armar(j, fechas, salida, proc_path, forzar=False):
             tj = d.get("tarjetas") or {}
             b["once"] = [[[p[0], p[1], fuentes.promedio([d["notas_once"].get(p[0]), ao.get(p[0]), bo.get(str(p[0]))]), tj.get(str(p[2])) or {}] for p in linea]
                          for linea in d.get("once") or []]
-            mia = tj.get(str(j.get("fotmob_id"))) or {}
+            mia = tj.get(fid) or {}
             if mia.get("roja"): b["roja"] = mia["roja"]
 
             def frac(k):
@@ -281,7 +312,7 @@ def armar(j, fechas, salida, proc_path, forzar=False):
                 c0 = sorted(copas, key=lambda c: "qualif" in fuentes.norm(c))[0]; comps[c0] = copas[c0]
             for comp, v in list(comps.items())[:2]:
                 otras = [x.get("nota") for c2, x in (af.get("temporada") or {}).items() if _comp(c2) == _comp(comp)]
-                tm.append([comp.upper(), " "])
+                tm.append([(LIGAS_ES.get(v.get("liga_id")) or comp).upper(), " "])
                 if v.get("pj") is not None:
                     # lo que FotMob no trae (partidos de titular, minutos) no se muestra: nunca "None" ni "?"
                     et, val = "PJ", f"{v['pj']}"
