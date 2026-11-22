@@ -1,0 +1,477 @@
+[
+ {
+  "archivo": "Olaza_DynamoMoscow-FCKrasnodar_2026-11-22",
+  "nombre": "LUCAS OLAZA",
+  "apellido": "Olaza",
+  "dorsal": "15",
+  "local": "Dynamo Moscow",
+  "visita": "FC Krasnodar",
+  "goles_local": 1,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_marichal.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_olaza.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_olaza.png",
+  "meta": "PREMIER LEAGUE · JORNADA 15 · 22 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.6",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#0a8a45",
+   "c2": "#03240f",
+   "acento": "#111111"
+  },
+  "sustitucion": null,
+  "formacion": "4-4-2",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Agkatsev",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "15",
+     "nombre": "Olaza",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/olaza.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Rodríguez",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Jubal",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "40",
+     "nombre": "Vakhania",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "11",
+     "nombre": "Batxi",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Augusto",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "53",
+     "nombre": "Chernikov",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "18",
+     "nombre": "Christian",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Vorobyov",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Córdoba",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/olaza.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "74",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "3/6",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO LATERAL IZQUIERDO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "38/44",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "86%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "3",
+    true
+   ],
+   [
+    "Pases clave",
+    "6",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "2",
+    false
+   ],
+   [
+    "Despejes",
+    "3",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "PREMIER LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "14 (None) · 1231",
+     false
+    ],
+    [
+     "Nota media",
+     "7.53",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "4[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/olaza_2026-11-22.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA IZQUIERDA",
+   "filas": [
+    [
+     "Acciones",
+     "64/81 (79%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "15"
+   ],
+   [
+    "EDAD",
+    "32 años"
+   ],
+   [
+    "ALTURA",
+    "1,73 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Lateral Izquierdo"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "74",
+     false
+    ],
+    [
+     "Pases precisos",
+     "38/44 (86%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "3/6 (50%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/3 (33%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "2",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "2",
+     false
+    ],
+    [
+     "Despejes",
+     "3",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,01",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,01",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,35",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,36",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "0 · 1 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "6",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "1/2 (50%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "2/3 (67%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE LATERAL",
+    "filas": [
+     [
+      "Duelos ganados",
+      "3/6 (50%)",
+      false
+     ],
+     [
+      "Centros precisos",
+      "6/14 (43%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "2",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "3",
+      false
+     ],
+     [
+      "Lo regatearon",
+      "0",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/olaza_2026-11-22.png",
+   "lados": {
+    "izquierda": 79,
+    "centro": 12,
+    "derecha": 9
+   },
+   "campo_rival": 57,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "64/81 (79%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "39/64 (61%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

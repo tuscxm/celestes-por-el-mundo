@@ -1,0 +1,462 @@
+[
+ {
+  "archivo": "Valverde_RealMadrid-CeltaVigo_2026-11-21",
+  "nombre": "FEDERICO VALVERDE",
+  "apellido": "Valverde",
+  "dorsal": "8",
+  "local": "Real Madrid",
+  "visita": "Celta Vigo",
+  "goles_local": 2,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_valverde.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_9910.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_valverde.png",
+  "meta": "LALIGA · JORNADA 13 · 21 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "33’",
+  "nota": "6.6",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#2457b3",
+   "c2": "#0b1838",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": {
+   "minuto": "57’",
+   "por": "Silva",
+   "apellido": "Valverde",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/valverde.png",
+   "rol": ""
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Courtois",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Carreras",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Huijsen",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "16",
+     "nombre": "Konaté",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "12",
+     "nombre": "Alexander-Arnold",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "6",
+     "nombre": "Camavinga",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Silva",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    }
+   ],
+   [
+    {
+     "dorsal": "25",
+     "nombre": "Diomande",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Bellingham",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Güler",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Mbappé",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/valverde.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "23",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "12/16",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "75%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "2",
+    true
+   ],
+   [
+    "Pases clave",
+    "1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "4",
+    false
+   ],
+   [
+    "Intercepciones",
+    "3",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "1",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "12 (None) · 924",
+     false
+    ],
+    [
+     "Nota media",
+     "7.33",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 2",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "4 (3) · 293",
+     false
+    ],
+    [
+     "Nota media",
+     "7.91",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/valverde_2026-11-21.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA DERECHA",
+   "filas": [
+    [
+     "Acciones",
+     "26/29 (90%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "8"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,81 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "23",
+     false
+    ],
+    [
+     "Pases precisos",
+     "12/16 (75%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "4",
+     false
+    ],
+    [
+     "Intercepciones",
+     "3",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "1",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,01",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,01",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "1",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "2",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "0/2 (0%)",
+     false
+    ]
+   ],
+   "perfil": null,
+   "heat_img": "mapas/valverde_2026-11-21.png",
+   "lados": {
+    "izquierda": 0,
+    "centro": 10,
+    "derecha": 90
+   },
+   "campo_rival": 55,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "26/29 (90%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "14/26 (54%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

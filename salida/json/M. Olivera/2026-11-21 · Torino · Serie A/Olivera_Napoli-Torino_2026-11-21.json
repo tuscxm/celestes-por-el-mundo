@@ -1,0 +1,460 @@
+[
+ {
+  "archivo": "Olivera_Napoli-Torino_2026-11-21",
+  "nombre": "MATHÍAS OLIVERA",
+  "apellido": "Olivera",
+  "dorsal": "17",
+  "local": "Napoli",
+  "visita": "Torino",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_olivera.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_9804.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_olivera.png",
+  "meta": "SERIE A · JORNADA 12 · 21 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "32’",
+  "nota": "6.9",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#12a0d7",
+   "c2": "#0a3a5e",
+   "acento": "#ffffff"
+  },
+  "sustitucion": {
+   "minuto": "58’",
+   "por": "Marín",
+   "apellido": "Olivera",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/olivera.png",
+   "rol": ""
+  },
+  "formacion": "3-5-2",
+  "once": [
+   [
+    {
+     "dorsal": "32",
+     "nombre": "Milinković-Savić",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "16",
+     "nombre": "Marín",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null,
+     "sale": true
+    },
+    {
+     "dorsal": "13",
+     "nombre": "Rrahmani",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "31",
+     "nombre": "Beukema",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "37",
+     "nombre": "Spinazzola",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "McTominay",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Gilmour",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "99",
+     "nombre": "Anguissa",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "21",
+     "nombre": "Politano",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "26",
+     "nombre": "Vergara",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Højlund",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/olivera.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "30",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "4/5",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/3",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "16/19",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "84%",
+    false
+   ],
+   [
+    "Pases clave",
+    "1",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "SERIE A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "10 (None) · 546",
+     false
+    ],
+    [
+     "Nota media",
+     "6.84",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (1) · 101",
+     false
+    ],
+    [
+     "Nota media",
+     "6.60",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/olivera_2026-11-21.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "11/36 (31%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "17"
+   ],
+   [
+    "EDAD",
+    "29 años"
+   ],
+   [
+    "ALTURA",
+    "1,85 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "30",
+     false
+    ],
+    [
+     "Pases precisos",
+     "16/19 (84%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "4/5 (80%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "2/3 (67%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "4",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "1",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "2",
+     false
+    ],
+    [
+     "Pases que rompen líneas",
+     "2",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "1/2 (50%)",
+     false
+    ]
+   ],
+   "perfil": null,
+   "heat_img": "mapas/olivera_2026-11-21.png",
+   "lados": {
+    "izquierda": 69,
+    "centro": 31,
+    "derecha": 0
+   },
+   "campo_rival": 39,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "25/36 (69%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "12/25 (48%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

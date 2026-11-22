@@ -1,0 +1,138 @@
+[
+ {
+  "archivo": "Zalazar_SportingCP-UniãoSerra_2026-11-21",
+  "nombre": "RODRIGO ZALAZAR",
+  "apellido": "Zalazar",
+  "dorsal": "17",
+  "local": "Sporting CP",
+  "visita": "União Serra",
+  "goles_local": 4,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_zalazar.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_188158.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_zalazar.png",
+  "meta": "TAÇA DE PORTUGAL · JORNADA 4 · 21 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "21’",
+  "nota": null,
+  "estrellas": 0,
+  "tema": {
+   "c1": "#13a45a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": null,
+  "formacion": "",
+  "once": [],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/zalazar.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "SU JUEGO",
+  "posicion": [
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA PORTUGAL",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (None) · 562",
+     false
+    ],
+    [
+     "Nota media",
+     "7.16",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 1",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ],
+    [
+     "CHAMPIONS LEAGUE",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "2 (1) · 86",
+     false
+    ],
+    [
+     "Nota media",
+     "7.20",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "17"
+   ],
+   [
+    "EDAD",
+    "27 años"
+   ],
+   [
+    "ALTURA",
+    "1,74 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Su Juego"
+   ]
+  ],
+  "roja": null,
+  "abajo": null
+ }
+]

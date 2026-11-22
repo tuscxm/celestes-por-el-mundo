@@ -1,0 +1,439 @@
+[
+ {
+  "archivo": "Bueno_Tigres-CFAmerica_2026-11-22",
+  "nombre": "SANTIAGO BUENO",
+  "apellido": "Bueno",
+  "dorsal": "14",
+  "local": "Tigres",
+  "visita": "CF América",
+  "goles_local": 1,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_aguirre.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_bueno.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_bueno.png",
+  "meta": "LIGA MX · JORNADA 17 · 22 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "6.4",
+  "estrellas": 2,
+  "tema": {
+   "c1": "#e3b100",
+   "c2": "#3a2c00",
+   "acento": "#0b1f3a"
+  },
+  "sustitucion": null,
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Malagón",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "24",
+     "nombre": "Rossano",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Ramos",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Bueno",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/bueno.png",
+     "estrellas": 2,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "2",
+     "nombre": "Lara",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Cervantes",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Cerrillo",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Perea",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "Álvarez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Zendejas",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "9",
+     "nombre": "Martín",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/bueno.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "29",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "1/3",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "18/22",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "82%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/2",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "2",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA MX",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "6 (None) · 535",
+     false
+    ],
+    [
+     "Nota media",
+     "6.76",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "1 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 1[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/bueno_2026-11-22.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR EL CENTRO",
+   "filas": [
+    [
+     "Acciones",
+     "14/36 (39%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "14"
+   ],
+   [
+    "EDAD",
+    "28 años"
+   ],
+   [
+    "ALTURA",
+    "1,90 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "29",
+     false
+    ],
+    [
+     "Pases precisos",
+     "18/22 (82%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "1/3 (33%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "2",
+     false
+    ],
+    [
+     "Intercepciones",
+     "2",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "2",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "2",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "2",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "1",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "1/3 (33%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Duelos ganados",
+      "1/3 (33%)",
+      false
+     ],
+     [
+      "Despejes",
+      "2",
+      false
+     ],
+     [
+      "Intercepciones",
+      "2",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "1/2 (50%)",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/bueno_2026-11-22.png",
+   "lados": {
+    "izquierda": 6,
+    "centro": 39,
+    "derecha": 56
+   },
+   "campo_rival": 11,
+   "zona": {
+    "titulo": "SU ZONA: POR LA DERECHA",
+    "filas": [
+     [
+      "Acciones",
+      "20/36 (56%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "3/20 (15%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
