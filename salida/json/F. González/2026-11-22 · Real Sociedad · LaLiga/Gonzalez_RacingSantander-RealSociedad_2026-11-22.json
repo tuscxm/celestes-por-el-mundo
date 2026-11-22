@@ -1,0 +1,395 @@
+[
+ {
+  "archivo": "Gonzalez_RacingSantander-RealSociedad_2026-11-22",
+  "nombre": "FACUNDO GONZÁLEZ",
+  "apellido": "González",
+  "dorsal": "16",
+  "local": "Racing Santander",
+  "visita": "Real Sociedad",
+  "goles_local": 3,
+  "goles_visita": 2,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_facundo_gonzalez.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_8560.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_facundo_gonzalez.png",
+  "meta": "LALIGA · JORNADA 13 · 22 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "1’",
+  "nota": null,
+  "estrellas": 0,
+  "tema": {
+   "c1": "#0b8a4a",
+   "c2": "#06331d",
+   "acento": "#f3f6f3"
+  },
+  "sustitucion": {
+   "minuto": "90+2’",
+   "por": "Vicente",
+   "apellido": "González",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/facundo_gonzalez.png",
+   "rol": "defensor central"
+  },
+  "formacion": "4-2-3-1",
+  "once": [
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Agirrezabala",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Salinas",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "24",
+     "nombre": "Belocian",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "22",
+     "nombre": "Felipe",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Ramón",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "18",
+     "nombre": "Prati",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "23",
+     "nombre": "Martín",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Vicente",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1,
+     "sale": true
+    },
+    {
+     "dorsal": "20",
+     "nombre": "Canales",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "19",
+     "nombre": "Luque",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "21",
+     "nombre": "Zabiri",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/facundo_gonzalez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "2",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO DEFENSOR CENTRAL",
+  "posicion": [
+   [
+    "Pases precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "0%",
+    false
+   ],
+   [
+    "Pases clave",
+    "0",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "1",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "0",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LALIGA",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "6 (3) · 247",
+     false
+    ],
+    [
+     "Nota media",
+     "5.93",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "0 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "1[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "16"
+   ],
+   [
+    "EDAD",
+    "23 años"
+   ],
+   [
+    "ALTURA",
+    "1,93 m"
+   ],
+   [
+    "PIE",
+    "Izquierdo"
+   ],
+   [
+    "POSICIÓN",
+    "Defensor Central"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "2",
+     false
+    ],
+    [
+     "Pases precisos",
+     "0/1 (0%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "1",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "0",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Ocasiones creadas",
+     "0",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "1",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "0",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "0",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "1",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE DEFENSOR CENTRAL",
+    "filas": [
+     [
+      "Despejes",
+      "0",
+      false
+     ],
+     [
+      "Intercepciones",
+      "0",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "0/1 (0%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]

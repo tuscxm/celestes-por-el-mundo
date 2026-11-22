@@ -1,0 +1,405 @@
+[
+ {
+  "archivo": "Barreiro_UruguaySub17-HaitiSub17_2026-11-22",
+  "nombre": "PABLO BARREIRO",
+  "apellido": "Barreiro",
+  "dorsal": "5",
+  "local": "Uruguay Sub-17",
+  "visita": "Haití Sub-17",
+  "goles_local": 4,
+  "goles_visita": 1,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_78793.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "meta": "MUNDIAL SUB-17 · JORNADA 2 · 22 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "9.3",
+  "estrellas": 5,
+  "tema": {
+   "c1": "#6fb7e6",
+   "c2": "#14365f",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Machín",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "6",
+     "nombre": "de León",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Muñiz",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "13",
+     "nombre": "Fernández",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Guedes",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Brizuela",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Barreiro",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/barreiro.png",
+     "estrellas": 5,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "García",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "11",
+     "nombre": "de Lima",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Gancheff",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "17",
+     "nombre": "Saldaña",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/barreiro.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "1",
+    true
+   ],
+   [
+    "Asistencias",
+    "1",
+    true
+   ],
+   [
+    "Toques",
+    "74",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "13/19",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "1/1",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "34/42",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "81%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "10",
+    true
+   ],
+   [
+    "Pases clave",
+    "3",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "4/6",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "8",
+    false
+   ],
+   [
+    "Intercepciones",
+    "2",
+    false
+   ],
+   [
+    "Entradas",
+    "8",
+    false
+   ],
+   [
+    "Despejes",
+    "2",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "",
+   "filas": []
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "5"
+   ],
+   [
+    "EDAD",
+    "17 años"
+   ],
+   [
+    "ALTURA",
+    "—"
+   ],
+   [
+    "PIE",
+    "—"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "1",
+     true
+    ],
+    [
+     "Asistencias",
+     "1",
+     true
+    ],
+    [
+     "Toques",
+     "74",
+     false
+    ],
+    [
+     "Pases precisos",
+     "34/42 (81%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "13/19 (68%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Regates",
+     "1/3 (33%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "8",
+     false
+    ],
+    [
+     "Intercepciones",
+     "2",
+     false
+    ],
+    [
+     "Entradas",
+     "8",
+     false
+    ],
+    [
+     "Despejes",
+     "2",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "3",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "3",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "3 · 1 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "3",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "10",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "1",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Centros precisos",
+     "1/2 (50%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE MEDIOCENTRO",
+    "filas": [
+     [
+      "Pases precisos",
+      "34/42 (81%)",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "4/6 (67%)",
+      true
+     ],
+     [
+      "Recuperaciones",
+      "8",
+      true
+     ],
+     [
+      "Duelos en el piso",
+      "12/18 (67%)",
+      true
+     ]
+    ]
+   }
+  }
+ }
+]

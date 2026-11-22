@@ -1,0 +1,441 @@
+[
+ {
+  "archivo": "Brizuela_ArabiaSauditaSub17-UruguaySub17_2026-11-19",
+  "nombre": "THIAGO BRIZUELA",
+  "apellido": "Brizuela",
+  "dorsal": "10",
+  "local": "Arabia Saudita Sub-17",
+  "visita": "Uruguay Sub-17",
+  "goles_local": 2,
+  "goles_visita": 3,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/fotmob_1763781.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/uruguay.png",
+  "meta": "MUNDIAL SUB-17 · JORNADA 1 · 19 NOVIEMBRE 2026",
+  "condicion": "TITULAR",
+  "minutos": "90’",
+  "nota": "7.9",
+  "estrellas": 4,
+  "tema": {
+   "c1": "#6fb7e6",
+   "c2": "#14365f",
+   "acento": "#f2c14e"
+  },
+  "sustitucion": null,
+  "formacion": "4-3-3",
+  "once": [
+   [
+    {
+     "dorsal": "1",
+     "nombre": "Machín",
+     "cara": null,
+     "estrellas": 1,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "6",
+     "nombre": "de León",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Muñiz",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "13",
+     "nombre": "Fernández",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "4",
+     "nombre": "Guedes",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "10",
+     "nombre": "Brizuela",
+     "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/brizuela.png",
+     "estrellas": 4,
+     "yo": true,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "5",
+     "nombre": "Barreiro",
+     "cara": null,
+     "estrellas": 5,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "8",
+     "nombre": "García",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "17",
+     "nombre": "Saldaña",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "9",
+     "nombre": "Gancheff",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "11",
+     "nombre": "de Lima",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/brizuela.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "1",
+    true
+   ],
+   [
+    "Toques",
+    "58",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "9/23",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "2/4",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "4",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO MEDIOCENTRO",
+  "posicion": [
+   [
+    "Pases precisos",
+    "23/32",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "72%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "7",
+    true
+   ],
+   [
+    "Remates al arco",
+    "1/4",
+    true
+   ],
+   [
+    "Remates afuera · bloq.",
+    "2 · 1",
+    false
+   ],
+   [
+    "Pases clave",
+    "2",
+    true
+   ],
+   [
+    "Centros precisos",
+    "0/3",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "0/3",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "6",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26",
+   "filas": [
+    [
+     "LIGA AUF URUGUAYA INTERMEDIO GRP. A",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "9 (3) · 336",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "2 · 0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "2[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": null,
+  "heat_horizontal": true,
+  "zona": null,
+  "perfil": [
+   [
+    "DORSAL",
+    "10"
+   ],
+   [
+    "EDAD",
+    "17 años"
+   ],
+   [
+    "ALTURA",
+    "1,69 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Mediocentro"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "1",
+     true
+    ],
+    [
+     "Toques",
+     "58",
+     false
+    ],
+    [
+     "Pases precisos",
+     "23/32 (72%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "9/23 (39%)",
+     false
+    ],
+    [
+     "Duelos aéreos ganados",
+     "2/4 (50%)",
+     false
+    ],
+    [
+     "Regates",
+     "5/6 (83%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "6",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "4",
+     false
+    ],
+    [
+     "Faltas recibidas",
+     "1",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "5",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "1 · 2 · 1",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "2",
+     false
+    ],
+    [
+     "Pases al último tercio",
+     "7",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "5",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "2",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Centros precisos",
+     "0/3 (0%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE MEDIOCENTRO",
+    "filas": [
+     [
+      "Pases precisos",
+      "23/32 (72%)",
+      false
+     ],
+     [
+      "Pases largos precisos",
+      "0/3 (0%)",
+      false
+     ],
+     [
+      "Recuperaciones",
+      "6",
+      true
+     ],
+     [
+      "Duelos en el piso",
+      "7/19 (37%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
