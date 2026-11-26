@@ -1,0 +1,491 @@
+[
+ {
+  "archivo": "Rodriguez_Monterrey-CFAmerica_2026-11-26",
+  "nombre": "BRIAN RODRÍGUEZ",
+  "apellido": "Rodríguez",
+  "dorsal": "7",
+  "local": "Monterrey",
+  "visita": "CF América",
+  "goles_local": 0,
+  "goles_visita": 0,
+  "escudo_local": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_diego_rossi.png",
+  "escudo_visita": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_brian_rodriguez.png",
+  "escudo_club": "/home/user/celestes-por-el-mundo/automatizacion/escudos/club_brian_rodriguez.png",
+  "meta": "LIGA MX · APERTURA - QUARTER-FINALS · 26 NOVIEMBRE 2026",
+  "condicion": "SUPLENTE",
+  "minutos": "45’",
+  "nota": "7.0",
+  "estrellas": 3,
+  "tema": {
+   "c1": "#e3b100",
+   "c2": "#3a2c00",
+   "acento": "#0b1f3a"
+  },
+  "sustitucion": {
+   "minuto": "46’",
+   "por": "Sánchez",
+   "apellido": "Rodríguez",
+   "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/brian_rodriguez.png",
+   "rol": "volante por izquierda"
+  },
+  "formacion": "4-1-3-2",
+  "once": [
+   [
+    {
+     "dorsal": "30",
+     "nombre": "Cota",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "5",
+     "nombre": "Álvarez",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "15",
+     "nombre": "Ramos",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "14",
+     "nombre": "Bueno",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "3",
+     "nombre": "Reyes",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "13",
+     "nombre": "Cervantes",
+     "cara": null,
+     "estrellas": 4,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    }
+   ],
+   [
+    {
+     "dorsal": "22",
+     "nombre": "Perea",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "6",
+     "nombre": "Cerrillo",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1
+    },
+    {
+     "dorsal": "10",
+     "nombre": "Zendejas",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    }
+   ],
+   [
+    {
+     "dorsal": "93",
+     "nombre": "Borja",
+     "cara": null,
+     "estrellas": 3,
+     "yo": false,
+     "roja": null,
+     "amarillas": null
+    },
+    {
+     "dorsal": "28",
+     "nombre": "Sánchez",
+     "cara": null,
+     "estrellas": 2,
+     "yo": false,
+     "roja": null,
+     "amarillas": 1,
+     "sale": true
+    }
+   ]
+  ],
+  "cara": "/home/user/celestes-por-el-mundo/automatizacion/caras/brian_rodriguez.png",
+  "foto": null,
+  "generales": [
+   [
+    "Goles",
+    "0",
+    false
+   ],
+   [
+    "Asistencias",
+    "0",
+    false
+   ],
+   [
+    "Toques",
+    "33",
+    false
+   ],
+   [
+    "Duelos ganados",
+    "5/10",
+    false
+   ],
+   [
+    "Duelos aéreos ganados",
+    "0/0",
+    false
+   ],
+   [
+    "Faltas cometidas",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "pos_titulo": "COMO VOLANTE POR IZQUIERDA",
+  "posicion": [
+   [
+    "Pases precisos",
+    "15/21",
+    false
+   ],
+   [
+    "Precisión de pase",
+    "71%",
+    false
+   ],
+   [
+    "Pases al último tercio",
+    "3",
+    true
+   ],
+   [
+    "Pases clave",
+    "3",
+    false
+   ],
+   [
+    "Pases largos precisos",
+    "1/1",
+    false
+   ],
+   [
+    "Recuperaciones",
+    "0",
+    false
+   ],
+   [
+    "Intercepciones",
+    "0",
+    false
+   ],
+   [
+    "Entradas",
+    "1",
+    false
+   ],
+   [
+    "Despejes",
+    "0",
+    false
+   ],
+   [
+    "Tarjetas",
+    "0[A] · 0[R]",
+    false
+   ]
+  ],
+  "extra": {
+   "titulo": "TEMPORADA",
+   "sub": "26/27",
+   "filas": [
+    [
+     "LIGA MX",
+     " ",
+     false
+    ],
+    [
+     "PJ (tit.) · Min.",
+     "11 (7) · 723",
+     false
+    ],
+    [
+     "Nota media",
+     "7.86",
+     false
+    ],
+    [
+     "Goles · Asist.",
+     "5 · 3",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ]
+  },
+  "heat_img": "mapas/brian_rodriguez_2026-11-26.png",
+  "heat_horizontal": true,
+  "zona": {
+   "titulo": "POR LA IZQUIERDA",
+   "filas": [
+    [
+     "Acciones",
+     "28/34 (82%)",
+     true
+    ]
+   ]
+  },
+  "perfil": [
+   [
+    "DORSAL",
+    "7"
+   ],
+   [
+    "EDAD",
+    "26 años"
+   ],
+   [
+    "ALTURA",
+    "1,74 m"
+   ],
+   [
+    "PIE",
+    "Derecho"
+   ],
+   [
+    "POSICIÓN",
+    "Volante Por Izquierda"
+   ]
+  ],
+  "roja": null,
+  "abajo": {
+   "su_partido": [
+    [
+     "Goles",
+     "0",
+     false
+    ],
+    [
+     "Asistencias",
+     "0",
+     false
+    ],
+    [
+     "Toques",
+     "33",
+     false
+    ],
+    [
+     "Pases precisos",
+     "15/21 (71%)",
+     false
+    ],
+    [
+     "Duelos ganados",
+     "5/10 (50%)",
+     false
+    ],
+    [
+     "Regates",
+     "4/8 (50%)",
+     false
+    ],
+    [
+     "Recuperaciones",
+     "0",
+     false
+    ],
+    [
+     "Intercepciones",
+     "0",
+     false
+    ],
+    [
+     "Entradas",
+     "1",
+     false
+    ],
+    [
+     "Despejes",
+     "0",
+     false
+    ],
+    [
+     "Faltas cometidas",
+     "0",
+     false
+    ],
+    [
+     "Pérdidas de balón",
+     "0",
+     false
+    ],
+    [
+     "Tarjetas",
+     "0[A] · 0[R]",
+     false
+    ]
+   ],
+   "esperados": [
+    [
+     "ESPERADOS",
+     " "
+    ],
+    [
+     "Goles esperados (xG)",
+     "0,08",
+     false
+    ],
+    [
+     "xG sin penales",
+     "0,08",
+     false
+    ],
+    [
+     "Asistencias esperadas (xA)",
+     "0,49",
+     false
+    ],
+    [
+     "xG + xA",
+     "0,57",
+     false
+    ]
+   ],
+   "mas": [
+    [
+     "MÁS DEL PARTIDO",
+     " "
+    ],
+    [
+     "Remates arco/fuera/bloq.",
+     "0 · 2 · 0",
+     false
+    ],
+    [
+     "Ocasiones creadas",
+     "3",
+     false
+    ],
+    [
+     "Toques en el área rival",
+     "2",
+     false
+    ],
+    [
+     "Lo regatearon",
+     "1",
+     false
+    ],
+    [
+     "Remates que tapó",
+     "0",
+     false
+    ],
+    [
+     "Pases largos precisos",
+     "1/1 (100%)",
+     false
+    ],
+    [
+     "Duelos en el piso",
+     "5/10 (50%)",
+     false
+    ]
+   ],
+   "perfil": {
+    "titulo": "PERFIL DE VOLANTE POR FUERA",
+    "filas": [
+     [
+      "Centros precisos",
+      "0/1 (0%)",
+      false
+     ],
+     [
+      "Regates",
+      "4/8 (50%)",
+      false
+     ],
+     [
+      "Pases al último tercio",
+      "3",
+      false
+     ],
+     [
+      "Duelos ganados",
+      "5/10 (50%)",
+      false
+     ],
+     [
+      "Recuperaciones",
+      "0",
+      false
+     ]
+    ]
+   },
+   "heat_img": "mapas/brian_rodriguez_2026-11-26.png",
+   "lados": {
+    "izquierda": 82,
+    "centro": 18,
+    "derecha": 0
+   },
+   "campo_rival": 79,
+   "zona": {
+    "titulo": "SU ZONA: POR LA IZQUIERDA",
+    "filas": [
+     [
+      "Acciones",
+      "28/34 (82%)",
+      true
+     ],
+     [
+      "En campo rival",
+      "22/28 (79%)",
+      false
+     ]
+    ]
+   }
+  }
+ }
+]
